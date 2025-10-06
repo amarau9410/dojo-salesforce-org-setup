@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <label>Manage Public Group Membership</label>
+    <interviewLabel>Manage Public Group Membership {!$Flow.CurrentDateTime}</interviewLabel>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+
+    <!-- Static choices for Market and Action -->
+    <choices>
+        <name>GB</name>
+        <choiceText>GB</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>GB</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>IE</name>
+        <choiceText>IE</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>IE</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ES</name>
+        <choiceText>ES</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>ES</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>IT</name>
+        <choiceText>IT</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>IT</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Add</name>
+        <choiceText>Add</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Add</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Remove</name>
+        <choiceText>Remove</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Remove</stringValue>
+        </value>
+    </choices>
+
+    <!-- Apex action: ManageGroupMemberAction.process (payload) -->
+    <actionCalls>
+        <name>Invoke_Apex</name>
+        <label>Update Group Membership</label>
+        <locationX>100</locationX>
+        <locationY>220</locationY>
+        <actionName>ManageGroupMemberAction</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>value</name>
+            <value>
+                <elementReference>PayloadFormula</elementReference>
+            </value>
+        </inputParameters>
+        <connector>
+            <targetReference>Complete</targetReference>
+        </connector>
+        <nameSegment>ManageGroupMemberAction</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+
+    <!-- Screen 1: Selection -->
+    <screens>
+        <name>Manage_Group_Membership</name>
+        <label>Manage Group Membership</label>
+        <locationX>100</locationX>
+        <locationY>100</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>false</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Section_1</name>
+            <fieldType>Region</fieldType>
+            <fields>
+                <name>UserDisplay</name>
+                <fieldText>User Id: {!recordId}</fieldText>
+                <fieldType>DisplayText</fieldType>
+                <styleProperties>
+                    <verticalAlignment>
+                        <stringValue>top</stringValue>
+                    </verticalAlignment>
+                    <width>
+                        <stringValue>12</stringValue>
+                    </width>
+                </styleProperties>
+            </fields>
+            <fields>
+                <name>MarketCodeRadio</name>
+                <choiceReferences>GB</choiceReferences>
+                <choiceReferences>IE</choiceReferences>
+                <choiceReferences>ES</choiceReferences>
+                <choiceReferences>IT</choiceReferences>
+                <dataType>String</dataType>
+                <fieldText>Market Group(s)</fieldText>
+                <fieldType>MultiSelectCheckboxes</fieldType>
+                <isRequired>true</isRequired>
+                <styleProperties>
+                    <verticalAlignment>
+                        <stringValue>top</stringValue>
+                    </verticalAlignment>
+                    <width>
+                        <stringValue>12</stringValue>
+                    </width>
+                </styleProperties>
+            </fields>
+            <fields>
+                <name>ActionTypeRadio</name>
+                <choiceReferences>Add</choiceReferences>
+                <choiceReferences>Remove</choiceReferences>
+                <dataType>String</dataType>
+                <fieldText>Action</fieldText>
+                <fieldType>RadioButtons</fieldType>
+                <isRequired>true</isRequired>
+                <styleProperties>
+                    <verticalAlignment>
+                        <stringValue>top</stringValue>
+                    </verticalAlignment>
+                    <width>
+                        <stringValue>12</stringValue>
+                    </width>
+                </styleProperties>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+        <connector>
+            <targetReference>Invoke_Apex</targetReference>
+        </connector>
+    </screens>
+
+    <!-- Confirmation screen -->
+    <screens>
+        <name>Complete</name>
+        <label>Action Complete</label>
+        <locationX>100</locationX>
+        <locationY>340</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Summary</name>
+            <fieldText>{!recordId} has been successfully {!ActionTypeRadio}ed from/to {!MarketCodeRadio} Customer Service Group.</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+
+    <start>
+        <locationX>20</locationX>
+        <locationY>20</locationY>
+        <connector>
+            <targetReference>Manage_Group_Membership</targetReference>
+        </connector>
+    </start>
+
+    <status>Active</status>
+
+    <!-- Build payload string via formula: UserId|Action|Markets -->
+    <formulas>
+        <name>PayloadFormula</name>
+        <dataType>String</dataType>
+        <expression>CASESAFEID({!recordId}) + &apos;|&apos; + {!ActionTypeRadio} + &apos;|&apos; + {!MarketCodeRadio}</expression>
+    </formulas>
+
+    <!-- recordId comes from the User record page action -->
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
