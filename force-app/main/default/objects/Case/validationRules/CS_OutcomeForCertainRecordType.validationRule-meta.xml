@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_OutcomeForCertainRecordType</fullName>
+    <active>true</active>
+    <description>This Validation rule will fire when the status is changed to Close for certain record Type</description>
+    <errorConditionFormula>AND(
+				ISCHANGED(Status),
+    ISPICKVAL(Status, &quot;Closed&quot;),
+    ISBLANK(TEXT(SC_Outcome__c)),
+OR(
+        RecordType.DeveloperName = "General_Queries",
+RecordType.DeveloperName = "Account_Management",
+RecordType.DeveloperName = "WelcomeCall",
+RecordType.DeveloperName = "VQ_B",
+RecordType.DeveloperName = "Technical",
+RecordType.DeveloperName = "Funding",
+RecordType.DeveloperName = "ProactiveServiceCampaign",
+RecordType.DeveloperName = "Onboarding",
+RecordType.DeveloperName = "Loyalty",
+RecordType.DeveloperName = "Integration",
+RecordType.DeveloperName = "EnterpriseAccountManagement",
+RecordType.DeveloperName = "ChangeofLegalEntity",
+RecordType.DeveloperName = "Retentions",
+RecordType.DeveloperName = "Collections",
+RecordType.DeveloperName = "CardMachineCharges"
+    )
+)</errorConditionFormula>
+    <errorMessage>Please complete Outcome Field in order to Save Record.</errorMessage>
+</ValidationRule>
