@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Legacy_GBP_Deals</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Added to give visibility to UK team for legacy opportunities, created before accounts (and there for markets) were assigned,</description>
+        <label>Share Legacy GBP Deals</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.GreatBritain</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>CurrencyIsoCode</field>
+            <operation>equals</operation>
+            <value>GBP</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Legacy_Opps_with_Spain</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Legacy Opps with Spain</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.Spain</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>CurrencyIsoCode</field>
+            <operation>equals</operation>
+            <value>EUR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Opportunity_All_Internal_Read_Only_For_Sales_Access_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Opportunity All Internal Read Only For Sales Access Group</label>
+        <sharedTo>
+            <group>ES_IT_Sales_App_Access_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Managers_Can_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Managers_Can_Edit</label>
+        <sharedTo>
+            <group>Managers</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>PC_Inside_Sales_and_Customer_Services</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

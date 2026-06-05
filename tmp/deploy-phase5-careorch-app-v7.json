@@ -1,0 +1,110 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T14:57:15.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T14:57:14.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomTab",
+          "created": true,
+          "createdDate": "2026-05-27T14:57:15.000Z",
+          "deleted": false,
+          "fileName": "tabs/careOrchCarerWorkspace.tab",
+          "fullName": "careOrchCarerWorkspace",
+          "id": "01rQ100001qsDwHIAU",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomApplication",
+          "created": true,
+          "createdDate": "2026-05-27T14:57:15.000Z",
+          "deleted": false,
+          "fileName": "applications/CareOrch.app",
+          "fullName": "CareOrch",
+          "id": "02uQ1000005Xxw5IAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T14:57:15.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Floor_Carer.permissionset",
+          "fullName": "CareOrch_Floor_Carer",
+          "id": "0PSQ1000005QerlOAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T14:57:15.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfQ100000RWyEPKA1",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T14:57:15.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 3,
+    "numberComponentsTotal": 3,
+    "numberFiles": "7",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T14:57:14.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 2011,
+    "files": [
+      {
+        "fullName": "CareOrch",
+        "type": "CustomApplication",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\applications\\CareOrch.app-meta.xml"
+      },
+      {
+        "fullName": "careOrchCarerWorkspace",
+        "type": "CustomTab",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\tabs\\careOrchCarerWorkspace.tab-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Floor_Carer",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Floor_Carer.permissionset-meta.xml"
+      }
+    ],
+    "zipFileCount": 4,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWyEPKA1%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

@@ -1,0 +1,137 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T14:50:50.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T14:50:48.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "componentType": "CustomApplication",
+          "created": false,
+          "createdDate": "2026-05-27T14:50:49.000Z",
+          "deleted": false,
+          "fileName": "applications/CareOrch.app",
+          "fullName": "CareOrch",
+          "problem": "FormFactors is required for Lightning apps.",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "FlexiPage",
+          "created": false,
+          "createdDate": "2026-05-27T14:50:50.000Z",
+          "deleted": false,
+          "fileName": "flexipages/CareOrch_UtilityBar.flexipage",
+          "fullName": "CareOrch_UtilityBar",
+          "problem": "We couldn't retrieve the design time component information for component runtime_sales_console:notifications.",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T14:50:50.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Floor_Carer.permissionset",
+          "fullName": "CareOrch_Floor_Carer",
+          "problem": "In field: application - no CustomApplication named CareOrch found",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomTab",
+          "created": true,
+          "createdDate": "2026-05-27T14:50:50.000Z",
+          "deleted": false,
+          "fileName": "tabs/careOrchCarerWorkspace.tab",
+          "fullName": "careOrchCarerWorkspace",
+          "id": "01rQ100001qs2BFIAY",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T14:50:50.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWxwfKAD",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T14:50:50.000Z",
+    "numberComponentErrors": 3,
+    "numberComponentsDeployed": 1,
+    "numberComponentsTotal": 4,
+    "numberFiles": "9",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T14:50:48.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 2638,
+    "files": [
+      {
+        "fullName": "CareOrch",
+        "type": "CustomApplication",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\applications\\CareOrch.app-meta.xml",
+        "error": "FormFactors is required for Lightning apps."
+      },
+      {
+        "fullName": "careOrchCarerWorkspace",
+        "type": "CustomTab",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\tabs\\careOrchCarerWorkspace.tab-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_UtilityBar",
+        "type": "FlexiPage",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flexipages\\CareOrch_UtilityBar.flexipage-meta.xml",
+        "error": "We couldn't retrieve the design time component information for component runtime_sales_console:notifications."
+      },
+      {
+        "fullName": "CareOrch_Floor_Carer",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Floor_Carer.permissionset-meta.xml",
+        "error": "In field: application - no CustomApplication named CareOrch found"
+      }
+    ],
+    "zipFileCount": 5,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWxwfKAD%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

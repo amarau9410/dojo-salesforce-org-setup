@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FundsOnHoldAtTicketCreation__c</fullName>
+    <description>Funds On Hold At Ticket Creation</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Funds On Hold At Ticket Creation</inlineHelpText>
+    <label>Funds On Hold At Ticket Creation</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>funds_on_hold_at_ticket_creation_yes</fullName>
+                <default>true</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>funds_on_hold_at_ticket_creation_no</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_WasTheComplaintUpheld__c</fullName>
+    <description>Indicates if the complaint was validated.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if upheld; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Was The Complaint Upheld?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>complaint_upheld_yes</fullName>
+                <default>false</default>
+                <label>Upheld</label>
+            </value>
+            <value>
+                <fullName>complaint_upheld_no</fullName>
+                <default>false</default>
+                <label>Not Upheld</label>
+            </value>
+            <value>
+                <fullName>complaint_upheld_handover</fullName>
+                <default>false</default>
+                <label>Third Party Handover</label>
+            </value>
+            <value>
+                <fullName>complaint_upheld_fos</fullName>
+                <default>false</default>
+                <label>FOS</label>
+            </value>
+            <value>
+                <fullName>complaint_upheld_follow_up</fullName>
+                <default>false</default>
+                <label>Follow up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Tour_Feedback_Satisfactory__c</fullName>
+    <description>Confirms whether facility tour feedback is satisfactory for contract progression.</description>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>CareOrch Tour Feedback Satisfactory</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

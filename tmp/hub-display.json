@@ -1,0 +1,17 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.134.6.
+{
+  "status": 0,
+  "result": {
+    "id": "00Dd30000079MN4EAM",
+    "apiVersion": "66.0",
+    "accessToken": "00Dd30000079MN4!AQEAQOBZ3AdZmm.z2gVJp2jIlzQihS6fP.WeGjHZ.vVkNIuzCNRBxfhSVRuz8wtQQchwP5E8OSXLBwZswp2iC.dTqMv8jGoB",
+    "instanceUrl": "https://wilfredandkaizer.my.salesforce.com",
+    "username": "nnamdiudoye@gmail.com.partner",
+    "clientId": "PlatformCLI",
+    "connectedStatus": "Connected",
+    "alias": "WilfredKaizerHub"
+  },
+  "warnings": [
+    "This command will expose sensitive information that allows for subsequent activity using your current authenticated session.\nSharing this information is equivalent to logging someone in under the current credential, resulting in unintended access and escalation of privilege.\nFor additional information, please review the authorization section of the https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_web_flow.htm."
+  ]
+}

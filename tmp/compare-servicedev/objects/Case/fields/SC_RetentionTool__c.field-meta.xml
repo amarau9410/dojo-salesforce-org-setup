@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_RetentionTool__c</fullName>
+    <description>Tool used to retain customers or accounts.</description>
+    <inlineHelpText>Specify the retention tool used.</inlineHelpText>
+    <label>Retention Tool</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SC_Outcome__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>retention_tool_billing_holiday</fullName>
+                <default>false</default>
+                <label>Billing Holiday</label>
+            </value>
+            <value>
+                <fullName>retention_tool_business_funding</fullName>
+                <default>false</default>
+                <label>Business Funding</label>
+            </value>
+            <value>
+                <fullName>retention_tool_explanation</fullName>
+                <default>false</default>
+                <label>Explanation</label>
+            </value>
+            <value>
+                <fullName>retention_tool_goodwill</fullName>
+                <default>false</default>
+                <label>Goodwill</label>
+            </value>
+            <value>
+                <fullName>retention_tool_invoice_waived</fullName>
+                <default>false</default>
+                <label>Invoice Waived</label>
+            </value>
+            <value>
+                <fullName>retention_tool_rate_review</fullName>
+                <default>false</default>
+                <label>Rate Review</label>
+            </value>
+            <value>
+                <fullName>retention_tool_rate_roll_back</fullName>
+                <default>false</default>
+                <label>Rate Roll Back</label>
+            </value>
+            <value>
+                <fullName>retention_tool_reduced_card_machine</fullName>
+                <default>false</default>
+                <label>Reduced Card Machine</label>
+            </value>
+            <value>
+                <fullName>retention_tool_refund/credit</fullName>
+                <default>false</default>
+                <label>Refund/Credit</label>
+            </value>
+            <value>
+                <fullName>retention_tool_value_based_conversation</fullName>
+                <default>false</default>
+                <label>Value Based Conversation</label>
+            </value>
+            <value>
+                <fullName>7 day to 5 day settlement</fullName>
+                <default>false</default>
+                <label>7 day to 5 day settlement</label>
+            </value>
+            <value>
+                <fullName>n/a</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_billing_holiday</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_business_funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_explanation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_goodwill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_invoice_waived</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_rate_review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_rate_roll_back</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_reduced_card_machine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_refund/credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>retention_tool_value_based_conversation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>7 day to 5 day settlement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>retained</controllingFieldValue>
+            <controllingFieldValue>cancelled</controllingFieldValue>
+            <valueName>n/a</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

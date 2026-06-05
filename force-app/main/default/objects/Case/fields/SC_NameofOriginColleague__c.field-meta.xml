@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_NameofOriginColleague__c</fullName>
+    <description>Name of the colleague who originated the item.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the origin colleague.</inlineHelpText>
+    <label>Name of Origin Colleague</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

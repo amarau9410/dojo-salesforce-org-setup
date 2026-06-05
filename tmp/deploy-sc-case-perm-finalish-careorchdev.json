@@ -1,0 +1,84 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T14:01:37.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T14:01:34.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "columnNumber": 29,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T14:01:37.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/SC_Case_ObjectPermissions.permissionset",
+          "fullName": "SC_Case_ObjectPermissions",
+          "lineNumber": 1885,
+          "problem": "In field: recordType - no RecordType named Case.Logistics found",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T14:01:37.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWsgtKAD",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T14:01:37.000Z",
+    "numberComponentErrors": 1,
+    "numberComponentsDeployed": 0,
+    "numberComponentsTotal": 1,
+    "numberFiles": "3",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T14:01:36.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 5275,
+    "files": [
+      {
+        "fullName": "SC_Case_ObjectPermissions",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\SC_Case_ObjectPermissions.permissionset-meta.xml",
+        "lineNumber": 1885,
+        "columnNumber": 29,
+        "error": "In field: recordType - no RecordType named Case.Logistics found (1885:29)"
+      }
+    ],
+    "zipFileCount": 2,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWsgtKAD%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

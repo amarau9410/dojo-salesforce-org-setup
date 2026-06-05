@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_SourceofLead__c</fullName>
+    <description>Origin or source of the lead.</description>
+    <inlineHelpText>Specify the source of the lead.</inlineHelpText>
+    <label>Source of Lead</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>app_clicks</fullName>
+                <default>false</default>
+                <label>App Clicks</label>
+            </value>
+            <value>
+                <fullName>app_lead</fullName>
+                <default>false</default>
+                <label>App Lead</label>
+            </value>
+            <value>
+                <fullName>back_book</fullName>
+                <default>false</default>
+                <label>Back Book</label>
+            </value>
+            <value>
+                <fullName>customer_generated_lead</fullName>
+                <default>false</default>
+                <label>Customer Generated Lead</label>
+            </value>
+            <value>
+                <fullName>customer_satisfaction_lead</fullName>
+                <default>false</default>
+                <label>Customer Satisfaction</label>
+            </value>
+            <value>
+                <fullName>direct_mail</fullName>
+                <default>false</default>
+                <label>Direct Mail</label>
+            </value>
+            <value>
+                <fullName>email_campaign_lead</fullName>
+                <default>false</default>
+                <label>Email Campaign</label>
+            </value>
+            <value>
+                <fullName>enterprise_health_check_lead</fullName>
+                <default>false</default>
+                <label>Enterprise Health Check</label>
+            </value>
+            <value>
+                <fullName>enterprise_nba_lead</fullName>
+                <default>false</default>
+                <label>Enterprise Next Best Action</label>
+            </value>
+            <value>
+                <fullName>enterprise_welcome_call_lead</fullName>
+                <default>false</default>
+                <label>Enterprise Welcome Call</label>
+            </value>
+            <value>
+                <fullName>payment_consultant_</fullName>
+                <default>false</default>
+                <label>Payment Consultant</label>
+            </value>
+            <value>
+                <fullName>proactive_health_check_lead</fullName>
+                <default>false</default>
+                <label>Proactive Health Check</label>
+            </value>
+            <value>
+                <fullName>proactive_nba_lead</fullName>
+                <default>false</default>
+                <label>Proactive Next Best Action</label>
+            </value>
+            <value>
+                <fullName>proactive_welcome_call_lead</fullName>
+                <default>false</default>
+                <label>Proactive Welcome Call</label>
+            </value>
+            <value>
+                <fullName>web_lead</fullName>
+                <default>false</default>
+                <label>Web Lead</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

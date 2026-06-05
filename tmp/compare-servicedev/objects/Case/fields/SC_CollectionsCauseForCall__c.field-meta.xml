@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CollectionsCauseForCall__c</fullName>
+    <description>Reason for initiating a collections call.</description>
+    <inlineHelpText>Specify the reason for the collections call.</inlineHelpText>
+    <label>Collections Cause For Call</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Cancellation</fullName>
+                <default>false</default>
+                <label>Account Cancellation</label>
+            </value>
+            <value>
+                <fullName>Balance Query</fullName>
+                <default>false</default>
+                <label>Balance Query</label>
+            </value>
+            <value>
+                <fullName>chargeback_query</fullName>
+                <default>false</default>
+                <label>Chargeback Query</label>
+            </value>
+            <value>
+                <fullName>Collections Journey Query</fullName>
+                <default>false</default>
+                <label>Collections Journey Query</label>
+            </value>
+            <value>
+                <fullName>Credit/Refund Query</fullName>
+                <default>false</default>
+                <label>Credit/Refund Query</label>
+            </value>
+            <value>
+                <fullName>collections__damaged_card_machine_charges</fullName>
+                <default>false</default>
+                <label>Damaged Card Machine Charges</label>
+            </value>
+            <value>
+                <fullName>final_debt__dca</fullName>
+                <default>false</default>
+                <label>DCA</label>
+            </value>
+            <value>
+                <fullName>Direct Debit Query</fullName>
+                <default>false</default>
+                <label>Direct Debit Query</label>
+            </value>
+            <value>
+                <fullName>Final Debt Live Locations</fullName>
+                <default>false</default>
+                <label>Final Debt Live Locations</label>
+            </value>
+            <value>
+                <fullName>Garnishment Process</fullName>
+                <default>false</default>
+                <label>Garnishment Process</label>
+            </value>
+            <value>
+                <fullName>final_debt__initial_fd_chase</fullName>
+                <default>false</default>
+                <label>Initial FD Chase</label>
+            </value>
+            <value>
+                <fullName>Invoice Query</fullName>
+                <default>false</default>
+                <label>Invoice Query</label>
+            </value>
+            <value>
+                <fullName>final_debt__legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>collections__manual_payment</fullName>
+                <default>false</default>
+                <label>Manual Payment</label>
+            </value>
+            <value>
+                <fullName>negative_transfer_balance</fullName>
+                <default>false</default>
+                <label>Negative Transfer Balance</label>
+            </value>
+            <value>
+                <fullName>Net Settlement</fullName>
+                <default>false</default>
+                <label>Net Settlement</label>
+            </value>
+            <value>
+                <fullName>Non Collections Query</fullName>
+                <default>false</default>
+                <label>Non Collections Query</label>
+            </value>
+            <value>
+                <fullName>collections__pause_collections_journey_request</fullName>
+                <default>false</default>
+                <label>Pause Collections Journey</label>
+            </value>
+            <value>
+                <fullName>collections__payment_plan</fullName>
+                <default>false</default>
+                <label>Payment Plan</label>
+            </value>
+            <value>
+                <fullName>collections__unreturned_card_machine_charges</fullName>
+                <default>false</default>
+                <label>Unreturned Card Machine Charges</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

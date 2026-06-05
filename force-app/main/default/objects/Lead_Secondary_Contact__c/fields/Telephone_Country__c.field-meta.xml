@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Telephone_Country__c</fullName>
+    <defaultValue>&quot;+44&quot;</defaultValue>
+    <label>Telephone Country</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Phone_Country</valueSetName>
+    </valueSet>
+</CustomField>

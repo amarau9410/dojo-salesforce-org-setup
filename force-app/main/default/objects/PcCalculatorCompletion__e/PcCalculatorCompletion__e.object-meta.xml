@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>PoC for tracking if CPQ Record Jobs can be tracked for PCs for monitoring when their quote calculation service jobs are created and completed</description>
+    <eventType>HighVolume</eventType>
+    <label>PC Calculator Completion</label>
+    <pluralLabel>PC Calculator Completions</pluralLabel>
+    <publishBehavior>PublishImmediately</publishBehavior>
+</CustomObject>

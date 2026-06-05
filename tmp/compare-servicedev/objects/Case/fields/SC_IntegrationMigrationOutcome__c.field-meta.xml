@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_IntegrationMigrationOutcome__c</fullName>
+    <description>Result of the integration or migration process.</description>
+    <inlineHelpText>Describe the outcome of the integration or migration.</inlineHelpText>
+    <label>Integration Migration Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>moved_to_partner_direct</fullName>
+                <default>false</default>
+                <label>Moved to partner direct</label>
+            </value>
+            <value>
+                <fullName>no_longer_with_partner</fullName>
+                <default>false</default>
+                <label>No longer with partner</label>
+            </value>
+            <value>
+                <fullName>moved_to_recommended_epos</fullName>
+                <default>false</default>
+                <label>Moved to recommended epos</label>
+            </value>
+            <value>
+                <fullName>no_longer_uses_epos</fullName>
+                <default>false</default>
+                <label>No longer uses epos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

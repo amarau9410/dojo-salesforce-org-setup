@@ -1,0 +1,6 @@
+RecordTypeId,AccountId,BusinessHoursId,Subject,Origin,Status,Type,Market_Channel_Skill__c,Team_Skill__c
+012Q5000001uAdiIAE,001S900001Md74WIAR,01mQ5000002RkLlIAK,API complaint test case 001 - consolidated complaints,Phone,Assigned,Problem,GB_Cases,CaseGBCustomerService
+012Q5000001uAdiIAE,001S900001Md74WIAR,01mQ5000002RkLlIAK,API complaint test case 002 - consolidated complaints,Web,Assigned,Question,IT_Cases,CaseITCustomerService
+012Q5000001uAdiIAE,001S900001Md74WIAR,01mQ5000002RkLlIAK,API complaint test case 003 - consolidated complaints,Phone,Assigned,Feature Request,ES_Cases,CaseESCustomerService
+012Q5000001uAdiIAE,001S900001Md74WIAR,01mQ5000002RkLlIAK,API complaint test case 004 - consolidated complaints,Web,Assigned,Problem,IE_Cases,CaseIECustomerService
+012Q5000001uAdiIAE,001S900001Md74WIAR,01mQ5000002RkLlIAK,API complaint test case 005 - consolidated complaints,Phone,Assigned,Question,GB_Cases,CaseChargebacks

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Prices</fullName>
+    <columns>NAME</columns>
+    <columns>Market__c</columns>
+    <columns>Pricing_Model__c</columns>
+    <columns>Product__c</columns>
+    <columns>Contract_Model__c</columns>
+    <columns>Low_CTO_Band__c</columns>
+    <columns>High_CTO_Band__c</columns>
+    <columns>Standard_Price__c</columns>
+    <columns>Inside_Sales_Floor__c</columns>
+    <columns>Manager_Floor__c</columns>
+    <columns>Enterprise_Floor__c</columns>
+    <columns>Head_of_Sales_Floor__c</columns>
+    <columns>Ceiling__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Prices</label>
+</ListView>

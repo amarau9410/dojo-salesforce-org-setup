@@ -1,0 +1,523 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T11:13:23.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T11:13:12.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:16.000Z",
+          "deleted": false,
+          "fileName": "flows/Asset_Create_Maintenance_Plan.flow",
+          "fullName": "Asset_Create_Maintenance_Plan",
+          "problem": "field integrity exception: unknown (The MaintenancePlan object doesn't exist. Enter a valid object.)",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:16.000Z",
+          "deleted": false,
+          "fileName": "flows/Fire_Door_Inspection_Completion.flow",
+          "fullName": "Fire_Door_Inspection_Completion",
+          "problem": "field integrity exception: unknown (The field \"Fire_Door_Status__c\" for the object \"Asset\" doesn't exist.)",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "flows/Display_Locations_Related_to_Legal_Entity.flow",
+          "fullName": "Display_Locations_Related_to_Legal_Entity",
+          "problem": "field integrity exception: unknown (The field \"RecordTypeId\" for the object \"Case\" doesn't exist.)",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "flows/Manage_Public_Group_Membership.flow",
+          "fullName": "Manage_Public_Group_Membership",
+          "problem": "An unexpected error occurred. Please include this ErrorId if you contact support: 1988041925-100511 (575192123)",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchCarerWorkspaceController.cls",
+          "fullName": "CareOrchCarerWorkspaceController",
+          "id": "01pQ100000FxCR7IAN",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchCarerWorkspaceControllerTest.cls",
+          "fullName": "CareOrchCarerWorkspaceControllerTest",
+          "id": "01pQ100000FxCR8IAN",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalActionPlanAction.cls",
+          "fullName": "CareOrchEmarSignalActionPlanAction",
+          "id": "01pQ100000G7fwTIAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalActionPlanService.cls",
+          "fullName": "CareOrchEmarSignalActionPlanService",
+          "id": "01pQ100000G7fwUIAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalsRest.cls",
+          "fullName": "CareOrchEmarSignalsRest",
+          "id": "01pQ100000FxCR9IAN",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalsRestTest.cls",
+          "fullName": "CareOrchEmarSignalsRestTest",
+          "id": "01pQ100000FxCRAIA3",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchResidentClinicalLogger.cls",
+          "fullName": "CareOrchResidentClinicalLogger",
+          "id": "01pQ100000G7OMAIA3",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchResidentProfileTest.cls",
+          "fullName": "CareOrchResidentProfileTest",
+          "id": "01pQ100000G7OMBIA3",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "classes/ManageGroupMemberAction.cls",
+          "fullName": "ManageGroupMemberAction",
+          "id": "01pQ100000G9f3FIAR",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "LightningComponentBundle",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "lwc/careOrchCarerWorkspace",
+          "fullName": "careOrchCarerWorkspace",
+          "id": "0RbQ10000020U8DKAU",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "LightningComponentBundle",
+          "created": true,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "lwc/pfCorporatePortfolio",
+          "fullName": "pfCorporatePortfolio",
+          "id": "0RbQ10000022aSrKAI",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "LightningComponentBundle",
+          "created": true,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "lwc/pfCorporateTrustFooter",
+          "fullName": "pfCorporateTrustFooter",
+          "id": "0RbQ10000022aSsKAI",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "flows/CareOrch_Medication_Refused_Action_Plan.flow",
+          "fullName": "CareOrch_Medication_Refused_Action_Plan",
+          "id": "301Q100000aarHBIAY",
+          "success": true
+        },
+        {
+          "changed": false,
+          "columnNumber": 14,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "flows/Display_Locations_Related_to_Legal_Entity-3.flow",
+          "fullName": "Display_Locations_Related_to_Legal_Entity-3",
+          "lineNumber": 211,
+          "problem": "Error_Screen (Screen) - The \"Error Screen\" screen is missing navigation. To let users navigate from this screen, restore the footer or add a screen component that includes navigation options.",
+          "problemType": "Info",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Flow",
+          "created": true,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "flows/Display_Locations_Related_to_Legal_Entity-3.flow",
+          "fullName": "Display_Locations_Related_to_Legal_Entity-3",
+          "id": "301Q100000aarHEIAY",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Flow",
+          "created": true,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "flows/Set_Legal_Entity_Account_on_Case.flow",
+          "fullName": "Set_Legal_Entity_Account_on_Case",
+          "id": "301Q100000aarHCIAY",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T11:13:23.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWlAjKAL",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T11:13:23.000Z",
+    "numberComponentErrors": 4,
+    "numberComponentsDeployed": 15,
+    "numberComponentsTotal": 19,
+    "numberFiles": "45",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T11:13:12.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 51703,
+    "files": [
+      {
+        "fullName": "CareOrchCarerWorkspaceController",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchCarerWorkspaceController.cls"
+      },
+      {
+        "fullName": "CareOrchCarerWorkspaceController",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchCarerWorkspaceController.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchCarerWorkspaceControllerTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchCarerWorkspaceControllerTest.cls"
+      },
+      {
+        "fullName": "CareOrchCarerWorkspaceControllerTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchCarerWorkspaceControllerTest.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalActionPlanAction",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanAction.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalActionPlanAction",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanAction.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalActionPlanService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanService.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalActionPlanService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanService.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRest.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRest.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRestTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRestTest.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRestTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRestTest.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchResidentClinicalLogger",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentClinicalLogger.cls"
+      },
+      {
+        "fullName": "CareOrchResidentClinicalLogger",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentClinicalLogger.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchResidentProfileTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentProfileTest.cls"
+      },
+      {
+        "fullName": "CareOrchResidentProfileTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentProfileTest.cls-meta.xml"
+      },
+      {
+        "fullName": "ManageGroupMemberAction",
+        "type": "ApexClass",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\ManageGroupMemberAction.cls"
+      },
+      {
+        "fullName": "ManageGroupMemberAction",
+        "type": "ApexClass",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\ManageGroupMemberAction.cls-meta.xml"
+      },
+      {
+        "fullName": "Asset_Create_Maintenance_Plan",
+        "type": "Flow",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\Asset_Create_Maintenance_Plan.flow-meta.xml",
+        "error": "field integrity exception: unknown (The MaintenancePlan object doesn't exist. Enter a valid object.)"
+      },
+      {
+        "fullName": "CareOrch_Medication_Refused_Action_Plan",
+        "type": "Flow",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\CareOrch_Medication_Refused_Action_Plan.flow-meta.xml"
+      },
+      {
+        "fullName": "Display_Locations_Related_to_Legal_Entity-3",
+        "type": "Flow",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\Display_Locations_Related_to_Legal_Entity-3.flow-meta.xml"
+      },
+      {
+        "fullName": "Display_Locations_Related_to_Legal_Entity",
+        "type": "Flow",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\Display_Locations_Related_to_Legal_Entity.flow-meta.xml",
+        "error": "field integrity exception: unknown (The field \"RecordTypeId\" for the object \"Case\" doesn't exist.)"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Completion",
+        "type": "Flow",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\Fire_Door_Inspection_Completion.flow-meta.xml",
+        "error": "field integrity exception: unknown (The field \"Fire_Door_Status__c\" for the object \"Asset\" doesn't exist.)"
+      },
+      {
+        "fullName": "Manage_Public_Group_Membership",
+        "type": "Flow",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\Manage_Public_Group_Membership.flow-meta.xml",
+        "error": "An unexpected error occurred. Please include this ErrorId if you contact support: 1988041925-100511 (575192123)"
+      },
+      {
+        "fullName": "Set_Legal_Entity_Account_on_Case",
+        "type": "Flow",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\Set_Legal_Entity_Account_on_Case.flow-meta.xml"
+      },
+      {
+        "fullName": "careOrchCarerWorkspace",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\careOrchCarerWorkspace\\careOrchCarerWorkspace.css"
+      },
+      {
+        "fullName": "careOrchCarerWorkspace",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\careOrchCarerWorkspace\\careOrchCarerWorkspace.html"
+      },
+      {
+        "fullName": "careOrchCarerWorkspace",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\careOrchCarerWorkspace\\careOrchCarerWorkspace.js"
+      },
+      {
+        "fullName": "careOrchCarerWorkspace",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\careOrchCarerWorkspace\\careOrchCarerWorkspace.js-meta.xml"
+      },
+      {
+        "fullName": "pfCorporatePortfolio",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporatePortfolio\\pfCorporatePortfolio.css"
+      },
+      {
+        "fullName": "pfCorporatePortfolio",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporatePortfolio\\pfCorporatePortfolio.html"
+      },
+      {
+        "fullName": "pfCorporatePortfolio",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporatePortfolio\\pfCorporatePortfolio.js"
+      },
+      {
+        "fullName": "pfCorporatePortfolio",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporatePortfolio\\pfCorporatePortfolio.js-meta.xml"
+      },
+      {
+        "fullName": "pfCorporatePortfolio",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporatePortfolio\\pfCorporatePortfolioAiChatLibrary.js"
+      },
+      {
+        "fullName": "pfCorporateTrustFooter",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporateTrustFooter\\pfCorporateTrustFooter.css"
+      },
+      {
+        "fullName": "pfCorporateTrustFooter",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporateTrustFooter\\pfCorporateTrustFooter.html"
+      },
+      {
+        "fullName": "pfCorporateTrustFooter",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporateTrustFooter\\pfCorporateTrustFooter.js"
+      },
+      {
+        "fullName": "pfCorporateTrustFooter",
+        "type": "LightningComponentBundle",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\lwc\\pfCorporateTrustFooter\\pfCorporateTrustFooter.js-meta.xml"
+      }
+    ],
+    "zipFileCount": 39,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWlAjKAL%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Channel_Skill__c</fullName>
+    <description>The Market-Channel Skill that agents need to have to be allocated this Case. A picklist is required for skills mapping, a text field can&apos;t be used. Restrictions have not been enforced in order to always ensure the Case record is not blocked from being saved.</description>
+    <inlineHelpText>The Market-Channel Skill that agents need to have to be allocated this Case.</inlineHelpText>
+    <label>Market-Channel Skill</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ES_Cases</fullName>
+                <default>false</default>
+                <label>#ES Cases</label>
+            </value>
+            <value>
+                <fullName>GB_Cases</fullName>
+                <default>false</default>
+                <label>#GB Cases</label>
+            </value>
+            <value>
+                <fullName>IE_Cases</fullName>
+                <default>false</default>
+                <label>#IE Cases</label>
+            </value>
+            <value>
+                <fullName>IT_Cases</fullName>
+                <default>false</default>
+                <label>#IT Cases</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

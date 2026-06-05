@@ -1,0 +1,287 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.134.6.
+{
+  "status": 0,
+  "result": {
+    "checkOnly": true,
+    "completedDate": "2026-05-26T10:27:04.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-26T10:26:58.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-26T10:26:58.000Z",
+          "deleted": false,
+          "fileName": "objects/Account.object",
+          "fullName": "Account.Admission_Date__c",
+          "id": "00NQ100000MKMZBMA5",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-26T10:26:58.000Z",
+          "deleted": false,
+          "fileName": "objects/Account.object",
+          "fullName": "Account.DNR_Status__c",
+          "id": "00NQ100000MKMZCMA5",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-26T10:26:58.000Z",
+          "deleted": false,
+          "fileName": "objects/Account.object",
+          "fullName": "Account.Room_Assignment__c",
+          "id": "00NQ100000MKMZDMA5",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-26T10:26:58.000Z",
+          "deleted": false,
+          "fileName": "objects/CareObservation.object",
+          "fullName": "CareObservation.Metric_Type__c",
+          "id": "00NQ100000MKMZEMA5",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "ApexClass",
+          "created": true,
+          "createdDate": "2026-05-26T10:27:00.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchResidentClinicalLogger.cls",
+          "fullName": "CareOrchResidentClinicalLogger",
+          "id": "01pQ100000G7V2fIAF",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "ApexClass",
+          "created": true,
+          "createdDate": "2026-05-26T10:27:00.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchResidentProfileTest.cls",
+          "fullName": "CareOrchResidentProfileTest",
+          "id": "01pQ100000G7V2gIAF",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Layout",
+          "created": false,
+          "createdDate": "2026-05-26T10:27:01.000Z",
+          "deleted": false,
+          "fileName": "layouts/Account-Account Layout.layout",
+          "fullName": "Account-Account Layout",
+          "id": "00hd3000002OOzQAAW",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-26T10:27:01.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Clinical_Workspace.permissionset",
+          "fullName": "CareOrch_Clinical_Workspace",
+          "id": "0PSQ1000005NW7ZOAW",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-26T10:27:01.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "codeCoverage": [
+          {
+            "id": "01pQ100000G7V2fIAF",
+            "locationsNotCovered": [
+              {
+                "column": 0,
+                "line": 19,
+                "numExecutions": 0,
+                "time": -1
+              },
+              {
+                "column": 0,
+                "line": 20,
+                "numExecutions": 0,
+                "time": -1
+              },
+              {
+                "column": 0,
+                "line": 21,
+                "numExecutions": 0,
+                "time": -1
+              },
+              {
+                "column": 0,
+                "line": 24,
+                "numExecutions": 0,
+                "time": -1
+              },
+              {
+                "column": 0,
+                "line": 25,
+                "numExecutions": 0,
+                "time": -1
+              },
+              {
+                "column": 0,
+                "line": 26,
+                "numExecutions": 0,
+                "time": -1
+              }
+            ],
+            "name": "CareOrchResidentClinicalLogger",
+            "namespace": null,
+            "numLocations": 27,
+            "numLocationsNotCovered": 6,
+            "type": "Class",
+            "dmlInfo": [],
+            "methodInfo": [],
+            "soqlInfo": [],
+            "soslInfo": []
+          }
+        ],
+        "numFailures": 0,
+        "numTestsRun": 4,
+        "successes": [
+          {
+            "id": "01pQ100000G7V2gIAF",
+            "methodName": "observationCreatePathHandlesResidentValidation",
+            "name": "CareOrchResidentProfileTest",
+            "namespace": null,
+            "time": 118
+          },
+          {
+            "id": "01pQ100000G7V2gIAF",
+            "methodName": "observationCreateValidatesRequiredInputs",
+            "name": "CareOrchResidentProfileTest",
+            "namespace": null,
+            "time": 53
+          },
+          {
+            "id": "01pQ100000G7V2gIAF",
+            "methodName": "observationPayloadBuildsForResidentWithTargetValuation",
+            "name": "CareOrchResidentProfileTest",
+            "namespace": null,
+            "time": 54
+          },
+          {
+            "id": "01pQ100000G7V2gIAF",
+            "methodName": "residentPersonAccountCreatesUnderlyingContactAndStoresTrackingFields",
+            "name": "CareOrchResidentProfileTest",
+            "namespace": null,
+            "time": 95
+          }
+        ],
+        "totalTime": 714,
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfQ100000RVj6AKAT",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-26T10:27:04.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 8,
+    "numberComponentsTotal": 8,
+    "numberFiles": "13",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 4,
+    "numberTestsTotal": 4,
+    "rollbackOnError": true,
+    "runTestsEnabled": true,
+    "startDate": "2026-05-26T10:26:58.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 6844,
+    "files": [
+      {
+        "fullName": "CareOrchResidentClinicalLogger",
+        "type": "ApexClass",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentClinicalLogger.cls"
+      },
+      {
+        "fullName": "CareOrchResidentClinicalLogger",
+        "type": "ApexClass",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentClinicalLogger.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchResidentProfileTest",
+        "type": "ApexClass",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentProfileTest.cls"
+      },
+      {
+        "fullName": "CareOrchResidentProfileTest",
+        "type": "ApexClass",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchResidentProfileTest.cls-meta.xml"
+      },
+      {
+        "fullName": "Account.Admission_Date__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Account\\fields\\Admission_Date__c.field-meta.xml"
+      },
+      {
+        "fullName": "Account.DNR_Status__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Account\\fields\\DNR_Status__c.field-meta.xml"
+      },
+      {
+        "fullName": "Account.Room_Assignment__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Account\\fields\\Room_Assignment__c.field-meta.xml"
+      },
+      {
+        "fullName": "CareObservation.Metric_Type__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\CareObservation\\fields\\Metric_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Account-Account Layout",
+        "type": "Layout",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\layouts\\Account-Account Layout.layout-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Clinical_Workspace",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Clinical_Workspace.permissionset-meta.xml"
+      }
+    ],
+    "zipFileCount": 9,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RVj6AKAT%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

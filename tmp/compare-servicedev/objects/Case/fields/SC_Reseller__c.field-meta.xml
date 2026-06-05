@@ -1,0 +1,2612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_Reseller__c</fullName>
+    <description>Entity reselling products or services.</description>
+    <inlineHelpText>Enter the name of the reseller.</inlineHelpText>
+    <label>Reseller</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>gotu_touch_systems_ltd</fullName>
+                <default>false</default>
+                <label>GOTU TOUCH SYSTEMS LTD</label>
+            </value>
+            <value>
+                <fullName>ace_restaurant_tech_ltd__uk_fastfood_suppliers_limited</fullName>
+                <default>false</default>
+                <label>Ace Restaurant Tech Ltd::UK Fastfood Suppliers Limited</label>
+            </value>
+            <value>
+                <fullName>active_pos/aktif_pos__arya_epos_limited</fullName>
+                <default>false</default>
+                <label>Active POS/Aktif POS::Arya Epos Limited</label>
+            </value>
+            <value>
+                <fullName>agility_software__infrastrate</fullName>
+                <default>false</default>
+                <label>Agility Software::Infrastrate</label>
+            </value>
+            <value>
+                <fullName>aipos_ltd_t/a_alliance_ipos</fullName>
+                <default>false</default>
+                <label>AIPOS Ltd T/A Alliance IPOS</label>
+            </value>
+            <value>
+                <fullName>aufait_systems_</fullName>
+                <default>false</default>
+                <label>Aufait Systems</label>
+            </value>
+            <value>
+                <fullName>avery_berkel__south_coast_systems</fullName>
+                <default>false</default>
+                <label>Avery Berkel::South Coast Systems</label>
+            </value>
+            <value>
+                <fullName>avon_data_systems/banquet__sbs_epos</fullName>
+                <default>false</default>
+                <label>Avon Data Systems/Banquet::SBS Epos</label>
+            </value>
+            <value>
+                <fullName>bassett_systems</fullName>
+                <default>false</default>
+                <label>Bassett Systems</label>
+            </value>
+            <value>
+                <fullName>bk_business_solutions</fullName>
+                <default>false</default>
+                <label>BK Business Solutions</label>
+            </value>
+            <value>
+                <fullName>bransom_retail_systems_ltd__bank_brokers</fullName>
+                <default>false</default>
+                <label>Bransom Retail Systems Ltd::Bank Brokers</label>
+            </value>
+            <value>
+                <fullName>brighton_epos</fullName>
+                <default>false</default>
+                <label>Brighton Epos</label>
+            </value>
+            <value>
+                <fullName>casio__andretail</fullName>
+                <default>false</default>
+                <label>Casio::Andretail</label>
+            </value>
+            <value>
+                <fullName>casio__b___m_business_machines</fullName>
+                <default>false</default>
+                <label>Casio::B &amp; M Business Machines</label>
+            </value>
+            <value>
+                <fullName>casio__bec__sheffield_</fullName>
+                <default>false</default>
+                <label>Casio::BEC (Sheffield)</label>
+            </value>
+            <value>
+                <fullName>casio__cbe</fullName>
+                <default>false</default>
+                <label>Casio::CBE</label>
+            </value>
+            <value>
+                <fullName>casio__chester_cash_registers</fullName>
+                <default>false</default>
+                <label>Casio::Chester Cash Registers</label>
+            </value>
+            <value>
+                <fullName>casio__classic_retail_systems</fullName>
+                <default>false</default>
+                <label>Casio::Classic Retail Systems</label>
+            </value>
+            <value>
+                <fullName>casio__cleveland_retail_systems_ltd</fullName>
+                <default>false</default>
+                <label>Casio::Cleveland Retail Systems LTD</label>
+            </value>
+            <value>
+                <fullName>casio__counter_solutions_group</fullName>
+                <default>false</default>
+                <label>Casio::Counter Solutions Group</label>
+            </value>
+            <value>
+                <fullName>casio__county_epos</fullName>
+                <default>false</default>
+                <label>Casio::County Epos</label>
+            </value>
+            <value>
+                <fullName>casio__crs_hull</fullName>
+                <default>false</default>
+                <label>Casio::CRS Hull</label>
+            </value>
+            <value>
+                <fullName>casio__definitive_epos_solutions</fullName>
+                <default>false</default>
+                <label>Casio::Definitive EPoS Solutions</label>
+            </value>
+            <value>
+                <fullName>casio__direct_business_equipment/dbe</fullName>
+                <default>false</default>
+                <label>Casio::Direct Business Equipment/DBE</label>
+            </value>
+            <value>
+                <fullName>casio__doncaster_cash_registers</fullName>
+                <default>false</default>
+                <label>Casio::Doncaster Cash Registers</label>
+            </value>
+            <value>
+                <fullName>casio__ecr_concepts</fullName>
+                <default>false</default>
+                <label>Casio::ECR Concepts</label>
+            </value>
+            <value>
+                <fullName>casio__elepos</fullName>
+                <default>false</default>
+                <label>Casio::Elepos</label>
+            </value>
+            <value>
+                <fullName>casio__eurocashregister_ltd</fullName>
+                <default>false</default>
+                <label>Casio::Eurocashregister Ltd</label>
+            </value>
+            <value>
+                <fullName>casio__lj_scales_and_tills</fullName>
+                <default>false</default>
+                <label>Casio::LJ Scales and Tills</label>
+            </value>
+            <value>
+                <fullName>casio__microtill_limited</fullName>
+                <default>false</default>
+                <label>Casio::Microtill Limited</label>
+            </value>
+            <value>
+                <fullName>casio__mxl_solutions</fullName>
+                <default>false</default>
+                <label>Casio::MXL Solutions</label>
+            </value>
+            <value>
+                <fullName>casio__pc_cash_epos</fullName>
+                <default>false</default>
+                <label>Casio::PC Cash Epos</label>
+            </value>
+            <value>
+                <fullName>casio__postech_till_systems_ltd</fullName>
+                <default>false</default>
+                <label>Casio::Postech Till Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>casio__premier_cash_registers_ltd</fullName>
+                <default>false</default>
+                <label>Casio::Premier Cash Registers Ltd</label>
+            </value>
+            <value>
+                <fullName>casio__premier_cash_registers_scotland</fullName>
+                <default>false</default>
+                <label>Casio::Premier Cash Registers Scotland</label>
+            </value>
+            <value>
+                <fullName>casio__retail_solutions_scotland</fullName>
+                <default>false</default>
+                <label>Casio::Retail Solutions Scotland</label>
+            </value>
+            <value>
+                <fullName>casio__ringatill</fullName>
+                <default>false</default>
+                <label>Casio::Ringatill</label>
+            </value>
+            <value>
+                <fullName>casio__solway_signs_and_shop_equipment</fullName>
+                <default>false</default>
+                <label>Casio::Solway Signs and Shop Equipment</label>
+            </value>
+            <value>
+                <fullName>casio__south_west_systems</fullName>
+                <default>false</default>
+                <label>Casio::South West Systems</label>
+            </value>
+            <value>
+                <fullName>casio__tagfirst_retail_solutions_ltd</fullName>
+                <default>false</default>
+                <label>Casio::Tagfirst Retail Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>casio__the_computer_store</fullName>
+                <default>false</default>
+                <label>Casio::The Computer Store</label>
+            </value>
+            <value>
+                <fullName>casio__vision_oriented_ltd__prev._ebizpoints_ltd_</fullName>
+                <default>false</default>
+                <label>Casio::Vision Oriented Ltd (Prev. Ebizpoints Ltd)</label>
+            </value>
+            <value>
+                <fullName>casio__zenith_epos</fullName>
+                <default>false</default>
+                <label>Casio::Zenith Epos</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__3s_aberdeen_/_3sa</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::3S Aberdeen / 3SA</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__ab_systems</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::AB Systems</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__abacus_epos_uk_ltd_-_brighton</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Abacus Epos UK Ltd - BRIGHTON</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__acr_systems</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::ACR Systems</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__bcr_epos_systems</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::BCR Epos Systems</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__bec__liverpool_</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::BEC (Liverpool)</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__black_knight_retail_systems</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Black Knight Retail Systems</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__bransom_retail_systems_ltd_reseller</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Bransom Retail Systems Ltd Reseller</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__cash_control_services</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Cash Control Services</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__ccr_epos_ltd_wales</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::CCR EPOS LTD WALES</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__cns_systems_east</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::CNS Systems East</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__cornish_epos_and_it_services_ltd</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Cornish EPOS and IT Services LTD</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__costa_systems</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Costa Systems</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__epos_north</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::EPOS North</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__goldilocks_systems_ltd</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Goldilocks Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__gwynedd_cash_registers</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Gwynedd Cash Registers</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__howell_epos_systems</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Howell Epos Systems</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__international_pos_ltd</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::INTERNATIONAL POS LTD</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__interprit_limited</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Interprit Limited</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__lapsley</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Lapsley</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__lcr_systems-morecambe</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::LCR Systems-MoreCambe</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__loc_epos_solutions</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::LOC EPOS SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__metrik</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Metrik</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__onipos_systems_ltd</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Onipos Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__rytec_</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Rytec</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__scotia_systems_ltd</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Scotia Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__scrs__scotland__ltd</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::SCRS (SCOTLAND) LTD</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__sims_cash_control/cash_control_equipment</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Sims Cash Control/Cash Control Equipment</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom__y3k_systems</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom::Y3K Systems</label>
+            </value>
+            <value>
+                <fullName>coleman_business_systems</fullName>
+                <default>false</default>
+                <label>coleman business systems</label>
+            </value>
+            <value>
+                <fullName>connect_standalone__bank_brokers</fullName>
+                <default>false</default>
+                <label>Connect Standalone::Bank Brokers</label>
+            </value>
+            <value>
+                <fullName>counterweigh_uk</fullName>
+                <default>false</default>
+                <label>Counterweigh UK</label>
+            </value>
+            <value>
+                <fullName>dan_dwyer_retail_systems</fullName>
+                <default>false</default>
+                <label>Dan Dwyer Retail Systems</label>
+            </value>
+            <value>
+                <fullName>datasym__argyll_systems</fullName>
+                <default>false</default>
+                <label>Datasym::Argyll Systems</label>
+            </value>
+            <value>
+                <fullName>datasym__direct_business_equipment/dbe</fullName>
+                <default>false</default>
+                <label>Datasym::Direct Business Equipment/DBE</label>
+            </value>
+            <value>
+                <fullName>datasym__wrs_systems</fullName>
+                <default>false</default>
+                <label>Datasym::WRS Systems</label>
+            </value>
+            <value>
+                <fullName>desmond_mcparland_t/a_epos_solutions</fullName>
+                <default>false</default>
+                <label>Desmond Mcparland T/a Epos Solutions</label>
+            </value>
+            <value>
+                <fullName>dunham_cash_registers_ltd</fullName>
+                <default>false</default>
+                <label>Dunham cash registers ltd</label>
+            </value>
+            <value>
+                <fullName>easify_ltd__easi_tech</fullName>
+                <default>false</default>
+                <label>EASIFY LTD::Easi tech</label>
+            </value>
+            <value>
+                <fullName>eat_it_drink_it</fullName>
+                <default>false</default>
+                <label>Eat it Drink it</label>
+            </value>
+            <value>
+                <fullName>eatitdrinkit</fullName>
+                <default>false</default>
+                <label>EatItDrinkIt</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__alpha_epos_ltd</fullName>
+                <default>false</default>
+                <label>ECR Touch::Alpha EPOS Ltd</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__black_knight_retail_systems</fullName>
+                <default>false</default>
+                <label>ECR Touch::Black Knight Retail Systems</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__business_supplies_/_bs_systems</fullName>
+                <default>false</default>
+                <label>ECR Touch::Business Supplies / BS Systems</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__c_l_epos_systems_ltd</fullName>
+                <default>false</default>
+                <label>ECR Touch::C&amp;L EPoS Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__cash_control_services</fullName>
+                <default>false</default>
+                <label>ECR Touch::Cash Control Services</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__ccr_epos_ltd_wales</fullName>
+                <default>false</default>
+                <label>ECR Touch::CCR EPOS LTD WALES</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__cornwall_scales___equipment_ltd/cse_ltd</fullName>
+                <default>false</default>
+                <label>ECR Touch::Cornwall Scales &amp; Equipment Ltd/CSE Ltd</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__dataweigh_systems_ltd</fullName>
+                <default>false</default>
+                <label>ECR Touch::Dataweigh Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__dwc_services_ltd</fullName>
+                <default>false</default>
+                <label>ECR Touch::DWC Services Ltd</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__easi_tech</fullName>
+                <default>false</default>
+                <label>ECR Touch::Easi tech</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__fry_scales</fullName>
+                <default>false</default>
+                <label>ECR Touch::Fry Scales</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__gm_epos_systems</fullName>
+                <default>false</default>
+                <label>ECR Touch::GM EPOS Systems</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__langley_distribution</fullName>
+                <default>false</default>
+                <label>ECR Touch::Langley Distribution</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__rytec_</fullName>
+                <default>false</default>
+                <label>ECR Touch::Rytec</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__sharp_retail_systems</fullName>
+                <default>false</default>
+                <label>ECR Touch::Sharp Retail Systems</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__stephen_o_brien_retail_systems</fullName>
+                <default>false</default>
+                <label>ECR Touch::Stephen O Brien Retail Systems</label>
+            </value>
+            <value>
+                <fullName>ecr_touch__wiltshire_and_avon_cash_registers__wacr_</fullName>
+                <default>false</default>
+                <label>ECR Touch::Wiltshire and Avon Cash Registers (WACR)</label>
+            </value>
+            <value>
+                <fullName>elite_integrations_ltd__4s_systems_ltd</fullName>
+                <default>false</default>
+                <label>Elite Integrations Ltd::4S Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>elite_integrations_ltd__cads_it_solutions___services</fullName>
+                <default>false</default>
+                <label>Elite Integrations Ltd::CADS IT Solutions &amp; Services</label>
+            </value>
+            <value>
+                <fullName>elite_integrations_ltd__godden_consulting_group_ltd</fullName>
+                <default>false</default>
+                <label>Elite Integrations Ltd::Godden Consulting Group Ltd</label>
+            </value>
+            <value>
+                <fullName>elite_integrations_ltd__plan_it_business_systems</fullName>
+                <default>false</default>
+                <label>Elite Integrations Ltd::PLAN IT Business Systems</label>
+            </value>
+            <value>
+                <fullName>elite_integrations_ltd__software-123_ltd</fullName>
+                <default>false</default>
+                <label>Elite Integrations Ltd::Software-123 Ltd</label>
+            </value>
+            <value>
+                <fullName>elite_integrations_ltd__thom_micro_systems_ltd/tms</fullName>
+                <default>false</default>
+                <label>Elite Integrations Ltd::Thom Micro Systems Ltd/TMS</label>
+            </value>
+            <value>
+                <fullName>epos_buddy_/_accent_it_services_ltd/accentpos</fullName>
+                <default>false</default>
+                <label>Epos Buddy / Accent IT Services Ltd/AccentPOS</label>
+            </value>
+            <value>
+                <fullName>epos_buddy_/_casio</fullName>
+                <default>false</default>
+                <label>Epos Buddy / Casio</label>
+            </value>
+            <value>
+                <fullName>epos_buddy_/_icrtouch</fullName>
+                <default>false</default>
+                <label>Epos Buddy / ICRTouch</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__cash_control_services</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::Cash Control Services</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__cash_control_systems</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::Cash Control Systems</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__crystal_sound___vision</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::Crystal Sound &amp; Vision</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__jaandigital_limited</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::Jaandigital Limited</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__lcr_limited</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::LCR Limited</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__simply_epos</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::Simply EPOS</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__south_west_systems</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::South West Systems</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch__waterford_business_machines</fullName>
+                <default>false</default>
+                <label>EPoS Company / EC Touch::Waterford Business Machines</label>
+            </value>
+            <value>
+                <fullName>epos_direct/e-novations/wowpos/emperium__b-spoke_systems_ltd</fullName>
+                <default>false</default>
+                <label>Epos Direct/E-Novations/WowPos/Emperium::B-Spoke Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>epos_it_solutions_ltd</fullName>
+                <default>false</default>
+                <label>EPOS IT Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>epos_ni</fullName>
+                <default>false</default>
+                <label>Epos NI</label>
+            </value>
+            <value>
+                <fullName>epos_now__application_development_solutions_ltd</fullName>
+                <default>false</default>
+                <label>Epos Now::Application Development Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>epos_now__bank_brokers</fullName>
+                <default>false</default>
+                <label>Epos Now::Bank Brokers</label>
+            </value>
+            <value>
+                <fullName>epos_now__clover_51_ltd</fullName>
+                <default>false</default>
+                <label>Epos Now::Clover 51 LTD</label>
+            </value>
+            <value>
+                <fullName>epos_now__ideal_epos_ltd_reseller</fullName>
+                <default>false</default>
+                <label>Epos Now::Ideal Epos Ltd RESELLER</label>
+            </value>
+            <value>
+                <fullName>epos_now__ism_tech_ltd__intellect_systems__</fullName>
+                <default>false</default>
+                <label>Epos Now::ISM TECH LTD (Intellect Systems)</label>
+            </value>
+            <value>
+                <fullName>epos_now__right_click_tech_ltd</fullName>
+                <default>false</default>
+                <label>Epos Now::Right Click Tech Ltd</label>
+            </value>
+            <value>
+                <fullName>epos_now__seven_days_solutions_ltd</fullName>
+                <default>false</default>
+                <label>Epos Now::Seven Days Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>epos_now__south_west_systems</fullName>
+                <default>false</default>
+                <label>Epos Now::South West Systems</label>
+            </value>
+            <value>
+                <fullName>epos_now__storekit</fullName>
+                <default>false</default>
+                <label>Epos Now::Storekit</label>
+            </value>
+            <value>
+                <fullName>erply__south_west_systems</fullName>
+                <default>false</default>
+                <label>Erply::South West Systems</label>
+            </value>
+            <value>
+                <fullName>ezi_solution_systems_/_retailman_uk-swh__ezi_solution_systems_/_retailman_uk-reseller</fullName>
+                <default>false</default>
+                <label>Ezi Solution Systems / Retailman UK-SWH::Ezi Solution Systems / Retailman UK-Reseller</label>
+            </value>
+            <value>
+                <fullName>fashion_epos_solutions_ltd__costa_systems</fullName>
+                <default>false</default>
+                <label>Fashion Epos Solutions Ltd::Costa Systems</label>
+            </value>
+            <value>
+                <fullName>fidelity_systems__gpos___birmingham_cash_registers_ltd</fullName>
+                <default>false</default>
+                <label>Fidelity Systems (GPOS)::Birmingham Cash Registers Ltd</label>
+            </value>
+            <value>
+                <fullName>fidelity_systems__gpos___ccr_systems__northern_</fullName>
+                <default>false</default>
+                <label>Fidelity Systems (GPOS)::CCR Systems (Northern)</label>
+            </value>
+            <value>
+                <fullName>fidelity_systems__gpos___ipos_systems</fullName>
+                <default>false</default>
+                <label>Fidelity Systems (GPOS)::iPOS Systems</label>
+            </value>
+            <value>
+                <fullName>fidelity_systems__gpos___north_west_business_machines</fullName>
+                <default>false</default>
+                <label>Fidelity Systems (GPOS)::North West Business Machines</label>
+            </value>
+            <value>
+                <fullName>filshill</fullName>
+                <default>false</default>
+                <label>Filshill</label>
+            </value>
+            <value>
+                <fullName>gastrofix__radley_systems</fullName>
+                <default>false</default>
+                <label>Gastrofix::Radley Systems</label>
+            </value>
+            <value>
+                <fullName>gloposnet__jaandigital_limited</fullName>
+                <default>false</default>
+                <label>Gloposnet::Jaandigital Limited</label>
+            </value>
+            <value>
+                <fullName>goodtill__hbs_connect_limited</fullName>
+                <default>false</default>
+                <label>Goodtill::HBS Connect Limited</label>
+            </value>
+            <value>
+                <fullName>goodtill__simple_solutions_360_ltd_ï¿½_reseller</fullName>
+                <default>false</default>
+                <label>goodtill__simple_solutions_360_ltd_ï¿½_reseller</label>
+            </value>
+            <value>
+                <fullName>goodtill__true_pos</fullName>
+                <default>false</default>
+                <label>Goodtill::True POS</label>
+            </value>
+            <value>
+                <fullName>hdserve/samtouch/ycr</fullName>
+                <default>false</default>
+                <label>HDServe/Samtouch/YCR</label>
+            </value>
+            <value>
+                <fullName>highland_cash_registers</fullName>
+                <default>false</default>
+                <label>Highland Cash registers</label>
+            </value>
+            <value>
+                <fullName>ibs_systems_/_poslink_/_access_group__argyll_systems</fullName>
+                <default>false</default>
+                <label>IBS Systems / Poslink / Access Group::Argyll Systems</label>
+            </value>
+            <value>
+                <fullName>ibs_systems_/_poslink_/_access_group__checkout_ci_ltd</fullName>
+                <default>false</default>
+                <label>IBS Systems / Poslink / Access Group::Checkout CI Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_resales__crs_hull</fullName>
+                <default>false</default>
+                <label>ICR Resales::CRS Hull</label>
+            </value>
+            <value>
+                <fullName>icr_touch__1call4</fullName>
+                <default>false</default>
+                <label>ICR Touch::1Call4</label>
+            </value>
+            <value>
+                <fullName>icr_touch__4imagination</fullName>
+                <default>false</default>
+                <label>ICR Touch::4imagination</label>
+            </value>
+            <value>
+                <fullName>icr_touch__10ninety_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::10ninety Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__abacus_cash_registers_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Abacus Cash Registers Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__abacus_epos_uk_ltd_-_brighton</fullName>
+                <default>false</default>
+                <label>ICR Touch::Abacus Epos UK Ltd - BRIGHTON</label>
+            </value>
+            <value>
+                <fullName>icr_touch__abbey_business_machines_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Abbey Business Machines Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__abi-tech</fullName>
+                <default>false</default>
+                <label>ICR Touch::abi-TECH</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ace_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::Ace Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__acsl_computers</fullName>
+                <default>false</default>
+                <label>ICR Touch::ACSL Computers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__addwell_epos_solutions</fullName>
+                <default>false</default>
+                <label>ICR Touch::Addwell EPoS Solutions</label>
+            </value>
+            <value>
+                <fullName>icr_touch__alliance_till_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Alliance Till Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__application_development_solutions_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Application Development Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__appos_sales</fullName>
+                <default>false</default>
+                <label>ICR Touch::APPOS Sales</label>
+            </value>
+            <value>
+                <fullName>icr_touch__asg_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::ASG Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__astec_pos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Astec POS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__astro-tec_solutions</fullName>
+                <default>false</default>
+                <label>ICR Touch::Astro-Tec Solutions</label>
+            </value>
+            <value>
+                <fullName>icr_touch__avatill</fullName>
+                <default>false</default>
+                <label>ICR Touch::Avatill</label>
+            </value>
+            <value>
+                <fullName>icr_touch__aztec_services</fullName>
+                <default>false</default>
+                <label>ICR Touch::Aztec Services</label>
+            </value>
+            <value>
+                <fullName>icr_touch__bailey_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Bailey EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__bangor_cash_register_company_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Bangor Cash Register Company LTD</label>
+            </value>
+            <value>
+                <fullName>icr_touch__bcg</fullName>
+                <default>false</default>
+                <label>ICR Touch::BCG</label>
+            </value>
+            <value>
+                <fullName>icr_touch__bec__sheffield_</fullName>
+                <default>false</default>
+                <label>ICR Touch::BEC (Sheffield)</label>
+            </value>
+            <value>
+                <fullName>icr_touch__bes_cash_registers_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::BES Cash Registers Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__better_price_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Better Price Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__bower_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Bower Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__business_reply_ltd_ta_breezy_tech</fullName>
+                <default>false</default>
+                <label>ICR Touch::Business Reply Ltd TA Breezy Tech</label>
+            </value>
+            <value>
+                <fullName>icr_touch__business_supplies_/_bs_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Business Supplies / BS Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cash_control_services</fullName>
+                <default>false</default>
+                <label>ICR Touch::Cash Control Services</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cash_control_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Cash Control Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cavendish_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::Cavendish Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ccm__price_marking__ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::CCM (Price Marking) Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ccm_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::CCM Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ccr_epos_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::CCR EPOS Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ccr_systems__northern_</fullName>
+                <default>false</default>
+                <label>ICR Touch::CCR Systems (Northern)</label>
+            </value>
+            <value>
+                <fullName>icr_touch__checkout_ci_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Checkout CI Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__checkout_jersey_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Checkout Jersey Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__city_cash_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::City Cash Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cj-pos</fullName>
+                <default>false</default>
+                <label>ICR Touch::CJ-POS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cleveland_retail_systems_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Cleveland Retail Systems LTD</label>
+            </value>
+            <value>
+                <fullName>icr_touch__club_control/kappita_management_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Club Control/Kappita Management Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cns_systems_east</fullName>
+                <default>false</default>
+                <label>ICR Touch::CNS Systems East</label>
+            </value>
+            <value>
+                <fullName>icr_touch__comcal_systems_limited</fullName>
+                <default>false</default>
+                <label>ICR Touch::Comcal Systems Limited</label>
+            </value>
+            <value>
+                <fullName>icr_touch__consult_it</fullName>
+                <default>false</default>
+                <label>ICR Touch::Consult IT</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cornish_epos_and_it_services_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Cornish EPOS and IT Services LTD</label>
+            </value>
+            <value>
+                <fullName>icr_touch__cornwall_scales___equipment_ltd/cse_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Cornwall Scales &amp; Equipment Ltd/CSE Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__county_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::County Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__craigavon_business_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Craigavon Business Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__crs_hull</fullName>
+                <default>false</default>
+                <label>ICR Touch::CRS Hull</label>
+            </value>
+            <value>
+                <fullName>icr_touch__crs-ipswich</fullName>
+                <default>false</default>
+                <label>ICR Touch::CRS-Ipswich</label>
+            </value>
+            <value>
+                <fullName>icr_touch__d_b_cash_registers/d_b_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::D B Cash Registers/D B Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__davis_epos_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Davis EPOS Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__dh_business_services</fullName>
+                <default>false</default>
+                <label>ICR Touch::DH Business Services</label>
+            </value>
+            <value>
+                <fullName>icr_touch__dhfe</fullName>
+                <default>false</default>
+                <label>ICR Touch::DHFE</label>
+            </value>
+            <value>
+                <fullName>icr_touch__dmp_epos_solutions_ni_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::DMP Epos Solutions NI LTD</label>
+            </value>
+            <value>
+                <fullName>icr_touch__doncaster_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::Doncaster Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__duchy_cash_systems_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Duchy Cash Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__dwc_services_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::DWC Services Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__e-positive</fullName>
+                <default>false</default>
+                <label>ICR Touch::e-positive</label>
+            </value>
+            <value>
+                <fullName>icr_touch__easi_tech</fullName>
+                <default>false</default>
+                <label>ICR Touch::Easi tech</label>
+            </value>
+            <value>
+                <fullName>icr_touch__eastern_cash_registers__norwich__limited</fullName>
+                <default>false</default>
+                <label>ICR Touch::Eastern Cash Registers (Norwich) Limited</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ebm</fullName>
+                <default>false</default>
+                <label>ICR Touch::EBM</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ecr_tills</fullName>
+                <default>false</default>
+                <label>ICR Touch::ECR Tills</label>
+            </value>
+            <value>
+                <fullName>icr_touch__electro-tec</fullName>
+                <default>false</default>
+                <label>ICR Touch::Electro-Tec</label>
+            </value>
+            <value>
+                <fullName>icr_touch__elliott_business_equipment_and_scales</fullName>
+                <default>false</default>
+                <label>ICR Touch::Elliott Business Equipment and Scales</label>
+            </value>
+            <value>
+                <fullName>icr_touch__epos_essentials/secure_services_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::EPOS Essentials/Secure Services Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__epos_ni</fullName>
+                <default>false</default>
+                <label>ICR Touch::Epos NI</label>
+            </value>
+            <value>
+                <fullName>icr_touch__epos_ready</fullName>
+                <default>false</default>
+                <label>ICR Touch::EPOS Ready</label>
+            </value>
+            <value>
+                <fullName>icr_touch__euro_epos_-_reseller</fullName>
+                <default>false</default>
+                <label>ICR Touch::Euro Epos - Reseller</label>
+            </value>
+            <value>
+                <fullName>icr_touch__euro_till_scale</fullName>
+                <default>false</default>
+                <label>ICR Touch::Euro Till Scale</label>
+            </value>
+            <value>
+                <fullName>icr_touch__everything_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Everything EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__expert_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Expert Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__follion_uk_limited</fullName>
+                <default>false</default>
+                <label>ICR Touch::Follion UK Limited</label>
+            </value>
+            <value>
+                <fullName>icr_touch__gane_data</fullName>
+                <default>false</default>
+                <label>ICR Touch::Gane Data</label>
+            </value>
+            <value>
+                <fullName>icr_touch__garc_/_global_asset_resale_company</fullName>
+                <default>false</default>
+                <label>ICR Touch::GARC / Global Asset Resale Company</label>
+            </value>
+            <value>
+                <fullName>icr_touch__gardiff_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Gardiff Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__garrod_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Garrod EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__global_15</fullName>
+                <default>false</default>
+                <label>ICR Touch::Global 15</label>
+            </value>
+            <value>
+                <fullName>icr_touch__glyn_edwards_office_equipment</fullName>
+                <default>false</default>
+                <label>ICR Touch::Glyn Edwards Office Equipment</label>
+            </value>
+            <value>
+                <fullName>icr_touch__gmh_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::GMH Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__go_epos/scs_epos-reseller</fullName>
+                <default>false</default>
+                <label>ICR Touch::Go EPoS/SCS Epos-Reseller</label>
+            </value>
+            <value>
+                <fullName>icr_touch__greater_than_security_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Greater than Security Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__gs_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::GS Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__gts_central_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::GTS Central Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__gwynedd_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::Gwynedd Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__hbm_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::HBM Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ibs_systems__ni__ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::IBS Systems (NI) Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__iclick</fullName>
+                <default>false</default>
+                <label>ICR Touch::Iclick</label>
+            </value>
+            <value>
+                <fullName>icr_touch__icr_retail_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::ICR Retail Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__icr_scotland</fullName>
+                <default>false</default>
+                <label>ICR Touch::ICR Scotland</label>
+            </value>
+            <value>
+                <fullName>icr_touch__icr_solutions</fullName>
+                <default>false</default>
+                <label>ICR Touch::ICR Solutions</label>
+            </value>
+            <value>
+                <fullName>icr_touch__icr_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::ICR Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ideal_epos_ltd_reseller</fullName>
+                <default>false</default>
+                <label>ICR Touch::Ideal Epos Ltd RESELLER</label>
+            </value>
+            <value>
+                <fullName>icr_touch__impact_epos_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Impact EPOS LTD</label>
+            </value>
+            <value>
+                <fullName>icr_touch__infinity_business_advancement_systems_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Infinity Business Advancement Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__intelligent_point_of_sale</fullName>
+                <default>false</default>
+                <label>ICR Touch::Intelligent Point of Sale</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ipos_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::iPOS Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__jgc_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::JGC Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__just_tills</fullName>
+                <default>false</default>
+                <label>ICR Touch::Just Tills</label>
+            </value>
+            <value>
+                <fullName>icr_touch__kar_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::Kar Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ke_supplies</fullName>
+                <default>false</default>
+                <label>ICR Touch::KE Supplies</label>
+            </value>
+            <value>
+                <fullName>icr_touch__kepos_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Kepos Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__key_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Key Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__langley_business_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Langley Business Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__langley_distribution</fullName>
+                <default>false</default>
+                <label>ICR Touch::Langley Distribution</label>
+            </value>
+            <value>
+                <fullName>icr_touch__lashbrooks</fullName>
+                <default>false</default>
+                <label>ICR Touch::Lashbrooks</label>
+            </value>
+            <value>
+                <fullName>icr_touch__lcr_systems-morecambe</fullName>
+                <default>false</default>
+                <label>ICR Touch::LCR Systems-MoreCambe</label>
+            </value>
+            <value>
+                <fullName>icr_touch__lefta_ltd-reseller</fullName>
+                <default>false</default>
+                <label>ICR Touch::Lefta Ltd-Reseller</label>
+            </value>
+            <value>
+                <fullName>icr_touch__linden_business_systems_/_lbs</fullName>
+                <default>false</default>
+                <label>ICR Touch::Linden Business Systems / LBS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__lj_scales_and_tills</fullName>
+                <default>false</default>
+                <label>ICR Touch::LJ Scales and Tills</label>
+            </value>
+            <value>
+                <fullName>icr_touch__london_cash_registers_/_positality</fullName>
+                <default>false</default>
+                <label>ICR Touch::London Cash Registers / Positality</label>
+            </value>
+            <value>
+                <fullName>icr_touch__memotech_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Memotech Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__merlin_office</fullName>
+                <default>false</default>
+                <label>ICR Touch::Merlin Office</label>
+            </value>
+            <value>
+                <fullName>icr_touch__microtill_limited</fullName>
+                <default>false</default>
+                <label>ICR Touch::Microtill Limited</label>
+            </value>
+            <value>
+                <fullName>icr_touch__mid_glam_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::Mid Glam Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__mobo_innovations</fullName>
+                <default>false</default>
+                <label>ICR Touch::Mobo Innovations</label>
+            </value>
+            <value>
+                <fullName>icr_touch__new_horizon_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::New Horizon Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__newcastle_tills_ltd/_jbd_leisure_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Newcastle Tills Ltd/ JBD Leisure Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__nexserve_dynamics/nexpos</fullName>
+                <default>false</default>
+                <label>ICR Touch::neXserve Dynamics/neXpos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__norcash</fullName>
+                <default>false</default>
+                <label>ICR Touch::Norcash</label>
+            </value>
+            <value>
+                <fullName>icr_touch__norcon_computers_limited</fullName>
+                <default>false</default>
+                <label>ICR Touch::Norcon Computers Limited</label>
+            </value>
+            <value>
+                <fullName>icr_touch__nts_comms_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::NTS Comms Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__online_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::Online Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ontill__prev._the_till_man_</fullName>
+                <default>false</default>
+                <label>ICR Touch::Ontill (Prev. The Till Man)</label>
+            </value>
+            <value>
+                <fullName>icr_touch__p___p_business</fullName>
+                <default>false</default>
+                <label>ICR Touch::P &amp; P Business</label>
+            </value>
+            <value>
+                <fullName>icr_touch__panaepos</fullName>
+                <default>false</default>
+                <label>ICR Touch::PanaEpos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__pat_brennan_business_equipment_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Pat Brennan Business Equipment Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__pba</fullName>
+                <default>false</default>
+                <label>ICR Touch::PBA</label>
+            </value>
+            <value>
+                <fullName>icr_touch__pickering_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Pickering Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__pos_e-vision_llp</fullName>
+                <default>false</default>
+                <label>ICR Touch::Pos E-Vision Llp</label>
+            </value>
+            <value>
+                <fullName>icr_touch__pos_plus_roi_-_reseller</fullName>
+                <default>false</default>
+                <label>ICR Touch::Pos Plus ROI - Reseller</label>
+            </value>
+            <value>
+                <fullName>icr_touch__postech_till_systems_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Postech Till Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__premier_cash_registers_scotland</fullName>
+                <default>false</default>
+                <label>ICR Touch::Premier Cash Registers Scotland</label>
+            </value>
+            <value>
+                <fullName>icr_touch__proview_tech_sols_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Proview Tech Sols Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__qube_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Qube EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__radley_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Radley Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__richards_marketing_services_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Richards Marketing Services Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ringatill</fullName>
+                <default>false</default>
+                <label>ICR Touch::Ringatill</label>
+            </value>
+            <value>
+                <fullName>icr_touch__rollteq</fullName>
+                <default>false</default>
+                <label>ICR Touch::Rollteq</label>
+            </value>
+            <value>
+                <fullName>icr_touch__rss_cash_registers</fullName>
+                <default>false</default>
+                <label>ICR Touch::RSS Cash Registers</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ryedale_cash_registers/_rcr_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Ryedale Cash Registers/ RCR EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__s___o_machine_services</fullName>
+                <default>false</default>
+                <label>ICR Touch::S &amp; O Machine Services</label>
+            </value>
+            <value>
+                <fullName>icr_touch__sale_point_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Sale point systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__salop_cash_registers/scr</fullName>
+                <default>false</default>
+                <label>ICR Touch::Salop Cash registers/SCR</label>
+            </value>
+            <value>
+                <fullName>icr_touch__sbm_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::SBM EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__sbs_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::SBS Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__scrs__scotland__ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::SCRS (SCOTLAND) LTD</label>
+            </value>
+            <value>
+                <fullName>icr_touch__shelfguard_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Shelfguard Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__simply_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Simply EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__simply_tills</fullName>
+                <default>false</default>
+                <label>ICR Touch::Simply Tills</label>
+            </value>
+            <value>
+                <fullName>icr_touch__smart_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Smart EPOS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__sms_food_equipment</fullName>
+                <default>false</default>
+                <label>ICR Touch::SMS Food Equipment</label>
+            </value>
+            <value>
+                <fullName>icr_touch__solap_cash_register__duplicate_</fullName>
+                <default>false</default>
+                <label>ICR Touch::Solap Cash Register (Duplicate)</label>
+            </value>
+            <value>
+                <fullName>icr_touch__southern_retail_systems/srs</fullName>
+                <default>false</default>
+                <label>ICR Touch::Southern Retail Systems/SRS</label>
+            </value>
+            <value>
+                <fullName>icr_touch__southern_scales/ssec</fullName>
+                <default>false</default>
+                <label>ICR Touch::Southern Scales/SSEC</label>
+            </value>
+            <value>
+                <fullName>icr_touch__spa_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::SPA Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__system_services</fullName>
+                <default>false</default>
+                <label>ICR Touch::System Services</label>
+            </value>
+            <value>
+                <fullName>icr_touch__tamar_gaming</fullName>
+                <default>false</default>
+                <label>ICR Touch::Tamar Gaming</label>
+            </value>
+            <value>
+                <fullName>icr_touch__technogrid_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Technogrid Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__techpos_asset_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Techpos Asset Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__the_epos_company__swansea_</fullName>
+                <default>false</default>
+                <label>ICR Touch::The EPOS Company (Swansea)</label>
+            </value>
+            <value>
+                <fullName>icr_touch__till_max</fullName>
+                <default>false</default>
+                <label>ICR Touch::Till Max</label>
+            </value>
+            <value>
+                <fullName>icr_touch__till_tech</fullName>
+                <default>false</default>
+                <label>ICR Touch::Till Tech</label>
+            </value>
+            <value>
+                <fullName>icr_touch__tillpoint-reseller</fullName>
+                <default>false</default>
+                <label>ICR Touch::Tillpoint-Reseller</label>
+            </value>
+            <value>
+                <fullName>icr_touch__tills_4_change</fullName>
+                <default>false</default>
+                <label>ICR Touch::Tills 4 Change</label>
+            </value>
+            <value>
+                <fullName>icr_touch__tills_direct</fullName>
+                <default>false</default>
+                <label>ICR Touch::Tills Direct</label>
+            </value>
+            <value>
+                <fullName>icr_touch__tills4u</fullName>
+                <default>false</default>
+                <label>ICR Touch::Tills4u</label>
+            </value>
+            <value>
+                <fullName>icr_touch__total_epos_solutions</fullName>
+                <default>false</default>
+                <label>ICR Touch::Total Epos Solutions</label>
+            </value>
+            <value>
+                <fullName>icr_touch__touch_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Touch Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__ubiquity_uk</fullName>
+                <default>false</default>
+                <label>ICR Touch::Ubiquity UK</label>
+            </value>
+            <value>
+                <fullName>icr_touch__united_epos_solutions/west_country_cash_register</fullName>
+                <default>false</default>
+                <label>ICR Touch::United EPoS Solutions/West Country Cash Register</label>
+            </value>
+            <value>
+                <fullName>icr_touch__universal_business_systems</fullName>
+                <default>false</default>
+                <label>ICR Touch::Universal Business Systems</label>
+            </value>
+            <value>
+                <fullName>icr_touch__vyrav_it_solutions</fullName>
+                <default>false</default>
+                <label>ICR Touch::Vyrav IT Solutions</label>
+            </value>
+            <value>
+                <fullName>icr_touch__waterford_business_machines</fullName>
+                <default>false</default>
+                <label>ICR Touch::Waterford Business Machines</label>
+            </value>
+            <value>
+                <fullName>icr_touch__wcr_epos_system</fullName>
+                <default>false</default>
+                <label>ICR Touch::WCR EPOS System</label>
+            </value>
+            <value>
+                <fullName>icr_touch__weigh-till/sparkenhoe_business_centre_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::Weigh-Till/Sparkenhoe Business Centre Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__western_office_equipment</fullName>
+                <default>false</default>
+                <label>ICR Touch::Western Office Equipment</label>
+            </value>
+            <value>
+                <fullName>icr_touch__white_rose_pos_ltd</fullName>
+                <default>false</default>
+                <label>ICR Touch::White Rose Pos Ltd</label>
+            </value>
+            <value>
+                <fullName>icr_touch__wiltshire_and_avon_cash_registers__wacr_</fullName>
+                <default>false</default>
+                <label>ICR Touch::Wiltshire and Avon Cash Registers (WACR)</label>
+            </value>
+            <value>
+                <fullName>icr_touch__zalion</fullName>
+                <default>false</default>
+                <label>ICR Touch::Zalion</label>
+            </value>
+            <value>
+                <fullName>icr_touch__zenith_epos</fullName>
+                <default>false</default>
+                <label>ICR Touch::Zenith Epos</label>
+            </value>
+            <value>
+                <fullName>ideal_epos_software_house__garc_/_global_asset_resale_company</fullName>
+                <default>false</default>
+                <label>Ideal Epos Software House::GARC / Global Asset Resale Company</label>
+            </value>
+            <value>
+                <fullName>ideal_epos_software_house__teedee365_ltd</fullName>
+                <default>false</default>
+                <label>Ideal Epos Software House::TeeDee365 Ltd</label>
+            </value>
+            <value>
+                <fullName>ikentoo__eposability</fullName>
+                <default>false</default>
+                <label>iKentoo::EPOSability</label>
+            </value>
+            <value>
+                <fullName>in-2-technology__pos_plus_roi_ï¿½_reseller</fullName>
+                <default>false</default>
+                <label>in-2-technology__pos_plus_roi_ï¿½_reseller</label>
+            </value>
+            <value>
+                <fullName>independent_equipment_company</fullName>
+                <default>false</default>
+                <label>Independent equipment Company</label>
+            </value>
+            <value>
+                <fullName>innstay/newcastle_tills_ltd/jbd_leisure_ltd</fullName>
+                <default>false</default>
+                <label>Innstay/Newcastle Tills Ltd/JBD Leisure Ltd</label>
+            </value>
+            <value>
+                <fullName>intelligent_golf__bank_brokers</fullName>
+                <default>false</default>
+                <label>Intelligent Golf::Bank Brokers</label>
+            </value>
+            <value>
+                <fullName>itd_software__critical_solutions</fullName>
+                <default>false</default>
+                <label>iTD Software::Critical Solutions</label>
+            </value>
+            <value>
+                <fullName>itd_software__greater_than_security_ltd</fullName>
+                <default>false</default>
+                <label>iTD Software::Greater than Security Ltd</label>
+            </value>
+            <value>
+                <fullName>itd_software__icr_scotland</fullName>
+                <default>false</default>
+                <label>iTD Software::ICR Scotland</label>
+            </value>
+            <value>
+                <fullName>itd_software__satyam_technologies_ltd</fullName>
+                <default>false</default>
+                <label>iTD Software::Satyam Technologies Ltd</label>
+            </value>
+            <value>
+                <fullName>itd_software__till_max</fullName>
+                <default>false</default>
+                <label>iTD Software::Till Max</label>
+            </value>
+            <value>
+                <fullName>jack___jill_payments_ltd</fullName>
+                <default>false</default>
+                <label>Jack &amp; Jill Payments LTD</label>
+            </value>
+            <value>
+                <fullName>kamarin_computers_/_kcpos</fullName>
+                <default>false</default>
+                <label>Kamarin Computers / KCPOS</label>
+            </value>
+            <value>
+                <fullName>kls_business</fullName>
+                <default>false</default>
+                <label>KLS Business</label>
+            </value>
+            <value>
+                <fullName>matrix_technical_services</fullName>
+                <default>false</default>
+                <label>Matrix Technical Services</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__10ninety_ltd</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::10ninety Ltd</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__ab_systems</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::AB Systems</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__acr_systems</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::ACR Systems</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__action-tec_services</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Action-Tec Services</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__birmingham_cash_registers_ltd</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Birmingham Cash Registers Ltd</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__ccr_epos_ltd_wales</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::CCR EPOS LTD WALES</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__ccr_services</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::CCR Services</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__crs_coventry_ltd</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::CRS Coventry Ltd</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__crs-ipswich</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::CRS-Ipswich</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__gemini_business_systems</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Gemini Business Systems</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__harmony_epos</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Harmony Epos</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__johnsons_cash_registers</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Johnsons Cash Registers</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__mobo_innovations</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Mobo Innovations</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__north_west_business_machines</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::North West Business Machines</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__p___p_business</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::P &amp; P Business</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__qube_epos</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Qube EPOS</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell__welgo_office_equipment</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell::Welgo Office equipment</label>
+            </value>
+            <value>
+                <fullName>myappetite_limited</fullName>
+                <default>false</default>
+                <label>myAPPetite Limited</label>
+            </value>
+            <value>
+                <fullName>myepos__abi-tech</fullName>
+                <default>false</default>
+                <label>Myepos::abi-TECH</label>
+            </value>
+            <value>
+                <fullName>myepos__c_l_epos_systems_ltd</fullName>
+                <default>false</default>
+                <label>Myepos::C&amp;L EPoS Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>myepos__d_b_cash_registers/d_b_epos</fullName>
+                <default>false</default>
+                <label>Myepos::D B Cash Registers/D B Epos</label>
+            </value>
+            <value>
+                <fullName>myepos__dataweigh_systems_ltd</fullName>
+                <default>false</default>
+                <label>Myepos::Dataweigh Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>myepos__everything_epos</fullName>
+                <default>false</default>
+                <label>Myepos::Everything EPOS</label>
+            </value>
+            <value>
+                <fullName>myepos__gm_epos_systems</fullName>
+                <default>false</default>
+                <label>Myepos::GM EPOS Systems</label>
+            </value>
+            <value>
+                <fullName>myepos__merlin_office</fullName>
+                <default>false</default>
+                <label>Myepos::Merlin Office</label>
+            </value>
+            <value>
+                <fullName>myepos__rytec_</fullName>
+                <default>false</default>
+                <label>Myepos::Rytec</label>
+            </value>
+            <value>
+                <fullName>myepos__smart_epos</fullName>
+                <default>false</default>
+                <label>Myepos::Smart EPOS</label>
+            </value>
+            <value>
+                <fullName>myepos__sms_food_equipment</fullName>
+                <default>false</default>
+                <label>Myepos::SMS Food Equipment</label>
+            </value>
+            <value>
+                <fullName>myepos__wiltshire_and_avon_cash_registers__wacr_</fullName>
+                <default>false</default>
+                <label>Myepos::Wiltshire and Avon Cash Registers (WACR)</label>
+            </value>
+            <value>
+                <fullName>ncr_silver__centegra_ltd</fullName>
+                <default>false</default>
+                <label>NCR Silver::Centegra Ltd</label>
+            </value>
+            <value>
+                <fullName>netron/restaurant_ltd</fullName>
+                <default>false</default>
+                <label>Netron/restaurant Ltd</label>
+            </value>
+            <value>
+                <fullName>newbridge_software__epos_systems_ltd</fullName>
+                <default>false</default>
+                <label>Newbridge Software::EPoS Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>nobly_pos__comcal_systems_limited</fullName>
+                <default>false</default>
+                <label>Nobly POS::Comcal Systems Limited</label>
+            </value>
+            <value>
+                <fullName>nobly_pos__storekit</fullName>
+                <default>false</default>
+                <label>Nobly POS::Storekit</label>
+            </value>
+            <value>
+                <fullName>northwest_scales</fullName>
+                <default>false</default>
+                <label>Northwest Scales</label>
+            </value>
+            <value>
+                <fullName>notts___derby_cash_registers</fullName>
+                <default>false</default>
+                <label>Notts &amp; Derby Cash Registers</label>
+            </value>
+            <value>
+                <fullName>novus_business_works</fullName>
+                <default>false</default>
+                <label>Novus Business Works</label>
+            </value>
+            <value>
+                <fullName>nudigita_ltd/restajet</fullName>
+                <default>false</default>
+                <label>Nudigita LTD/Restajet</label>
+            </value>
+            <value>
+                <fullName>odoo__gems_media_ltd</fullName>
+                <default>false</default>
+                <label>Odoo::Gems Media Ltd</label>
+            </value>
+            <value>
+                <fullName>odoo__opensys_ltd</fullName>
+                <default>false</default>
+                <label>Odoo::Opensys Ltd</label>
+            </value>
+            <value>
+                <fullName>opsuite__rms__scotland_</fullName>
+                <default>false</default>
+                <label>OpSuite::RMS (Scotland)</label>
+            </value>
+            <value>
+                <fullName>other___</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>parkers_food_machinery_plus_ltd</fullName>
+                <default>false</default>
+                <label>Parkers Food Machinery Plus Ltd</label>
+            </value>
+            <value>
+                <fullName>payment_kiosks_ltd/konnected_tecnology</fullName>
+                <default>false</default>
+                <label>Payment Kiosks Ltd/Konnected tecnology</label>
+            </value>
+            <value>
+                <fullName>pixel_point__retail_solutions_scotland</fullName>
+                <default>false</default>
+                <label>Pixel Point::Retail Solutions Scotland</label>
+            </value>
+            <value>
+                <fullName>pixel_point__slowey_systems</fullName>
+                <default>false</default>
+                <label>Pixel Point::Slowey Systems</label>
+            </value>
+            <value>
+                <fullName>pointone__slowey_systems</fullName>
+                <default>false</default>
+                <label>pointOne::Slowey Systems</label>
+            </value>
+            <value>
+                <fullName>posera_europe_ltd/maitre_d__cornwall_scales___equipment_ltd/cse_ltd</fullName>
+                <default>false</default>
+                <label>Posera Europe Ltd/Maitre&apos;D::Cornwall Scales &amp; Equipment Ltd/CSE Ltd</label>
+            </value>
+            <value>
+                <fullName>posera_europe_ltd/maitre_d__hospitality_it</fullName>
+                <default>false</default>
+                <label>Posera Europe Ltd/Maitre&apos;D::Hospitality IT</label>
+            </value>
+            <value>
+                <fullName>posso_ltd</fullName>
+                <default>false</default>
+                <label>Posso_ltd</label>
+            </value>
+            <value>
+                <fullName>power_epos/cpos/triniteq/weightapos__greater_than_security_ltd</fullName>
+                <default>false</default>
+                <label>Power Epos/CPOS/Triniteq/Weightapos::Greater than Security Ltd</label>
+            </value>
+            <value>
+                <fullName>power_epos/cpos/triniteq/weightapos__ontill__prev._the_till_man_</fullName>
+                <default>false</default>
+                <label>Power Epos/CPOS/Triniteq/Weightapos::Ontill (Prev. The Till Man)</label>
+            </value>
+            <value>
+                <fullName>power_epos/cpos/triniteq/weightapos__ontill_limited</fullName>
+                <default>false</default>
+                <label>Power Epos/CPOS/Triniteq/Weightapos::Ontill Limited</label>
+            </value>
+            <value>
+                <fullName>power_epos/cpos/triniteq/weightapos__professional_retail_systems_limited</fullName>
+                <default>false</default>
+                <label>Power Epos/CPOS/Triniteq/Weightapos::Professional Retail Systems Limited</label>
+            </value>
+            <value>
+                <fullName>power_epos/cpos/triniteq/weightapos__secure_systems_aberdeen_ltd_/_ssa</fullName>
+                <default>false</default>
+                <label>Power Epos/CPOS/Triniteq/Weightapos::SECURE SYSTEMS ABERDEEN LTD / SSA</label>
+            </value>
+            <value>
+                <fullName>proton6_/_infipos__langley_distribution</fullName>
+                <default>false</default>
+                <label>Proton6 / InfiPoS::Langley Distribution</label>
+            </value>
+            <value>
+                <fullName>quorion__gm_epos_systems</fullName>
+                <default>false</default>
+                <label>Quorion::GM EPOS Systems</label>
+            </value>
+            <value>
+                <fullName>realtime_dc_ltd</fullName>
+                <default>false</default>
+                <label>Realtime DC LTD</label>
+            </value>
+            <value>
+                <fullName>red_epos</fullName>
+                <default>false</default>
+                <label>Red Epos</label>
+            </value>
+            <value>
+                <fullName>reposs__norcon_computers_limited</fullName>
+                <default>false</default>
+                <label>Reposs::Norcon Computers Limited</label>
+            </value>
+            <value>
+                <fullName>restapp_uk_limited__customer_technologies_ltd</fullName>
+                <default>false</default>
+                <label>RestApp UK Limited::Customer Technologies Ltd</label>
+            </value>
+            <value>
+                <fullName>retail_hardware_solutions_t/a_iposg__argyll_systems</fullName>
+                <default>false</default>
+                <label>Retail Hardware Solutions T/A IPOSG::Argyll Systems</label>
+            </value>
+            <value>
+                <fullName>retail_realm__absolute_control_epos_solutions</fullName>
+                <default>false</default>
+                <label>Retail Realm::Absolute Control Epos Solutions</label>
+            </value>
+            <value>
+                <fullName>retail_solutions__retail_solutions_scotland</fullName>
+                <default>false</default>
+                <label>Retail Solutions::Retail Solutions Scotland</label>
+            </value>
+            <value>
+                <fullName>retail-able</fullName>
+                <default>false</default>
+                <label>retail-able</label>
+            </value>
+            <value>
+                <fullName>rst_epos_/_tata_pos</fullName>
+                <default>false</default>
+                <label>RST Epos / TATA POS</label>
+            </value>
+            <value>
+                <fullName>rydale_cash_registers</fullName>
+                <default>false</default>
+                <label>Rydale Cash Registers</label>
+            </value>
+            <value>
+                <fullName>salesvu_technologies__contact_telemarketing_t/a_talk_2_connect</fullName>
+                <default>false</default>
+                <label>SalesVu Technologies::Contact Telemarketing T/A Talk 2 Connect</label>
+            </value>
+            <value>
+                <fullName>salesvu_technologies__vision_oriented_ltd__prev._ebizpoints_ltd_</fullName>
+                <default>false</default>
+                <label>SalesVu Technologies::Vision Oriented Ltd (Prev. Ebizpoints Ltd)</label>
+            </value>
+            <value>
+                <fullName>sambapos__arya_epos_limited</fullName>
+                <default>false</default>
+                <label>SambaPOS::Arya Epos Limited</label>
+            </value>
+            <value>
+                <fullName>sambapos__elite_design_and_print_ltd</fullName>
+                <default>false</default>
+                <label>SambaPOS::Elite Design and Print Ltd</label>
+            </value>
+            <value>
+                <fullName>sambapos__epos_pro_ltd/we_make_app</fullName>
+                <default>false</default>
+                <label>SambaPOS::Epos Pro Ltd/We Make App</label>
+            </value>
+            <value>
+                <fullName>sambapos__jtr_solutions</fullName>
+                <default>false</default>
+                <label>SambaPOS::JTR Solutions</label>
+            </value>
+            <value>
+                <fullName>sambapos__netron</fullName>
+                <default>false</default>
+                <label>SambaPOS::Netron</label>
+            </value>
+            <value>
+                <fullName>sambapos__online_till</fullName>
+                <default>false</default>
+                <label>SambaPOS::Online Till</label>
+            </value>
+            <value>
+                <fullName>sambapos__storeseen__uk__limited_/_chinese_pos</fullName>
+                <default>false</default>
+                <label>SambaPOS::StoreSeen (UK) Limited / Chinese POS</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__a_m_business_equipment</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::A&amp;M Business Equipment</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__abacus_epos_uk_ltd_-_brighton</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Abacus Epos UK Ltd - BRIGHTON</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__anchor_data_systems__ni__ltd</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Anchor Data Systems (NI) Ltd</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__anglia_epos</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Anglia EPOS</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__argyll_systems</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Argyll Systems</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__bec__sheffield_</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::BEC (Sheffield)</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__black_knight_retail_systems</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Black Knight Retail Systems</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__c___g_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::C &amp; G Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__cash_point_systems</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Cash Point Systems</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__ccm__price_marking__ltd</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::CCM (Price Marking) Ltd</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__ccr_systems__uk__ltd</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::CCR Systems (UK) LTD</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__cns_systems_east_ltd</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Cns Systems East Ltd</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__correct_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Correct Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__doncaster_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Doncaster Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__elepos</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Elepos</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__epos_systems__b-tech_distribution_</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::EPOS systems (B-Tech Distribution)</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__eurocashregister_ltd</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Eurocashregister Ltd</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__g_b_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::G&amp;B Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__j_j_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::J&amp;J Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__lcr_systems-morecambe</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::LCR Systems-MoreCambe</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__mansfield_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Mansfield Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__merseyside_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Merseyside Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__new_horizon_systems</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::New Horizon Systems</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__north_west_business_machines</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::North West Business Machines</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__northern_retail</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Northern Retail</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__pba</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::PBA</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__red_rose_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Red Rose Cash Registers</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__ringatill</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Ringatill</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__sam_software_solutions_limited</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Sam Software Solutions Limited</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__scrs__scotland__ltd</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::SCRS (SCOTLAND) LTD</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__shopstuff_uk_ltd</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Shopstuff UK Ltd</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__sims_cash_control/cash_control_equipment</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Sims Cash Control/Cash Control Equipment</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__symes_club_systems_limited</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Symes Club Systems Limited</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__tamar_gaming</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::Tamar Gaming</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__the_tillman/ccm_epos_systems</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::The Tillman/CCM EPOS SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__tillwise</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::TILLWISE</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr__york_and_selby_cash_registers</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR::York and Selby Cash Registers</label>
+            </value>
+            <value>
+                <fullName>shanghai_teraoka_electronic__digi_group_/maxpos__langley_distribution</fullName>
+                <default>false</default>
+                <label>Shanghai Teraoka Electronic (Digi Group)/MaxPOS::Langley Distribution</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__a_and_k_cash_registers</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::A and K Cash Registers</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__acr_epos_systems_ltd</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::ACR Epos Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__crystal_epos_limited</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::Crystal Epos Limited</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__easy_pos</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::Easy POS</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__gs_systems</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::GS Systems</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__icr_retail_systems</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::ICR Retail Systems</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__insignia_technology_systems_limited</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::Insignia Technology Systems Limited</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__ke_supplies</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::KE Supplies</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__merseyside_cash_registers</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::Merseyside Cash Registers</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__pos___catering_solutions_ltd</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::POS &amp; Catering Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__rice_office_supplies_limited</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::Rice Office Supplies Limited</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__select_business_supplies</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::SELECT BUSINESS SUPPLIES</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__sharp_retail_systems</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::Sharp Retail Systems</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__smartphone_money_limited/_sunhill__uk__limited</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::SmartPhone Money Limited/ SunHill (UK) limited</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc__visual_business_retail_vbr_/sharp_integration</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC::Visual Business Retail VBR / Integration</label>
+            </value>
+            <value>
+                <fullName>smart_retail_solutions/gloposnet</fullName>
+                <default>false</default>
+                <label>Smart Retail Solutions/Gloposnet</label>
+            </value>
+            <value>
+                <fullName>smart_volution__rms__scotland_</fullName>
+                <default>false</default>
+                <label>Smart Volution::RMS (Scotland)</label>
+            </value>
+            <value>
+                <fullName>smart_volution__the_barcode_warehouse</fullName>
+                <default>false</default>
+                <label>Smart Volution::The Barcode Warehouse</label>
+            </value>
+            <value>
+                <fullName>tcpos__pxtech_ltd/charity_expertise</fullName>
+                <default>false</default>
+                <label>TCPOS::Pxtech Ltd/Charity Expertise</label>
+            </value>
+            <value>
+                <fullName>tcube/epos_technologies__inteltec</fullName>
+                <default>false</default>
+                <label>TCube/EPOS Technologies::Inteltec</label>
+            </value>
+            <value>
+                <fullName>tcube/epos_technologies__logics_technologies_ltd</fullName>
+                <default>false</default>
+                <label>TCube/EPOS Technologies::Logics Technologies Ltd</label>
+            </value>
+            <value>
+                <fullName>tevalis__quintrillion_ltd</fullName>
+                <default>false</default>
+                <label>Tevalis::Quintrillion Ltd</label>
+            </value>
+            <value>
+                <fullName>touchretail_ltd__the_it_department</fullName>
+                <default>false</default>
+                <label>Touchretail Ltd::The IT Department</label>
+            </value>
+            <value>
+                <fullName>unicenta__ideal_epos_ltd_reseller</fullName>
+                <default>false</default>
+                <label>Unicenta::Ideal Epos Ltd RESELLER</label>
+            </value>
+            <value>
+                <fullName>unicenta__verstech</fullName>
+                <default>false</default>
+                <label>Unicenta::Verstech</label>
+            </value>
+            <value>
+                <fullName>unipos_systems_ltd</fullName>
+                <default>false</default>
+                <label>Unipos Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>untill_epos__lapsley</fullName>
+                <default>false</default>
+                <label>UnTill Epos::Lapsley</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__absolute_retail_control_ltd/arc</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::Absolute Retail Control Ltd/ARC</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__cheshire_business_supplies</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::Cheshire Business Supplies</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__cos_business_machines</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::COS Business Machines</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__djs_systems</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::DJS Systems</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__fry_scales</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::Fry Scales</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__global_15</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::Global 15</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__insignia_technology_systems_limited</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::Insignia Technology Systems Limited</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__j___a_systems_limited</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::J &amp; A Systems Limited</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__laganside_retail_systems</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::Laganside Retail Systems</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__new_horizon_systems</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::New Horizon Systems</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__ryedale_cash_registers/_rcr_epos</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::Ryedale Cash Registers/ EPOS</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions__s___s_cash_registers_ltd</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions::S + S Cash Registers Ltd</label>
+            </value>
+            <value>
+                <fullName>vectron/arcsoft/northwood_software_solutions__advanced_cash_control_systems/accs</fullName>
+                <default>false</default>
+                <label>Vectron/Arcsoft/Northwood Software Solutions::Advanced Cash Control Systems/ACCS</label>
+            </value>
+            <value>
+                <fullName>vend__albion_computers_plc</fullName>
+                <default>false</default>
+                <label>Vend::Albion Computers PLC</label>
+            </value>
+            <value>
+                <fullName>vend__krcs_group_ltd</fullName>
+                <default>false</default>
+                <label>Vend::KRCS Group Ltd</label>
+            </value>
+            <value>
+                <fullName>vend__memotech_ltd</fullName>
+                <default>false</default>
+                <label>Vend::Memotech Ltd</label>
+            </value>
+            <value>
+                <fullName>vend__storekit</fullName>
+                <default>false</default>
+                <label>Vend::Storekit</label>
+            </value>
+            <value>
+                <fullName>vend__total_tech_ltd</fullName>
+                <default>false</default>
+                <label>Vend::Total Tech Ltd</label>
+            </value>
+            <value>
+                <fullName>vend__website_success_ltd</fullName>
+                <default>false</default>
+                <label>Vend::Website Success Ltd</label>
+            </value>
+            <value>
+                <fullName>venture_house_group</fullName>
+                <default>false</default>
+                <label>Venture House Group</label>
+            </value>
+            <value>
+                <fullName>vesopa</fullName>
+                <default>false</default>
+                <label>Vesopa</label>
+            </value>
+            <value>
+                <fullName>whites_cctv</fullName>
+                <default>false</default>
+                <label>Whites CCTV</label>
+            </value>
+            <value>
+                <fullName>wizbang/onetap__jbm_merit-reseller</fullName>
+                <default>false</default>
+                <label>WizBang/Onetap::JBM Merit-Reseller</label>
+            </value>
+            <value>
+                <fullName>wizbang/onetap__radley_systems</fullName>
+                <default>false</default>
+                <label>WizBang/Onetap::Radley Systems</label>
+            </value>
+            <value>
+                <fullName>xenex</fullName>
+                <default>false</default>
+                <label>Xenex</label>
+            </value>
+            <value>
+                <fullName>yumapos_uk_ltd__first_choice_epos</fullName>
+                <default>false</default>
+                <label>YumaPOS UK Ltd::First Choice EPOS</label>
+            </value>
+            <value>
+                <fullName>octo_pos</fullName>
+                <default>false</default>
+                <label>Octo POS</label>
+            </value>
+            <value>
+                <fullName>selectepos</fullName>
+                <default>false</default>
+                <label>SelectEpos</label>
+            </value>
+            <value>
+                <fullName>gesbox</fullName>
+                <default>false</default>
+                <label>Gesbox</label>
+            </value>
+            <value>
+                <fullName>epos_devon</fullName>
+                <default>false</default>
+                <label>Epos Devon</label>
+            </value>
+            <value>
+                <fullName>hcr_epos</fullName>
+                <default>false</default>
+                <label>HCR EPOS</label>
+            </value>
+            <value>
+                <fullName>pepper_hq</fullName>
+                <default>false</default>
+                <label>Pepper HQ</label>
+            </value>
+            <value>
+                <fullName>nova_epos_ltd</fullName>
+                <default>false</default>
+                <label>Nova Epos LTD</label>
+            </value>
+            <value>
+                <fullName>nova_epos_ie_ltd</fullName>
+                <default>false</default>
+                <label>Nova EPOS IE LTD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_OnboardingStatus__c</fullName>
+    <description>Current state of the onboarding process.</description>
+    <inlineHelpText>Select the onboarding status from the list.</inlineHelpText>
+    <label>Onboarding Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pipeline</fullName>
+                <default>false</default>
+                <label>Pipeline</label>
+            </value>
+            <value>
+                <fullName>ready_to_hand_over</fullName>
+                <default>false</default>
+                <label>Ready to hand over</label>
+            </value>
+            <value>
+                <fullName>work_in_progress_-_active</fullName>
+                <default>false</default>
+                <label>Work in Progress - Active</label>
+            </value>
+            <value>
+                <fullName>work_in_progress_-_monitoring</fullName>
+                <default>false</default>
+                <label>Work in Progress - Monitoring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

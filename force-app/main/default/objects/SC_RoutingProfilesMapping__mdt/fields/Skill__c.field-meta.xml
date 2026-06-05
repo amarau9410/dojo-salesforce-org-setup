@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skill__c</fullName>
+    <description>skill selected on skill assignment screen</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Skill</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>true</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+                <label>Integrations</label>
+            </value>
+            <value>
+                <fullName>Business Funding</fullName>
+                <default>false</default>
+                <label>Business Funding</label>
+            </value>
+            <value>
+                <fullName>2L</fullName>
+                <default>false</default>
+                <label>2L</label>
+            </value>
+            <value>
+                <fullName>Escalated Retentions</fullName>
+                <default>false</default>
+                <label>Escalated Retentions</label>
+            </value>
+            <value>
+                <fullName>Escalated Complaints</fullName>
+                <default>false</default>
+                <label>Escalated Complaints</label>
+            </value>
+            <value>
+                <fullName>Credit Risk</fullName>
+                <default>false</default>
+                <label>Credit Risk</label>
+            </value>
+            <value>
+                <fullName>Risk Monitoring</fullName>
+                <default>false</default>
+                <label>Risk Monitoring</label>
+            </value>
+            <value>
+                <fullName>Loyalty</fullName>
+                <default>false</default>
+                <label>Loyalty</label>
+            </value>
+            <value>
+                <fullName>Integration Onboarding</fullName>
+                <default>false</default>
+                <label>Integration Onboarding</label>
+            </value>
+            <value>
+                <fullName>Logistics Escalations</fullName>
+                <default>false</default>
+                <label>Logistics Escalations</label>
+            </value>
+            <value>
+                <fullName>Proactive</fullName>
+                <default>false</default>
+                <label>Proactive</label>
+            </value>
+            <value>
+                <fullName>CLE</fullName>
+                <default>false</default>
+                <label>CLE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Us_Form_Types__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Contact Us Form Types</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add or remove an authorised employee</fullName>
+                <default>false</default>
+                <label>Add or remove an authorised employee</label>
+            </value>
+            <value>
+                <fullName>Customer satisfaction callback request</fullName>
+                <default>false</default>
+                <label>Customer satisfaction callback request</label>
+            </value>
+            <value>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+                <label>General enquiry</label>
+            </value>
+            <value>
+                <fullName>Submit a Proof of Bank</fullName>
+                <default>false</default>
+                <label>Submit a Proof of Bank</label>
+            </value>
+            <value>
+                <fullName>Welcome call and Health check callback request</fullName>
+                <default>false</default>
+                <label>Welcome call and Health check callback request</label>
+            </value>
+            <value>
+                <fullName>Claim your Dojo Payments Cancellation Protection</fullName>
+                <default>false</default>
+                <label>Claim your Dojo Payments Cancellation Protection</label>
+            </value>
+            <value>
+                <fullName>Apply for Phone Payments/Payment Links</fullName>
+                <default>false</default>
+                <label>Apply for Phone Payments/Payment Links</label>
+            </value>
+            <value>
+                <fullName>DCC not required</fullName>
+                <default>false</default>
+                <label>DCC not required</label>
+            </value>
+            <value>
+                <fullName>Add American Express to your account</fullName>
+                <default>false</default>
+                <label>Add American Express to your account</label>
+            </value>
+            <value>
+                <fullName>Claim your Dojo Bookings Cancellation Protection</fullName>
+                <default>false</default>
+                <label>Claim your Dojo Bookings Cancellation Protection</label>
+            </value>
+            <value>
+                <fullName>Changing your legal entity</fullName>
+                <default>false</default>
+                <label>Changing your legal entity</label>
+            </value>
+            <value>
+                <fullName>Hardware Care downgrade to Light version</fullName>
+                <default>false</default>
+                <label>Hardware Care downgrade to Light version</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

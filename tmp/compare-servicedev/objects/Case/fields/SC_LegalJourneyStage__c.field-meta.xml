@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_LegalJourneyStage__c</fullName>
+    <description>Tracks Collections case progress.</description>
+    <label>Legal Journey Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PAP Ready</fullName>
+                <default>false</default>
+                <label>PAP Ready</label>
+            </value>
+            <value>
+                <fullName>PAP - Pre-Action Protocol Letter</fullName>
+                <default>false</default>
+                <label>PAP - Pre-Action Protocol Letter</label>
+            </value>
+            <value>
+                <fullName>MCOL Submission</fullName>
+                <default>false</default>
+                <label>MCOL Submission</label>
+            </value>
+            <value>
+                <fullName>Order Obtained</fullName>
+                <default>false</default>
+                <label>Order Obtained</label>
+            </value>
+            <value>
+                <fullName>Trethowans Escalation</fullName>
+                <default>false</default>
+                <label>Trethowans Escalation</label>
+            </value>
+            <value>
+                <fullName>Enforcement</fullName>
+                <default>false</default>
+                <label>Enforcement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

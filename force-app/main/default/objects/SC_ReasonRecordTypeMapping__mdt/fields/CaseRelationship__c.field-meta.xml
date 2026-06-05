@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseRelationship__c</fullName>
+    <description>Defines how to automatically relate newly created cases or update the existing case instead.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Case Relationship</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Parent</fullName>
+                <default>true</default>
+                <label>Parent</label>
+            </value>
+            <value>
+                <fullName>Child</fullName>
+                <default>false</default>
+                <label>Child</label>
+            </value>
+            <value>
+                <fullName>Orphaned</fullName>
+                <default>false</default>
+                <label>Orphaned</label>
+            </value>
+            <value>
+                <fullName>Update Existing</fullName>
+                <default>false</default>
+                <label>Update Existing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

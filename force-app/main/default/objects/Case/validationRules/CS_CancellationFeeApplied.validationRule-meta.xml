@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_CancellationFeeApplied</fullName>
+    <active>true</active>
+    <description>If Outcome = Cancelled then CancellationFeeApplied_c required.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Closed&quot;),
+ISPICKVAL(SC_Outcome__c, &quot;Cancelled&quot;),
+ISBLANK(TEXT(SC_CancellationFeeApplied__c))
+)</errorConditionFormula>
+    <errorMessage>Please complete Cancellation Fees Applied field before Saving the Record.</errorMessage>
+</ValidationRule>

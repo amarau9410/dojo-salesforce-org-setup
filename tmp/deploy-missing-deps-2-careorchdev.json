@@ -1,0 +1,108 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T12:53:32.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T12:53:31.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "columnNumber": 24,
+          "componentType": "BusinessProcess",
+          "created": false,
+          "createdDate": "2026-05-27T12:53:32.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Standard Support Process",
+          "lineNumber": 243,
+          "problem": "Picklist value: Assigned not found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "columnNumber": 25,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-27T12:53:32.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.CardMachineCharges",
+          "lineNumber": 282,
+          "problem": "Global value set 'Acquirer__c' in record type 'Card Machine Charges' on the entity 'Case' cannot be resolved",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T12:53:32.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWr6TKAT",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T12:53:32.000Z",
+    "numberComponentErrors": 2,
+    "numberComponentsDeployed": 0,
+    "numberComponentsTotal": 2,
+    "numberFiles": "3",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T12:53:32.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 38748,
+    "files": [
+      {
+        "fullName": "Case.Standard Support Process",
+        "type": "BusinessProcess",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\businessProcesses\\Standard Support Process.businessProcess-meta.xml",
+        "lineNumber": 243,
+        "columnNumber": 24,
+        "error": "Picklist value: Assigned not found (243:24)"
+      },
+      {
+        "fullName": "Case.CardMachineCharges",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\CardMachineCharges.recordType-meta.xml",
+        "lineNumber": 282,
+        "columnNumber": 25,
+        "error": "Global value set 'Acquirer__c' in record type 'Card Machine Charges' on the entity 'Case' cannot be resolved (282:25)"
+      }
+    ],
+    "zipFileCount": 2,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWr6TKAT%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

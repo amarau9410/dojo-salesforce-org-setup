@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Second_Caregiver_Coverage__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates second caregiver coverage is confirmed for lone-worker safeguards.</description>
+    <externalId>false</externalId>
+    <label>CareOrch Second Caregiver Coverage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

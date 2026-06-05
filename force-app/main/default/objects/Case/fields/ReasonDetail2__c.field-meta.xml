@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReasonDetail2__c</fullName>
+    <label>Reason Detail 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6m statement required</fullName>
+                <default>false</default>
+                <label>6m statement required</label>
+            </value>
+            <value>
+                <fullName>Additional App form required</fullName>
+                <default>false</default>
+                <label>Additional App form required</label>
+            </value>
+            <value>
+                <fullName>CoB Errors</fullName>
+                <default>false</default>
+                <label>CoB Errors</label>
+            </value>
+            <value>
+                <fullName>DD Not Live</fullName>
+                <default>false</default>
+                <label>DD Not Live</label>
+            </value>
+            <value>
+                <fullName>Details dont match MS</fullName>
+                <default>false</default>
+                <label>Details dont match MS</label>
+            </value>
+            <value>
+                <fullName>KYC ID Required</fullName>
+                <default>false</default>
+                <label>KYC ID Required</label>
+            </value>
+            <value>
+                <fullName>MIDs to be added</fullName>
+                <default>false</default>
+                <label>MIDs to be added</label>
+            </value>
+            <value>
+                <fullName>Application in process</fullName>
+                <default>false</default>
+                <label>Application in process</label>
+            </value>
+            <value>
+                <fullName>Application not processed</fullName>
+                <default>false</default>
+                <label>Application not processed</label>
+            </value>
+            <value>
+                <fullName>Application processed</fullName>
+                <default>false</default>
+                <label>Application processed</label>
+            </value>
+            <value>
+                <fullName>Add/remove Gratuity</fullName>
+                <default>false</default>
+                <label>Add/remove Gratuity</label>
+            </value>
+            <value>
+                <fullName>Add/remove Table ID</fullName>
+                <default>false</default>
+                <label>Add/remove Table ID</label>
+            </value>
+            <value>
+                <fullName>Add/remove Waiter ID</fullName>
+                <default>false</default>
+                <label>Add/remove Waiter ID</label>
+            </value>
+            <value>
+                <fullName>Updated to PAC</fullName>
+                <default>false</default>
+                <label>Updated to PAC</label>
+            </value>
+            <value>
+                <fullName>Updated to PAT</fullName>
+                <default>false</default>
+                <label>Updated to PAT</label>
+            </value>
+            <value>
+                <fullName>Updated to Standalone</fullName>
+                <default>false</default>
+                <label>Updated to Standalone</label>
+            </value>
+            <value>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+                <label>Upgrade</label>
+            </value>
+            <value>
+                <fullName>Upgrade - Cancelled</fullName>
+                <default>false</default>
+                <label>Upgrade - Cancelled</label>
+            </value>
+            <value>
+                <fullName>Contact details change</fullName>
+                <default>false</default>
+                <label>Contact details change</label>
+            </value>
+            <value>
+                <fullName>Delivery address change</fullName>
+                <default>false</default>
+                <label>Delivery address change</label>
+            </value>
+            <value>
+                <fullName>Integration development assistance</fullName>
+                <default>false</default>
+                <label>Integration development assistance</label>
+            </value>
+            <value>
+                <fullName>Information Created</fullName>
+                <default>false</default>
+                <label>Information Created</label>
+            </value>
+            <value>
+                <fullName>Information provided</fullName>
+                <default>false</default>
+                <label>Information provided</label>
+            </value>
+            <value>
+                <fullName>Shared Credentials</fullName>
+                <default>false</default>
+                <label>Shared Credentials</label>
+            </value>
+            <value>
+                <fullName>Partner Tagging</fullName>
+                <default>false</default>
+                <label>Partner Tagging</label>
+            </value>
+            <value>
+                <fullName>Install</fullName>
+                <default>false</default>
+                <label>Install</label>
+            </value>
+            <value>
+                <fullName>.NET Framework</fullName>
+                <default>false</default>
+                <label>.NET Framework</label>
+            </value>
+            <value>
+                <fullName>EFT App not running</fullName>
+                <default>false</default>
+                <label>EFT App not running</label>
+            </value>
+            <value>
+                <fullName>Error sending transaction</fullName>
+                <default>false</default>
+                <label>Error sending transaction</label>
+            </value>
+            <value>
+                <fullName>Firewall ports unblocked</fullName>
+                <default>false</default>
+                <label>Firewall ports unblocked</label>
+            </value>
+            <value>
+                <fullName>Refer To SWH/Reseller</fullName>
+                <default>false</default>
+                <label>Refer To SWH/Reseller</label>
+            </value>
+            <value>
+                <fullName>TID association</fullName>
+                <default>false</default>
+                <label>TID association</label>
+            </value>
+            <value>
+                <fullName>Till set up help</fullName>
+                <default>false</default>
+                <label>Till set up help</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting - Referred to IM</fullName>
+                <default>false</default>
+                <label>Troubleshooting - Referred to IM</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting - Referred to SWH</fullName>
+                <default>false</default>
+                <label>Troubleshooting - Referred to SWH</label>
+            </value>
+            <value>
+                <fullName>URL entered incorrectly</fullName>
+                <default>false</default>
+                <label>URL entered incorrectly</label>
+            </value>
+            <value>
+                <fullName>Connect Compatibility Query</fullName>
+                <default>false</default>
+                <label>Connect Compatibility Query</label>
+            </value>
+            <value>
+                <fullName>New integration referred to PDM</fullName>
+                <default>false</default>
+                <label>New integration referred to PDM</label>
+            </value>
+            <value>
+                <fullName>Payment delays</fullName>
+                <default>false</default>
+                <label>Payment delays</label>
+            </value>
+            <value>
+                <fullName>Status of leads submitted</fullName>
+                <default>false</default>
+                <label>Status of leads submitted</label>
+            </value>
+            <value>
+                <fullName>Installation not happened</fullName>
+                <default>false</default>
+                <label>Installation not happened</label>
+            </value>
+            <value>
+                <fullName>Integration details - Customer</fullName>
+                <default>false</default>
+                <label>Integration details - Customer</label>
+            </value>
+            <value>
+                <fullName>Integration details - Partner</fullName>
+                <default>false</default>
+                <label>Integration details - Partner</label>
+            </value>
+            <value>
+                <fullName>Integration time query</fullName>
+                <default>false</default>
+                <label>Integration time query</label>
+            </value>
+            <value>
+                <fullName>Schedule integration</fullName>
+                <default>false</default>
+                <label>Schedule integration</label>
+            </value>
+            <value>
+                <fullName>Change Address</fullName>
+                <default>false</default>
+                <label>Change Address</label>
+            </value>
+            <value>
+                <fullName>Change Bank Details/COB</fullName>
+                <default>false</default>
+                <label>Change Bank Details/COB</label>
+            </value>
+            <value>
+                <fullName>Change Company name</fullName>
+                <default>false</default>
+                <label>Change Company name</label>
+            </value>
+            <value>
+                <fullName>Change Contact Details</fullName>
+                <default>false</default>
+                <label>Change Contact Details</label>
+            </value>
+            <value>
+                <fullName>Change Legal Entity/CLE</fullName>
+                <default>false</default>
+                <label>Change Legal Entity/CLE</label>
+            </value>
+            <value>
+                <fullName>Change MCC</fullName>
+                <default>false</default>
+                <label>Change MCC</label>
+            </value>
+            <value>
+                <fullName>Disable Satisfaction Survey</fullName>
+                <default>false</default>
+                <label>Disable Satisfaction Survey</label>
+            </value>
+            <value>
+                <fullName>Dissolved Company</fullName>
+                <default>false</default>
+                <label>Dissolved Company</label>
+            </value>
+            <value>
+                <fullName>Enable Satisfaction Survey</fullName>
+                <default>false</default>
+                <label>Enable Satisfaction Survey</label>
+            </value>
+            <value>
+                <fullName>In Administration</fullName>
+                <default>false</default>
+                <label>In Administration</label>
+            </value>
+            <value>
+                <fullName>Liquidated Company</fullName>
+                <default>false</default>
+                <label>Liquidated Company</label>
+            </value>
+            <value>
+                <fullName>Proof of Bank</fullName>
+                <default>false</default>
+                <label>Proof of Bank</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+            <value>
+                <fullName>Interest</fullName>
+                <default>false</default>
+                <label>Interest</label>
+            </value>
+            <value>
+                <fullName>Setup Query</fullName>
+                <default>false</default>
+                <label>Setup Query</label>
+            </value>
+            <value>
+                <fullName>Insights query</fullName>
+                <default>false</default>
+                <label>Insights query</label>
+            </value>
+            <value>
+                <fullName>Query</fullName>
+                <default>false</default>
+                <label>Query</label>
+            </value>
+            <value>
+                <fullName>Refund Processed</fullName>
+                <default>false</default>
+                <label>Refund Processed</label>
+            </value>
+            <value>
+                <fullName>Add/Remove Authorised Contact</fullName>
+                <default>false</default>
+                <label>Add/Remove Authorised Contact</label>
+            </value>
+            <value>
+                <fullName>Change of Principal Details</fullName>
+                <default>false</default>
+                <label>Change of Principal Details</label>
+            </value>
+            <value>
+                <fullName>Bereavement</fullName>
+                <default>false</default>
+                <label>Bereavement</label>
+            </value>
+            <value>
+                <fullName>Cancellation Actioned</fullName>
+                <default>false</default>
+                <label>Cancellation Actioned</label>
+            </value>
+            <value>
+                <fullName>Account Closed in Error</fullName>
+                <default>false</default>
+                <label>Account Closed in Error</label>
+            </value>
+            <value>
+                <fullName>Cancellation Query</fullName>
+                <default>false</default>
+                <label>Cancellation Query</label>
+            </value>
+            <value>
+                <fullName>Stop Cancellation</fullName>
+                <default>false</default>
+                <label>Stop Cancellation</label>
+            </value>
+            <value>
+                <fullName>Contract Query</fullName>
+                <default>false</default>
+                <label>Contract Query</label>
+            </value>
+            <value>
+                <fullName>Rate Review</fullName>
+                <default>false</default>
+                <label>Rate Review</label>
+            </value>
+            <value>
+                <fullName>Become Compliant</fullName>
+                <default>false</default>
+                <label>Become Compliant</label>
+            </value>
+            <value>
+                <fullName>PCI Charge Query</fullName>
+                <default>false</default>
+                <label>PCI Charge Query</label>
+            </value>
+            <value>
+                <fullName>Pro-active Campaign June 21</fullName>
+                <default>false</default>
+                <label>Pro-active Campaign June 21</label>
+            </value>
+            <value>
+                <fullName>Reactivate &lt;30 days</fullName>
+                <default>false</default>
+                <label>Reactivate &lt;30 days</label>
+            </value>
+            <value>
+                <fullName>Reactivate &gt; 30 days</fullName>
+                <default>false</default>
+                <label>Reactivate &gt; 30 days</label>
+            </value>
+            <value>
+                <fullName>Welcome Call</fullName>
+                <default>false</default>
+                <label>Welcome Call</label>
+            </value>
+            <value>
+                <fullName>Charge Error</fullName>
+                <default>false</default>
+                <label>Charge Error</label>
+            </value>
+            <value>
+                <fullName>Seasonal Billing Holiday</fullName>
+                <default>false</default>
+                <label>Seasonal Billing Holiday</label>
+            </value>
+            <value>
+                <fullName>Statement Explanation</fullName>
+                <default>false</default>
+                <label>Statement Explanation</label>
+            </value>
+            <value>
+                <fullName>Direct Debit Query</fullName>
+                <default>false</default>
+                <label>Direct Debit Query</label>
+            </value>
+            <value>
+                <fullName>Explanation of Rate Increase</fullName>
+                <default>false</default>
+                <label>Explanation of Rate Increase</label>
+            </value>
+            <value>
+                <fullName>Arrears collected</fullName>
+                <default>false</default>
+                <label>Arrears collected</label>
+            </value>
+            <value>
+                <fullName>Payment plan</fullName>
+                <default>false</default>
+                <label>Payment plan</label>
+            </value>
+            <value>
+                <fullName>Payment taken</fullName>
+                <default>false</default>
+                <label>Payment taken</label>
+            </value>
+            <value>
+                <fullName>Promised to pay</fullName>
+                <default>false</default>
+                <label>Promised to pay</label>
+            </value>
+            <value>
+                <fullName>Query arrears</fullName>
+                <default>false</default>
+                <label>Query arrears</label>
+            </value>
+            <value>
+                <fullName>DD cancelled</fullName>
+                <default>false</default>
+                <label>DD cancelled</label>
+            </value>
+            <value>
+                <fullName>DD reinstated</fullName>
+                <default>false</default>
+                <label>DD reinstated</label>
+            </value>
+            <value>
+                <fullName>DD returned unpaid</fullName>
+                <default>false</default>
+                <label>DD returned unpaid</label>
+            </value>
+            <value>
+                <fullName>DD Set-Up Failure</fullName>
+                <default>false</default>
+                <label>DD Set-Up Failure</label>
+            </value>
+            <value>
+                <fullName>Payment taken and DD reinstated</fullName>
+                <default>false</default>
+                <label>Payment taken and DD reinstated</label>
+            </value>
+            <value>
+                <fullName>Callback arranged</fullName>
+                <default>false</default>
+                <label>Callback arranged</label>
+            </value>
+            <value>
+                <fullName>Call Dropped/Bad Line</fullName>
+                <default>false</default>
+                <label>Call Dropped/Bad Line</label>
+            </value>
+            <value>
+                <fullName>Data Issues</fullName>
+                <default>false</default>
+                <label>Data Issues</label>
+            </value>
+            <value>
+                <fullName>GDPR Request</fullName>
+                <default>false</default>
+                <label>GDPR Request</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Current World Customer Calling</fullName>
+                <default>false</default>
+                <label>Current World Customer Calling</label>
+            </value>
+            <value>
+                <fullName>Add/Remove Amex</fullName>
+                <default>false</default>
+                <label>Add/Remove Amex</label>
+            </value>
+            <value>
+                <fullName>Add/Remove CNP</fullName>
+                <default>false</default>
+                <label>Add/Remove CNP</label>
+            </value>
+            <value>
+                <fullName>Cashback Query</fullName>
+                <default>false</default>
+                <label>Cashback Query</label>
+            </value>
+            <value>
+                <fullName>CNP Explanation</fullName>
+                <default>false</default>
+                <label>CNP Explanation</label>
+            </value>
+            <value>
+                <fullName>CNP Not Working</fullName>
+                <default>false</default>
+                <label>CNP Not Working</label>
+            </value>
+            <value>
+                <fullName>How to Run a Z/EOD Report</fullName>
+                <default>false</default>
+                <label>How to Run a Z/EOD Report</label>
+            </value>
+            <value>
+                <fullName>Request Transaction Limit Increase</fullName>
+                <default>false</default>
+                <label>Request Transaction Limit Increase</label>
+            </value>
+            <value>
+                <fullName>Additional Card Machine Request</fullName>
+                <default>false</default>
+                <label>Additional Card Machine Request</label>
+            </value>
+            <value>
+                <fullName>Card Machine Closed in Error</fullName>
+                <default>false</default>
+                <label>Card Machine Closed in Error</label>
+            </value>
+            <value>
+                <fullName>Card Reader Issue</fullName>
+                <default>false</default>
+                <label>Card Reader Issue</label>
+            </value>
+            <value>
+                <fullName>Damaged/Stolen</fullName>
+                <default>false</default>
+                <label>Damaged/Stolen</label>
+            </value>
+            <value>
+                <fullName>Device/Base Power issue</fullName>
+                <default>false</default>
+                <label>Device/Base Power issue</label>
+            </value>
+            <value>
+                <fullName>Display Issue</fullName>
+                <default>false</default>
+                <label>Display Issue</label>
+            </value>
+            <value>
+                <fullName>Explanation of Contactless</fullName>
+                <default>false</default>
+                <label>Explanation of Contactless</label>
+            </value>
+            <value>
+                <fullName>How to Use</fullName>
+                <default>false</default>
+                <label>How to Use</label>
+            </value>
+            <value>
+                <fullName>Printer Issue</fullName>
+                <default>false</default>
+                <label>Printer Issue</label>
+            </value>
+            <value>
+                <fullName>Remove Card Machine</fullName>
+                <default>false</default>
+                <label>Remove Card Machine</label>
+            </value>
+            <value>
+                <fullName>Replacement Request</fullName>
+                <default>false</default>
+                <label>Replacement Request</label>
+            </value>
+            <value>
+                <fullName>Sim Connectivity</fullName>
+                <default>false</default>
+                <label>Sim Connectivity</label>
+            </value>
+            <value>
+                <fullName>Tamper Detected</fullName>
+                <default>false</default>
+                <label>Tamper Detected</label>
+            </value>
+            <value>
+                <fullName>Wifi Connectivity</fullName>
+                <default>false</default>
+                <label>Wifi Connectivity</label>
+            </value>
+            <value>
+                <fullName>Apple Pay / Google Pay Query</fullName>
+                <default>false</default>
+                <label>Apple Pay / Google Pay Query</label>
+            </value>
+            <value>
+                <fullName>Transactions Failing</fullName>
+                <default>false</default>
+                <label>Transactions Failing</label>
+            </value>
+            <value>
+                <fullName>Underwriting request</fullName>
+                <default>false</default>
+                <label>Underwriting request</label>
+            </value>
+            <value>
+                <fullName>Add Amex</fullName>
+                <default>false</default>
+                <label>Add Amex</label>
+            </value>
+            <value>
+                <fullName>Add Payment Links</fullName>
+                <default>false</default>
+                <label>Add Payment Links</label>
+            </value>
+            <value>
+                <fullName>Failed Link</fullName>
+                <default>false</default>
+                <label>Failed Link</label>
+            </value>
+            <value>
+                <fullName>Payment Link Query</fullName>
+                <default>false</default>
+                <label>Payment Link Query</label>
+            </value>
+            <value>
+                <fullName>Pre-Auth Query</fullName>
+                <default>false</default>
+                <label>Pre-Auth Query</label>
+            </value>
+            <value>
+                <fullName>Virtual Terminal Query</fullName>
+                <default>false</default>
+                <label>Virtual Terminal Query</label>
+            </value>
+            <value>
+                <fullName>Card Machine Set-Up Query</fullName>
+                <default>false</default>
+                <label>Card Machine Set-Up Query</label>
+            </value>
+            <value>
+                <fullName>What&apos;s my Activation Code?</fullName>
+                <default>false</default>
+                <label>What&apos;s my Activation Code?</label>
+            </value>
+            <value>
+                <fullName>What&apos;s my Supervisor Code?</fullName>
+                <default>false</default>
+                <label>What&apos;s my Supervisor Code?</label>
+            </value>
+            <value>
+                <fullName>Integration details requested</fullName>
+                <default>false</default>
+                <label>Integration details requested</label>
+            </value>
+            <value>
+                <fullName>Integration Issue</fullName>
+                <default>false</default>
+                <label>Integration Issue</label>
+            </value>
+            <value>
+                <fullName>Integration Status</fullName>
+                <default>false</default>
+                <label>Integration Status</label>
+            </value>
+            <value>
+                <fullName>Schedule Connect Set-Up</fullName>
+                <default>false</default>
+                <label>Schedule Connect Set-Up</label>
+            </value>
+            <value>
+                <fullName>Dojo Accessories Online Store Issue</fullName>
+                <default>false</default>
+                <label>Dojo Accessories Online Store Issue</label>
+            </value>
+            <value>
+                <fullName>Additional Parts Ordered</fullName>
+                <default>false</default>
+                <label>Additional Parts Ordered</label>
+            </value>
+            <value>
+                <fullName>Delivery Query</fullName>
+                <default>false</default>
+                <label>Delivery Query</label>
+            </value>
+            <value>
+                <fullName>Rearrange Delivery</fullName>
+                <default>false</default>
+                <label>Rearrange Delivery</label>
+            </value>
+            <value>
+                <fullName>Referral Payment Query</fullName>
+                <default>false</default>
+                <label>Referral Payment Query</label>
+            </value>
+            <value>
+                <fullName>AMEX Shop Small</fullName>
+                <default>false</default>
+                <label>AMEX Shop Small</label>
+            </value>
+            <value>
+                <fullName>How to Use/Link Resent</fullName>
+                <default>false</default>
+                <label>How to Use/Link Resent</label>
+            </value>
+            <value>
+                <fullName>Issues/Errors</fullName>
+                <default>false</default>
+                <label>Issues/Errors</label>
+            </value>
+            <value>
+                <fullName>Role/Permissions Query</fullName>
+                <default>false</default>
+                <label>Role/Permissions Query</label>
+            </value>
+            <value>
+                <fullName>Chargeback email sent</fullName>
+                <default>false</default>
+                <label>Chargeback email sent</label>
+            </value>
+            <value>
+                <fullName>Chargeback Query</fullName>
+                <default>false</default>
+                <label>Chargeback Query</label>
+            </value>
+            <value>
+                <fullName>Bank Error</fullName>
+                <default>false</default>
+                <label>Bank Error</label>
+            </value>
+            <value>
+                <fullName>Held Funds Query</fullName>
+                <default>false</default>
+                <label>Held Funds Query</label>
+            </value>
+            <value>
+                <fullName>Refund Error</fullName>
+                <default>false</default>
+                <label>Refund Error</label>
+            </value>
+            <value>
+                <fullName>Refund Query (Customer to Consumer)</fullName>
+                <default>false</default>
+                <label>Refund Query (Customer to Consumer)</label>
+            </value>
+            <value>
+                <fullName>Refund Query (Dojo to Customer)</fullName>
+                <default>false</default>
+                <label>Refund Query (Dojo to Customer)</label>
+            </value>
+            <value>
+                <fullName>Reversal</fullName>
+                <default>false</default>
+                <label>Reversal</label>
+            </value>
+            <value>
+                <fullName>Transaction Query</fullName>
+                <default>false</default>
+                <label>Transaction Query</label>
+            </value>
+            <value>
+                <fullName>Transfer Query</fullName>
+                <default>false</default>
+                <label>Transfer Query</label>
+            </value>
+            <value>
+                <fullName>Unclaimed Funds</fullName>
+                <default>false</default>
+                <label>Unclaimed Funds</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">ID sede: {{{Case.SC_LocationMID__c}}}<br />
+Nome della sede: {{{Case.SC_AccountName__c}}}<br />
+<br />
+Importante: Ultimo sollecito per il pagamento degli arretrati.<br />
+<br />
+Gentile {{{Recipient.Name}}},<br />
+<br />
+Abbiamo provato a contattarla ripetutamente a riguardo del pagamento degli arretrati sul suo account e per organizzare la restituzione del/dei POS.<br />
+<br />
+Il suo debito residuo ammonta a {{{Case.SC_CollectionsCurrentDebt__c}}}.<br />
+<br />
+Nel caso in cui sia ancora in possesso del/dei suo/i POS, il/i numero/i di serie è/sono:<br />
+{{{Case.SC_UncollectedCMIds__c}}}<br />
+<br />
+Se l'attrezzatura non verrà restituita, le sarà addebitato un costo di 214,72 € (176,00 € + IVA) per POS non ricevuto.<br />
+<br />
+La preghiamo di contattarci al più presto al numero +39 0240 130256. Le nostre linee telefoniche sono aperte dalle 8:00 alle 18:00, dal lunedì alla domenica.<br />
+<br />
+La mancata risoluzione di questi punti potrebbe risultare nel passaggio del debito contratto ad una Agenzia di Riscossione o in un'azione legale.<br />
+<br />
+Il team Dojo</body>
+</html>

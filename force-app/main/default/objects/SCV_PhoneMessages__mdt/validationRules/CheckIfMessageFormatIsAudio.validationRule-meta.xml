@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckIfMessageFormatIsAudio</fullName>
+    <active>false</active>
+    <description>Check non empty values according to the Message Format</description>
+    <errorConditionFormula>ISPICKVAL(MessageFormat__c, &quot;Audio (.wav)&quot;) &amp;&amp;  (ISBLANK(RecordedAudioFile__c) ||  
+(RecordedAudioFile__c == &quot;NA&quot;))</errorConditionFormula>
+    <errorDisplayField>RecordedAudioFile__c</errorDisplayField>
+    <errorMessage>A value for RecordedAudioFile__c is mandatory when Message Format is Audio (.wav)</errorMessage>
+</ValidationRule>

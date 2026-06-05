@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckMessageTextLength</fullName>
+    <active>false</active>
+    <description>Checking the length of messages, not to exceed 6000 characters, which is Amazon Connect Limit</description>
+    <errorConditionFormula>LEN(MessageText__c) &gt; 6000</errorConditionFormula>
+    <errorMessage>The text-to-speech length cannot exceed 6000 characters. You can find out more on https://docs.aws.amazon.com/connect/latest/adminguide/prompts.html</errorMessage>
+</ValidationRule>

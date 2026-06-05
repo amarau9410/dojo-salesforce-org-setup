@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team_Skill__c</fullName>
+    <description>The Team Skill that agents need to have to be allocated this Case. A picklist is required for skills mapping, a text field can&apos;t be used. Restrictions have not been enforced in order to always ensure the Case record is not blocked from being saved.</description>
+    <inlineHelpText>The Team Skill that agents need to have to be allocated this Case.</inlineHelpText>
+    <label>Team Skill</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case2L</fullName>
+                <default>false</default>
+                <label>2L</label>
+            </value>
+            <value>
+                <fullName>CaseBookingsOnboarding</fullName>
+                <default>false</default>
+                <label>Bookings Onboarding</label>
+            </value>
+            <value>
+                <fullName>CaseBusinessFunding</fullName>
+                <default>false</default>
+                <label>Business Funding</label>
+            </value>
+            <value>
+                <fullName>CaseChargebacks</fullName>
+                <default>false</default>
+                <label>Chargebacks</label>
+            </value>
+            <value>
+                <fullName>CaseCLE</fullName>
+                <default>false</default>
+                <label>CLE</label>
+            </value>
+            <value>
+                <fullName>CaseCollections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>CaseCreditRisk</fullName>
+                <default>false</default>
+                <label>Credit Risk</label>
+            </value>
+            <value>
+                <fullName>CaseDevSupport</fullName>
+                <default>false</default>
+                <label>Dev Support</label>
+            </value>
+            <value>
+                <fullName>CaseEnterpriseAccountManagement</fullName>
+                <default>false</default>
+                <label>Enterprise Account Management</label>
+            </value>
+            <value>
+                <fullName>CaseESBookings</fullName>
+                <default>false</default>
+                <label>ES - Bookings</label>
+            </value>
+            <value>
+                <fullName>CaseEscalatedRetentions</fullName>
+                <default>false</default>
+                <label>Escalated Retentions</label>
+            </value>
+            <value>
+                <fullName>CaseESCustomerService</fullName>
+                <default>false</default>
+                <label>ES Customer Service</label>
+            </value>
+            <value>
+                <fullName>ES_Escalated_Complaints_Approval_Request</fullName>
+                <default>false</default>
+                <label>ES Escalated Complaints Approval Request</label>
+            </value>
+            <value>
+                <fullName>CaseESEscalatedComplaints</fullName>
+                <default>false</default>
+                <label>ES Escalated Complaints Case</label>
+            </value>
+            <value>
+                <fullName>CaseFloorwalking</fullName>
+                <default>false</default>
+                <label>Floorwalking</label>
+            </value>
+            <value>
+                <fullName>CaseGBBookings</fullName>
+                <default>false</default>
+                <label>GB - Bookings</label>
+            </value>
+            <value>
+                <fullName>CaseGBCustomerService</fullName>
+                <default>false</default>
+                <label>GB Customer Service</label>
+            </value>
+            <value>
+                <fullName>CaseGBEscalatedComplaints</fullName>
+                <default>false</default>
+                <label>GB Escalated Complaints</label>
+            </value>
+            <value>
+                <fullName>GB_Escalated_Complaints_Approval_Request</fullName>
+                <default>false</default>
+                <label>GB Escalated Complaints Approval Request</label>
+            </value>
+            <value>
+                <fullName>CaseGDPR</fullName>
+                <default>false</default>
+                <label>GDPR</label>
+            </value>
+            <value>
+                <fullName>CaseIEBookings</fullName>
+                <default>false</default>
+                <label>IE - Bookings</label>
+            </value>
+            <value>
+                <fullName>CaseIECustomerService</fullName>
+                <default>false</default>
+                <label>IE Customer Service</label>
+            </value>
+            <value>
+                <fullName>IE_Escalated_Complaints_Approval_Request</fullName>
+                <default>false</default>
+                <label>IE Escalated Complaints Approval Request</label>
+            </value>
+            <value>
+                <fullName>CaseIEEscalatedComplaints</fullName>
+                <default>false</default>
+                <label>IE Escalated complaints Case</label>
+            </value>
+            <value>
+                <fullName>CaseIELoyalty</fullName>
+                <default>false</default>
+                <label>IE Loyalty - Case</label>
+            </value>
+            <value>
+                <fullName>CaseIntegrationOnboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>CaseIntegrations</fullName>
+                <default>false</default>
+                <label>Integrations</label>
+            </value>
+            <value>
+                <fullName>CaseITBookings</fullName>
+                <default>false</default>
+                <label>IT Bookings</label>
+            </value>
+            <value>
+                <fullName>CaseITCustomerService</fullName>
+                <default>false</default>
+                <label>IT Customer Service</label>
+            </value>
+            <value>
+                <fullName>CaseITEscalatedComplaints</fullName>
+                <default>false</default>
+                <label>IT Escalated Complaints</label>
+            </value>
+            <value>
+                <fullName>IT_Escalated_Complaints_Approval_Request</fullName>
+                <default>false</default>
+                <label>IT Escalated Complaints Approval Request</label>
+            </value>
+            <value>
+                <fullName>CaseKYC</fullName>
+                <default>false</default>
+                <label>KYC</label>
+            </value>
+            <value>
+                <fullName>CaseLogistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>CaseLogisticsEscalations</fullName>
+                <default>false</default>
+                <label>Logistics Escalations</label>
+            </value>
+            <value>
+                <fullName>CaseLoyalty</fullName>
+                <default>false</default>
+                <label>Loyalty</label>
+            </value>
+            <value>
+                <fullName>CasePartnerships</fullName>
+                <default>false</default>
+                <label>Partnerships</label>
+            </value>
+            <value>
+                <fullName>CasePartnerTechnology</fullName>
+                <default>false</default>
+                <label>Partner Technology</label>
+            </value>
+            <value>
+                <fullName>CasePlanningTeam</fullName>
+                <default>false</default>
+                <label>Planning Team</label>
+            </value>
+            <value>
+                <fullName>CaseProactive</fullName>
+                <default>false</default>
+                <label>Proactive</label>
+            </value>
+            <value>
+                <fullName>CaseProactiveCallBack</fullName>
+                <default>false</default>
+                <label>Proactive Call-Back</label>
+            </value>
+            <value>
+                <fullName>CaseProactiveNonFresh</fullName>
+                <default>false</default>
+                <label>Proactive Non-Fresh</label>
+            </value>
+            <value>
+                <fullName>CaseProactivePriority</fullName>
+                <default>false</default>
+                <label>Proactive Priority</label>
+            </value>
+            <value>
+                <fullName>CaseProactiveWelcomeCall</fullName>
+                <default>false</default>
+                <label>Proactive Welcome Call</label>
+            </value>
+            <value>
+                <fullName>CaseRiskMonitoring</fullName>
+                <default>false</default>
+                <label>Risk Monitoring</label>
+            </value>
+            <value>
+                <fullName>CaseSalesSupport</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>CaseTreasury</fullName>
+                <default>false</default>
+                <label>Treasury</label>
+            </value>
+            <value>
+                <fullName>CaseUnderwriting</fullName>
+                <default>false</default>
+                <label>Underwriting</label>
+            </value>
+            <value>
+                <fullName>CaseWelcomeCall</fullName>
+                <default>false</default>
+                <label>Welcome Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

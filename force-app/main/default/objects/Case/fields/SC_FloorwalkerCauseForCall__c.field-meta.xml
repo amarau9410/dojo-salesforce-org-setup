@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_FloorwalkerCauseForCall__c</fullName>
+    <description>Reason for contacting the floorwalker.</description>
+    <inlineHelpText>Specify the reason for the floorwalker call.</inlineHelpText>
+    <label>Floorwalker Cause For Call</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>fw_bereavement_query</fullName>
+                <default>false</default>
+                <label>Bereavement Query</label>
+            </value>
+            <value>
+                <fullName>fw_business_funding</fullName>
+                <default>true</default>
+                <label>Business Funding</label>
+            </value>
+            <value>
+                <fullName>fw_cancellation_rebate_query</fullName>
+                <default>false</default>
+                <label>Cancellation Rebate Query</label>
+            </value>
+            <value>
+                <fullName>fw_cancellation_rebate_approval</fullName>
+                <default>false</default>
+                <label>Cancellation Rebate Approval</label>
+            </value>
+            <value>
+                <fullName>fw_card_machine_features</fullName>
+                <default>false</default>
+                <label>Card Machine Features</label>
+            </value>
+            <value>
+                <fullName>fw_card_machine_troubleshooting</fullName>
+                <default>false</default>
+                <label>Card Machine Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>fw_cob_and_change_of_mcc</fullName>
+                <default>false</default>
+                <label>COB and Change of MCC</label>
+            </value>
+            <value>
+                <fullName>fw_cle_and_lad</fullName>
+                <default>false</default>
+                <label>CLE and LAD</label>
+            </value>
+            <value>
+                <fullName>fw_complaints</fullName>
+                <default>false</default>
+                <label>Complaints</label>
+            </value>
+            <value>
+                <fullName>fw_contact_changes</fullName>
+                <default>false</default>
+                <label>Contact Changes</label>
+            </value>
+            <value>
+                <fullName>fw_data_protection</fullName>
+                <default>false</default>
+                <label>Data Protection</label>
+            </value>
+            <value>
+                <fullName>fw_dojo_app</fullName>
+                <default>false</default>
+                <label>Dojo App</label>
+            </value>
+            <value>
+                <fullName>fw_enterprise_specific_processes</fullName>
+                <default>false</default>
+                <label>Enterprise Specific Process</label>
+            </value>
+            <value>
+                <fullName>fw_invoices_direct_debits</fullName>
+                <default>false</default>
+                <label>Invoices and Direct Debits</label>
+            </value>
+            <value>
+                <fullName>fw_logistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>fw_manager_escalation</fullName>
+                <default>false</default>
+                <label>Manager Escalation</label>
+            </value>
+            <value>
+                <fullName>fw_pricing</fullName>
+                <default>false</default>
+                <label>Pricing/Rates</label>
+            </value>
+            <value>
+                <fullName>fw_remote_payments</fullName>
+                <default>false</default>
+                <label>Remote Payments</label>
+            </value>
+            <value>
+                <fullName>fw_retentions</fullName>
+                <default>false</default>
+                <label>Retentions</label>
+            </value>
+            <value>
+                <fullName>fw_risk_escalation</fullName>
+                <default>false</default>
+                <label>Risk Escalation</label>
+            </value>
+            <value>
+                <fullName>fw_risk_process</fullName>
+                <default>false</default>
+                <label>Risk Process</label>
+            </value>
+            <value>
+                <fullName>fw_transfers</fullName>
+                <default>false</default>
+                <label>Transfers</label>
+            </value>
+            <value>
+                <fullName>fw_underwriting_escalation</fullName>
+                <default>false</default>
+                <label>Underwriting Escalation</label>
+            </value>
+            <value>
+                <fullName>fw_underwriting_process</fullName>
+                <default>false</default>
+                <label>Underwriting Process</label>
+            </value>
+            <value>
+                <fullName>fw_zendesk_tickets</fullName>
+                <default>false</default>
+                <label>Zendesk and Tickets</label>
+            </value>
+            <value>
+                <fullName>fw_approval</fullName>
+                <default>false</default>
+                <label>Approval (MUST SPECIFY IN NOTES)</label>
+            </value>
+            <value>
+                <fullName>fw_other</fullName>
+                <default>false</default>
+                <label>Other (MUST SPECIFY IN NOTES)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

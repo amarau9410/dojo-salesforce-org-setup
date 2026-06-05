@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CallUnsuccessful__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marks that a call attempt was made to the customer.</description>
+    <label>Call Unsuccessful</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

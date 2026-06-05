@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Case.Legal_Entity_Account__c,Flow:Set_Legal_Entity_Account_on_Case,FlexiPage:Legal_Entity_Record_Page</members>
+        <name>CustomField</name>
+    </types>
+    <version>66.0</version>
+</Package>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_AssetRequired__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to flag if the Termina (Asset) or Subscription is required from the Location account.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Asset Required</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PreviousCLEEntity__c</fullName>
+    <label>Previous CLE Entity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>cle_from_sole_trader</fullName>
+                <default>false</default>
+                <label>CLE from Sole Trader</label>
+            </value>
+            <value>
+                <fullName>cle_from_partnership</fullName>
+                <default>false</default>
+                <label>CLE from Partnership</label>
+            </value>
+            <value>
+                <fullName>cle_from_limited_company</fullName>
+                <default>false</default>
+                <label>CLE from Limited Company</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

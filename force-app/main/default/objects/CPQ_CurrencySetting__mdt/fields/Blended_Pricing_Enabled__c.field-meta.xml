@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blended_Pricing_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>DOJOP-6860</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Determines if the blended pricing model is enabled for a given market</inlineHelpText>
+    <label>Blended Pricing Enabled</label>
+    <type>Checkbox</type>
+</CustomField>

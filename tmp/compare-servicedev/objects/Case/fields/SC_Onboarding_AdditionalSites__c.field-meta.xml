@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_Onboarding_AdditionalSites__c</fullName>
+    <description>Additional sites involved in the onboarding process.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>List any additional sites for onboarding.</inlineHelpText>
+    <label>Onboarding - Additional Sites</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

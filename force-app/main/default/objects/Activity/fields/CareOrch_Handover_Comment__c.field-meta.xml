@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Handover_Comment__c</fullName>
+    <description>Brief handover information from the previous caregiver.</description>
+    <label>CareOrch Handover Comment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

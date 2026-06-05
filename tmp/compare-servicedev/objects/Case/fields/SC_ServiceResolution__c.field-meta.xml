@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ServiceResolution__c</fullName>
+    <description>Solution provided for a service issue.</description>
+    <inlineHelpText>Describe the resolution provided.</inlineHelpText>
+    <label>Service Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>service_resolution_gesture_of_goodwill</fullName>
+                <default>false</default>
+                <label>Gesture of Goodwill</label>
+            </value>
+            <value>
+                <fullName>service_resolution_rate_review__debit_rate</fullName>
+                <default>false</default>
+                <label>Rate Review::Debit Rate</label>
+            </value>
+            <value>
+                <fullName>service_resolution_rate_review__credit_rate</fullName>
+                <default>false</default>
+                <label>Rate Review::Credit Rate</label>
+            </value>
+            <value>
+                <fullName>service_resolution_rate_review__mmc</fullName>
+                <default>false</default>
+                <label>Rate Review::MMC</label>
+            </value>
+            <value>
+                <fullName>service_resolution_rate_review__auth_fee</fullName>
+                <default>false</default>
+                <label>Rate Review::Auth Fee</label>
+            </value>
+            <value>
+                <fullName>service_resolution_payment_holiday</fullName>
+                <default>false</default>
+                <label>Payment Holiday</label>
+            </value>
+            <value>
+                <fullName>service_resolution_passed_to_retentions</fullName>
+                <default>false</default>
+                <label>Passed to Retentions</label>
+            </value>
+            <value>
+                <fullName>service_resolution_business_funding</fullName>
+                <default>false</default>
+                <label>Business Funding</label>
+            </value>
+            <value>
+                <fullName>service_resolution_explanation</fullName>
+                <default>false</default>
+                <label>Explanation</label>
+            </value>
+            <value>
+                <fullName>service_resolution_free_additionals</fullName>
+                <default>false</default>
+                <label>Free Additional Card Machine</label>
+            </value>
+            <value>
+                <fullName>service_resolution_reduced_card_machine</fullName>
+                <default>false</default>
+                <label>Reduced Card Machine</label>
+            </value>
+            <value>
+                <fullName>service_resolution_invoice_waived</fullName>
+                <default>false</default>
+                <label>Invoice Waived</label>
+            </value>
+            <value>
+                <fullName>service_resolution_refund/credit</fullName>
+                <default>false</default>
+                <label>Refund/Credit</label>
+            </value>
+            <value>
+                <fullName>service_resolution_value_based_conversation</fullName>
+                <default>false</default>
+                <label>Value Based Conversation</label>
+            </value>
+            <value>
+                <fullName>service_resolution_n/a</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

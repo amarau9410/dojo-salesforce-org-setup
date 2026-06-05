@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ChargebackOutcome__c</fullName>
+    <description>Final result of the chargeback process.</description>
+    <inlineHelpText>Describe the outcome of the chargeback.</inlineHelpText>
+    <label>Chargeback Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>outcome_invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>outcome_net_transfer</fullName>
+                <default>false</default>
+                <label>Net Transfer</label>
+            </value>
+            <value>
+                <fullName>outcome_write_off</fullName>
+                <default>false</default>
+                <label>Write Off</label>
+            </value>
+            <value>
+                <fullName>outcome_successfully_defended</fullName>
+                <default>false</default>
+                <label>Successfully defended</label>
+            </value>
+            <value>
+                <fullName>outcome_funds_in_safeguarding_account_</fullName>
+                <default>false</default>
+                <label>Funds in Safeguarding account</label>
+            </value>
+            <value>
+                <fullName>outcome_no_action</fullName>
+                <default>false</default>
+                <label>No action</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

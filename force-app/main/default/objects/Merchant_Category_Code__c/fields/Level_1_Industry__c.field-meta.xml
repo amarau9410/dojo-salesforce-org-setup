@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_1_Industry__c</fullName>
+    <description>DOJOR-69 First level of industry specificity. Level 2 values dependent on  this value</description>
+    <inlineHelpText>First level of industry specificity. Level 2 values dependent on  this value</inlineHelpText>
+    <label>Level 1 Industry</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Industry</valueSetName>
+    </valueSet>
+</CustomField>

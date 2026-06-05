@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Defined_Number_routing_needs_a_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Routing_Type__c, &apos;Defined Number&apos;), ISBLANK( Outbound_Dialing_Number__c))</errorConditionFormula>
+    <errorMessage>Defined number routing requires a number</errorMessage>
+</ValidationRule>

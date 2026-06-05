@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Inspection_Result__c</fullName>
+    <label>Overall Inspection Result</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Pass</fullName><default>false</default><label>Pass</label></value>
+            <value><fullName>Fail</fullName><default>false</default><label>Fail</label></value>
+            <value><fullName>No Access</fullName><default>false</default><label>No Access</label></value>
+            <value><fullName>Visual External Only</fullName><default>false</default><label>Visual External Only</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

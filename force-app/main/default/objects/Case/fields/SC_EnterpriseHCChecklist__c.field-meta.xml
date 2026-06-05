@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_EnterpriseHCChecklist__c</fullName>
+    <description>Checklist for enterprise health checks.</description>
+    <inlineHelpText>List the items on the health check checklist.</inlineHelpText>
+    <label>Enterprise HC Checklist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>enterprise_hc_checklist_pci_compliant</fullName>
+                <default>false</default>
+                <label>PCI Compliant</label>
+            </value>
+            <value>
+                <fullName>enterprise_hc_checklist_using_app</fullName>
+                <default>false</default>
+                <label>Using App</label>
+            </value>
+            <value>
+                <fullName>enterprise_hc_checklist_using_integration</fullName>
+                <default>false</default>
+                <label>Using Integration</label>
+            </value>
+            <value>
+                <fullName>enterprise_hc_checklist_contacts_added</fullName>
+                <default>false</default>
+                <label>Contacts Added</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

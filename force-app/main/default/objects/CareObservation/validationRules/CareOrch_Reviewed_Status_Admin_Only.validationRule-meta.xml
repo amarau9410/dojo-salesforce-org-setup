@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Reviewed_Status_Admin_Only</fullName>
+    <active>true</active>
+    <description>Only authorised administrators can mark translations as reviewed.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Translation_Status__c),
+ISPICKVAL(Translation_Status__c, "Reviewed"),
+$Profile.Name &lt;&gt; "System Administrator"
+)</errorConditionFormula>
+    <errorDisplayField>Translation_Status__c</errorDisplayField>
+    <errorMessage>Only authorised administrators can update Translation Status to Reviewed.</errorMessage>
+</ValidationRule>

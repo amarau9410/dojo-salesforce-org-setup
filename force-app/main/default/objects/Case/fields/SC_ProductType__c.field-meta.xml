@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ProductType__c</fullName>
+    <description>Classification of the product.</description>
+    <inlineHelpText>Select the product type from the list.</inlineHelpText>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>tap_to_pay_on_iphone</fullName>
+                <default>false</default>
+                <label>Tap to Pay on IPhone</label>
+            </value>
+            <value>
+                <fullName>dojo_pocket_call</fullName>
+                <default>false</default>
+                <label>Dojo Pocket</label>
+            </value>
+            <value>
+                <fullName>dojo_bookings</fullName>
+                <default>false</default>
+                <label>Dojo Bookings</label>
+            </value>
+            <value>
+                <fullName>dojo_go/one</fullName>
+                <default>false</default>
+                <label>Dojo Go/One</label>
+            </value>
+            <value>
+                <fullName>dojo_wired</fullName>
+                <default>false</default>
+                <label>Dojo Wired</label>
+            </value>
+            <value>
+                <fullName>d4b_app</fullName>
+                <default>false</default>
+                <label>D4B App</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

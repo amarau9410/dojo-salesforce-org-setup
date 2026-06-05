@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SetGoogleIdAsSellerId__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Feature flag to turn on or off for getting seller ID from either Google ID or Federation ID.</description>
+    <inlineHelpText>Feature flag to turn on or off for getting seller ID from either Google ID or Federation ID.</inlineHelpText>
+    <label>Set Google ID as Seller ID</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

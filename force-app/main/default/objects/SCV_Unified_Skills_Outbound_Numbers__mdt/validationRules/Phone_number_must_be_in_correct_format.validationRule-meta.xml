@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_number_must_be_in_correct_format</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Routing_Type__c, &apos;Defined Number&apos;), 
+    NOT(
+        REGEX(
+            Outbound_Dialing_Number__c,
+            &quot;^\\+[1-9][0-9]{1,14}$&quot;
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Phone number must be in E.164 format - The phone number must start with + followed by 1-15 digits. There must be no spaces, hyphens, brackets, full stops, or commas.</errorMessage>
+</ValidationRule>

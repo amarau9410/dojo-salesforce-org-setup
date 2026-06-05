@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Contacted_Caregiver_Ids__c</fullName>
+    <description>Semicolon-separated user Id list of caregivers contacted for this shift.</description>
+    <label>CareOrch Contacted Caregiver Ids</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

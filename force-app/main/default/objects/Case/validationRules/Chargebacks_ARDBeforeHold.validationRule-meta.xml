@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargebacks_ARDBeforeHold</fullName>
+    <active>true</active>
+    <description>Certan scenarios for chargebacks to enforce ARD before putting on hold</description>
+    <errorConditionFormula>NOT($Permission.SC_BypassValidationRules)
+&amp;&amp;
+RecordType.DeveloperName = &quot;Chargebacks&quot;
+&amp;&amp;
+(ISPICKVAL (SC_ChargebacksScenario__c, &quot;Fraud SG&quot;) ||
+	ISPICKVAL (SC_ChargebacksScenario__c, &quot;Pre Compliance&quot;))
+&amp;&amp;
+ISBLANK( SC_ActionRequiredDateTime__c )
+&amp;&amp;
+ISCHANGED(Status)
+&amp;&amp; 
+CONTAINS(TEXT(Status), &quot;On Hold&quot;)</errorConditionFormula>
+    <errorMessage>Please set an Action Required Date before putting the case on hold.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Youlend_State__c</fullName>
+    <label>Youlend State</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>stage2incomplete</fullName>
+                <default>false</default>
+                <label>Stage 2 Incomplete</label>
+            </value>
+            <value>
+                <fullName>stage1rejected</fullName>
+                <default>false</default>
+                <label>Stage 1 Rejected</label>
+            </value>
+            <value>
+                <fullName>stage1submitted</fullName>
+                <default>false</default>
+                <label>Stage 1 Submitted</label>
+            </value>
+            <value>
+                <fullName>stage1incomplete</fullName>
+                <default>false</default>
+                <label>Stage 1 Incomplete</label>
+            </value>
+            <value>
+                <fullName>stage2rejected</fullName>
+                <default>false</default>
+                <label>Stage 2 Rejected</label>
+            </value>
+            <value>
+                <fullName>stage2submitted</fullName>
+                <default>false</default>
+                <label>Stage 2 Submitted</label>
+            </value>
+            <value>
+                <fullName>signuprequirementsnotmet</fullName>
+                <default>false</default>
+                <label>Sign Up Requirements not Met</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

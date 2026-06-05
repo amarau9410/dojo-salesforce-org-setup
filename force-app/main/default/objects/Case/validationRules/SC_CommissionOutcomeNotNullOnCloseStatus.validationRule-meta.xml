@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CommissionOutcomeNotNullOnCloseStatus</fullName>
+    <active>true</active>
+    <description>When attempting to Close the Case (Status) and Commission Outcome on Application Form is null</description>
+    <errorConditionFormula>AND(
+    SC_Record_Type_Formula__c=&quot;Sales Support&quot;,
+    ISPICKVAL(Type, &quot;Switcher Statement Review&quot;),
+    ISPICKVAL(Status, &quot;Closed&quot;), 
+    ISBLANK(SC_CommissionOutcome__c)
+)</errorConditionFormula>
+    <errorMessage>You must select a Commission Outcome on the corresponding Application Form to close this Case</errorMessage>
+</ValidationRule>

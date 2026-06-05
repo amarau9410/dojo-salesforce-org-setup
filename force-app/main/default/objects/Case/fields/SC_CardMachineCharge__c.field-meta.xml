@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CardMachineCharge__c</fullName>
+    <description>Amount to be charged to the customer for non returned or damaged card machines.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Amount to be charged to the customer for non returned or damaged card machines.</inlineHelpText>
+    <label>Card Machine Charge</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

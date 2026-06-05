@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AcquirerNameRequiredWhenOther</fullName>
+    <active>true</active>
+    <description>Requires Acquirer Name when Acquirer is Other for Sales Support cases. Honors SC_BypassValidationRules permission for approved bypass users.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &quot;SalesSupport&quot;,
+    ISPICKVAL(Acquirer__c, &quot;Other&quot;),
+    ISBLANK(AcquirerName__c),
+    NOT($Permission.SC_BypassValidationRules)
+)</errorConditionFormula>
+    <errorDisplayField>AcquirerName__c</errorDisplayField>
+    <errorMessage>Please provide the Acquirer Name as Other is selected</errorMessage>
+</ValidationRule>

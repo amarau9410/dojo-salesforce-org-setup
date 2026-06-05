@@ -1,0 +1,64 @@
+<template>
+    <!--
+    @description LWC template for displaying ID&V Data.
+    -->
+    <lightning-card>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+        <div class="slds-p-around_medium">
+            <template if:true={accountData.message}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                    <span class="slds-assistive-text">Error</span>
+                    <h2>{accountData.message}</h2>
+                </div>
+            </template>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer" if:false={accountData.message}>
+                <thead>
+                <tr class="slds-line-height_reset">
+                    <th scope="col">
+                        <div class="slds-truncate" title="ID&V Data">ID&V Data</div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="slds-hint-parent">
+                    <th scope="row">
+                        <div class="slds-truncate slds-text-title_bold" title="First 4 Digits on Account">First 4 Digits on Account</div>
+                        <div class="slds-truncate" title={accountData.first4Digits}>
+                            <lightning-formatted-text value={accountData.first4Digits}></lightning-formatted-text>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="slds-hint-parent">
+                    <th scope="row">
+                        <div class="slds-truncate slds-text-title_bold" title="Last Transaction on Location">Last Transaction on Location</div>
+                        <div class="slds-truncate" title={accountData.lastTransactionDate}>
+                            <lightning-formatted-text value={accountData.lastTransactionDate}></lightning-formatted-text>
+                        </div>
+                        <div class="slds-truncate">
+                            <lightning-formatted-url value={accountData.transactionsLink} label="Open transactions"></lightning-formatted-url>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="slds-hint-parent">
+                    <th scope="row">
+                        <div class="slds-truncate slds-text-title_bold" title="Last Month's Invoice Amount">Last Month's Invoice Amount</div>
+                        <div class="slds-truncate" title={accountData.lastMonthsInvoiceAmount}>
+                            <lightning-formatted-text value={accountData.lastMonthsInvoiceAmount}></lightning-formatted-text>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="slds-hint-parent">
+                    <th scope="row">
+                        <div class="slds-truncate slds-text-title_bold" title="Last Transfer Amount">Last Transfer Amount</div>
+                        <div class="slds-truncate" title={accountData.lastTransferAmount}>
+                            <lightning-formatted-text value={accountData.lastTransferAmount}></lightning-formatted-text>
+                        </div>
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>

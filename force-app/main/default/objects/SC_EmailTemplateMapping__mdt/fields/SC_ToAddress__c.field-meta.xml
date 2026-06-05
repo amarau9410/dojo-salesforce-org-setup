@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ToAddress__c</fullName>
+    <description>To Address of the incoming email</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>To Address</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

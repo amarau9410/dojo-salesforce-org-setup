@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_OutcomeRequiredOnClose</fullName>
+    <active>false</active>
+    <description>Checks that the Outcome is entered when closed on General Queries</description>
+    <errorConditionFormula>/*CS Only*/
+NOT($Permission.SC_BypassValidationRules) &amp;&amp; RecordType.DeveloperName =&quot;General_Queries&quot;&amp;&amp;
+TEXT(SC_Outcome__c)=&quot;&quot;
+&amp;&amp;TEXT(Status)=&quot;Closed&quot;
+&amp;&amp;
+ SC_CaseAutoclosed__c = false</errorConditionFormula>
+    <errorDisplayField>SC_Outcome__c</errorDisplayField>
+    <errorMessage>Please select an Outcome reason.</errorMessage>
+</ValidationRule>

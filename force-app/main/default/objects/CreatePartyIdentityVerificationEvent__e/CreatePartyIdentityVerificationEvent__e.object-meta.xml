@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Creates a new Party Identity Verification record if the option is changed. (Possible options: Onfido, Manual)</description>
+    <eventType>HighVolume</eventType>
+    <label>Create Party Identity Verification Event</label>
+    <pluralLabel>Create Party Identity Verification Event</pluralLabel>
+    <publishBehavior>PublishImmediately</publishBehavior>
+</CustomObject>

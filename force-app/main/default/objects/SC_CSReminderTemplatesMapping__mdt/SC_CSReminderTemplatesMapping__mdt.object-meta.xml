@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Customer Service 3 and 5 days reminder email templates mapping to markets.</description>
+    <label>SC CS Reminder Templates Mapping</label>
+    <pluralLabel>SC CS Reminder Templates Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

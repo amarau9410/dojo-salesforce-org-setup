@@ -1,0 +1,6 @@
+Name|type=string|required=True|defaulted=False
+ActionPlanTemplateId|type=reference|required=True|defaulted=False
+Version|type=int|required=False|defaulted=True
+Status|type=picklist|required=False|defaulted=True
+ActivationDateTime|type=datetime|required=False|defaulted=False
+InactivationDateTime|type=datetime|required=False|defaulted=False

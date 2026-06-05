@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_EnterpriseTypeofContact__c</fullName>
+    <description>Classification of the contact within the enterprise.</description>
+    <inlineHelpText>Select the type of contact from the list.</inlineHelpText>
+    <label>Enterprise Type of Contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>enterprise_type_of_contact_proactive</fullName>
+                <default>false</default>
+                <label>Proactive</label>
+            </value>
+            <value>
+                <fullName>enterprise_type_of_contact_reactive</fullName>
+                <default>false</default>
+                <label>Reactive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

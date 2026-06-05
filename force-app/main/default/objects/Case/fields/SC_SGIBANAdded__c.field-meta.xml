@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_SGIBANAdded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the SG IBAN was added.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if added; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>SG IBAN Added</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

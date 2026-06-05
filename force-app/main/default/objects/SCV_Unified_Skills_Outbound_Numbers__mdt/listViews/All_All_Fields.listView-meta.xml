@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_All_Fields</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Outbound_Dialing_Number__c</columns>
+    <columns>Routing_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All (All Fields)</label>
+    <language>en_GB</language>
+</ListView>

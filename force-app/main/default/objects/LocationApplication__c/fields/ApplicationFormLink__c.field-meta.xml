@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApplicationFormLink__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot;+ Location_Application_Form_Id__c,    LocationId__r.ApplicationFormId__r.Name , &apos;_self&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Manage Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

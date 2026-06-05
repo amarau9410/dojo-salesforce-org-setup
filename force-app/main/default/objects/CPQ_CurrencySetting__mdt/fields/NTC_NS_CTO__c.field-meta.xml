@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NTC_NS_CTO__c</fullName>
+    <description>DOJOP-13493</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>stamped onto this markets quotes - any no switcher or new to card deal will use this CTO when matching cpq costs</inlineHelpText>
+    <label>NTC/NS CTO</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

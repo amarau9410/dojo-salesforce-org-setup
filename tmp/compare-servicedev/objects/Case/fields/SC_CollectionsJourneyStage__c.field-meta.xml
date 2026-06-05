@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CollectionsJourneyStage__c</fullName>
+    <description>Current phase of the collections process.</description>
+    <inlineHelpText>Specify the stage of the collections journey.</inlineHelpText>
+    <label>Collections Journey Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>final_email_1</fullName>
+                <default>false</default>
+                <label>Final email 1</label>
+            </value>
+            <value>
+                <fullName>final_call_1</fullName>
+                <default>false</default>
+                <label>Final call 1</label>
+            </value>
+            <value>
+                <fullName>final_call_2</fullName>
+                <default>false</default>
+                <label>Final call 2</label>
+            </value>
+            <value>
+                <fullName>final_email_2</fullName>
+                <default>false</default>
+                <label>Final email 2</label>
+            </value>
+            <value>
+                <fullName>final_call_3</fullName>
+                <default>false</default>
+                <label>Final call 3</label>
+            </value>
+            <value>
+                <fullName>final_call_4</fullName>
+                <default>false</default>
+                <label>Final call 4</label>
+            </value>
+            <value>
+                <fullName>final_call_5</fullName>
+                <default>false</default>
+                <label>Final call 5</label>
+            </value>
+            <value>
+                <fullName>final_letter</fullName>
+                <default>false</default>
+                <label>Final letter</label>
+            </value>
+            <value>
+                <fullName>final_dca</fullName>
+                <default>false</default>
+                <label>Final DCA</label>
+            </value>
+            <value>
+                <fullName>final_write-off</fullName>
+                <default>false</default>
+                <label>Final write-off</label>
+            </value>
+            <value>
+                <fullName>legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Pending Debt Collection Submission</fullName>
+                <default>false</default>
+                <label>Pending Debt Collection Submission</label>
+            </value>
+            <value>
+                <fullName>Pending Legal Action Submission</fullName>
+                <default>false</default>
+                <label>Pending Legal Action Submission</label>
+            </value>
+            <value>
+                <fullName>Awaiting Debt Collection Assessment</fullName>
+                <default>false</default>
+                <label>Awaiting Debt Collection Assessment</label>
+            </value>
+            <value>
+                <fullName>Awaiting Legal Action Assessment</fullName>
+                <default>false</default>
+                <label>Awaiting Legal Action Assessment</label>
+            </value>
+            <value>
+                <fullName>Awaiting Write Off</fullName>
+                <default>false</default>
+                <label>Awaiting Write Off</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Industry</label>
+    <referenceTo>Merchant_Category_Code__c</referenceTo>
+    <relationshipName>Industry_Segments</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

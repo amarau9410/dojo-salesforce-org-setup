@@ -1,0 +1,134 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T14:55:05.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T14:55:04.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "componentType": "CustomTab",
+          "created": false,
+          "createdDate": "2026-05-27T14:55:04.000Z",
+          "deleted": false,
+          "fileName": "tabs/HealthCloudGA__EHR_Observation__c.tab",
+          "fullName": "HealthCloudGA__EHR_Observation__c",
+          "problem": "In field: fullName - no CustomObject named HealthCloudGA__EHR_Observation__c found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "CustomApplication",
+          "created": false,
+          "createdDate": "2026-05-27T14:55:04.000Z",
+          "deleted": false,
+          "fileName": "applications/CareOrch.app",
+          "fullName": "CareOrch",
+          "problem": "In field: tab - no CustomTab named HealthCloudGA__EHR_Observation__c found",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomTab",
+          "created": true,
+          "createdDate": "2026-05-27T14:55:05.000Z",
+          "deleted": false,
+          "fileName": "tabs/careOrchCarerWorkspace.tab",
+          "fullName": "careOrchCarerWorkspace",
+          "id": "01rQ100001qs60LIAQ",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T14:55:05.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Floor_Carer.permissionset",
+          "fullName": "CareOrch_Floor_Carer",
+          "id": "0PSQ1000005QerlOAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T14:55:05.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWuKVKA1",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T14:55:05.000Z",
+    "numberComponentErrors": 2,
+    "numberComponentsDeployed": 2,
+    "numberComponentsTotal": 4,
+    "numberFiles": "8",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T14:55:04.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 2419,
+    "files": [
+      {
+        "fullName": "CareOrch",
+        "type": "CustomApplication",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\applications\\CareOrch.app-meta.xml",
+        "error": "In field: tab - no CustomTab named HealthCloudGA__EHR_Observation__c found"
+      },
+      {
+        "fullName": "HealthCloudGA__EHR_Observation__c",
+        "type": "CustomTab",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\tabs\\HealthCloudGA__EHR_Observation__c.tab-meta.xml",
+        "error": "In field: fullName - no CustomObject named HealthCloudGA__EHR_Observation__c found"
+      },
+      {
+        "fullName": "careOrchCarerWorkspace",
+        "type": "CustomTab",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\tabs\\careOrchCarerWorkspace.tab-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Floor_Carer",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Floor_Carer.permissionset-meta.xml"
+      }
+    ],
+    "zipFileCount": 5,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWuKVKA1%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

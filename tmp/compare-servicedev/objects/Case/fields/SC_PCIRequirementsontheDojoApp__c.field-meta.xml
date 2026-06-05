@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PCIRequirementsontheDojoApp__c</fullName>
+    <description>Compliance requirements for the Dojo app.</description>
+    <inlineHelpText>Indicate if PCI requirements are met.</inlineHelpText>
+    <label>PCI Requirements on the Dojo App</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>were_you_made_aware_of_your_pci_requirements_and_how_to_do_this_on_the_app_yes</fullName>
+                <default>false</default>
+                <label>Yes and completed</label>
+            </value>
+            <value>
+                <fullName>were_you_made_aware_of_your_pci_requirements_and_how_to_do_this_on_the_app_no</fullName>
+                <default>false</default>
+                <label>Yes but not done</label>
+            </value>
+            <value>
+                <fullName>no__but_completed</fullName>
+                <default>false</default>
+                <label>no__but_completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

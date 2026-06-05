@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_DojoIssuingFeedback__c</fullName>
+    <description>Feedback related to Dojo services.</description>
+    <inlineHelpText>Enter feedback about Dojo services.</inlineHelpText>
+    <label>Dojo Issuing Feedback</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>loyalty_dj_issuing_discount_is_too_small</fullName>
+                <default>false</default>
+                <label>Discount is too small</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_already_have_a_similar_product</fullName>
+                <default>false</default>
+                <label>Already have a similar product</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_do_not_wish_to_be_apart_of_a_trial</fullName>
+                <default>false</default>
+                <label>Do not wish to be apart of a trial</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_too_complicated_/_didn_t_understand</fullName>
+                <default>false</default>
+                <label>Too complicated / didn&apos;t understand</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_would_cause_accounting_complications</fullName>
+                <default>false</default>
+                <label>Would cause accounting complications</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_only_use_bank_transfers</fullName>
+                <default>false</default>
+                <label>Only use bank transfers</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_not_interested_in_a_prepaid_card_only_debit_or_credit</fullName>
+                <default>false</default>
+                <label>Not interested in a prepaid card only debit or credit</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_no_direct_debit_functionality</fullName>
+                <default>false</default>
+                <label>No direct debit functionality</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_would_need_multiple_cards_at_multiple_sites</fullName>
+                <default>false</default>
+                <label>Would need multiple cards at multiple sites</label>
+            </value>
+            <value>
+                <fullName>loyalty_dj_issuing_business_bank_transfer_fees</fullName>
+                <default>false</default>
+                <label>Business bank transfer fees</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HasDojoSubscription__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If yes, location has Dojo Bookings (RMS) as assigned.</description>
+    <inlineHelpText>If yes, location has Dojo Bookings (RMS) as assigned.</inlineHelpText>
+    <label>Has Dojo Bookings</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

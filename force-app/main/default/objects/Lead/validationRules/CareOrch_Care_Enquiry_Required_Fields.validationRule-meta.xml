@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Care_Enquiry_Required_Fields</fullName>
+    <active>true</active>
+    <description>Require baseline qualification data when Care Enquiry leads progress beyond Inquiry.</description>
+    <errorConditionFormula>AND(
+$RecordType.Name = 'Care Enquiry',
+ISCHANGED(Status),
+NOT(
+OR(
+ISPICKVAL(Status, 'Inquiry'),
+ISPICKVAL(Status, 'Closed - Not Admitted')
+)
+),
+OR(
+ISBLANK(TEXT(CareOrch_Enquiry_Source__c)),
+ISBLANK(TEXT(CareOrch_Funding_Type__c)),
+ISBLANK(TEXT(CareOrch_Requested_Care_Type__c)),
+ISBLANK(CareOrch_Target_Admission_Date__c),
+ISBLANK(CareOrch_Medical_Conditions__c),
+ISBLANK(CareOrch_Care_Needs__c),
+ISBLANK(CareOrch_Dietary_Needs__c),
+ISBLANK(CareOrch_Contact_Information__c)
+)
+)</errorConditionFormula>
+    <errorDisplayField>CareOrch_Enquiry_Source__c</errorDisplayField>
+    <errorMessage>Complete enquiry source, medical conditions, care needs, dietary needs, contact information, funding type, requested care type, and target admission date before progressing beyond Inquiry.</errorMessage>
+</ValidationRule>

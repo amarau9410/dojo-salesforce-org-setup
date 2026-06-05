@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CareOrch mobile-first clinical workspace app.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>CareOrch</label>
+    <navType>Standard</navType>
+    <tabs>careOrchCarerWorkspace</tabs>
+    <tabs>careOrchIncidentLogger</tabs>
+    <tabs>careOrchShiftInbox</tabs>
+    <tabs>careOrchMyCalendar</tabs>
+    <tabs>careOrchManagerCockpit</tabs>
+    <tabs>Critical_Event__c</tabs>
+    <tabs>Communication_Log__c</tabs>
+    <tabs>Shift_Lifecycle__c</tabs>
+    <tabs>CareOrch_SLA_Threshold__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-CareObservation</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>standard-ActionPlan</tabs>
+    <tabs>standard-Report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

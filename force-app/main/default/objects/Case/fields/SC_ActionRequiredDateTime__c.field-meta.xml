@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ActionRequiredDateTime__c</fullName>
+    <description>Deadline for required actions to be completed.</description>
+    <inlineHelpText>Enter the deadline date and time in the format DD/MM/YYYY HH:MM.</inlineHelpText>
+    <label>Action Required Date/Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

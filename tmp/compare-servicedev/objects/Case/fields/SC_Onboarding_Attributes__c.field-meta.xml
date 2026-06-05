@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_Onboarding_Attributes__c</fullName>
+    <description>Characteristics or features of the onboarding process.</description>
+    <inlineHelpText>List the attributes of the onboarding process.</inlineHelpText>
+    <label>Onboarding - Attributes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pci_compliance_completed</fullName>
+                <default>false</default>
+                <label>PCI compliance completed</label>
+            </value>
+            <value>
+                <fullName>contacts_added</fullName>
+                <default>false</default>
+                <label>Contacts added</label>
+            </value>
+            <value>
+                <fullName>app_downloaded</fullName>
+                <default>false</default>
+                <label>App downloaded</label>
+            </value>
+            <value>
+                <fullName>app_training_delivered</fullName>
+                <default>false</default>
+                <label>App training delivered</label>
+            </value>
+            <value>
+                <fullName>integration_complete</fullName>
+                <default>false</default>
+                <label>Integration complete</label>
+            </value>
+            <value>
+                <fullName>first_bill_checkpoint</fullName>
+                <default>false</default>
+                <label>First bill checkpoint</label>
+            </value>
+            <value>
+                <fullName>check_in</fullName>
+                <default>false</default>
+                <label>Check in</label>
+            </value>
+            <value>
+                <fullName>direct_amex</fullName>
+                <default>false</default>
+                <label>Direct Amex</label>
+            </value>
+            <value>
+                <fullName>limit_increase</fullName>
+                <default>false</default>
+                <label>Limit Increase</label>
+            </value>
+            <value>
+                <fullName>7am_banking_window</fullName>
+                <default>false</default>
+                <label>7am banking window</label>
+            </value>
+            <value>
+                <fullName>product_trial</fullName>
+                <default>false</default>
+                <label>Product trial</label>
+            </value>
+            <value>
+                <fullName>rate_amendments</fullName>
+                <default>false</default>
+                <label>rate amendments</label>
+            </value>
+            <value>
+                <fullName>card_machine_charges/fee_freeze</fullName>
+                <default>false</default>
+                <label>card machine charges/fee freeze</label>
+            </value>
+            <value>
+                <fullName>consolidated_billing</fullName>
+                <default>false</default>
+                <label>Consolidated billing</label>
+            </value>
+            <value>
+                <fullName>ps_to_dojo_switcher</fullName>
+                <default>false</default>
+                <label>PS to Dojo switcher</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

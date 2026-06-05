@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CaseReasonHandlingType__c</fullName>
+    <description>This field determines the action to be taken when the case reason is logged or changed. It specifies whether to update the existing case, create a new parent or child case, or create a separate orphaned case.</description>
+    <inlineHelpText>&quot;Select an option to define how changes to the case reason should be handled:
+
+&apos;Update Existing Case&apos;: Modify the current case with the new reason.
+&apos;Create New Parent Case&apos;: Initiate a new parent case with the updated reason.
+&apos;Create New Child Case&apos;: Generate a new child case under the current case.
+&apos;Create Separate Orphaned Case&apos;: Start a new, independent case with no parent-child relationship.</inlineHelpText>
+    <label>Case Reason Handling Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Update</fullName>
+                <default>false</default>
+                <label>Update</label>
+            </value>
+            <value>
+                <fullName>Child</fullName>
+                <default>false</default>
+                <label>Child</label>
+            </value>
+            <value>
+                <fullName>Parent</fullName>
+                <default>false</default>
+                <label>Parent</label>
+            </value>
+            <value>
+                <fullName>Orphaned</fullName>
+                <default>false</default>
+                <label>Orphaned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

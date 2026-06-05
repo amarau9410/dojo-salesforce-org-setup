@@ -1,0 +1,469 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef1",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 01",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "756301532461454",
+      "Market_Id__c": "IE",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef1",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 01",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "202017110912813",
+            "ExternalPcId__c": "masked.pc.01@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "GBP"
+          },
+          {
+            "attributes": {
+              "referenceId": "LocationRef3",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 03",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "425213222124329",
+            "ExternalPcId__c": "masked.pc.03@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef2",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 02",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "415140720114514",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef2",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 02",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "715518592307810",
+            "ExternalPcId__c": "masked.pc.02@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef3",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 03",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "222620028237193",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef4",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 04",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "118222944114163",
+            "ExternalPcId__c": "masked.pc.04@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef4",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 04",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "211197233189173",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef5",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 05",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "618510721476127",
+            "ExternalPcId__c": "masked.pc.05@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef5",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 05",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "684461413982239",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef6",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 06",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "202014189951806",
+            "ExternalPcId__c": "masked.pc.06@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef6",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 06",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "287214237206223",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef7",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 07",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "110778341964888",
+            "ExternalPcId__c": "masked.pc.07@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef7",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 07",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "713684172621053",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef8",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 08",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "421588651421526",
+            "ExternalPcId__c": "masked.pc.08@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef8",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 08",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "120023022254889",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef9",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 09",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "713619123475191",
+            "ExternalPcId__c": "masked.pc.09@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef9",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 09",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "202010323574165",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef10",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 10",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "120922109116236",
+            "ExternalPcId__c": "masked.pc.10@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef10",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 10",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "225532794155771",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef11",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 11",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "417711450182711",
+            "ExternalPcId__c": "masked.pc.11@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          },
+          {
+            "attributes": {
+              "referenceId": "LocationRef12",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 12",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "416417160183251",
+            "ExternalPcId__c": "masked.pc.12@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef11",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 11",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "611318220315326",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef13",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 13",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "712716514918812",
+            "ExternalPcId__c": "masked.pc.13@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef12",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 12",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "202034248140175",
+      "Market_Id__c": "GB",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef14",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 14",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "219621221611916",
+            "ExternalPcId__c": "masked.pc.14@dojo.tech.training",
+            "Market_Id__c": "GB",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef13",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 13",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "414319456205156",
+      "Market_Id__c": "IE",
+      "CurrencyIsoCode": "GBP",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef15",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 15",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "410730156127231",
+            "ExternalPcId__c": "masked.pc.15@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "GBP"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef14",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 14",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "186161122691021",
+      "Market_Id__c": "IE",
+      "CurrencyIsoCode": "EUR",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef16",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 16",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "715617034502051",
+            "ExternalPcId__c": "masked.pc.16@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "EUR"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "referenceId": "LegalEntityRef15",
+        "type": "Account"
+      },
+      "Name": "Training IDV Legal Entity 15",
+      "RecordTypeId": "012Q5000001u7eAIAQ",
+      "ExternalCustomerId__c": "422228171233155",
+      "Market_Id__c": "IE",
+      "CurrencyIsoCode": "EUR",
+      "ChildAccounts": {
+        "records": [
+          {
+            "attributes": {
+              "referenceId": "LocationRef17",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 17",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "202014194177140",
+            "ExternalPcId__c": "masked.pc.17@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "EUR"
+          },
+          {
+            "attributes": {
+              "referenceId": "LocationRef18",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 18",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "417742216153142",
+            "ExternalPcId__c": "masked.pc.18@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "EUR"
+          },
+          {
+            "attributes": {
+              "referenceId": "LocationRef19",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 19",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "452108762472086",
+            "ExternalPcId__c": "masked.pc.19@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "EUR"
+          },
+          {
+            "attributes": {
+              "referenceId": "LocationRef20",
+              "type": "Account"
+            },
+            "Name": "Training IDV Location 20",
+            "RecordTypeId": "012Q5000001u7eBIAQ",
+            "ExternalLocationId__c": "758153699798147",
+            "ExternalPcId__c": "masked.pc.20@dojo.tech.training",
+            "Market_Id__c": "IE",
+            "CurrencyIsoCode": "EUR"
+          }
+        ]
+      }
+    }
+  ]
+}

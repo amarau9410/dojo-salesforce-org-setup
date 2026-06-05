@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Support experience site base url for survey opt out link</description>
+    <label>SC Support Site Base URL</label>
+    <pluralLabel>SC Support Site Base URLs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

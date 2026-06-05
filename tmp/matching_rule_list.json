@@ -1,0 +1,58 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005d3000002xIMLAA2",
+      "createdByName": "Additional User",
+      "createdDate": "2026-04-28T10:27:21.000Z",
+      "fileName": "matchingRules/Lead.matchingRule",
+      "fullName": "Lead.Standard_Lead_Match_Rule_v1_0",
+      "id": "0JDd30000019GWQGA2",
+      "lastModifiedById": "005d3000002xIMLAA2",
+      "lastModifiedByName": "Additional User",
+      "lastModifiedDate": "2026-04-28T10:27:21.000Z",
+      "manageableState": "unmanaged",
+      "type": "MatchingRule"
+    },
+    {
+      "createdById": "005d3000002xIMLAA2",
+      "createdByName": "Additional User",
+      "createdDate": "2026-04-28T10:27:21.000Z",
+      "fileName": "matchingRules/Contact.matchingRule",
+      "fullName": "Contact.Standard_Contact_Match_Rule_v1_1",
+      "id": "0JDd30000019GWPGA2",
+      "lastModifiedById": "005d3000002xIMLAA2",
+      "lastModifiedByName": "Additional User",
+      "lastModifiedDate": "2026-04-28T10:27:21.000Z",
+      "manageableState": "unmanaged",
+      "type": "MatchingRule"
+    },
+    {
+      "createdById": "005d3000002xIMLAA2",
+      "createdByName": "Additional User",
+      "createdDate": "2026-04-28T10:27:21.000Z",
+      "fileName": "matchingRules/Account.matchingRule",
+      "fullName": "Account.Standard_Account_Match_Rule_v1_0",
+      "id": "0JDd30000019GWRGA2",
+      "lastModifiedById": "005d3000002xIMLAA2",
+      "lastModifiedByName": "Additional User",
+      "lastModifiedDate": "2026-04-28T10:27:21.000Z",
+      "manageableState": "unmanaged",
+      "type": "MatchingRule"
+    },
+    {
+      "createdById": "005d3000002xIMMAA2",
+      "createdByName": "Automated Process",
+      "createdDate": "2026-05-21T10:39:35.000Z",
+      "fileName": "matchingRules/Account.matchingRule",
+      "fullName": "Account.Standard_PersonAccount_Match_Rule_v1_0",
+      "id": "0JDQ100000247PxOAI",
+      "lastModifiedById": "005d3000002x7IyAAI",
+      "lastModifiedByName": "Nnamdi Udoye",
+      "lastModifiedDate": "2026-05-21T10:39:37.000Z",
+      "manageableState": "unmanaged",
+      "type": "MatchingRule"
+    }
+  ],
+  "warnings": []
+}

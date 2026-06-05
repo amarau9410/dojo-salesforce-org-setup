@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ChargebackDisputeType__c</fullName>
+    <description>Type of dispute related to a chargeback.</description>
+    <inlineHelpText>Select the dispute type from the options provided.</inlineHelpText>
+    <label>Chargeback Dispute Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>chargeback_-_dispute_type_chargeback</fullName>
+                <default>false</default>
+                <label>Chargeback</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_type_chargeback_reversal</fullName>
+                <default>false</default>
+                <label>Chargeback Reversal</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_type_good_faith</fullName>
+                <default>false</default>
+                <label>Good Faith</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_type_pre_compliance</fullName>
+                <default>false</default>
+                <label>Pre Compliance</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_type_retrieval_request</fullName>
+                <default>false</default>
+                <label>Retrieval Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

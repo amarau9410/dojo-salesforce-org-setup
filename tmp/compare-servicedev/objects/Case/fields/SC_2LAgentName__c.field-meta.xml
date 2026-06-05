@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_2LAgentName__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Name of the second-level support agent.</description>
+    <inlineHelpText>Enter the name of the 2L agent.</inlineHelpText>
+    <label>2L Agent Name</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>2L Agent</relationshipLabel>
+    <relationshipName>X2L_Agent</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Critical_Event_Taxonomy__c</fullName>
+    <externalId>false</externalId>
+    <label>Critical Event Taxonomy</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fall</fullName>
+                <default>true</default>
+                <label>Fall</label>
+            </value>
+            <value>
+                <fullName>Medication Error</fullName>
+                <default>false</default>
+                <label>Medication Error</label>
+            </value>
+            <value>
+                <fullName>Serious Injury</fullName>
+                <default>false</default>
+                <label>Serious Injury</label>
+            </value>
+            <value>
+                <fullName>Elopement / Missing Resident</fullName>
+                <default>false</default>
+                <label>Elopement / Missing Resident</label>
+            </value>
+            <value>
+                <fullName>Resident-to-Resident Altercation</fullName>
+                <default>false</default>
+                <label>Resident-to-Resident Altercation</label>
+            </value>
+            <value>
+                <fullName>Choking Incident</fullName>
+                <default>false</default>
+                <label>Choking Incident</label>
+            </value>
+            <value>
+                <fullName>Unresponsive / Loss of Consciousness</fullName>
+                <default>false</default>
+                <label>Unresponsive / Loss of Consciousness</label>
+            </value>
+            <value>
+                <fullName>Sudden Clinical Deterioration</fullName>
+                <default>false</default>
+                <label>Sudden Clinical Deterioration</label>
+            </value>
+            <value>
+                <fullName>Skin Integrity Failure (Severe Pressure Ulcer)</fullName>
+                <default>false</default>
+                <label>Skin Integrity Failure (Severe Pressure Ulcer)</label>
+            </value>
+            <value>
+                <fullName>Unexplained Injury</fullName>
+                <default>false</default>
+                <label>Unexplained Injury</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

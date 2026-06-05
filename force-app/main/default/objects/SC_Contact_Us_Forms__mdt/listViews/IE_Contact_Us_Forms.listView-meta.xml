@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IE_Contact_Us_Forms</fullName>
+    <columns>MasterLabel</columns>
+    <columns>Contact_Us_Form_Types__c</columns>
+    <columns>Market__c</columns>
+    <columns>IsActive__c</columns>
+    <columns>LWC_Component_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MasterLabel</field>
+        <operation>contains</operation>
+        <value>IE</value>
+    </filters>
+    <label>IE Contact Us Forms</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_IsCBKDataComplete__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is CBK Data Complete.</description>
+    <inlineHelpText>Is CBK Data Complete.</inlineHelpText>
+    <label>Is CBK Data Complete</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_SocialMediaResolution__c</fullName>
+    <description>Solution provided for a social media issue.</description>
+    <inlineHelpText>Describe the resolution provided.</inlineHelpText>
+    <label>Social Media Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>none_required</fullName>
+                <default>false</default>
+                <label>None Required</label>
+            </value>
+            <value>
+                <fullName>resolved__public_response</fullName>
+                <default>false</default>
+                <label>Resolved::Public Response</label>
+            </value>
+            <value>
+                <fullName>resolved__private_message</fullName>
+                <default>false</default>
+                <label>Resolved::Private Message</label>
+            </value>
+            <value>
+                <fullName>merchant_not_found</fullName>
+                <default>false</default>
+                <label>Merchant Not Found</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

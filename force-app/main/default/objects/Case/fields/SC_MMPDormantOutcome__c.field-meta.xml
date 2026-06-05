@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_MMPDormantOutcome__c</fullName>
+    <description>Result of the MMP or dormancy process.</description>
+    <inlineHelpText>Describe the outcome of the MMP or dormancy process.</inlineHelpText>
+    <label>MMP/Dormant Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>closed_mid_set_up_in_error</fullName>
+                <default>false</default>
+                <label>Closed MID Set up in error</label>
+            </value>
+            <value>
+                <fullName>mid_no_longer_needed</fullName>
+                <default>false</default>
+                <label>MID no longer needed</label>
+            </value>
+            <value>
+                <fullName>no_action_needed</fullName>
+                <default>false</default>
+                <label>No action needed</label>
+            </value>
+            <value>
+                <fullName>rate_review</fullName>
+                <default>false</default>
+                <label>Rate Review</label>
+            </value>
+            <value>
+                <fullName>mmp_review</fullName>
+                <default>false</default>
+                <label>MMP Review</label>
+            </value>
+            <value>
+                <fullName>broken_terminal_fixed</fullName>
+                <default>false</default>
+                <label>Broken Terminal Fixed</label>
+            </value>
+            <value>
+                <fullName>billing_holiday</fullName>
+                <default>false</default>
+                <label>Billing Holiday</label>
+            </value>
+            <value>
+                <fullName>troubleshoot</fullName>
+                <default>false</default>
+                <label>Troubleshoot</label>
+            </value>
+            <value>
+                <fullName>onboarding_education</fullName>
+                <default>false</default>
+                <label>Onboarding Education</label>
+            </value>
+            <value>
+                <fullName>discussed_bacs_to_card</fullName>
+                <default>false</default>
+                <label>Discussed BACs to card</label>
+            </value>
+            <value>
+                <fullName>discussed_cash_to_card</fullName>
+                <default>false</default>
+                <label>Discussed Cash to card</label>
+            </value>
+            <value>
+                <fullName>closed_entire_account</fullName>
+                <default>false</default>
+                <label>Closed entire account</label>
+            </value>
+            <value>
+                <fullName>no_contact</fullName>
+                <default>false</default>
+                <label>No contact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

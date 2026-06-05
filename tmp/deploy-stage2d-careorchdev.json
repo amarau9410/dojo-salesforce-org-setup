@@ -1,0 +1,592 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T11:14:29.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T11:14:15.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "columnNumber": 26,
+          "componentType": "Layout",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:22.000Z",
+          "deleted": false,
+          "fileName": "layouts/Case-Feed Complaints.layout",
+          "fullName": "Case-Feed Complaints",
+          "lineNumber": 53,
+          "problem": "In field: field - no CustomField named Case.SC_ActionRequiredDateTime__c found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "columnNumber": 26,
+          "componentType": "Layout",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:22.000Z",
+          "deleted": false,
+          "fileName": "layouts/Case-Feed Enterprise Account Management.layout",
+          "fullName": "Case-Feed Enterprise Account Management",
+          "lineNumber": 52,
+          "problem": "In field: field - no CustomField named Case.SC_ActionRequiredDateTime__c found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "EmailTemplate",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:22.000Z",
+          "deleted": false,
+          "fileName": "email/SC_CustomerService/Collections/Collections_Final_Reminder_IT_1752563717047.email",
+          "fullName": "SC_CustomerService/Collections/Collections_Final_Reminder_IT_1752563717047",
+          "problem": "Cannot find folder:Collections",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "EmailTemplate",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:22.000Z",
+          "deleted": false,
+          "fileName": "email/SC_CustomerService/Collections/Collections_Urgent_Action_Required_IT_1752563555540.email",
+          "fullName": "SC_CustomerService/Collections/Collections_Urgent_Action_Required_IT_1752563555540",
+          "problem": "Cannot find folder:Collections",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "CustomMetadata",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Six_Monthly_Communal_Cupboards_Housing_Plus.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Six_Monthly_Communal_Cupboards_Housing_Plus",
+          "problem": "Value too long for field: fullName maximum length is:40",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:28.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Application_User.permissionset",
+          "fullName": "Application_User",
+          "problem": "Unknown user permission: CreateAuditFields",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:28.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Fire_Door_Inspection_User.permissionset",
+          "fullName": "Fire_Door_Inspection_User",
+          "problem": "Permission Read Account depends on permission(s): Read Contact",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "columnNumber": 29,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:28.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/SC_Case_ObjectPermissions.permissionset",
+          "fullName": "SC_Case_ObjectPermissions",
+          "lineNumber": 1845,
+          "problem": "In field: recordType - no RecordType named Case.Account_Management found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "FlexiPage",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "flexipages/Legal_Entity_Record_Page.flexipage",
+          "fullName": "Legal_Entity_Record_Page",
+          "problem": "We couldn't retrieve the design time component information for component dfsle:Status.",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Community_Hubs.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Community_Hubs",
+          "id": "m02Q100000HJlnpIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Offices.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Offices",
+          "id": "m02Q100000HJlnqIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Annual_Communal_Cupboards_General_Needs.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Communal_Cupboards_General_Needs",
+          "id": "m02Q100000HJlnrIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Annual_Cross_Corridor_General_Needs.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Cross_Corridor_General_Needs",
+          "id": "m02Q100000HJlnsIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Annual_Customer_Cupboards_General_Needs.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Customer_Cupboards_General_Needs",
+          "id": "m02Q100000HJlntIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Annual_Flat_Entrance_General_Needs.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Flat_Entrance_General_Needs",
+          "id": "m02Q100000HJlnuIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Six_Monthly_Cross_Corridor_Housing_Plus.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Six_Monthly_Cross_Corridor_Housing_Plus",
+          "id": "m02Q100000HJlnvIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Frequency_Rule__mdt.Six_Monthly_Flat_Entrance_Housing_Plus.md",
+          "fullName": "Fire_Door_Frequency_Rule__mdt.Six_Monthly_Flat_Entrance_Housing_Plus",
+          "id": "m02Q100000HJlnwIAD",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Risk_SLA__mdt.Immediately_Dangerous.md",
+          "fullName": "Fire_Door_Risk_SLA__mdt.Immediately_Dangerous",
+          "id": "m03Q100000b7bVOIAY",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Risk_SLA__mdt.Low.md",
+          "fullName": "Fire_Door_Risk_SLA__mdt.Low",
+          "id": "m03Q100000b7bVPIAY",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Risk_SLA__mdt.Medium.md",
+          "fullName": "Fire_Door_Risk_SLA__mdt.Medium",
+          "id": "m03Q100000b7bVQIAY",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomMetadata",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:23.000Z",
+          "deleted": false,
+          "fileName": "customMetadata/Fire_Door_Risk_SLA__mdt.Urgent.md",
+          "fullName": "Fire_Door_Risk_SLA__mdt.Urgent",
+          "id": "m03Q100000b7bVRIAY",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Group",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "groups/ES_IT_Sales_App_Access_Users.group",
+          "fullName": "ES_IT_Sales_App_Access_Users",
+          "id": "00GQ1000008L1xNMAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Layout",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "layouts/Account-Account Layout.layout",
+          "fullName": "Account-Account Layout",
+          "id": "00hd3000002OOzQAAW",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Clinical_Workspace.permissionset",
+          "fullName": "CareOrch_Clinical_Workspace",
+          "id": "0PSQ1000005NW7ZOAW",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Floor_Carer.permissionset",
+          "fullName": "CareOrch_Floor_Carer",
+          "id": "0PSQ1000005QerlOAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/SC_Supervisor_GroupMgmt.permissionset",
+          "fullName": "SC_Supervisor_GroupMgmt",
+          "id": "0PSQ1000005RVeMOAW",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CspTrustedSite",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "cspTrustedSites/developer_salesforce_com.cspTrustedSite",
+          "fullName": "developer_salesforce_com",
+          "id": "08yQ1000000OfrdIAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CspTrustedSite",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "cspTrustedSites/images_credly_com.cspTrustedSite",
+          "fullName": "images_credly_com",
+          "id": "08yQ1000000OfreIAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CspTrustedSite",
+          "created": true,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "cspTrustedSites/www_gre_ac_uk.cspTrustedSite",
+          "fullName": "www_gre_ac_uk",
+          "id": "08yQ1000000OfrfIAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T11:14:29.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWkEhKAL",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T11:14:29.000Z",
+    "numberComponentErrors": 9,
+    "numberComponentsDeployed": 20,
+    "numberComponentsTotal": 29,
+    "numberFiles": "41",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T11:14:20.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 41992,
+    "files": [
+      {
+        "fullName": "developer_salesforce_com",
+        "type": "CspTrustedSite",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\cspTrustedSites\\developer_salesforce_com.cspTrustedSite-meta.xml"
+      },
+      {
+        "fullName": "images_credly_com",
+        "type": "CspTrustedSite",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\cspTrustedSites\\images_credly_com.cspTrustedSite-meta.xml"
+      },
+      {
+        "fullName": "www_gre_ac_uk",
+        "type": "CspTrustedSite",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\cspTrustedSites\\www_gre_ac_uk.cspTrustedSite-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Community_Hubs",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Community_Hubs.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Offices",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Annual_All_Fire_Doors_Offices.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Communal_Cupboards_General_Needs",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Annual_Communal_Cupboards_General_Needs.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Cross_Corridor_General_Needs",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Annual_Cross_Corridor_General_Needs.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Customer_Cupboards_General_Needs",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Annual_Customer_Cupboards_General_Needs.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Annual_Flat_Entrance_General_Needs",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Annual_Flat_Entrance_General_Needs.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Six_Monthly_Communal_Cupboards_Housing_Plus",
+        "type": "CustomMetadata",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Six_Monthly_Communal_Cupboards_Housing_Plus.md-meta.xml",
+        "error": "Value too long for field: fullName maximum length is:40"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Six_Monthly_Cross_Corridor_Housing_Plus",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Six_Monthly_Cross_Corridor_Housing_Plus.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Frequency_Rule__mdt.Six_Monthly_Flat_Entrance_Housing_Plus",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Frequency_Rule__mdt.Six_Monthly_Flat_Entrance_Housing_Plus.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Risk_SLA__mdt.Immediately_Dangerous",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Risk_SLA__mdt.Immediately_Dangerous.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Risk_SLA__mdt.Low",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Risk_SLA__mdt.Low.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Risk_SLA__mdt.Medium",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Risk_SLA__mdt.Medium.md-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Risk_SLA__mdt.Urgent",
+        "type": "CustomMetadata",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\customMetadata\\Fire_Door_Risk_SLA__mdt.Urgent.md-meta.xml"
+      },
+      {
+        "fullName": "SC_CustomerService/Collections/Collections_Final_Reminder_IT_1752563717047",
+        "type": "EmailTemplate",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\email\\SC_CustomerService\\Collections\\Collections_Final_Reminder_IT_1752563717047.email",
+        "error": "Cannot find folder:Collections"
+      },
+      {
+        "fullName": "SC_CustomerService/Collections/Collections_Urgent_Action_Required_IT_1752563555540",
+        "type": "EmailTemplate",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\email\\SC_CustomerService\\Collections\\Collections_Urgent_Action_Required_IT_1752563555540.email",
+        "error": "Cannot find folder:Collections"
+      },
+      {
+        "fullName": "Legal_Entity_Record_Page",
+        "type": "FlexiPage",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flexipages\\Legal_Entity_Record_Page.flexipage-meta.xml",
+        "error": "We couldn't retrieve the design time component information for component dfsle:Status."
+      },
+      {
+        "fullName": "ES_IT_Sales_App_Access_Users",
+        "type": "Group",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\groups\\ES_IT_Sales_App_Access_Users.group-meta.xml"
+      },
+      {
+        "fullName": "Account-Account Layout",
+        "type": "Layout",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\layouts\\Account-Account Layout.layout-meta.xml"
+      },
+      {
+        "fullName": "Case-Feed Complaints",
+        "type": "Layout",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\layouts\\Case-Feed Complaints.layout-meta.xml",
+        "lineNumber": 53,
+        "columnNumber": 26,
+        "error": "In field: field - no CustomField named Case.SC_ActionRequiredDateTime__c found (53:26)"
+      },
+      {
+        "fullName": "Case-Feed Enterprise Account Management",
+        "type": "Layout",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\layouts\\Case-Feed Enterprise Account Management.layout-meta.xml",
+        "lineNumber": 52,
+        "columnNumber": 26,
+        "error": "In field: field - no CustomField named Case.SC_ActionRequiredDateTime__c found (52:26)"
+      },
+      {
+        "fullName": "Application_User",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\Application_User.permissionset-meta.xml",
+        "error": "Unknown user permission: CreateAuditFields"
+      },
+      {
+        "fullName": "CareOrch_Clinical_Workspace",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Clinical_Workspace.permissionset-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Floor_Carer",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Floor_Carer.permissionset-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_User",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\Fire_Door_Inspection_User.permissionset-meta.xml",
+        "error": "Permission Read Account depends on permission(s): Read Contact"
+      },
+      {
+        "fullName": "SC_Case_ObjectPermissions",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\SC_Case_ObjectPermissions.permissionset-meta.xml",
+        "lineNumber": 1845,
+        "columnNumber": 29,
+        "error": "In field: recordType - no RecordType named Case.Account_Management found (1845:29)"
+      },
+      {
+        "fullName": "SC_Supervisor_GroupMgmt",
+        "type": "PermissionSet",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\SC_Supervisor_GroupMgmt.permissionset-meta.xml"
+      }
+    ],
+    "zipFileCount": 32,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWkEhKAL%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

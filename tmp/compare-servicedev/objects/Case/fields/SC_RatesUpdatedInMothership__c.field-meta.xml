@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_RatesUpdatedInMothership__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if rates were updated in the main system.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if rates were updated; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Rates Updated In Mothership?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

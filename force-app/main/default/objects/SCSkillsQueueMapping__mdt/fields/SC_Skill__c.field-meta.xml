@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_Skill__c</fullName>
+    <description>Lookup to SC Skill custom metadata.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Lookup to SC Skill custom metadata.</inlineHelpText>
+    <label>SC Skill</label>
+    <referenceTo>SC_Skill__mdt</referenceTo>
+    <relationshipLabel>SC Skills Queue Mappings</relationshipLabel>
+    <relationshipName>SC_SkillsQueueMappings</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

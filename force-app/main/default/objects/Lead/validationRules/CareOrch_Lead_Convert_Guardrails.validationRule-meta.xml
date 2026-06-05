@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Lead_Convert_Guardrails</fullName>
+    <active>true</active>
+    <description>Block Care Enquiry conversion unless status and qualification prerequisites are met.</description>
+    <errorConditionFormula>AND(
+$RecordType.Name = 'Care Enquiry',
+ISCHANGED(IsConverted),
+IsConverted,
+OR(
+TEXT(PRIORVALUE(Status)) &lt;&gt; 'Ready to Convert',
+ISBLANK(TEXT(CareOrch_Funding_Type__c)),
+ISBLANK(TEXT(CareOrch_Requested_Care_Type__c)),
+ISBLANK(CareOrch_Target_Admission_Date__c)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Conversion is allowed only when the lead is in Ready to Convert and all enquiry qualification fields are complete.</errorMessage>
+</ValidationRule>

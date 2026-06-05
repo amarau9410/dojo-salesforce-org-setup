@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CancellationFeeApplied__c</fullName>
+    <label>Cancellation Fee Applied</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>applied</fullName>
+                <default>false</default>
+                <label>Applied</label>
+            </value>
+            <value>
+                <fullName>n/a__does_not_have_a_contract</fullName>
+                <default>false</default>
+                <label>N/A::Does not have a contract</label>
+            </value>
+            <value>
+                <fullName>n/a__outside_of_contract_term</fullName>
+                <default>false</default>
+                <label>N/A::Outside of contract term</label>
+            </value>
+            <value>
+                <fullName>n/a__risk_closure</fullName>
+                <default>false</default>
+                <label>N/A::Risk Closure</label>
+            </value>
+            <value>
+                <fullName>waived__business_retained__business_sold__new_owners_retained_</fullName>
+                <default>false</default>
+                <label>Waived::Business Retained (business sold, new owners retained)</label>
+            </value>
+            <value>
+                <fullName>waived__cle</fullName>
+                <default>false</default>
+                <label>Waived::CLE</label>
+            </value>
+            <value>
+                <fullName>waived__complaint_resolution_</fullName>
+                <default>false</default>
+                <label>Waived::Complaint Resolution</label>
+            </value>
+            <value>
+                <fullName>waived__vulnerable_customer</fullName>
+                <default>false</default>
+                <label>Waived::Vulnerable Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

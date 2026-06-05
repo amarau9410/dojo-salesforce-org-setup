@@ -1,0 +1,101 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T13:10:35.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T13:10:32.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "columnNumber": 13,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-27T13:10:35.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Next_Inspection_Due_Date__c",
+          "lineNumber": 15,
+          "problem": "Field Last_Inspection_Date__c does not exist. Check spelling.",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:10:35.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Inspection_Overdue__c",
+          "id": "00NQ100000MOmJoMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T13:10:35.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWd1uKAD",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T13:10:35.000Z",
+    "numberComponentErrors": 1,
+    "numberComponentsDeployed": 1,
+    "numberComponentsTotal": 2,
+    "numberFiles": "3",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T13:10:34.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 895,
+    "files": [
+      {
+        "fullName": "Asset.Inspection_Overdue__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Inspection_Overdue__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Next_Inspection_Due_Date__c",
+        "type": "CustomField",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Next_Inspection_Due_Date__c.field-meta.xml",
+        "lineNumber": 15,
+        "columnNumber": 13,
+        "error": "Field Last_Inspection_Date__c does not exist. Check spelling. (15:13)"
+      }
+    ],
+    "zipFileCount": 2,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWd1uKAD%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

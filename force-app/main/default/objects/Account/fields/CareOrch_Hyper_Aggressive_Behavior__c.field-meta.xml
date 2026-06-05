@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Hyper_Aggressive_Behavior__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flags residents with hyper-aggressive behavior risk for lone-worker safeguards.</description>
+    <externalId>false</externalId>
+    <label>CareOrch Hyper Aggressive Behavior</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

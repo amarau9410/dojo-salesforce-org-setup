@@ -1,0 +1,7 @@
+Name|type=string|required=True|defaulted=False
+ActionPlanId|type=reference|required=True|defaulted=False
+ItemId|type=reference|required=False|defaulted=False
+ItemState|type=picklist|required=True|defaulted=False
+ActionPlanTemplateItemId|type=reference|required=False|defaulted=False
+IsRequired|type=boolean|required=False|defaulted=True
+DisplayOrder|type=int|required=False|defaulted=False

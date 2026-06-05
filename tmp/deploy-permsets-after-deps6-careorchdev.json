@@ -1,0 +1,121 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T13:47:56.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T13:47:54.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T13:47:55.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Application_User.permissionset",
+          "fullName": "Application_User",
+          "problem": "In field: object - no CustomObject named ApplicantApplicantRelation found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "columnNumber": 29,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T13:47:56.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/SC_Case_ObjectPermissions.permissionset",
+          "fullName": "SC_Case_ObjectPermissions",
+          "lineNumber": 1869,
+          "problem": "In field: recordType - no RecordType named Case.Funding found",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": true,
+          "createdDate": "2026-05-27T13:47:56.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Fire_Door_Inspection_User.permissionset",
+          "fullName": "Fire_Door_Inspection_User",
+          "id": "0PSQ1000005RaWvOAK",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T13:47:56.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWuFdKAL",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T13:47:56.000Z",
+    "numberComponentErrors": 2,
+    "numberComponentsDeployed": 1,
+    "numberComponentsTotal": 3,
+    "numberFiles": "5",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T13:47:54.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 14310,
+    "files": [
+      {
+        "fullName": "Application_User",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\Application_User.permissionset-meta.xml",
+        "error": "In field: object - no CustomObject named ApplicantApplicantRelation found"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_User",
+        "type": "PermissionSet",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\Fire_Door_Inspection_User.permissionset-meta.xml"
+      },
+      {
+        "fullName": "SC_Case_ObjectPermissions",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\SC_Case_ObjectPermissions.permissionset-meta.xml",
+        "lineNumber": 1869,
+        "columnNumber": 29,
+        "error": "In field: recordType - no RecordType named Case.Funding found (1869:29)"
+      }
+    ],
+    "zipFileCount": 4,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWuFdKAL%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckIfMessageFormatIsText</fullName>
+    <active>false</active>
+    <description>Check non empty values according to the Message Format</description>
+    <errorConditionFormula>ISPICKVAL(MessageFormat__c, &quot;Text-to-speech&quot;) &amp;&amp; ISBLANK(MessageText__c)</errorConditionFormula>
+    <errorDisplayField>MessageText__c</errorDisplayField>
+    <errorMessage>A value for MessageText__c is mandatory when Message Format is Text-to-speech</errorMessage>
+</ValidationRule>

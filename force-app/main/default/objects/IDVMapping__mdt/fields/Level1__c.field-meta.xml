@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Provides the boolean option to have the object.field.value to be Level 1 ID&amp;V requirement.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Level 1</label>
+    <type>Checkbox</type>
+</CustomField>

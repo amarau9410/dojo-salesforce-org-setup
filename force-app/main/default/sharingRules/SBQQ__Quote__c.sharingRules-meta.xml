@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_GB_Quotes_with_GB_Territory</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>DOJOP-492</description>
+        <label>Share GB Quotes with GB Territory</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.GreatBritain</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>GB</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_IE_Quotes_with_IE_Territory</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>DOJOP-492</description>
+        <label>Share IE Quotes with IE Territory</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.Ireland</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>IE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Italy_Quotes_with_Italy_Territory</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>DOJOP-492</description>
+        <label>Share Italy Quotes with Italy Territory</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.Italy</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>IT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Spain_Quotes_with_Spain_Territory</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>DOJOP-492</description>
+        <label>Share Spain Quotes with Spain Territory</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.Spain</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>ES</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SBQQ_Quote_ES_Read_Only_For_Sales_Access_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SBQQ Quote ES Read Only For Sales Access Group</label>
+        <sharedTo>
+            <group>ES_IT_Sales_App_Access_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>ES</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SBQQ_Quote_IT_Read_Only_For_Sales_Access_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SBQQ Quote IT Read Only For Sales Access Group</label>
+        <sharedTo>
+            <group>ES_IT_Sales_App_Access_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>IT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

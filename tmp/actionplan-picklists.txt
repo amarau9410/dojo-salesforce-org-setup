@@ -1,0 +1,15 @@
+[ActionPlanType]
+Industries
+Retail
+
+[ActionPlanState]
+Not Started
+In Progress
+Canceled
+Completed
+
+[StatusCode]
+NotStarted
+InProgress
+Completed
+Canceled

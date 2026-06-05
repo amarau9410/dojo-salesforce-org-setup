@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Case.Operational_Alert</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Case.Operational_Alert</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Case-Operational Alert</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Case.CareOrch_Alert_Source__c</members>
+        <members>Case.CareOrch_Severity__c</members>
+        <members>Case.CareOrch_Resident_Impact__c</members>
+        <members>Case.CareOrch_Critical_Event__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Case.CareOrch_OpAlert_Required</members>
+        <members>Case.CareOrch_OpAlert_CE_Link</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>CareOrch_Operations_Lead</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>66.0</version>
+</Package>

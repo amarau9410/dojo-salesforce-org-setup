@@ -1,0 +1,3 @@
+[Tooling.BriefcaseDefinition]
+FullName|type=string|required=False|defaulted=False
+Metadata|type=complexvalue|required=False|defaulted=False

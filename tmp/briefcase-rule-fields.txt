@@ -1,0 +1,33 @@
+BriefcaseRule Fields
+Id
+IsDeleted
+CreatedDate
+CreatedById
+LastModifiedDate
+LastModifiedById
+SystemModstamp
+BriefcaseId
+TargetEntity
+ParentRuleId
+FilterLogic
+QueryScope
+RecordLimit
+OrderBy
+IsAscendingOrder
+RelationshipField
+RelationshipType
+OptionsIsRelatedFilesRule
+
+BriefcaseRuleFilter Fields
+Id
+IsDeleted
+CreatedDate
+CreatedById
+LastModifiedDate
+LastModifiedById
+SystemModstamp
+BriefcaseRuleId
+TargetEntityField
+FilterOperator
+FilterValue
+FilterSeqNumber

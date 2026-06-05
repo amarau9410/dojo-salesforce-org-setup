@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_MMPDormantReason__c</fullName>
+    <description>Explanation for MMP or dormancy status.</description>
+    <inlineHelpText>Provide the reason for MMP or dormancy.</inlineHelpText>
+    <label>MMP/Dormant Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>seasonal</fullName>
+                <default>false</default>
+                <label>Seasonal</label>
+            </value>
+            <value>
+                <fullName>using_old_provider</fullName>
+                <default>false</default>
+                <label>Using Old Provider</label>
+            </value>
+            <value>
+                <fullName>moved_to_new_provider</fullName>
+                <default>false</default>
+                <label>Moved to new provider</label>
+            </value>
+            <value>
+                <fullName>trialing_new_provider</fullName>
+                <default>false</default>
+                <label>Trialing new provider</label>
+            </value>
+            <value>
+                <fullName>refurbishment_</fullName>
+                <default>false</default>
+                <label>Refurbishment</label>
+            </value>
+            <value>
+                <fullName>mid_set_up_in_error</fullName>
+                <default>false</default>
+                <label>MID set up in error</label>
+            </value>
+            <value>
+                <fullName>slow_business_</fullName>
+                <default>false</default>
+                <label>Slow Business</label>
+            </value>
+            <value>
+                <fullName>cost_of_living</fullName>
+                <default>false</default>
+                <label>Cost of living</label>
+            </value>
+            <value>
+                <fullName>broken_card_machine</fullName>
+                <default>false</default>
+                <label>Broken Card Machine</label>
+            </value>
+            <value>
+                <fullName>onboarding_issue</fullName>
+                <default>false</default>
+                <label>Onboarding Issue</label>
+            </value>
+            <value>
+                <fullName>free_trial_ended</fullName>
+                <default>false</default>
+                <label>Free Trial Ended</label>
+            </value>
+            <value>
+                <fullName>pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>alt_pm_bacs</fullName>
+                <default>false</default>
+                <label>Alt PM Bacs</label>
+            </value>
+            <value>
+                <fullName>alt_pm_cash</fullName>
+                <default>false</default>
+                <label>Alt PM Cash</label>
+            </value>
+            <value>
+                <fullName>ceased_trading</fullName>
+                <default>false</default>
+                <label>Ceased Trading</label>
+            </value>
+            <value>
+                <fullName>small_business</fullName>
+                <default>false</default>
+                <label>Small Business</label>
+            </value>
+            <value>
+                <fullName>business_not_yet_open</fullName>
+                <default>false</default>
+                <label>Business not yet open</label>
+            </value>
+            <value>
+                <fullName>no_contact_reason</fullName>
+                <default>false</default>
+                <label>No Contact Reason</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

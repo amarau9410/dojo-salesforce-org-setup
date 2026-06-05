@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System__c</fullName>
+    <label>System</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce_SalesCloud</fullName>
+                <default>false</default>
+                <label>Salesforce_SalesCloud</label>
+            </value>
+            <value>
+                <fullName>Salesforce_CPQ</fullName>
+                <default>false</default>
+                <label>Salesforce_CPQ</label>
+            </value>
+            <value>
+                <fullName>Salesforce_FSC</fullName>
+                <default>false</default>
+                <label>Salesforce_FSC</label>
+            </value>
+            <value>
+                <fullName>Salesforce_ServiceCloud</fullName>
+                <default>false</default>
+                <label>Salesforce_ServiceCloud</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_KnowledgeFAQArticlesVPublicVisibility</fullName>
+    <active>true</active>
+    <description>If an article is FAQ record type, it has to be visible in public knowledge base.</description>
+    <errorConditionFormula>RecordType.DeveloperName =&quot;FAQ&quot; &amp;&amp;
+	 IsVisibleInPkb = false</errorConditionFormula>
+    <errorMessage>FAQ type articles must be marked as Visible in Public Knowledge Base.</errorMessage>
+</ValidationRule>

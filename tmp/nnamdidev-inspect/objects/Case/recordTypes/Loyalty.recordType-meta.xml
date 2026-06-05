@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loyalty</fullName>
+    <active>true</active>
+    <businessProcess>Standard Support Process</businessProcess>
+    <description>Loyalty record type</description>
+    <label>Loyalty</label>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Data Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Accounting Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amex Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrears Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bereavement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing%2FCharges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bookings General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bookings Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bookings Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Funding Funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Funding Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Funding Sign Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Dropped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Rebate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card Machine Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Account Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chargeback Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo 4 Business App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Card%2FIssuing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Go Device%2FTroubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Go Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Go Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo One Device%2FTroubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo One Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo One Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Pocket Device%2FTroubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Pocket Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Pocket Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Rewards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Wired Device%2FTroubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Wired Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Wired Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gdpr Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Account Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Partner Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Troubleshooting%2FAssitance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Make a complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Account%2FLocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Customer Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Checkout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order And Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCI Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay By Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay By QR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Links</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactivate Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transaction%2FRefunds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Terminal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SC_UpsellProducts__c</picklist>
+        <values>
+            <fullName>upsell_products_additional_location%5F%5Fsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_additional_location%5F%5Funsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_additional_terminal%5F%5Fsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_additional_terminal%5F%5Funsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_business_funding%5F%5Fprospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_business_funding%5F%5Fsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_business_funding%5F%5Funsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_dojo_bookings%5F%5Fprospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_dojo_bookings%5F%5Fsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>upsell_products_dojo_bookings%5F%5Funsuccessful</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>180_day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45_day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90_day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad-Hoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Returned CM HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back on track</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer inactive trigger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital HC Call Back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Debit cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Card checkins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Issuing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dojo Pocket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dormancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECOM Commissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixedprice-emailonly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixedprice-group1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixedprice-group2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixedprice-group3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware Care HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive Card Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instagram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Churn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC Churn Prevention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QR Pay Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROI Billing Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Right First Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trustpilot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Write Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iNPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>initial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

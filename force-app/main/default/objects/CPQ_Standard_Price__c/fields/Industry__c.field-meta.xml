@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <description>DOJOR-50 Industry for specific pricing. Used to match quote&apos;s to bring in pricing</description>
+    <inlineHelpText>Industry for specific pricing. Used to match quote&apos;s to bring in pricing</inlineHelpText>
+    <label>Industry</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Industry</valueSetName>
+    </valueSet>
+</CustomField>

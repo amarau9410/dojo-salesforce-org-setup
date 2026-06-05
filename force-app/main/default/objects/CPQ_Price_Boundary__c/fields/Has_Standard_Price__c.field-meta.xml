@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Standard_Price__c</fullName>
+    <description>DOJOP-561
+Used to help filter LEX page components</description>
+    <formula>NOT(ISNULL(CPQ_Standard_Price__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Has Standard Price</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

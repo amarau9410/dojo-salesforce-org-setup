@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_HygieneOutcomes__c</fullName>
+    <description>Results of hygiene checks or processes.</description>
+    <inlineHelpText>Describe the outcomes of hygiene checks.</inlineHelpText>
+    <label>Hygiene Outcomes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pro-active_outcomes_app_explained</fullName>
+                <default>false</default>
+                <label>App explained</label>
+            </value>
+            <value>
+                <fullName>pro-active_outcomes_contact_details_updated</fullName>
+                <default>false</default>
+                <label>Contact details updated</label>
+            </value>
+            <value>
+                <fullName>pro-active_outcomes_dd_reinstate</fullName>
+                <default>false</default>
+                <label>DD Reinstate</label>
+            </value>
+            <value>
+                <fullName>pro-active_outcomes_pci_reminder</fullName>
+                <default>false</default>
+                <label>PCI reminder</label>
+            </value>
+            <value>
+                <fullName>pro-active_outcomes_pob_credit</fullName>
+                <default>false</default>
+                <label>POB Credit</label>
+            </value>
+            <value>
+                <fullName>pro-active_outcomes_solved_existing_case</fullName>
+                <default>false</default>
+                <label>Solved existing case</label>
+            </value>
+            <value>
+                <fullName>integration__integration_set_up</fullName>
+                <default>false</default>
+                <label>Integration::Integration Set Up</label>
+            </value>
+            <value>
+                <fullName>integration__integration_declined</fullName>
+                <default>false</default>
+                <label>Integration::Integration Declined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,233 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T12:48:50.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T12:48:41.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:49.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Application_User.permissionset",
+          "fullName": "Application_User",
+          "problem": "In field: object - no CustomObject named ApplicantApplicantRelation found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:49.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Fire_Door_Inspection_User.permissionset",
+          "fullName": "Fire_Door_Inspection_User",
+          "problem": "In field: field - no CustomField named Asset.Building_Type__c found",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "columnNumber": 29,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:49.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/SC_Case_ObjectPermissions.permissionset",
+          "fullName": "SC_Case_ObjectPermissions",
+          "lineNumber": 1845,
+          "problem": "In field: recordType - no RecordType named Case.CardMachineCharges found",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:44.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalActionPlanService.cls",
+          "fullName": "CareOrchEmarSignalActionPlanService",
+          "id": "01pQ100000G7fwUIAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:44.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalsRest.cls",
+          "fullName": "CareOrchEmarSignalsRest",
+          "id": "01pQ100000FxCR9IAN",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:44.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalsRestTest.cls",
+          "fullName": "CareOrchEmarSignalsRestTest",
+          "id": "01pQ100000FxCRAIA3",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:44.000Z",
+          "deleted": false,
+          "fileName": "classes/ManageGroupMemberAction.cls",
+          "fullName": "ManageGroupMemberAction",
+          "id": "01pQ100000G9f3FIAR",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:49.000Z",
+          "deleted": false,
+          "fileName": "flows/CareOrch_Medication_Refused_Action_Plan.flow",
+          "fullName": "CareOrch_Medication_Refused_Action_Plan",
+          "id": "301Q100000ab4ZwIAI",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T12:48:49.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWpJDKA1",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T12:48:50.000Z",
+    "numberComponentErrors": 3,
+    "numberComponentsDeployed": 5,
+    "numberComponentsTotal": 8,
+    "numberFiles": "16",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T12:48:41.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 24767,
+    "files": [
+      {
+        "fullName": "CareOrchEmarSignalActionPlanService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanService.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalActionPlanService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanService.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRest.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRest.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRestTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRestTest.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRestTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRestTest.cls-meta.xml"
+      },
+      {
+        "fullName": "ManageGroupMemberAction",
+        "type": "ApexClass",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\ManageGroupMemberAction.cls"
+      },
+      {
+        "fullName": "ManageGroupMemberAction",
+        "type": "ApexClass",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\ManageGroupMemberAction.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Medication_Refused_Action_Plan",
+        "type": "Flow",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\CareOrch_Medication_Refused_Action_Plan.flow-meta.xml"
+      },
+      {
+        "fullName": "Application_User",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\Application_User.permissionset-meta.xml",
+        "error": "In field: object - no CustomObject named ApplicantApplicantRelation found"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_User",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\Fire_Door_Inspection_User.permissionset-meta.xml",
+        "error": "In field: field - no CustomField named Asset.Building_Type__c found"
+      },
+      {
+        "fullName": "SC_Case_ObjectPermissions",
+        "type": "PermissionSet",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\SC_Case_ObjectPermissions.permissionset-meta.xml",
+        "lineNumber": 1845,
+        "columnNumber": 29,
+        "error": "In field: recordType - no RecordType named Case.CardMachineCharges found (1845:29)"
+      }
+    ],
+    "zipFileCount": 13,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWpJDKA1%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

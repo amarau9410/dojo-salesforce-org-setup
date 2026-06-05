@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_AdditionalSites__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if there are more sites involved.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if additional sites are involved, otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Additional Sites?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

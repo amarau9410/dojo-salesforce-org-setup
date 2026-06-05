@@ -1,0 +1,4 @@
+UserId,Persona,IsPilotUser,LoggedInDuringPilot,PerformedInteractiveUpdate
+005XXXXXXXXXXXX,Carer,true,true,true
+005YYYYYYYYYYYY,Reviewer,true,true,true
+005ZZZZZZZZZZZZ,Operations Lead,true,true,true

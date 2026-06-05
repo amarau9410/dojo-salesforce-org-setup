@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <interviewLabel>CareOrch Lead Post Conversion Preparation Task {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CareOrch Lead Post Conversion Preparation Task</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+
+    <decisions>
+        <name>Was_Just_Converted</name>
+        <label>Was Just Converted</label>
+        <locationX>176</locationX>
+        <locationY>160</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Converted_In_This_Transaction</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.IsConverted</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.IsConverted</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Facility_Manager_Queue</targetReference>
+            </connector>
+            <label>Converted in this transaction</label>
+        </rules>
+    </decisions>
+
+    <decisions>
+        <name>Facility_Queue_Found</name>
+        <label>Facility Queue Found</label>
+        <locationX>176</locationX>
+        <locationY>420</locationY>
+        <defaultConnector>
+            <targetReference>Create_Preparation_Task_For_Lead_Owner</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Queue_Record_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Facility_Manager_Queue.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Task_Queue_Target</targetReference>
+            </connector>
+            <label>Queue record found</label>
+        </rules>
+    </decisions>
+
+    <decisions>
+        <name>Queue_Is_Task_Enabled</name>
+        <label>Queue Is Task Enabled</label>
+        <locationX>176</locationX>
+        <locationY>660</locationY>
+        <defaultConnector>
+            <targetReference>Create_Preparation_Task_For_Lead_Owner</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Queue_Target_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Task_Queue_Target.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Preparation_Task_For_Queue</targetReference>
+            </connector>
+            <label>Queue target found</label>
+        </rules>
+    </decisions>
+
+    <formulas>
+        <name>Preparation_Task_Due_Date</name>
+        <dataType>Date</dataType>
+        <expression>IF(
+ISBLANK({!$Record.CareOrch_Check_In_Date__c}),
+TODAY(),
+IF({!$Record.CareOrch_Check_In_Date__c} - 7 &lt; TODAY(), TODAY(), {!$Record.CareOrch_Check_In_Date__c} - 7)
+)</expression>
+    </formulas>
+
+    <recordLookups>
+        <name>Get_Facility_Manager_Queue</name>
+        <label>Get Facility Manager Queue</label>
+        <locationX>176</locationX>
+        <locationY>280</locationY>
+        <connector>
+            <targetReference>Facility_Queue_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CareOrch_Facility_Manager</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+
+    <recordLookups>
+        <name>Get_Task_Queue_Target</name>
+        <label>Get Task Queue Target</label>
+        <locationX>176</locationX>
+        <locationY>540</locationY>
+        <connector>
+            <targetReference>Queue_Is_Task_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>QueueId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Facility_Manager_Queue.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Task</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>QueueSobject</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+
+    <recordCreates>
+        <name>Create_Preparation_Task_For_Queue</name>
+        <label>Create Preparation Task For Queue</label>
+        <locationX>176</locationX>
+        <locationY>780</locationY>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Prepare Room and Kitchen Logistics for Incoming Resident</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.ConvertedAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Preparation_Task_Due_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Facility_Manager_Queue.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+    </recordCreates>
+
+    <recordCreates>
+        <name>Create_Preparation_Task_For_Lead_Owner</name>
+        <label>Create Preparation Task For Lead Owner</label>
+        <locationX>448</locationX>
+        <locationY>780</locationY>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Prepare Room and Kitchen Logistics for Incoming Resident</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.ConvertedAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Preparation_Task_Due_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+    </recordCreates>
+
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Was_Just_Converted</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsConverted</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ConvertedAccountId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CareOrch_Check_In_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+
+    <status>Active</status>
+</Flow>

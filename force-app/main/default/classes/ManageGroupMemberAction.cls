@@ -46,7 +46,13 @@ public without sharing class ManageGroupMemberAction {
         }
         Map<String, Group> groupByDev = new Map<String, Group>();
         if (!neededDev.isEmpty()) {
-            for (Group g : [SELECT Id, Name, DeveloperName FROM Group WHERE Type = 'Regular' AND DeveloperName IN :neededDev]) {
+            for (Group g : [
+                SELECT Id, Name, DeveloperName
+                FROM Group
+                WHERE Type = 'Regular'
+                AND DeveloperName IN :neededDev
+                WITH USER_MODE
+            ]) {
                 groupByDev.put(g.DeveloperName, g);
             }
         }
@@ -79,7 +85,14 @@ public without sharing class ManageGroupMemberAction {
 
                 // Check existing membership
                 GroupMember existing = null;
-                for (GroupMember gm : [SELECT Id, GroupId, UserOrGroupId FROM GroupMember WHERE GroupId = :grp.Id AND UserOrGroupId = :r.UserId LIMIT 1]) {
+                for (GroupMember gm : [
+                    SELECT Id, GroupId, UserOrGroupId
+                    FROM GroupMember
+                    WHERE GroupId = :grp.Id
+                    AND UserOrGroupId = :r.UserId
+                    WITH USER_MODE
+                    LIMIT 1
+                ]) {
                     existing = gm; break;
                 }
 
@@ -109,7 +122,7 @@ public without sharing class ManageGroupMemberAction {
 
         // Execute DML in batches
         if (!toInsert.isEmpty()) {
-            try { insert toInsert; }
+            try { insert as user toInsert; }
             catch (DmlException d) {
                 // propagate individual errors into results where applicable
                 for (Integer i = 0; i < results.size(); i++) {
@@ -122,7 +135,7 @@ public without sharing class ManageGroupMemberAction {
             }
         }
         if (!toDelete.isEmpty()) {
-            try { delete toDelete; }
+            try { delete as user toDelete; }
             catch (DmlException d) {
                 for (Integer i = 0; i < results.size(); i++) {
                     Result rr = results[i];

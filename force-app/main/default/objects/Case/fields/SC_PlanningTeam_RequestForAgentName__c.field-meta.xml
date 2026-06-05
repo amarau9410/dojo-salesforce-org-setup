@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PlanningTeam_RequestForAgentName__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Name of the agent for whom the request is made.</description>
+    <inlineHelpText>Enter the name of the agent the request is for.</inlineHelpText>
+    <label>Planning Team - Request For (Agent Name)</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Planning Team - Agent</relationshipLabel>
+    <relationshipName>Planning_Team_Agent</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

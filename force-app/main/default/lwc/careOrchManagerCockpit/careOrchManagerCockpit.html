@@ -1,0 +1,121 @@
+<template>
+    <lightning-card title="Manager Cockpit" icon-name="standard:insights">
+        <div class="toolbar slds-p-horizontal_small slds-p-top_x-small slds-p-bottom_x-small">
+            <lightning-button label="Refresh" onclick={handleRefresh}></lightning-button>
+            <span class="refresh-note">Auto-refresh every 30 seconds</span>
+        </div>
+
+        <div class="widget-grid slds-p-horizontal_small slds-p-bottom_small">
+            <button class="widget" data-panel="critical" onclick={handleWidgetClick}>
+                <p class="widget-label">Critical SLA Breaches</p>
+                <p class="widget-value">{criticalCount}</p>
+            </button>
+            <button class="widget" data-panel="shifts" onclick={handleWidgetClick}>
+                <p class="widget-label">At-Risk Shifts</p>
+                <p class="widget-value">{atRiskShiftCount}</p>
+            </button>
+            <button class="widget" data-panel="translations" onclick={handleWidgetClick}>
+                <p class="widget-label">Pending Translation Reviews</p>
+                <p class="widget-value">{translationCount}</p>
+            </button>
+            <button class="widget" data-panel="aging" onclick={handleWidgetClick}>
+                <p class="widget-label">Open Risk Aging</p>
+                <p class="widget-value">Trend</p>
+            </button>
+        </div>
+
+        <div class="panel-wrap slds-p-horizontal_small slds-p-bottom_small">
+            <h2 class="slds-text-heading_small">{panelTitle}</h2>
+            <p class="slds-text-body_small panel-subtitle">{panelDescription}</p>
+            <template if:true={hasAgingFilter}>
+                <div class="filter-pill-row slds-m-bottom_x-small">
+                    <span class="filter-pill">{agingFilterLabel}</span>
+                    <lightning-button variant="base" label="Clear" onclick={handleClearAgingFilter}></lightning-button>
+                </div>
+            </template>
+
+            <template if:true={hasRows}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={rows}
+                    columns={panelColumns}
+                    draft-values={draftValues}
+                    onsave={handleSave}
+                    oncellchange={handleCellChange}
+                    onrowaction={handleRowAction}
+                    hide-checkbox-column>
+                </lightning-datatable>
+            </template>
+
+            <template if:false={hasRows}>
+                <div class="empty-state">
+                    <p>No records matched the selected exception filter.</p>
+                </div>
+            </template>
+        </div>
+
+        <div class="trend-wrap slds-p-horizontal_small slds-p-bottom_medium">
+            <h3 class="slds-text-title_caps">Operational Alert Cases by Priority (Open)</h3>
+            <template if:true={hasCasePriorityRows}>
+                <template for:each={casePriorityRows} for:item="row">
+                    <div key={row.priority} class="priority-row">
+                        <span class="priority-label">{row.priority}</span>
+                        <div class="priority-bar-wrap">
+                            <div class={row.barClass} style={row.widthStyle}></div>
+                        </div>
+                        <span class="priority-count">{row.count}</span>
+                    </div>
+                </template>
+            </template>
+
+            <h3 class="slds-text-title_caps slds-m-top_medium">Open Risk Aging Trend (7 days)</h3>
+            <template for:each={trendRows} for:item="row">
+                <div key={row.dayLabel} class="trend-row">
+                    <div class="trend-day">{row.dayLabel}</div>
+                    <div class="trend-bars">
+                        <button class="bar bar-open" style={row.openWidth} data-day={row.dayLabel} data-segment="open" onclick={handleTrendSegmentClick} title="Filter open incidents"></button>
+                        <button class="bar bar-resolved" style={row.resolutionWidth} data-day={row.dayLabel} data-segment="resolved" onclick={handleTrendSegmentClick} title="Filter resolved incidents"></button>
+                    </div>
+                    <div class="trend-metrics">
+                        <span>Open Avg: {row.averageOpenAgeHours}h ({row.openCount})</span>
+                        <span>Resolved Avg: {row.averageResolutionHours}h ({row.resolvedCount})</span>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <template if:true={showReassignModal}>
+            <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Reassign shift" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <h2 class="slds-text-heading_medium">Manual Shift Reassignment</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <template if:true={hasCaregiverOptions}>
+                            <lightning-combobox
+                                label="Assign To"
+                                options={caregiverOptions}
+                                value={selectedCaregiverId}
+                                onchange={handleCaregiverChange}>
+                            </lightning-combobox>
+                        </template>
+                        <template if:false={hasCaregiverOptions}>
+                            <p class="slds-text-color_weak">No eligible caregivers found for reassignment.</p>
+                        </template>
+                        <lightning-textarea
+                            class="slds-m-top_small"
+                            label="Manager Note"
+                            value={managerReassignNote}
+                            onchange={handleManagerNoteChange}>
+                        </lightning-textarea>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancel" onclick={handleCloseReassignModal}></lightning-button>
+                        <lightning-button variant="brand" label="Confirm Reassignment" class="slds-m-left_small" onclick={handleConfirmReassign} disabled={disableReassignConfirm}></lightning-button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </lightning-card>
+</template>

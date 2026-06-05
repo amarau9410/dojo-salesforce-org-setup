@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParentApplicationFormId__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Parent Application Form</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Parent Application Form can&apos;t be a child application</errorMessage>
+        <filterItems>
+            <field>ApplicationForm.IsChild__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ApplicationForm</referenceTo>
+    <relationshipLabel>Locations Applications Data</relationshipLabel>
+    <relationshipName>Location_Applications</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

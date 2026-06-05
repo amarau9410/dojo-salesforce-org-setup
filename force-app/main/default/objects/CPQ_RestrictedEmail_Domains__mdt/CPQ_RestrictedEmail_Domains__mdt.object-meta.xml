@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A centralized list of all domains that shouldn&apos;t be allowed on Leads &amp; Contacts</description>
+    <label>CPQ Restricted Domain</label>
+    <pluralLabel>Restricted Domains</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

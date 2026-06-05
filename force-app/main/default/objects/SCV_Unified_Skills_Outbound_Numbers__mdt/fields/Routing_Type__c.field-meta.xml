@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Routing_Type__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Routing Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Defined Number</fullName>
+                <default>true</default>
+                <label>Defined Number</label>
+            </value>
+            <value>
+                <fullName>Default Customer Service Routing</fullName>
+                <default>false</default>
+                <label>Default Customer Service Routing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

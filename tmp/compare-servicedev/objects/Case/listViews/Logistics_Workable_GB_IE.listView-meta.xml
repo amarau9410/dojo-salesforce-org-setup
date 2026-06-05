@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Logistics_Workable_GB_IE</fullName>
+    <booleanFilter>1 AND (2 OR 3) AND 4 AND (5 OR 6)</booleanFilter>
+    <columns>SC_Market__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>SC_AccountName__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <columns>SC_ActionRequiredDateTime__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Reopened,Reassign</value>
+    </filters>
+    <filters>
+        <field>SC_Market__c</field>
+        <operation>equals</operation>
+        <value>GB</value>
+    </filters>
+    <filters>
+        <field>SC_Market__c</field>
+        <operation>equals</operation>
+        <value>IE</value>
+    </filters>
+    <filters>
+        <field>SC_MilestoneName__c</field>
+        <operation>notEqual</operation>
+        <value>logistics_call_required</value>
+    </filters>
+    <filters>
+        <field>SC_Team__c</field>
+        <operation>equals</operation>
+        <value>Logistics</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>contains</operation>
+        <value>Logistics</value>
+    </filters>
+    <label>Logistics - Workable GB/IE</label>
+</ListView>

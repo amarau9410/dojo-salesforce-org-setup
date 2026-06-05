@@ -1,0 +1,48 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "done": true,
+    "fileProperties": [
+      {
+        "createdById": "005d3000002x7IyAAI",
+        "createdByName": "Nnamdi Udoye",
+        "createdDate": "2026-05-27T14:57:14.000Z",
+        "fileName": "unpackaged/applications/CareOrch.app",
+        "fullName": "CareOrch",
+        "id": "02uQ1000005Xxw5IAC",
+        "lastModifiedById": "005d3000002x7IyAAI",
+        "lastModifiedByName": "Nnamdi Udoye",
+        "lastModifiedDate": "2026-05-27T14:57:14.000Z",
+        "manageableState": "unmanaged",
+        "type": "CustomApplication"
+      },
+      {
+        "createdById": "005d3000002x7IyAAI",
+        "createdByName": "Nnamdi Udoye",
+        "createdDate": "2026-05-28T07:14:38.626Z",
+        "fileName": "unpackaged/package.xml",
+        "fullName": "unpackaged/package.xml",
+        "id": "",
+        "lastModifiedById": "005d3000002x7IyAAI",
+        "lastModifiedByName": "Nnamdi Udoye",
+        "lastModifiedDate": "2026-05-28T07:14:38.626Z",
+        "manageableState": "unmanaged",
+        "type": "Package"
+      }
+    ],
+    "id": "09SQ100000GEhiDMAT",
+    "status": "Succeeded",
+    "success": true,
+    "messages": [],
+    "files": [
+      {
+        "fullName": "CareOrch",
+        "type": "CustomApplication",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\applications\\CareOrch.app-meta.xml"
+      }
+    ]
+  },
+  "warnings": []
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>List of Skills ready for assigning to Agents.</description>
+    <label>SC Skill</label>
+    <pluralLabel>SC Skills</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

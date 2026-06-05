@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_AssignmentSource__c</fullName>
+    <description>Indicates the latest source of system level assignment, for example, a scheduled flow or an omni-channel managed queue.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the latest source of system level assignment, for example, a scheduled flow or an omni-channel managed queue.</inlineHelpText>
+    <label>Assignment Source</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

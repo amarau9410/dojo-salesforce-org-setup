@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_RetentionCallAttempts__c</fullName>
+    <description>Number of attempts made to retain a customer.</description>
+    <inlineHelpText>Enter the number of retention call attempts.</inlineHelpText>
+    <label>Retention Call Attempts</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1st__successful_retentions</fullName>
+                <default>false</default>
+                <label>1st::Successful</label>
+            </value>
+            <value>
+                <fullName>1st__unsuccessful_retentions</fullName>
+                <default>false</default>
+                <label>1st::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>2nd__successful_retentions</fullName>
+                <default>false</default>
+                <label>2nd::Successful</label>
+            </value>
+            <value>
+                <fullName>2nd__unsuccessful_retentions</fullName>
+                <default>false</default>
+                <label>2nd::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>3rd__successful_retentions</fullName>
+                <default>false</default>
+                <label>3rd::Successful</label>
+            </value>
+            <value>
+                <fullName>3rd__unsuccessful_retentions</fullName>
+                <default>false</default>
+                <label>3rd::Unsuccessful</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

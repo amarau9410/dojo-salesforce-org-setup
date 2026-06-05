@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_LeadType__c</fullName>
+    <description>Classification of the lead.</description>
+    <inlineHelpText>Select the lead type from the options.</inlineHelpText>
+    <label>Lead Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>inside_sales_warm_transfer</fullName>
+                <default>false</default>
+                <label>Warm Transfer</label>
+            </value>
+            <value>
+                <fullName>inside_sales_callback</fullName>
+                <default>false</default>
+                <label>Callback</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

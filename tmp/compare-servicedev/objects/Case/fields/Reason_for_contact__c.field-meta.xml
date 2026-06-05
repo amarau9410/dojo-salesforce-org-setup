@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_contact__c</fullName>
+    <label>Reason for contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CSV Query/Advice/Upload</fullName>
+                <default>false</default>
+                <label>CSV Query/Advice/Upload</label>
+            </value>
+            <value>
+                <fullName>Change of Legal Entity/Ownership</fullName>
+                <default>false</default>
+                <label>Change of Legal Entity/Ownership</label>
+            </value>
+            <value>
+                <fullName>Demo Account Help</fullName>
+                <default>false</default>
+                <label>Demo Account Help</label>
+            </value>
+            <value>
+                <fullName>Login Issues/Queries</fullName>
+                <default>false</default>
+                <label>Login Issues/Queries</label>
+            </value>
+            <value>
+                <fullName>Onboarding Meeting Requested</fullName>
+                <default>false</default>
+                <label>Onboarding Meeting Requested</label>
+            </value>
+            <value>
+                <fullName>RMS Support</fullName>
+                <default>false</default>
+                <label>RMS Support</label>
+            </value>
+            <value>
+                <fullName>PC to Onboard</fullName>
+                <default>false</default>
+                <label>PC to Onboard</label>
+            </value>
+            <value>
+                <fullName>PS admin support</fullName>
+                <default>false</default>
+                <label>PS admin support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

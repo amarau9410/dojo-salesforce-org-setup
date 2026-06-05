@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For directing Cases using Skill Based Routing, this metadata maps from a Case Queue (identified using developer name) to a Market-Channel Skill. This metadata is referenced in the &quot;SC - Case - Before&quot; flow. If no mapping is found for a new Case Queue owner, GB Cases is applied by default.</description>
+    <label>SCV Case Queue To Market-Channel Map</label>
+    <pluralLabel>SCV Case Queue To Market-Channel Maps</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

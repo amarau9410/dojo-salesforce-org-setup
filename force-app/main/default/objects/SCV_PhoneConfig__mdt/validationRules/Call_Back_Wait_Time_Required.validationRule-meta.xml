@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Back_Wait_Time_Required</fullName>
+    <active>true</active>
+    <description>Checks there is a values in Call Back Wait Time if the Call Back option is enabled.</description>
+    <errorConditionFormula>CallBackEnabled__c ==true&amp;&amp; ISBLANK(CallBackWaitTime__c)</errorConditionFormula>
+    <errorDisplayField>CallBackWaitTime__c</errorDisplayField>
+    <errorMessage>If the Call Back option is enabled, then please provide a Call Back Wait Time which works out the longest time a Customer has been in a queue before giving this option.</errorMessage>
+</ValidationRule>

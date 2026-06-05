@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_DocumentationProvidedByMerchant__c</fullName>
+    <description>Indicates if the merchant provided necessary documentation.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if documentation was provided; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Documentation Provided By Merchant</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>documentation_provided_by_merchant_yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>documentation_provided_by_merchant_no</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

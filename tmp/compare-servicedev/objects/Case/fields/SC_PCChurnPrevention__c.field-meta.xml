@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PCChurnPrevention__c</fullName>
+    <description>Efforts to prevent customer turnover.</description>
+    <inlineHelpText>Describe the churn prevention efforts.</inlineHelpText>
+    <label>PC Churn Prevention</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pc_has_switched_customer</fullName>
+                <default>false</default>
+                <label>PC has switched customer</label>
+            </value>
+            <value>
+                <fullName>pc_has_approached_customer</fullName>
+                <default>false</default>
+                <label>PC has approached customer</label>
+            </value>
+            <value>
+                <fullName>pc_has_not_contact_customer</fullName>
+                <default>false</default>
+                <label>PC has not contact customer</label>
+            </value>
+            <value>
+                <fullName>customer_is_review</fullName>
+                <default>false</default>
+                <label>Customer in review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

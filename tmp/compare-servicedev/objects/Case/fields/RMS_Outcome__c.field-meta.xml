@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMS_Outcome__c</fullName>
+    <description>This field is used by the RMS Onboarding..</description>
+    <label>RMS Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Referred: Sales Support</fullName>
+                <default>false</default>
+                <label>Referred: Sales Support</label>
+            </value>
+            <value>
+                <fullName>Referred: 2L</fullName>
+                <default>false</default>
+                <label>Referred: 2L</label>
+            </value>
+            <value>
+                <fullName>Referred: Customer Service</fullName>
+                <default>false</default>
+                <label>Referred: Customer Service</label>
+            </value>
+            <value>
+                <fullName>Resolved PS admin support</fullName>
+                <default>false</default>
+                <label>Resolved PS admin support</label>
+            </value>
+            <value>
+                <fullName>Resolved: Action</fullName>
+                <default>false</default>
+                <label>Resolved: Action</label>
+            </value>
+            <value>
+                <fullName>Resolved Explanation</fullName>
+                <default>false</default>
+                <label>Resolved Explanation</label>
+            </value>
+            <value>
+                <fullName>Unresolved: DPA Failed</fullName>
+                <default>false</default>
+                <label>Unresolved: DPA Failed</label>
+            </value>
+            <value>
+                <fullName>Unresolved: No Answer</fullName>
+                <default>false</default>
+                <label>Unresolved: No Answer</label>
+            </value>
+            <value>
+                <fullName>Unresolved: Pending PC Response</fullName>
+                <default>false</default>
+                <label>Unresolved: Pending PC Response</label>
+            </value>
+            <value>
+                <fullName>Unresolved: Pending Customer Response</fullName>
+                <default>false</default>
+                <label>Unresolved: Pending Customer Response</label>
+            </value>
+            <value>
+                <fullName>Unresolved: Pending Underwriting Response</fullName>
+                <default>false</default>
+                <label>Unresolved: Pending Underwriting Response</label>
+            </value>
+            <value>
+                <fullName>Unresolved: Pending Product Response</fullName>
+                <default>false</default>
+                <label>Unresolved: Pending Product Response</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

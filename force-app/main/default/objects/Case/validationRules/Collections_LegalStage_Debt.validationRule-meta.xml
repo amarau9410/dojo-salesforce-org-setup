@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collections_LegalStage_Debt</fullName>
+    <active>true</active>
+    <description>Prevents users from updating Legal Journey Stage on Collections cases unless Collections Current Debt is populated and greater than 0; bypassed for users with SC_BypassValidationRules.</description>
+    <errorConditionFormula>AND(   NOT($Permission.SC_BypassValidationRules),   
+				RecordType.DeveloperName = &quot;Collections&quot;,   
+				ISCHANGED(SC_LegalJourneyStage__c),   
+				NOT(ISPICKVAL(SC_LegalJourneyStage__c, &quot;&quot;)),   
+				OR(     ISBLANK(SC_CollectionsCurrentDebt__c),     
+							SC_CollectionsCurrentDebt__c &lt;= 0   ) )</errorConditionFormula>
+    <errorMessage>Legal Journey Stage can only be updated when Collections Current Debt is greater than 0.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,101 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T12:52:22.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T12:52:20.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "columnNumber": 18,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-27T12:52:21.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.CardMachineCharges",
+          "lineNumber": 243,
+          "problem": "In field: businessProcess - no BusinessProcess named Case.Standard Support Process found",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T12:52:21.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Building_Type__c",
+          "id": "00NQ100000MPYY5MAP",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T12:52:21.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RWr01KAD",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T12:52:22.000Z",
+    "numberComponentErrors": 1,
+    "numberComponentsDeployed": 1,
+    "numberComponentsTotal": 2,
+    "numberFiles": "4",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T12:52:21.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 39076,
+    "files": [
+      {
+        "fullName": "Asset.Building_Type__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Building_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Case.CardMachineCharges",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\CardMachineCharges.recordType-meta.xml",
+        "lineNumber": 243,
+        "columnNumber": 18,
+        "error": "In field: businessProcess - no BusinessProcess named Case.Standard Support Process found (243:18)"
+      }
+    ],
+    "zipFileCount": 3,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWr01KAD%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

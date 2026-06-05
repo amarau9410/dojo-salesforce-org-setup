@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ECOMInactiveThemes__c</fullName>
+    <description>Themes identified in inactive e-commerce accounts.</description>
+    <inlineHelpText>List the inactive themes for e-commerce.</inlineHelpText>
+    <label>ECOM Inactive Themes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>lack_of_support_throughout_onboarding</fullName>
+                <default>false</default>
+                <label>Lack of support throughout onboarding</label>
+            </value>
+            <value>
+                <fullName>unable_to_integrate_with_partner</fullName>
+                <default>false</default>
+                <label>Unable to integrate with partner</label>
+            </value>
+            <value>
+                <fullName>technical_issues_after_set_up</fullName>
+                <default>false</default>
+                <label>Technical issues after set up</label>
+            </value>
+            <value>
+                <fullName>set_up__too_slow</fullName>
+                <default>false</default>
+                <label>Set up::Too slow</label>
+            </value>
+            <value>
+                <fullName>set_up__too_complicated</fullName>
+                <default>false</default>
+                <label>Set up::Too complicated</label>
+            </value>
+            <value>
+                <fullName>set_up__non-compliant</fullName>
+                <default>false</default>
+                <label>Set up::Non-compliant</label>
+            </value>
+            <value>
+                <fullName>product_not_suitable</fullName>
+                <default>false</default>
+                <label>Product not suitable</label>
+            </value>
+            <value>
+                <fullName>prefers_competitor</fullName>
+                <default>false</default>
+                <label>Prefers competitor</label>
+            </value>
+            <value>
+                <fullName>changes_to_business_practices</fullName>
+                <default>false</default>
+                <label>Changes to business practices</label>
+            </value>
+            <value>
+                <fullName>waiting_on_developer_/_epos_partner</fullName>
+                <default>false</default>
+                <label>Waiting on Developer / Epos Partner</label>
+            </value>
+            <value>
+                <fullName>seasonal_ecom_inactive</fullName>
+                <default>false</default>
+                <label>Seasonal</label>
+            </value>
+            <value>
+                <fullName>prefers_alternative_payment_type</fullName>
+                <default>false</default>
+                <label>Prefers alternative payment type</label>
+            </value>
+            <value>
+                <fullName>slow_business</fullName>
+                <default>false</default>
+                <label>Slow Business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

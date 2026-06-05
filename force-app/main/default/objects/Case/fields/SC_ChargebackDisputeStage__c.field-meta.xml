@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ChargebackDisputeStage__c</fullName>
+    <description>Current phase of the chargeback dispute process.</description>
+    <inlineHelpText>Indicate the current stage of the dispute.</inlineHelpText>
+    <label>Chargeback Dispute Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>chargeback_-_dispute_stage_dispute_response_/_representment</fullName>
+                <default>false</default>
+                <label>Dispute response / representment</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_pre_arbitration</fullName>
+                <default>false</default>
+                <label>Pre Arbitration</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_pre_compliance</fullName>
+                <default>false</default>
+                <label>Pre Compliance</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_responded</fullName>
+                <default>false</default>
+                <label>Responded</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_non_responded</fullName>
+                <default>false</default>
+                <label>Non responded</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_chargeback_reversed</fullName>
+                <default>false</default>
+                <label>Chargeback reversed</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_chargeback_accepted</fullName>
+                <default>false</default>
+                <label>Chargeback accepted</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_dispute_stage_arbitration</fullName>
+                <default>false</default>
+                <label>Arbitration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

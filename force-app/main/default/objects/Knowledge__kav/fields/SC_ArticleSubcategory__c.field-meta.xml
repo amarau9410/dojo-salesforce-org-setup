@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ArticleSubcategory__c</fullName>
+    <description>Shows the article subcateogry as defined on the external FAQ base.</description>
+    <label>Subcategory</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SC_KnowledgeCategory__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Getting Started</fullName>
+                <default>false</default>
+                <label>Getting Started</label>
+            </value>
+            <value>
+                <fullName>Your account and contract</fullName>
+                <default>false</default>
+                <label>Your account and contract</label>
+            </value>
+            <value>
+                <fullName>Making changes</fullName>
+                <default>false</default>
+                <label>Making changes</label>
+            </value>
+            <value>
+                <fullName>The Dojo for Business app</fullName>
+                <default>false</default>
+                <label>The Dojo for Business app</label>
+            </value>
+            <value>
+                <fullName>How to use</fullName>
+                <default>false</default>
+                <label>How to use</label>
+            </value>
+            <value>
+                <fullName>Integration</fullName>
+                <default>false</default>
+                <label>Integration</label>
+            </value>
+            <value>
+                <fullName>Card machine settings</fullName>
+                <default>false</default>
+                <label>Card machine settings</label>
+            </value>
+            <value>
+                <fullName>Card machine accessories</fullName>
+                <default>false</default>
+                <label>Card machine accessories</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting</fullName>
+                <default>false</default>
+                <label>Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Invoices</fullName>
+                <default>false</default>
+                <label>Invoices</label>
+            </value>
+            <value>
+                <fullName>Fees and charges explained</fullName>
+                <default>false</default>
+                <label>Fees and charges explained</label>
+            </value>
+            <value>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+                <label>Transactions</label>
+            </value>
+            <value>
+                <fullName>Transfers</fullName>
+                <default>false</default>
+                <label>Transfers</label>
+            </value>
+            <value>
+                <fullName>Remote Payments</fullName>
+                <default>false</default>
+                <label>Remote Payments</label>
+            </value>
+            <value>
+                <fullName>Business funding</fullName>
+                <default>false</default>
+                <label>Business funding</label>
+            </value>
+            <value>
+                <fullName>PCI DSS</fullName>
+                <default>false</default>
+                <label>PCI DSS</label>
+            </value>
+            <value>
+                <fullName>Chargebacks</fullName>
+                <default>false</default>
+                <label>Chargebacks</label>
+            </value>
+            <value>
+                <fullName>Dojo Booking RMS</fullName>
+                <default>false</default>
+                <label>Dojo Booking RMS</label>
+            </value>
+            <value>
+                <fullName>Managing queues and booking</fullName>
+                <default>false</default>
+                <label>Managing queues and booking</label>
+            </value>
+            <value>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+                <label>FAQs</label>
+            </value>
+            <value>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>Brand Update</fullName>
+                <default>false</default>
+                <label>Brand Update</label>
+            </value>
+            <value>
+                <fullName>La aplicación Dojo for business</fullName>
+                <default>false</default>
+                <label>La aplicación Dojo for business</label>
+            </value>
+            <value>
+                <fullName>Hacer cambios</fullName>
+                <default>false</default>
+                <label>Hacer cambios</label>
+            </value>
+            <value>
+                <fullName>Tu cuenta y tu contrato</fullName>
+                <default>false</default>
+                <label>Tu cuenta y tu contrato</label>
+            </value>
+            <value>
+                <fullName>Resolución de problemas</fullName>
+                <default>false</default>
+                <label>Resolución de problemas</label>
+            </value>
+            <value>
+                <fullName>Ajustes del datáfono</fullName>
+                <default>false</default>
+                <label>Ajustes del datáfono</label>
+            </value>
+            <value>
+                <fullName>Integración</fullName>
+                <default>false</default>
+                <label>Integración</label>
+            </value>
+            <value>
+                <fullName>Guía de uso</fullName>
+                <default>false</default>
+                <label>Guía de uso</label>
+            </value>
+            <value>
+                <fullName>Empezar</fullName>
+                <default>false</default>
+                <label>Empezar</label>
+            </value>
+            <value>
+                <fullName>Explicación de las tarifas y los cargos</fullName>
+                <default>false</default>
+                <label>Explicación de las tarifas y los cargos</label>
+            </value>
+            <value>
+                <fullName>Facturas</fullName>
+                <default>false</default>
+                <label>Facturas</label>
+            </value>
+            <value>
+                <fullName>Transferencias</fullName>
+                <default>false</default>
+                <label>Transferencias</label>
+            </value>
+            <value>
+                <fullName>Fraude</fullName>
+                <default>false</default>
+                <label>Fraude</label>
+            </value>
+            <value>
+                <fullName>Retrocesos de cargos</fullName>
+                <default>false</default>
+                <label>Retrocesos de cargos</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Transacciones y transferencias</controllingFieldValue>
+            <valueName>Transferencias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your account</controllingFieldValue>
+            <controllingFieldValue>Your Card Machine</controllingFieldValue>
+            <valueName>Getting Started</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your account</controllingFieldValue>
+            <valueName>Your account and contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your account</controllingFieldValue>
+            <valueName>Making changes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your account</controllingFieldValue>
+            <valueName>The Dojo for Business app</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguridad en los pagos</controllingFieldValue>
+            <controllingFieldValue>Payment security</controllingFieldValue>
+            <valueName>PCI DSS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguridad en los pagos</controllingFieldValue>
+            <valueName>Fraude</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seguridad en los pagos</controllingFieldValue>
+            <valueName>Retrocesos de cargos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your Card Machine</controllingFieldValue>
+            <valueName>How to use</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your Card Machine</controllingFieldValue>
+            <valueName>Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your Card Machine</controllingFieldValue>
+            <valueName>Card machine settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your Card Machine</controllingFieldValue>
+            <valueName>Card machine accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Your Card Machine</controllingFieldValue>
+            <valueName>Troubleshooting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Invoices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Fees and charges explained</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions and transfers</controllingFieldValue>
+            <valueName>Transactions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions and transfers</controllingFieldValue>
+            <valueName>Transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions and transfers</controllingFieldValue>
+            <valueName>Remote Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transactions and transfers</controllingFieldValue>
+            <valueName>Business funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment security</controllingFieldValue>
+            <valueName>Chargebacks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment security</controllingFieldValue>
+            <valueName>Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dojo Bookings</controllingFieldValue>
+            <valueName>Dojo Booking RMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dojo Bookings</controllingFieldValue>
+            <valueName>Managing queues and booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dojo Bookings</controllingFieldValue>
+            <valueName>FAQs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dojo updates</controllingFieldValue>
+            <valueName>Brand Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu cuenta</controllingFieldValue>
+            <valueName>La aplicación Dojo for business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu cuenta</controllingFieldValue>
+            <valueName>Hacer cambios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu cuenta</controllingFieldValue>
+            <valueName>Tu cuenta y tu contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu cuenta</controllingFieldValue>
+            <controllingFieldValue>Tu datáfono</controllingFieldValue>
+            <valueName>Empezar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu datáfono</controllingFieldValue>
+            <valueName>Resolución de problemas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu datáfono</controllingFieldValue>
+            <valueName>Ajustes del datáfono</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu datáfono</controllingFieldValue>
+            <valueName>Integración</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tu datáfono</controllingFieldValue>
+            <valueName>Guía de uso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturación</controllingFieldValue>
+            <valueName>Explicación de las tarifas y los cargos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturación</controllingFieldValue>
+            <valueName>Facturas</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

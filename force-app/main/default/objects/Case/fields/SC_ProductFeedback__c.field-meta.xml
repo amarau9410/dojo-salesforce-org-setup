@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ProductFeedback__c</fullName>
+    <description>Comments or opinions about the product.</description>
+    <inlineHelpText>Enter feedback or comments about the product.</inlineHelpText>
+    <label>Product Feedback</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>product_feedback_new</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>product_feedback_accounting_integration</fullName>
+                <default>false</default>
+                <label>Accounting integration</label>
+            </value>
+            <value>
+                <fullName>product_feedback_app</fullName>
+                <default>false</default>
+                <label>App</label>
+            </value>
+            <value>
+                <fullName>product_feedback_billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>product_feedback_card_machine</fullName>
+                <default>false</default>
+                <label>Card machine</label>
+            </value>
+            <value>
+                <fullName>product_feedback_dojo_card</fullName>
+                <default>false</default>
+                <label>Dojo Card</label>
+            </value>
+            <value>
+                <fullName>product_feedback_integration</fullName>
+                <default>false</default>
+                <label>Integration</label>
+            </value>
+            <value>
+                <fullName>product_feedback_receipts</fullName>
+                <default>false</default>
+                <label>Receipts</label>
+            </value>
+            <value>
+                <fullName>product_feedback_remote_payments</fullName>
+                <default>false</default>
+                <label>Remote payments</label>
+            </value>
+            <value>
+                <fullName>product_feedback_reporting</fullName>
+                <default>false</default>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>product_feedback_tap_pilot</fullName>
+                <default>false</default>
+                <label>Tap pilot</label>
+            </value>
+            <value>
+                <fullName>product_feedback_transfers</fullName>
+                <default>false</default>
+                <label>Transfers</label>
+            </value>
+            <value>
+                <fullName>db_-_bookings</fullName>
+                <default>false</default>
+                <label>DB - Bookings</label>
+            </value>
+            <value>
+                <fullName>db_-_queuing</fullName>
+                <default>false</default>
+                <label>DB - Queuing</label>
+            </value>
+            <value>
+                <fullName>db_-_payments_and_integration</fullName>
+                <default>false</default>
+                <label>DB - Payments and Integration</label>
+            </value>
+            <value>
+                <fullName>db_-_rms_settings_and_set_up</fullName>
+                <default>false</default>
+                <label>DB - RMS Settings and set up</label>
+            </value>
+            <value>
+                <fullName>db_-_guest_comms_or_reporting</fullName>
+                <default>false</default>
+                <label>DB - Guest Comms or Reporting</label>
+            </value>
+            <value>
+                <fullName>db_-_guest_profiles</fullName>
+                <default>false</default>
+                <label>DB - Guest Profiles</label>
+            </value>
+            <value>
+                <fullName>db_-_user_access_levels</fullName>
+                <default>false</default>
+                <label>DB - User Access levels</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

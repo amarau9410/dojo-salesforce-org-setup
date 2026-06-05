@@ -1,0 +1,25 @@
+diff --git "a/tmp\\promotion-branch-original\\SC_UpsellProducts__c.field-meta.xml" "b/tmp\\promotion-branch-copy\\SC_UpsellProducts__c.field-meta.xml"
+index ae65de0dc..9672c3bda 100644
+--- "a/tmp\\promotion-branch-original\\SC_UpsellProducts__c.field-meta.xml"
++++ "b/tmp\\promotion-branch-copy\\SC_UpsellProducts__c.field-meta.xml"
+@@ -123,17 +123,17 @@
+                 <label>Dojo Max::Unsuccessful</label>
+             </value>
+             <value>
+-                <fullName>upsell_products_integrations__prospect</fullName>
++                <fullName>upsell_products_Integrations_Prospect</fullName>
+                 <default>false</default>
+                 <label>Integrations::Prospect</label>
+             </value>
+             <value>
+-                <fullName>upsell_products_integrations__successful</fullName>
++                <fullName>upsell_products_Integrations_Successful</fullName>
+                 <default>false</default>
+                 <label>Integrations::Successful</label>
+             </value>
+             <value>
+-                <fullName>upsell_products_integrations__unsuccessful</fullName>
++                <fullName>upsell_products_Integrations_Unsuccessful</fullName>
+                 <default>false</default>
+                 <label>Integrations::Unsuccessful</label>
+             </value>

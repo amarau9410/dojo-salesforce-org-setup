@@ -1,0 +1,381 @@
+# CareOrch Epics 6-8 Build Backlog
+
+Date: 2026-06-01
+Target Org: careorchdev
+Source Blueprint: docs/careorch-epic6-8-implementation-blueprint.md
+
+## 1. Delivery Approach
+
+1. Flow-first implementation.
+2. Declarative-first; Apex only when required by platform limitations or scale.
+3. No profile edits; permission sets only.
+4. Preserve Critical_Event__c as clinical incident system of record.
+
+## 2. Phase Plan
+
+1. Phase A: Enquiry Lead model and admissions routing.
+2. Phase B: Conversion guardrails and Resident creation path.
+3. Phase C: Operational alert Cases and notifications.
+4. Phase D: Funding and contracts foundation.
+5. Phase E: Invoice and comfort-fund ledger automation.
+6. Phase F: Security hardening, UAT, and release readiness.
+
+## 3. Ticket Backlog
+
+## Phase A: Enquiry Lead Model and Routing
+
+### E6-A1 Create Lead Record Type Care_Enquiry
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: none
+
+Scope:
+1. Create Lead Record Type Care_Enquiry.
+2. Add Lead business process/status values for enquiry pipeline.
+3. Assign record type visibility to admissions permission sets only.
+
+Done criteria:
+1. Care_Enquiry selectable by admissions users.
+2. Statuses visible: Inquiry, Assessment Scheduled, Funding Verified, Contract Pending, Ready to Convert, Closed - Not Admitted.
+
+### E6-A2 Add Lead Custom Fields for Enquiry
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: E6-A1
+
+Scope:
+1. Add CareOrch_Funding_Type__c picklist.
+2. Add CareOrch_Requested_Care_Type__c picklist.
+3. Add CareOrch_Target_Admission_Date__c date.
+4. Add fields to Care_Enquiry page layout.
+
+Done criteria:
+1. Fields visible/editable for admissions users.
+2. Picklist values match blueprint.
+
+### E6-A3 Lead Validation Rules for Enquiry Completeness
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: E6-A2
+
+Scope:
+1. Require CareOrch_Funding_Type__c for Care_Enquiry.
+2. Require CareOrch_Requested_Care_Type__c for Care_Enquiry.
+3. Enforce Target Admission Date validity.
+
+Done criteria:
+1. Invalid saves are blocked with clear user messages.
+2. Non-Care_Enquiry leads are unaffected.
+
+### E6-A4 Admissions Queue and Assignment Automation
+
+Type: Metadata + Flow/Assignment Rule
+Owner: Salesforce Admin
+Dependencies: E6-A1, E6-A2
+
+Scope:
+1. Create Admissions Queue.
+2. Implement Lead assignment behavior for Care_Enquiry.
+3. Optional reminder task path for aging enquiries.
+
+Done criteria:
+1. New Care_Enquiry routes to Admissions Queue.
+2. Assignment behavior is testable and deterministic.
+
+## Phase B: Lead Conversion Guardrails
+
+### E6-B1 Lead-to-Resident Field Mapping
+
+Type: Configuration
+Owner: Salesforce Admin
+Dependencies: E6-A2
+
+Scope:
+1. Map Lead care/funding fields to Account Resident fields.
+2. Confirm Person Account field availability.
+
+Done criteria:
+1. Converted Resident account receives mapped values.
+
+### E6-B2 Conversion Guardrail Flow
+
+Type: Flow
+Owner: Salesforce Admin
+Dependencies: E6-B1
+
+Scope:
+1. Build admissions conversion screen flow or quick action flow.
+2. Enforce Ready to Convert status before conversion.
+3. Enforce required field checks before conversion.
+
+Done criteria:
+1. Conversion blocked when prerequisites are not met.
+2. Conversion succeeds when prerequisites are met.
+
+### E6-B3 Duplicate Management Rules for Resident Conversion
+
+Type: Configuration
+Owner: Salesforce Admin
+Dependencies: E6-B2
+
+Scope:
+1. Add duplicate and matching rules for person-account creation.
+2. Define admissions exception path for false positives.
+
+Done criteria:
+1. Duplicate resident creation prevented in common paths.
+2. Admissions team has clear override/escalation process.
+
+## Phase C: Operational Alert Case Management
+
+### E7-C1 Create Case Record Type Operational_Alert
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: none
+
+Scope:
+1. Add Case record type Operational_Alert.
+2. Add case layout and compact layout for operations users.
+
+Done criteria:
+1. Operational_Alert available to operations roles.
+
+### E7-C2 Add Operational Alert Case Fields and Rules
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: E7-C1
+
+Scope:
+1. Add CareOrch_Alert_Source__c.
+2. Add CareOrch_Severity__c.
+3. Add CareOrch_Resident_Impact__c.
+4. Add CareOrch_Critical_Event__c lookup.
+5. Add validation rules from blueprint.
+
+Done criteria:
+1. Operational_Alert requires account, source, and severity.
+2. Cross-link validation to Critical_Event__c works.
+
+### E7-C3 Build Observation-to-Case Alert Flow
+
+Type: Flow
+Owner: Salesforce Admin
+Dependencies: E7-C2
+
+Scope:
+1. Trigger on HealthCloudGA__EHR_Observation__c critical conditions.
+2. Create Case with Priority High and Status New.
+3. Map resident account to Case account.
+4. Link to existing Critical_Event__c when available.
+
+Done criteria:
+1. Simulated critical observation creates Operational_Alert case.
+2. No duplicate Critical_Event__c generated by this flow.
+
+### E7-C4 Duty Nurse Notification
+
+Type: Configuration + Flow
+Owner: Salesforce Admin
+Dependencies: E7-C3
+
+Scope:
+1. Create Custom Notification Type.
+2. Determine recipient strategy (queue users, role, or assignment).
+3. Send bell notification on new Operational_Alert cases.
+
+Done criteria:
+1. Assigned Duty Nurse receives in-app notification.
+2. Notification contains case link and alert context.
+
+## Phase D: Funding and Contract Foundation
+
+### E8-D1 Expose Contract on Resident and Add Financial Fields
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: none
+
+Scope:
+1. Add Contract related list to Resident layout.
+2. Add CareOrch_Core_Weekly_Fee__c.
+3. Add CareOrch_Fee_Payer_Type__c.
+
+Done criteria:
+1. Contract can be viewed and edited from Resident profile.
+
+### E8-D2 Contract Activation Validation
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: E8-D1
+
+Scope:
+1. Block Contract activation unless weekly fee > 0.
+2. Require fee payer type on activation.
+
+Done criteria:
+1. Invalid contract activations are blocked.
+
+### E8-D3 Create Funding Check Object and Rollups
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: none
+
+Scope:
+1. Create CareOrch_Funding_Check__c with master-detail to Account.
+2. Add eligibility, contribution, and review fields.
+3. Add rollup summary to Account for approved contribution total.
+
+Done criteria:
+1. Funding checks can be created against Resident account.
+2. Account rollup updates correctly for approved records.
+
+## Phase E: Invoice and Ledger Automation
+
+### E8-E1 Create Invoice and Invoice Line Objects
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: none
+
+Scope:
+1. Create CareOrch_Invoice__c (master-detail to Account).
+2. Create CareOrch_Invoice_Line__c (master-detail to Invoice).
+3. Add period/status/amount fields and line item fields.
+
+Done criteria:
+1. Invoice and line items can be created from Resident context.
+
+### E8-E2 Invoice Validation and Recalculation Logic
+
+Type: Metadata + Flow
+Owner: Salesforce Admin
+Dependencies: E8-E1
+
+Scope:
+1. Add validations for quantity, price, billing period coherence.
+2. Ensure totals roll up correctly via formula/rollups.
+
+Done criteria:
+1. Example 10 x 20 updates invoice total by 200.
+
+### E8-E3 Create Comfort Funds Ledger and Balance Logic
+
+Type: Metadata + Flow
+Owner: Salesforce Admin
+Dependencies: none
+
+Scope:
+1. Create CareOrch_Patient_Account_Ledger__c lookup to Account.
+2. Add type, amount, merchant, date fields.
+3. Flow updates running account balance.
+
+Done criteria:
+1. Deposit adds and charge subtracts in real time.
+2. Merchant description required for charge transactions.
+
+## Phase F: Security, UAT, Release
+
+### F1 Permission Set Build
+
+Type: Metadata
+Owner: Salesforce Admin
+Dependencies: all model tickets
+
+Scope:
+1. Create/adjust permission sets:
+- CareOrch_Admissions_Manager
+- CareOrch_Admissions_Admin
+- CareOrch_Operations_Support
+- CareOrch_Finance_Controller
+- CareOrch_Billing_Clerk
+2. Configure CRUD/FLS/tab access least privilege.
+
+Done criteria:
+1. No profile edits used.
+2. Persona access model passes smoke test.
+
+### F2 Regression and Non-Regression Test Execution
+
+Type: QA
+Owner: QA + Admin
+Dependencies: phases A-E complete
+
+Scope:
+1. Execute new epic tests.
+2. Re-run Critical_Event lifecycle regression.
+3. Verify no break in closed-loop acknowledgement controls.
+
+Done criteria:
+1. All minimum test pack items pass.
+2. No High/Critical regressions in protected areas.
+
+### F3 UAT and Go-Live Readiness
+
+Type: QA/Release
+Owner: Release Lead
+Dependencies: F2
+
+Scope:
+1. Execute UAT with persona scripts.
+2. Collect evidence and defect logs.
+3. Run go-live gate scripts and approvals.
+
+Done criteria:
+1. Required sign-offs completed.
+2. Release evidence package archived.
+
+## 4. Dependency Summary
+
+1. E6-A1 -> E6-A2 -> E6-A3 -> E6-A4.
+2. E6-A2 -> E6-B1 -> E6-B2 -> E6-B3.
+3. E7-C1 -> E7-C2 -> E7-C3 -> E7-C4.
+4. E8-D1 -> E8-D2.
+5. E8-E1 -> E8-E2.
+6. All build streams -> F1 -> F2 -> F3.
+
+## 5. Suggested Sprint Slicing
+
+Sprint 1:
+1. E6-A1, E6-A2, E6-A3, E6-A4
+2. E6-B1
+
+Sprint 2:
+1. E6-B2, E6-B3
+2. E7-C1, E7-C2
+
+Sprint 3:
+1. E7-C3, E7-C4
+2. E8-D1, E8-D2, E8-D3
+
+Sprint 4:
+1. E8-E1, E8-E2, E8-E3
+2. F1, F2, F3
+
+## 6. Risks and Controls
+
+1. Duplicate resident creation risk:
+- Control: E6-B3 duplicate rules + conversion guard flow.
+
+2. Incident source-of-truth drift:
+- Control: E7-C3 prohibits replacing Critical_Event lifecycle.
+
+3. Finance data retention risk:
+- Control: archival policy and no hard-delete acceptance criteria.
+
+4. Notification delivery ambiguity:
+- Control: define recipient resolution in E7-C4 before UAT.
+
+## 7. Definition of Done (Global)
+
+1. Metadata deployed and source tracked.
+2. Permission set access validated by persona.
+3. UAT scenario evidence captured.
+4. Regression on existing CareOrch operational flows passed.
+5. Documentation updated in docs directory.

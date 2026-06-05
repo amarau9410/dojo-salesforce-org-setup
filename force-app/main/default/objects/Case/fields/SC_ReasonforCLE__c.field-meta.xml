@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ReasonforCLE__c</fullName>
+    <description>Change of legal entity reason</description>
+    <label>Reason for CLE</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>reason_for_cle_pc_error_at_sign_up</fullName>
+                <default>false</default>
+                <label>PC error at sign up</label>
+            </value>
+            <value>
+                <fullName>reason_for_cle_customer_error_at_sign_up</fullName>
+                <default>false</default>
+                <label>Customer error at sign up</label>
+            </value>
+            <value>
+                <fullName>reason_for_cle_change_of_ownership</fullName>
+                <default>false</default>
+                <label>Change of ownership</label>
+            </value>
+            <value>
+                <fullName>reason_for_cle_customer_has_changed_legal_entity</fullName>
+                <default>false</default>
+                <label>Customer has changed legal entity</label>
+            </value>
+            <value>
+                <fullName>reason_for_cle_merging_locations</fullName>
+                <default>false</default>
+                <label>Merging locations</label>
+            </value>
+            <value>
+                <fullName>reason_for_cle_other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

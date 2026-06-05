@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_KickOffCall__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Initial call to start a project or process.</description>
+    <inlineHelpText>Schedule or confirm the kick-off call.</inlineHelpText>
+    <label>Kick Off Call</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

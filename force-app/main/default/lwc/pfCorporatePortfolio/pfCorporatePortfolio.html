@@ -1,0 +1,134 @@
+<template>
+    <section class="portfolio-shell">
+        <header class="topbar">
+            <div class="brand">Nnamdi Udoye | Salesforce Portfolio</div>
+            <nav class="menu" aria-label="Portfolio pages">
+                <a href={homeUrl}>Home</a>
+                <a href={servicesUrl}>Services</a>
+                <a href={projectsUrl}>Projects</a>
+                <a href={contactUrl}>Contact</a>
+            </nav>
+        </header>
+
+        <template lwc:if={isHome}>
+            <section class="hero card">
+                <p class="eyebrow">Salesforce Platform Specialist</p>
+                <h1>Corporate-grade Salesforce delivery for Sales Support, Service, and Governance.</h1>
+                <p class="lede">
+                    Certified Salesforce Administrator with 5+ years of platform delivery and 15+ years in enterprise IT,
+                    focused on secure, scalable Service Cloud and Sales Cloud execution.
+                </p>
+                <div class="action-row">
+                    <a class="btn primary" href={projectsUrl}>View Projects</a>
+                    <a class="btn secondary" href={contactUrl}>Contact Me</a>
+                </div>
+                <div class="kpi-grid">
+                    <article>
+                        <strong>5+ Years</strong>
+                        <span>Salesforce Experience</span>
+                    </article>
+                    <article>
+                        <strong>150,000+</strong>
+                        <span>Merchants Supported</span>
+                    </article>
+                    <article>
+                        <strong>15+ Years</strong>
+                        <span>Enterprise IT</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="split-grid">
+                <article class="card">
+                    <h2>Leadership Highlights</h2>
+                    <template for:each={highlights} for:item="item">
+                        <div class="highlight" key={item.title}>
+                            <h3>{item.title}</h3>
+                            <p>{item.text}</p>
+                        </div>
+                    </template>
+                </article>
+
+                <article class="card">
+                    <h2>Technical Toolkit</h2>
+                    <ul class="pill-grid">
+                        <template for:each={toolkit} for:item="tool">
+                            <li key={tool}>{tool}</li>
+                        </template>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="split-grid">
+                <article class="card">
+                    <h2>Professional Timeline</h2>
+                    <template for:each={timeline} for:item="step">
+                        <div class="timeline-item" key={step.role}>
+                            <h3>{step.role}</h3>
+                            <p class="timeline-company">{step.company}</p>
+                            <p>{step.summary}</p>
+                        </div>
+                    </template>
+                </article>
+
+                <article class="card">
+                    <h2>Measured Impact</h2>
+                    <ul class="outcome-list">
+                        <template for:each={outcomes} for:item="outcome">
+                            <li key={outcome}>{outcome}</li>
+                        </template>
+                    </ul>
+                </article>
+            </section>
+        </template>
+
+        <template lwc:if={isServices}>
+            <section class="card">
+                <h2>What I Can Do For You</h2>
+                <p class="lede">Hands-on Salesforce delivery focused on performance, governance, and measurable outcomes.</p>
+                <div class="service-grid">
+                    <template for:each={services} for:item="service">
+                        <article class="service-card" key={service.title}>
+                            <h3>{service.title}</h3>
+                            <p>{service.text}</p>
+                        </article>
+                    </template>
+                </div>
+            </section>
+        </template>
+
+        <template lwc:if={isProjects}>
+            <section class="card">
+                <h2>Featured Salesforce Projects</h2>
+                <p class="lede">A portfolio view of business challenge, delivery approach, and measurable impact.</p>
+                <div class="project-grid">
+                    <template for:each={projects} for:item="project">
+                        <article class="project-card" key={project.title}>
+                            <span class="chip">{project.label}</span>
+                            <h3>{project.title}</h3>
+                            <ul>
+                                <li><strong>Challenge:</strong> {project.challenge}</li>
+                                <li><strong>What I delivered:</strong> {project.delivered}</li>
+                                <li><strong>Outcome:</strong> {project.outcome}</li>
+                            </ul>
+                        </article>
+                    </template>
+                </div>
+            </section>
+        </template>
+
+        <template lwc:if={isContact}>
+            <section class="card contact-card">
+                <h2>Let&apos;s Work Together</h2>
+                <p class="lede">Available for Salesforce administration, solution delivery, and CRM optimization projects.</p>
+                <div class="action-row">
+                    <a class="btn primary" href={mailtoHref} data-event-name="generate_lead" data-event-label="email_contact" onclick={trackClick}>Email Nnamdi</a>
+                    <a class="btn secondary" href={phoneHref} data-event-name="contact_phone_click" data-event-label="phone_contact" onclick={trackClick}>Call Nnamdi</a>
+                    <a class="btn secondary" href={cvWordUrl} target="_blank" data-event-name="cv_download" data-event-label="cv_word" onclick={trackClick}>Download CV (Word)</a>
+                    <a class="btn secondary" href={cvPdfUrl} target="_blank" data-event-name="cv_download" data-event-label="cv_pdf" onclick={trackClick}>Download CV (PDF)</a>
+                    <a class="btn secondary" href={linkedInUrl} target="_blank" data-event-name="linkedin_click" data-event-label="linkedin_profile" onclick={trackClick}>LinkedIn</a>
+                </div>
+            </section>
+        </template>
+    </section>
+</template>

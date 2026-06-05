@@ -1,0 +1,212 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T11:01:50.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T11:01:25.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:49.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Fire_Door_Inspection__c",
+          "id": "00NQ100000MOwSnMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c.Check_Name__c",
+          "id": "00NQ100000MOwSoMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c.Inspection__c",
+          "id": "00NQ100000MOwSpMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c.Notes__c",
+          "id": "00NQ100000MOwSqMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c.Remedial_Required__c",
+          "id": "00NQ100000MOwSrMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c.Remedial_Target_Date__c",
+          "id": "00NQ100000MOwSuMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c.Result__c",
+          "id": "00NQ100000MOwSsMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c.Risk_Level__c",
+          "id": "00NQ100000MOwStMAL",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomObject",
+          "created": true,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "objects/Fire_Door_Inspection_Item__c.object",
+          "fullName": "Fire_Door_Inspection_Item__c",
+          "id": "01IQ100000AbjjZMAR",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T11:01:50.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfQ100000RWkJVKA1",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T11:01:50.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 9,
+    "numberComponentsTotal": 9,
+    "numberFiles": "4",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T11:01:48.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 2932,
+    "files": [
+      {
+        "fullName": "Case.Fire_Door_Inspection__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\fields\\Fire_Door_Inspection__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c.Check_Name__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\fields\\Check_Name__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c.Inspection__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\fields\\Inspection__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c.Notes__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\fields\\Notes__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c.Remedial_Required__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\fields\\Remedial_Required__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c.Remedial_Target_Date__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\fields\\Remedial_Target_Date__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c.Result__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\fields\\Result__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c.Risk_Level__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\fields\\Risk_Level__c.field-meta.xml"
+      },
+      {
+        "fullName": "Fire_Door_Inspection_Item__c",
+        "type": "CustomObject",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Fire_Door_Inspection_Item__c\\Fire_Door_Inspection_Item__c.object-meta.xml"
+      }
+    ],
+    "zipFileCount": 3,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWkJVKA1%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

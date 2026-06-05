@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_2_Industry__c</fullName>
+    <description>DOJOR-69 Second level of industry specificity. Level 1 values determine what values are available here</description>
+    <inlineHelpText>Second level of industry specificity. Level 2 values dependent on  this value</inlineHelpText>
+    <label>Level 2 Industry</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Level_1_Industry__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Level_2_Industry</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Hospitality</controllingFieldValue>
+            <valueName>Table Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospitality</controllingFieldValue>
+            <valueName>Counter Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Hair &amp; Beauty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Healthcare Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Retail Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>B2B Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Other Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Grocery Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Retail Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Entertainment and Leisure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Lodging</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

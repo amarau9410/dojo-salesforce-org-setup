@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartnerAccount__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Partner</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The selected record must be a Partner account</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Lead Partner Relationships</relationshipLabel>
+    <relationshipName>Lead_Partner_Relationships</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

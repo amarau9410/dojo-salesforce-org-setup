@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Contains restricted roles for the signatory ID verification. Roles that are listed in this metadata won&apos;t be able to use manual upload verification for signatory.</description>
+    <label>Restricted Roles for ID Verification</label>
+    <pluralLabel>Restricted Roles for ID Verifications</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

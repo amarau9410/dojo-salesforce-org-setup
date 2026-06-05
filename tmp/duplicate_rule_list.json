@@ -1,0 +1,45 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005d3000002xIMMAA2",
+      "createdByName": "Automated Process",
+      "createdDate": "2026-04-28T10:27:21.000Z",
+      "fileName": "duplicateRules/Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts.duplicateRule",
+      "fullName": "Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts",
+      "id": "0Bmd3000001GrHVCA0",
+      "lastModifiedById": "005d3000002xIMMAA2",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2026-04-28T10:27:21.000Z",
+      "manageableState": "unmanaged",
+      "type": "DuplicateRule"
+    },
+    {
+      "createdById": "005d3000002xIMMAA2",
+      "createdByName": "Automated Process",
+      "createdDate": "2026-05-21T10:39:35.000Z",
+      "fileName": "duplicateRules/Account.Standard_Person_Account_Duplicate_Rule.duplicateRule",
+      "fullName": "Account.Standard_Person_Account_Duplicate_Rule",
+      "id": "0BmQ10000028tqzKAA",
+      "lastModifiedById": "005d3000002x7IyAAI",
+      "lastModifiedByName": "Nnamdi Udoye",
+      "lastModifiedDate": "2026-05-21T10:39:37.000Z",
+      "manageableState": "unmanaged",
+      "type": "DuplicateRule"
+    },
+    {
+      "createdById": "005d3000002xIMMAA2",
+      "createdByName": "Automated Process",
+      "createdDate": "2026-04-28T10:27:21.000Z",
+      "fileName": "duplicateRules/Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads.duplicateRule",
+      "fullName": "Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads",
+      "id": "0Bmd3000001GrHWCA0",
+      "lastModifiedById": "005d3000002xIMMAA2",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2026-04-28T10:27:21.000Z",
+      "manageableState": "unmanaged",
+      "type": "DuplicateRule"
+    }
+  ],
+  "warnings": []
+}

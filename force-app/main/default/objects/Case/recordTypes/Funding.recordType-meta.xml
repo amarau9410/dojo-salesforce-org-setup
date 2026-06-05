@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding</fullName>
+    <active>true</active>
+    <businessProcess>Card Machine Charges Process</businessProcess>
+    <description>Funding record type for careorchdev compatibility.</description>
+    <label>Funding</label>
+</RecordType>

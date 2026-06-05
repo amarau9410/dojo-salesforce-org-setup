@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bypass_Chargebacks_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When this checkbox is set the additional Chargebacks field validations in the Case Trigger will be ignored.</description>
+    <inlineHelpText>When this checkbox is set the additional Chargebacks field validations in the Case Trigger will be ignored.</inlineHelpText>
+    <label>Bypass Chargebacks Validation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

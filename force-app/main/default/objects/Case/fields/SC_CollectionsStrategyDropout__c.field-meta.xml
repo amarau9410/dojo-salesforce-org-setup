@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CollectionsStrategyDropout__c</fullName>
+    <description>Indicates if the collections strategy was abandoned.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if dropped out; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Collections Strategy Dropout</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>insolvency</fullName>
+                <default>false</default>
+                <label>Insolvency</label>
+            </value>
+            <value>
+                <fullName>deceased</fullName>
+                <default>false</default>
+                <label>Deceased</label>
+            </value>
+            <value>
+                <fullName>invoicing_error</fullName>
+                <default>false</default>
+                <label>Invoicing error</label>
+            </value>
+            <value>
+                <fullName>complaint_debt_waived</fullName>
+                <default>false</default>
+                <label>Complaint debt waived</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

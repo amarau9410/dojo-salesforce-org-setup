@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CSAT surveys to channel and market mapping</description>
+    <label>SC CSAT Survey Mapping</label>
+    <pluralLabel>SC CSAT Survey Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

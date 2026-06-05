@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_GDPROutcome__c</fullName>
+    <description>Result or conclusion of a process or event.</description>
+    <label>GDPR Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>gdpr_outcome_raised_to_it</fullName>
+                <default>false</default>
+                <label>Raised to IT</label>
+            </value>
+            <value>
+                <fullName>gdpr_outcome_posted_dsar</fullName>
+                <default>false</default>
+                <label>Posted DSAR</label>
+            </value>
+            <value>
+                <fullName>gdpr_outcome_raised_to_it_and_rekeyed</fullName>
+                <default>false</default>
+                <label>Raised to IT and Rekeyed</label>
+            </value>
+            <value>
+                <fullName>gdpr_outcome_information_provided</fullName>
+                <default>false</default>
+                <label>Information Provided</label>
+            </value>
+            <value>
+                <fullName>gdpr_outcome_removal_from_systems</fullName>
+                <default>false</default>
+                <label>Removal From Systems</label>
+            </value>
+            <value>
+                <fullName>gdpr_outcome_no_action</fullName>
+                <default>false</default>
+                <label>No Action</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

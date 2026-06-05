@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="My Calendar" icon-name="standard:event">
+        <div class="header-actions slds-p-horizontal_small slds-p-top_x-small">
+            <lightning-button label="Refresh" onclick={handleRefresh}></lightning-button>
+        </div>
+
+        <template if:true={hasRows}>
+            <div class="slds-p-around_small">
+                <lightning-datatable
+                    key-field="taskId"
+                    data={rows}
+                    columns={columns}
+                    hide-checkbox-column
+                    onrowaction={handleRowAction}>
+                </lightning-datatable>
+            </div>
+        </template>
+
+        <template if:false={hasRows}>
+            <div class="slds-p-around_medium slds-text-align_center">
+                <p class="slds-text-heading_small">No upcoming shifts</p>
+                <p class="slds-text-body_small">Your next 14 days of shifts will appear here.</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SC_Outcome__c</fullName>
+        <description>Result or conclusion of a process or event.</description>
+        <inlineHelpText>Describe the outcome achieved.</inlineHelpText>
+        <label>Outcome</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>complained__deadlocked</fullName>
+                    <default>false</default>
+                    <label>Complaint - Deadlocked</label>
+                </value>
+                <value>
+                    <fullName>complained__financial_ombudsman</fullName>
+                    <default>false</default>
+                    <label>Complaint - FOS</label>
+                </value>
+                <value>
+                    <fullName>Duplicate</fullName>
+                    <default>false</default>
+                    <label>Duplicate</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__2nd_line_support</fullName>
+                    <default>false</default>
+                    <label>Escalated - 2nd Line</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__collections</fullName>
+                    <default>false</default>
+                    <label>Escalated - Collections</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__complaints</fullName>
+                    <default>false</default>
+                    <label>Escalated - Complaints</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__gdpr</fullName>
+                    <default>false</default>
+                    <label>Escalated - GDPR</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__integrations</fullName>
+                    <default>false</default>
+                    <label>Escalated - Integrations</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__it</fullName>
+                    <default>false</default>
+                    <label>Escalated - IT</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__partner_tech</fullName>
+                    <default>false</default>
+                    <label>Escalated - Partner Tech</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__retentions</fullName>
+                    <default>false</default>
+                    <label>Escalated - Retentions</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__review_team</fullName>
+                    <default>false</default>
+                    <label>Escalated - Review Team</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__team_manager</fullName>
+                    <default>false</default>
+                    <label>Escalated - Team Manager</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__treasury</fullName>
+                    <default>false</default>
+                    <label>Escalated - Treasury</label>
+                </value>
+                <value>
+                    <fullName>escalated__internal__underwriting</fullName>
+                    <default>false</default>
+                    <label>Escalated - Underwriting</label>
+                </value>
+                <value>
+                    <fullName>logistics__returned_to_sender</fullName>
+                    <default>false</default>
+                    <label>Logistics - Returned to sender</label>
+                </value>
+                <value>
+                    <fullName>logistics__written_off</fullName>
+                    <default>false</default>
+                    <label>Logistics - Written off</label>
+                </value>
+                <value>
+                    <fullName>no__action__required</fullName>
+                    <default>false</default>
+                    <label>No Action Required</label>
+                </value>
+                <value>
+                    <fullName>resolved</fullName>
+                    <default>false</default>
+                    <label>Resolved</label>
+                </value>
+                <value>
+                    <fullName>Resolved - Collections Journey ended</fullName>
+                    <default>false</default>
+                    <label>Resolved - Collections Journey ended</label>
+                </value>
+                <value>
+                    <fullName>retained</fullName>
+                    <default>false</default>
+                    <label>Retained</label>
+                </value>
+                <value>
+                    <fullName>transferred/referred</fullName>
+                    <default>false</default>
+                    <label>Transferred/Referred</label>
+                </value>
+                <value>
+                    <fullName>Unresolved - Collections Action Resumed</fullName>
+                    <default>false</default>
+                    <label>Unresolved - Collections Action Resumed</label>
+                </value>
+                <value>
+                    <fullName>unresolved__dpa_failed</fullName>
+                    <default>false</default>
+                    <label>Unresolved - DPA fail</label>
+                </value>
+                <value>
+                    <fullName>unresolved__unsuccessful_contact</fullName>
+                    <default>false</default>
+                    <label>Unresolved - Unsuccesful contact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

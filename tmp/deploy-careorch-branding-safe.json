@@ -1,0 +1,99 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-28T07:25:05.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-28T07:25:04.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": false,
+          "componentType": "StaticResource",
+          "created": false,
+          "createdDate": "2026-05-28T07:25:05.000Z",
+          "deleted": false,
+          "fileName": "staticresources/CareOrchLogo.resource",
+          "fullName": "CareOrchLogo",
+          "id": "081Q1000001slMLIAY",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomApplication",
+          "created": false,
+          "createdDate": "2026-05-28T07:25:05.000Z",
+          "deleted": false,
+          "fileName": "applications/CareOrch.app",
+          "fullName": "CareOrch",
+          "id": "02uQ1000005Xxw5IAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-28T07:25:05.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfQ100000RXYjJKAX",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-28T07:25:05.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 2,
+    "numberComponentsTotal": 2,
+    "numberFiles": "6",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-28T07:25:04.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 736937,
+    "files": [
+      {
+        "fullName": "CareOrch",
+        "type": "CustomApplication",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\applications\\CareOrch.app-meta.xml"
+      },
+      {
+        "fullName": "CareOrchLogo",
+        "type": "StaticResource",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\staticresources\\CareOrchLogo.png"
+      },
+      {
+        "fullName": "CareOrchLogo",
+        "type": "StaticResource",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\staticresources\\CareOrchLogo.resource-meta.xml"
+      }
+    ],
+    "zipFileCount": 4,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RXYjJKAX%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

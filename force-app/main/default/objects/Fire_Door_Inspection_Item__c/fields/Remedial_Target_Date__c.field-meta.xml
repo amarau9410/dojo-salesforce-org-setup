@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remedial_Target_Date__c</fullName>
+    <formula>CASE(
+TEXT(Risk_Level__c),
+&quot;Immediately Dangerous&quot;, DATEVALUE(CreatedDate) + 1,
+&quot;Urgent&quot;, DATEVALUE(CreatedDate) + 30,
+&quot;Medium&quot;, DATEVALUE(CreatedDate) + 90,
+&quot;Low&quot;, DATEVALUE(CreatedDate) + 180,
+null
+)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <label>Remedial Target Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

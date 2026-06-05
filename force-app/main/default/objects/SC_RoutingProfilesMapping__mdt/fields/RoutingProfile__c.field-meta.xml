@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RoutingProfile__c</fullName>
+    <description>routing profile that matches the market and skill selected on the skill assignment</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Routing Profile</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

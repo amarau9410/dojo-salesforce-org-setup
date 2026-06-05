@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Level_2__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>DOJOP-889 : Created for driving the logic of entering Level 2 industry</description>
+    <inlineHelpText>Level 2 Industry based on MCC code</inlineHelpText>
+    <label>Default Level 2</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

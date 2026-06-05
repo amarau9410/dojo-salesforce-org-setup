@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_InvalidSwitcherCommentRequired</fullName>
+    <active>true</active>
+    <description>When the Switcher Document Status has been updated from Attached to Invalid and Invalid Switcher Comment is blank</description>
+    <errorConditionFormula>AND(
+		SC_Record_Type_Formula__c=&quot;Sales Support&quot;,
+  ISCHANGED(SC_SwitcherDocumentStatus__c),
+  ISPICKVAL(PRIORVALUE(SC_SwitcherDocumentStatus__c), &quot;Attached&quot;),
+  ISPICKVAL(SC_SwitcherDocumentStatus__c, &quot;Invalid&quot;),
+  ISBLANK(SC_InvalidSwitcherComments__c)		
+)</errorConditionFormula>
+    <errorDisplayField>SC_InvalidSwitcherComments__c</errorDisplayField>
+    <errorMessage>Please enter a comment explaining why the switcher was marked as invalid.</errorMessage>
+</ValidationRule>

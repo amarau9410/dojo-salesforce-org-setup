@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The object which stores the mapping of various object field values against what is required for ID&amp;V procedures.</description>
+    <label>ID&amp;V Mapping</label>
+    <pluralLabel>ID&amp;V Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

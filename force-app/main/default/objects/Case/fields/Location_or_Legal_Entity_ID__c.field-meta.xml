@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_or_Legal_Entity_ID__c</fullName>
+    <description>Displays the location ID for location-linked cases or the legal entity ID for parent-level cases.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    NOT(ISBLANK(Account.ExternalLocationId__c)),
+    Account.ExternalLocationId__c,
+    Account.ExternalCustomerId__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Location or Legal Entity ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

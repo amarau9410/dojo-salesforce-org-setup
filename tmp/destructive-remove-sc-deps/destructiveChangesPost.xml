@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Case.CardMachineCharges</members>
+        <members>Case.ChangeofLegalEntity</members>
+        <members>Case.Chargebacks</members>
+        <members>Case.Collections</members>
+        <members>Case.Complaint</members>
+        <members>Case.EnterpriseAccountManagement</members>
+        <members>Case.Funding</members>
+        <members>Case.GDPR</members>
+        <members>Case.General_Queries</members>
+        <members>Case.Integration</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Asset.Building_Type__c</members>
+        <members>Asset.Door_Type__c</members>
+        <members>Asset.Fire_Door_Status__c</members>
+        <members>Asset.Inspection_Frequency_Months__c</members>
+        <members>Asset.Inspection_Overdue__c</members>
+        <members>Asset.Last_Inspection_Date__c</members>
+        <members>Asset.Next_Inspection_Due_Date__c</members>
+        <members>Case.Acquirer__c</members>
+        <members>Case.Remedial_Due_Date__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Case.Card Machine Charges Process</members>
+        <name>BusinessProcess</name>
+    </types>
+    <version>66.0</version>
+</Package>

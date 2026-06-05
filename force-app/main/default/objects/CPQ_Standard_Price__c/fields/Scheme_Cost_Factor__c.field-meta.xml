@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheme_Cost_Factor__c</fullName>
+    <defaultValue>0.0</defaultValue>
+    <description>DOJO-452</description>
+    <inlineHelpText>Used to calculate costs for CPQ Quotes, but not applicable to all lines.</inlineHelpText>
+    <label>Scheme Cost Factor</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

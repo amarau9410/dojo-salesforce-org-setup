@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Floor_and_Ceiling_values</fullName>
+    <active>true</active>
+    <errorConditionFormula>Floor__c &gt; 0 || Ceiling__c &lt; 0</errorConditionFormula>
+    <errorMessage>Floor % should be less than 0 and Ceiling % should be greater than 0</errorMessage>
+</ValidationRule>

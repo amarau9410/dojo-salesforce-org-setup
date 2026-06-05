@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_2LCauseForCall__c</fullName>
+    <description>Reason for contacting second-level support.</description>
+    <inlineHelpText>Specify the reason for the 2L call.</inlineHelpText>
+    <label>2L Cause For Call</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2l_-_cause_for_call_account_fail_to_charge_</fullName>
+                <default>false</default>
+                <label>Account Fail To Charge Error</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_activation_code_request</fullName>
+                <default>false</default>
+                <label>Activation Code Request</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_account_activation_issues</fullName>
+                <default>false</default>
+                <label>Activation Issues</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_amex_avs_failures__u_</fullName>
+                <default>false</default>
+                <label>Amex AVS failures (U)</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_booking_policy</fullName>
+                <default>false</default>
+                <label>Bookings - Booking Policy</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_cancellation</fullName>
+                <default>false</default>
+                <label>Bookings - Cancellation</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_consumer_app_query</fullName>
+                <default>false</default>
+                <label>Bookings - Consumer app query</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_experiences</fullName>
+                <default>false</default>
+                <label>Bookings - Experiences</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_floorplan</fullName>
+                <default>false</default>
+                <label>Bookings - Floorplan</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_guest_profile</fullName>
+                <default>false</default>
+                <label>Bookings - Guest Profile</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_log_in_issues</fullName>
+                <default>false</default>
+                <label>Bookings - Log in issues</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_schedule_query</fullName>
+                <default>false</default>
+                <label>Bookings - Schedule query</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bookings_-_set_up</fullName>
+                <default>false</default>
+                <label>Bookings - Set up</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_bp__issue/install/reinstall</fullName>
+                <default>false</default>
+                <label>BP Issue/Install/Reinstall</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_card_machine_closed_in_error</fullName>
+                <default>false</default>
+                <label>Card Machine Closed In Error</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_card_swipe_not_working</fullName>
+                <default>false</default>
+                <label>Card swipe not working</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_cashback_missing</fullName>
+                <default>false</default>
+                <label>Cashback Missing</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_chip_and_pin_issue</fullName>
+                <default>false</default>
+                <label>Chip and pin issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_cnp_not_working</fullName>
+                <default>false</default>
+                <label>CNP Not Working</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_contactless_issue</fullName>
+                <default>false</default>
+                <label>Contactless issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_damaged/stolen</fullName>
+                <default>false</default>
+                <label>Damaged/Stolen</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_declined_sale_-_checking_iso_code</fullName>
+                <default>false</default>
+                <label>Declined Sale - Checking ISO Code</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_dojo_fb_app_log_in_issues</fullName>
+                <default>false</default>
+                <label>Dojo FB App Log In Issues</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_email_receipt_fail</fullName>
+                <default>false</default>
+                <label>Email Receipt Fail</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_enrollment_fail</fullName>
+                <default>false</default>
+                <label>Enrollment Fail</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_eod_discrepancy__epos/cm_</fullName>
+                <default>false</default>
+                <label>EOD Discrepancy (EPOS/CM)</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_eod_summary_issue</fullName>
+                <default>false</default>
+                <label>EOD Summary Issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_ethernet_issue</fullName>
+                <default>false</default>
+                <label>Ethernet Issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_failed_to_install__file_i/o_error_</fullName>
+                <default>false</default>
+                <label>Failed to Install (File I/O Error)</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_firmware_download_test_mode</fullName>
+                <default>false</default>
+                <label>Firmware download/Test mode</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_firmware_issue</fullName>
+                <default>false</default>
+                <label>Firmware Issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_g4/a10_errors</fullName>
+                <default>false</default>
+                <label>G4/A10 Errors</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_cm_geo_fencing_error</fullName>
+                <default>false</default>
+                <label>Geo Fencing Error</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_account_gratuity_not_present</fullName>
+                <default>false</default>
+                <label>Gratuity Not Present</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_hardware_fault_-_printer</fullName>
+                <default>false</default>
+                <label>Hardware fault - Printer</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_hardware_fault_-_screen</fullName>
+                <default>false</default>
+                <label>Hardware fault - Screen</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_icr_pocket_touch_app_issue</fullName>
+                <default>false</default>
+                <label>ICR Pocket Touch App issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_incorrect_activation_code_error</fullName>
+                <default>false</default>
+                <label>Incorrect Activation Code Error</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_increase/decrease_transaction_limit</fullName>
+                <default>false</default>
+                <label>Increase/Decrease Transaction Limit</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_integration_issue</fullName>
+                <default>false</default>
+                <label>Integration Issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_kiosk_mode</fullName>
+                <default>false</default>
+                <label>Kiosk Mode</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_lost_certs</fullName>
+                <default>false</default>
+                <label>Lost Certs</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_not_a_2nd_line_query</fullName>
+                <default>false</default>
+                <label>Not a 2nd Line Query</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_OnoMondo</fullName>
+                <default>false</default>
+                <label>OnoMondo</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_pay_app_issue/install/reinstall</fullName>
+                <default>false</default>
+                <label>Pay App Issue/Install/Reinstall</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_pos_profile_missing</fullName>
+                <default>false</default>
+                <label>POS Profile Missing</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_power/charging_issues</fullName>
+                <default>false</default>
+                <label>Power/charging issues</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_rdp_log_in_error</fullName>
+                <default>false</default>
+                <label>RDP Log In Error</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_refund_query</fullName>
+                <default>false</default>
+                <label>Refund Query</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_Remote_Payment_Application_Query</fullName>
+                <default>false</default>
+                <label>Remote Payment - Application Query</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_Remote_Payment_Technical_Issue</fullName>
+                <default>false</default>
+                <label>Remote Payment - Technical Issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_remote_view_plugin</fullName>
+                <default>false</default>
+                <label>Remote View Plugin</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_routine_security_check_reboot</fullName>
+                <default>false</default>
+                <label>Routine Security Check Reboot</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_sim_connectivity_issue</fullName>
+                <default>false</default>
+                <label>Sim Connectivity Issue</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_account_slow_transactions__fixed_with_reinstall_</fullName>
+                <default>false</default>
+                <label>Slow Transactions (Fixed with reinstall)</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_static_ip/mac_whitelist</fullName>
+                <default>false</default>
+                <label>Static IP/MAC whitelist</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_supervisor_code_request</fullName>
+                <default>false</default>
+                <label>Supervisor Code Request</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_syncing_issues__offline_on_pax_</fullName>
+                <default>false</default>
+                <label>Syncing Issues (Offline on PAX)</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_terminal_provisioning_failed</fullName>
+                <default>false</default>
+                <label>Terminal Provisioning Failed</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_test_mode</fullName>
+                <default>false</default>
+                <label>Test Mode</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_transaction_data_missing_from_mobile/web_app</fullName>
+                <default>false</default>
+                <label>Transaction Data Missing from Mobile/Web app</label>
+            </value>
+            <value>
+                <fullName>2l_-_weekend_transfer_releases</fullName>
+                <default>false</default>
+                <label>Weekend Transfer releases</label>
+            </value>
+            <value>
+                <fullName>2l_-_cause_for_call_wifi_connectivity_issue</fullName>
+                <default>false</default>
+                <label>Wifi Connectivity Issue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

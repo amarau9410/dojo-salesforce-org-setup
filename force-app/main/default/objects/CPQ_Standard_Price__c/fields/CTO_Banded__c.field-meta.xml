@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CTO_Banded__c</fullName>
+    <formula>(Low_CTO_Band__c &gt; 0 &amp;&amp; High_CTO_Band__c &gt; 0)
+||
+(High_CTO_Band__c &gt; 0 &amp;&amp; Low_CTO_Band__c = 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Helpful for querying and price rules. Flags when a CTO band has been set.</inlineHelpText>
+    <label>CTO Banded</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

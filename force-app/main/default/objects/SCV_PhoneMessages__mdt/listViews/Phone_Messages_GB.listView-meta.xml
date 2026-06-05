@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Messages_GB</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>RecordedAudioFile__c</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>SCV_PhoneConfig__c</columns>
+    <columns>MessageType__c</columns>
+    <columns>MessageOrder__c</columns>
+    <columns>MessageText__c</columns>
+    <columns>MessagePostAction__c</columns>
+    <columns>Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>MessageFormat__c</field>
+        <operation>equals</operation>
+        <value>Audio (.wav)</value>
+    </filters>
+    <label>Phone Messages - GB</label>
+    <language>en_US</language>
+</ListView>

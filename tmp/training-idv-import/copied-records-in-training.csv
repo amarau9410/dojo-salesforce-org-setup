@@ -1,0 +1,36 @@
+"Id","Name","ParentName","RecordTypeName","ExternalCustomerId__c","ExternalLocationId__c"
+"001S900001KjHf0IAF","Training IDV Legal Entity 01",,"Legal Entity","756301532461454",
+"001S900001KjHf1IAF","Training IDV Legal Entity 02",,"Legal Entity","415140720114514",
+"001S900001KjHf2IAF","Training IDV Legal Entity 03",,"Legal Entity","222620028237193",
+"001S900001KjHf3IAF","Training IDV Legal Entity 04",,"Legal Entity","211197233189173",
+"001S900001KjHf4IAF","Training IDV Legal Entity 05",,"Legal Entity","684461413982239",
+"001S900001KjHf5IAF","Training IDV Legal Entity 06",,"Legal Entity","287214237206223",
+"001S900001KjHf6IAF","Training IDV Legal Entity 07",,"Legal Entity","713684172621053",
+"001S900001KjHf7IAF","Training IDV Legal Entity 08",,"Legal Entity","120023022254889",
+"001S900001KjHf8IAF","Training IDV Legal Entity 09",,"Legal Entity","202010323574165",
+"001S900001KjHf9IAF","Training IDV Legal Entity 10",,"Legal Entity","225532794155771",
+"001S900001KjHfAIAV","Training IDV Legal Entity 11",,"Legal Entity","611318220315326",
+"001S900001KjHfBIAV","Training IDV Legal Entity 12",,"Legal Entity","202034248140175",
+"001S900001KjHfCIAV","Training IDV Legal Entity 13",,"Legal Entity","414319456205156",
+"001S900001KjHfDIAV","Training IDV Legal Entity 14",,"Legal Entity","186161122691021",
+"001S900001KjHfEIAV","Training IDV Legal Entity 15",,"Legal Entity","422228171233155",
+"001S900001KjHfFIAV","Training IDV Location 01","Training IDV Legal Entity 01","Location",,"202017110912813"
+"001S900001KjHfHIAV","Training IDV Location 02","Training IDV Legal Entity 02","Location",,"715518592307810"
+"001S900001KjHfGIAV","Training IDV Location 03","Training IDV Legal Entity 01","Location",,"425213222124329"
+"001S900001KjHfIIAV","Training IDV Location 04","Training IDV Legal Entity 03","Location",,"118222944114163"
+"001S900001KjHfJIAV","Training IDV Location 05","Training IDV Legal Entity 04","Location",,"618510721476127"
+"001S900001KjHfKIAV","Training IDV Location 06","Training IDV Legal Entity 05","Location",,"202014189951806"
+"001S900001KjHfLIAV","Training IDV Location 07","Training IDV Legal Entity 06","Location",,"110778341964888"
+"001S900001KjHfMIAV","Training IDV Location 08","Training IDV Legal Entity 07","Location",,"421588651421526"
+"001S900001KjHfNIAV","Training IDV Location 09","Training IDV Legal Entity 08","Location",,"713619123475191"
+"001S900001KjHfOIAV","Training IDV Location 10","Training IDV Legal Entity 09","Location",,"120922109116236"
+"001S900001KjHfPIAV","Training IDV Location 11","Training IDV Legal Entity 10","Location",,"417711450182711"
+"001S900001KjHfQIAV","Training IDV Location 12","Training IDV Legal Entity 10","Location",,"416417160183251"
+"001S900001KjHfRIAV","Training IDV Location 13","Training IDV Legal Entity 11","Location",,"712716514918812"
+"001S900001KjHfSIAV","Training IDV Location 14","Training IDV Legal Entity 12","Location",,"219621221611916"
+"001S900001KjHfTIAV","Training IDV Location 15","Training IDV Legal Entity 13","Location",,"410730156127231"
+"001S900001KjHfUIAV","Training IDV Location 16","Training IDV Legal Entity 14","Location",,"715617034502051"
+"001S900001KjHfVIAV","Training IDV Location 17","Training IDV Legal Entity 15","Location",,"202014194177140"
+"001S900001KjHfWIAV","Training IDV Location 18","Training IDV Legal Entity 15","Location",,"417742216153142"
+"001S900001KjHfXIAV","Training IDV Location 19","Training IDV Legal Entity 15","Location",,"452108762472086"
+"001S900001KjHfYIAV","Training IDV Location 20","Training IDV Legal Entity 15","Location",,"758153699798147"

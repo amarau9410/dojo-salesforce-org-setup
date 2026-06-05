@@ -1,0 +1,134 @@
+<template>
+    <lightning-card title="My Open Care Tasks" icon-name="standard:task2">
+        <template if:true={showResidentAlertBanner}>
+            <div class="slds-p-horizontal_small slds-p-top_small">
+                <c-care-orch-resident-alert-banner
+                    aggressive-flag={residentHasAggressiveRisk}
+                    mobility-flag={residentHasMobilityRisk}>
+                </c-care-orch-resident-alert-banner>
+            </div>
+        </template>
+
+        <div class="workspace-header slds-p-horizontal_small slds-p-top_small slds-p-bottom_x-small">
+            <p class="workspace-greeting">{userDisplayName}</p>
+            <p class="workspace-metric">{paintMetricLabel}</p>
+            <div class="workspace-actions slds-m-top_small">
+                <c-care-orch-incident-logger></c-care-orch-incident-logger>
+                <lightning-button
+                    class="slds-m-left_x-small"
+                    variant="neutral"
+                    label="Log Nutritional Intake"
+                    title="Log Nutritional Intake"
+                    onclick={handleOpenNutritionLogger}>
+                </lightning-button>
+            </div>
+        </div>
+
+        <template if:true={showEmptyState}>
+            <div class="slds-p-around_medium slds-text-align_center workspace-empty">
+                <p class="slds-text-heading_small">No open tasks</p>
+                <p class="slds-text-body_small">Your assigned clinical logistics work is clear right now.</p>
+            </div>
+        </template>
+
+        <template if:false={showEmptyState}>
+            <div class="slds-p-horizontal_small slds-p-bottom_small">
+                <div class="slds-grid slds-wrap slds-gutters_x-small mobile-grid">
+                    <template for:each={taskCards} for:item="taskCard">
+                        <div key={taskCard.taskId} class="slds-col slds-size_1-of-1">
+                            <article class={taskCard.cardClass}>
+                                <div class="slds-grid slds-wrap slds-grid_vertical-align-start slds-gutters_small">
+                                    <div class="slds-col slds-size_9-of-12">
+                                        <p class="task-subject">{taskCard.subject}</p>
+                                        <p class="task-context">{taskCard.whatName}</p>
+                                        <p class="task-date">Due {taskCard.dueLabel}</p>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-12 slds-text-align_right">
+                                        <lightning-badge label={taskCard.priority}></lightning-badge>
+                                    </div>
+                                </div>
+                                <div class="slds-m-top_small slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+                                    <span class="task-status">{taskCard.statusLabel}</span>
+                                    <lightning-button
+                                        variant="brand"
+                                        label={taskCard.actionLabel}
+                                        title="Complete Task"
+                                        data-task-id={taskCard.taskId}
+                                        onclick={handleCompleteTask}
+                                        disabled={taskCard.isActionDisabled}>
+                                    </lightning-button>
+                                </div>
+                                <template if:true={taskCard.syncHint}>
+                                    <p class="task-sync-hint slds-m-top_x-small">{taskCard.syncHint}</p>
+                                </template>
+                            </article>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+
+    <template if:true={isNutritionModalOpen}>
+        <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container nutrition-modal">
+                <header class="slds-modal__header">
+                    <h2 class="slds-modal__title slds-hyphenate">Log Nutritional Intake</h2>
+                </header>
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <p class="nutrition-helper">{nutritionResidentHelper}</p>
+
+                    <lightning-input
+                        class="slds-m-top_small"
+                        name="residentId"
+                        label="Resident Account Id"
+                        value={nutritionResidentId}
+                        onchange={handleNutritionResidentChange}
+                        required>
+                    </lightning-input>
+
+                    <lightning-combobox
+                        class="slds-m-top_small"
+                        name="mealPeriod"
+                        label="Meal Period"
+                        value={nutritionMealPeriod}
+                        options={mealOptions}
+                        onchange={handleNutritionMealChange}
+                        required>
+                    </lightning-combobox>
+
+                    <lightning-combobox
+                        class="slds-m-top_small"
+                        name="consumptionLevel"
+                        label="Consumption Level"
+                        value={nutritionConsumptionLevel}
+                        options={consumptionOptions}
+                        onchange={handleNutritionConsumptionChange}
+                        required>
+                    </lightning-combobox>
+
+                    <lightning-textarea
+                        class="slds-m-top_small"
+                        name="notes"
+                        label="Refusal or food record notes"
+                        value={nutritionNotes}
+                        onchange={handleNutritionNotesChange}
+                        placeholder="Enter refusal details, food record notes, or short context">
+                    </lightning-textarea>
+                </div>
+
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Cancel" onclick={closeNutritionModal} class="slds-m-right_small"></lightning-button>
+                    <lightning-button
+                        variant="brand"
+                        label="Save Nutritional Log"
+                        onclick={handleSubmitNutrition}
+                        disabled={nutritionSubmitDisabled}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

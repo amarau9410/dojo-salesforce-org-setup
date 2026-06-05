@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Closed_Loop_Acknowledgement</fullName>
+    <active>true</active>
+    <description>Prevents closing a critical event until at least one child communication log is acknowledged.</description>
+    <errorConditionFormula>AND(
+    ISCHANGED(Status__c),
+    ISPICKVAL(Status__c, &quot;Closed&quot;),
+    Acknowledged_Communication_Count__c = 0
+)</errorConditionFormula>
+    <errorMessage>This critical event cannot be closed until an outbound communication log has been marked as Acknowledged by the contact.</errorMessage>
+</ValidationRule>

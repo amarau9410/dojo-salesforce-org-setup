@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Great_Britain_Retail</fullName>
+    <columns>NAME</columns>
+    <columns>Product__c</columns>
+    <columns>Market__c</columns>
+    <columns>Industry__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>Standard_Price__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>GB</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Retail</value>
+    </filters>
+    <label>Great Britain - Retail</label>
+</ListView>

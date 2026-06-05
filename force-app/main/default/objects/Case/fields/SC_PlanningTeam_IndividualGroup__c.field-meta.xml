@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PlanningTeam_IndividualGroup__c</fullName>
+    <description>Indicates if the planning team is individual or group-based.</description>
+    <inlineHelpText>Select &apos;Individual&apos; or &apos;Group&apos;.</inlineHelpText>
+    <label>Planning Team - Individual / Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>planning_team__group</fullName>
+                <default>false</default>
+                <label>Group</label>
+            </value>
+            <value>
+                <fullName>planning_team__individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

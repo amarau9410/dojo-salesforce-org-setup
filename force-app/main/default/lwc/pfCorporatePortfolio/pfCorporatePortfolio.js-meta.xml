@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>PF Corporate Portfolio</masterLabel>
+    <description>Experience Cloud portfolio component with configurable pages and corporate styling.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="pageMode" type="String" label="Page Mode" description="Set one of: home, services, projects, contact" default="home" />
+            <property name="homeUrl" type="String" label="Home URL" default="/s/" />
+            <property name="servicesUrl" type="String" label="Services URL" default="/s/services" />
+            <property name="projectsUrl" type="String" label="Projects URL" default="/s/projects" />
+            <property name="contactUrl" type="String" label="Contact URL" default="/s/contact" />
+            <property name="linkedInUrl" type="String" label="LinkedIn URL" />
+            <property name="emailAddress" type="String" label="Email Address" />
+            <property name="phoneNumber" type="String" label="Phone Number" />
+            <property name="cvWordUrl" type="String" label="Word CV URL" />
+            <property name="cvPdfUrl" type="String" label="PDF CV URL" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

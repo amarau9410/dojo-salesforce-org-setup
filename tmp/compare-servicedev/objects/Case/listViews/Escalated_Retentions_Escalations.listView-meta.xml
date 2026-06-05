@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalated_Retentions_Escalations</fullName>
+    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7) AND 8</booleanFilter>
+    <columns>SC_Market__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>SC_ActionRequiredDateTime__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>equals</operation>
+        <value>hetal.bharadwa@dojo.tech,ollie.martin@dojo.tech,leisha.thomas@dojo.tech,mia.poggi@dojo.tech</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>equals</operation>
+        <value>fintan.bridger@paymentsense.com,morgan.loan@dojo.tech,jordyn.hilton@dojo.tech,andrei.spataru@dojo.tech</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>equals</operation>
+        <value>info@blinqme.com,archie.mustow@dojo.tech,michael.slater@dojo.tech,tim.ruff@dojo.tech</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>equals</operation>
+        <value>connor.piercey@dojo.tech,john.orme-williams@dojo.tech,sophia.rudwick@dojo.tech</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>equals</operation>
+        <value>ben.kirk-patrick@dojo.tech,james.baxter@dojo.tech</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>equals</operation>
+        <value>freya.masefield@dojo.tech,rohan.franklin@dojo.tech,daniel,phillips@dojo.tech,ish.rathor@dojo.tech,tariq.hlali-painter@dojo.tech</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notEqual</operation>
+        <value>FBridger</value>
+    </filters>
+    <label>Escalated Retentions - Escalations</label>
+</ListView>

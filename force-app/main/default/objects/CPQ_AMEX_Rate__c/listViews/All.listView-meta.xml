@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CPQ_Industry_Description__c</columns>
+    <columns>CPQ_MCC__c</columns>
+    <columns>Rate__c</columns>
+    <columns>CPQ_Rate_for_Merchants_over_threshold__c</columns>
+    <columns>CPQ_AMEX_CTO_Threshold__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

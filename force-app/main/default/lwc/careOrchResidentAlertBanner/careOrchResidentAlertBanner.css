@@ -1,0 +1,17 @@
+.alert-shell {
+    align-items: flex-start;
+    background: linear-gradient(180deg, #fff5e4 0%, #ffe6bf 100%);
+    border: 1px solid #f2b668;
+    border-radius: 0.75rem;
+    color: #5e3b00;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.625rem 0.75rem;
+}
+
+.alert-message {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+}

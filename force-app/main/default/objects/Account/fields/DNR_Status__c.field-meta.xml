@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNR_Status__c</fullName>
+    <description>Do not resuscitate status for the resident.</description>
+    <defaultValue>false</defaultValue>
+    <label>DNR Status</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

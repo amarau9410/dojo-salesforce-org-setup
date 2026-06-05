@@ -1,0 +1,500 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-28T07:29:29.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-28T07:29:24.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.ChangeofLegalEntity",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Complaint",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.CardMachineCharges",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.EnterpriseAccountManagement",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Integration",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.GDPR",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.General_Queries",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Chargebacks",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Funding",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        },
+        {
+          "changed": false,
+          "componentType": "RecordType",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": false,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Collections",
+          "problem": "Cannot delete record type through API",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:25.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "BusinessProcess",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Card Machine Charges Process",
+          "id": "019Q1000001uwFFIAY",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Next_Inspection_Due_Date__c",
+          "id": "00NQ100000MPHYwMAP",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Door_Type__c",
+          "id": "00NQ100000MPYzWMAX",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Last_Inspection_Date__c",
+          "id": "00NQ100000MPHYuMAP",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Inspection_Frequency_Months__c",
+          "id": "00NQ100000MPDn2MAH",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Inspection_Overdue__c",
+          "id": "00NQ100000MPHYvMAP",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Acquirer__c",
+          "id": "00NQ100000MOytbMAD",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Building_Type__c",
+          "id": "00NQ100000MPCGOMA5",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Case.object",
+          "fullName": "Case.Remedial_Due_Date__c",
+          "id": "00NQ100000MPelZMAT",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-28T07:29:29.000Z",
+          "deleted": true,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Fire_Door_Status__c",
+          "id": "00NQ100000MPHYtMAP",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RXZ97KAH",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-28T07:29:29.000Z",
+    "numberComponentErrors": 10,
+    "numberComponentsDeployed": 10,
+    "numberComponentsTotal": 20,
+    "numberFiles": "2",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-28T07:29:25.000Z",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 789,
+    "files": [
+      {
+        "fullName": "Case.Card Machine Charges Process",
+        "type": "BusinessProcess",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\businessProcesses\\Card Machine Charges Process.businessProcess-meta.xml"
+      },
+      {
+        "fullName": "Asset.Building_Type__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Building_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Door_Type__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Door_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Fire_Door_Status__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Fire_Door_Status__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Inspection_Frequency_Months__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Inspection_Frequency_Months__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Inspection_Overdue__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Inspection_Overdue__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Last_Inspection_Date__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Last_Inspection_Date__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Next_Inspection_Due_Date__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Next_Inspection_Due_Date__c.field-meta.xml"
+      },
+      {
+        "fullName": "Case.Acquirer__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\fields\\Acquirer__c.field-meta.xml"
+      },
+      {
+        "fullName": "Case.Remedial_Due_Date__c",
+        "type": "CustomField",
+        "state": "Deleted",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\fields\\Remedial_Due_Date__c.field-meta.xml"
+      },
+      {
+        "fullName": "Case.Integration",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\Integration.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Integration",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.General_Queries",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\General_Queries.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.General_Queries",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.GDPR",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\GDPR.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.GDPR",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Funding",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\Funding.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Funding",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.EnterpriseAccountManagement",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\EnterpriseAccountManagement.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.EnterpriseAccountManagement",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Complaint",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\Complaint.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Complaint",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Collections",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\Collections.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Collections",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Chargebacks",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\Chargebacks.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.Chargebacks",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.ChangeofLegalEntity",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\ChangeofLegalEntity.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.ChangeofLegalEntity",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.CardMachineCharges",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Case\\recordTypes\\CardMachineCharges.recordType-meta.xml",
+        "error": "Cannot delete record type through API"
+      },
+      {
+        "fullName": "Case.CardMachineCharges",
+        "type": "RecordType",
+        "state": "Failed",
+        "problemType": "Error",
+        "error": "Cannot delete record type through API"
+      }
+    ],
+    "zipFileCount": 2,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RXZ97KAH%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

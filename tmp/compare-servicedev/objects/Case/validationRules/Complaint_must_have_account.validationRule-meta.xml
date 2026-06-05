@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complaint_must_have_account</fullName>
+    <active>true</active>
+    <description>Ensures that a complaint case has an account related</description>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = &quot;Complaint&quot;,
+  ISBLANK(AccountId))</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>To save this Complaint, you must select an Account. If this is a non-Dojo account, please use the EOD process.</errorMessage>
+</ValidationRule>

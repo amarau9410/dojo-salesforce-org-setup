@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteLineItemId__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Quote line item relationship.</description>
+    <inlineHelpText>Quote line item relationship.</inlineHelpText>
+    <label>Quote Line Item</label>
+    <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+    <relationshipLabel>Location Quote Lines</relationshipLabel>
+    <relationshipName>LocationQuoteLines</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

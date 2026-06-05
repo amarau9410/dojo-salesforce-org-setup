@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_UpsellProducts__c</fullName>
+    <description>Products offered for upselling.</description>
+    <inlineHelpText>List the products available for upsell.</inlineHelpText>
+    <label>Upsell Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>upsell_products_additional_entity__prospect</fullName>
+                <default>false</default>
+                <label>Additional Entity::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_additional_entity__successful</fullName>
+                <default>false</default>
+                <label>Additional Entity::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_additional_entity__unsuccessful</fullName>
+                <default>false</default>
+                <label>Additional Entity::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_additional_location__additional_location_successful</fullName>
+                <default>false</default>
+                <label>Additional Location::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_additional_location__additional_location_unsuccessful</fullName>
+                <default>false</default>
+                <label>Additional Location::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_additional_terminal__additional_terminal_successful</fullName>
+                <default>false</default>
+                <label>Additional Terminal::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_additional_terminal__additional_terminal_unsuccessful</fullName>
+                <default>false</default>
+                <label>Additional Terminal::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_business_funding__prospect</fullName>
+                <default>false</default>
+                <label>Business Funding::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_business_funding__business_funding_successful</fullName>
+                <default>false</default>
+                <label>Business Funding::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_business_funding__business_funding_unsuccessful</fullName>
+                <default>false</default>
+                <label>Business Funding::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dcc__prospect</fullName>
+                <default>false</default>
+                <label>DCC::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dcc__successful</fullName>
+                <default>false</default>
+                <label>DCC::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dcc__unsuccessful</fullName>
+                <default>false</default>
+                <label>DCC::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_bookings__prospect</fullName>
+                <default>false</default>
+                <label>Dojo Bookings::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_consumer_successful</fullName>
+                <default>false</default>
+                <label>Dojo Bookings::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_consumer_unsuccessful</fullName>
+                <default>false</default>
+                <label>Dojo Bookings::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_intelligence__prospect</fullName>
+                <default>false</default>
+                <label>Dojo Intelligence::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_intelligence__successful</fullName>
+                <default>false</default>
+                <label>Dojo Intelligence::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_intelligence__unsuccessful</fullName>
+                <default>false</default>
+                <label>Dojo Intelligence::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_max__prospect</fullName>
+                <default>false</default>
+                <label>Dojo Max::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_max__successful</fullName>
+                <default>false</default>
+                <label>Dojo Max::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_dojo_max__unsuccessful</fullName>
+                <default>false</default>
+                <label>Dojo Max::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_Integrations_Prospect</fullName>
+                <default>false</default>
+                <label>Integrations::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_Integrations_Successful</fullName>
+                <default>false</default>
+                <label>Integrations::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_Integrations_Unsuccessful</fullName>
+                <default>false</default>
+                <label>Integrations::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_online_payment__prospect</fullName>
+                <default>false</default>
+                <label>Online payment::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_online_payment__successful</fullName>
+                <default>false</default>
+                <label>Online payment::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_online_payment__unsuccessful</fullName>
+                <default>false</default>
+                <label>Online payment::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_payment_link__prospect</fullName>
+                <default>false</default>
+                <label>Payment link::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_payment_link__successful</fullName>
+                <default>false</default>
+                <label>Payment link::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_payment_link__unsuccessful</fullName>
+                <default>false</default>
+                <label>Payment link::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_qr_payment__prospect</fullName>
+                <default>false</default>
+                <label>QR payment::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_qr_payment__successful</fullName>
+                <default>false</default>
+                <label>QR payment::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_qr_payment__unsuccessful</fullName>
+                <default>false</default>
+                <label>QR payment::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_retention_contract__12_months</fullName>
+                <default>false</default>
+                <label>Retention Contract::12 Months</label>
+            </value>
+            <value>
+                <fullName>upsell_products_retention_contract__24_months</fullName>
+                <default>false</default>
+                <label>Retention Contract::24 Months</label>
+            </value>
+            <value>
+                <fullName>upsell_products_retention_contract__36_months</fullName>
+                <default>false</default>
+                <label>Retention Contract::36 Months</label>
+            </value>
+            <value>
+                <fullName>upsell_products_tap_to_pay_iphone__prospect</fullName>
+                <default>false</default>
+                <label>Tap to Pay iPhone::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_tap_to_pay_iphone__successful</fullName>
+                <default>false</default>
+                <label>Tap to Pay iPhone::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_tap_to_pay_iphone__unsuccessful</fullName>
+                <default>false</default>
+                <label>Tap to Pay iPhone::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_virtual_terminal__prospect</fullName>
+                <default>false</default>
+                <label>Virtual Terminal::Prospect</label>
+            </value>
+            <value>
+                <fullName>upsell_products_virtual_terminal__successful</fullName>
+                <default>false</default>
+                <label>Virtual Terminal::Successful</label>
+            </value>
+            <value>
+                <fullName>upsell_products_virtual_terminal__unsuccessful</fullName>
+                <default>false</default>
+                <label>Virtual Terminal::Unsuccessful</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

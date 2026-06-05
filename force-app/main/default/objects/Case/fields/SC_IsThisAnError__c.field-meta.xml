@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_IsThisAnError__c</fullName>
+    <description>Indicates if the situation is a mistake.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if it is an error; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Is This An Error?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>yes_-_remediated</fullName>
+                <default>false</default>
+                <label>Yes - Remediated</label>
+            </value>
+            <value>
+                <fullName>yes_-_ongoing</fullName>
+                <default>false</default>
+                <label>Yes - Ongoing</label>
+            </value>
+            <value>
+                <fullName>no_error</fullName>
+                <default>false</default>
+                <label>No Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

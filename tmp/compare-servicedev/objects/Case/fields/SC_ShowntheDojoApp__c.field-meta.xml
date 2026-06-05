@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ShowntheDojoApp__c</fullName>
+    <description>Indicates if the Dojo app was demonstrated.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if shown; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Shown the Dojo App</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>were_you_shown_how_to_use_the_dojo_app_yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>were_you_shown_how_to_use_the_dojo_app_no</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

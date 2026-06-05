@@ -1,0 +1,161 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T13:42:15.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T13:42:14.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:42:15.000Z",
+          "deleted": false,
+          "fileName": "objects/WorkOrder.object",
+          "fullName": "WorkOrder.Fire_Door_Inspection__c",
+          "id": "00NQ100000MPIuvMAH",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:42:15.000Z",
+          "deleted": false,
+          "fileName": "objects/WorkOrder.object",
+          "fullName": "WorkOrder.Fire_Door_Process_Type__c",
+          "id": "00NQ100000MPIuwMAH",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:42:15.000Z",
+          "deleted": false,
+          "fileName": "objects/WorkOrder.object",
+          "fullName": "WorkOrder.No_Access__c",
+          "id": "00NQ100000MPIuxMAH",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:42:15.000Z",
+          "deleted": false,
+          "fileName": "objects/WorkOrder.object",
+          "fullName": "WorkOrder.Overall_Inspection_Result__c",
+          "id": "00NQ100000MPIuyMAH",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:42:15.000Z",
+          "deleted": false,
+          "fileName": "objects/WorkOrder.object",
+          "fullName": "WorkOrder.Remedial_Case__c",
+          "id": "00NQ100000MPIuzMAH",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:42:15.000Z",
+          "deleted": false,
+          "fileName": "objects/WorkOrder.object",
+          "fullName": "WorkOrder.Risk_Level__c",
+          "id": "00NQ100000MPIv0MAH",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T13:42:15.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfQ100000RWtt3KAD",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T13:42:15.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 6,
+    "numberComponentsTotal": 6,
+    "numberFiles": "3",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T13:42:14.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 1246,
+    "files": [
+      {
+        "fullName": "WorkOrder.Fire_Door_Inspection__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\WorkOrder\\fields\\Fire_Door_Inspection__c.field-meta.xml"
+      },
+      {
+        "fullName": "WorkOrder.Fire_Door_Process_Type__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\WorkOrder\\fields\\Fire_Door_Process_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "WorkOrder.No_Access__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\WorkOrder\\fields\\No_Access__c.field-meta.xml"
+      },
+      {
+        "fullName": "WorkOrder.Overall_Inspection_Result__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\WorkOrder\\fields\\Overall_Inspection_Result__c.field-meta.xml"
+      },
+      {
+        "fullName": "WorkOrder.Remedial_Case__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\WorkOrder\\fields\\Remedial_Case__c.field-meta.xml"
+      },
+      {
+        "fullName": "WorkOrder.Risk_Level__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\WorkOrder\\fields\\Risk_Level__c.field-meta.xml"
+      }
+    ],
+    "zipFileCount": 2,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWtt3KAD%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

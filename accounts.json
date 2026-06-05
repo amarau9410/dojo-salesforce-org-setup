@@ -1,0 +1,74 @@
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v67.0/sobjects/Account/001S900001Md74WIAR"
+        },
+        "Id": "001S900001Md74WIAR",
+        "Name": "Wilfred and Kaizer Bristol",
+        "ParentId": "001S900001MdJ5wIAF",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001u7eBIAQ"
+          },
+          "DeveloperName": "Location"
+        }
+      },
+      {
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v67.0/sobjects/Account/001S900001MdJ5wIAF"
+        },
+        "Id": "001S900001MdJ5wIAF",
+        "Name": "Wilfred and Kaizer Ltd",
+        "ParentId": null,
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001u7eAIAQ"
+          },
+          "DeveloperName": "Legal_Entity"
+        }
+      },
+      {
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v67.0/sobjects/Account/001S900001MjTOvIAN"
+        },
+        "Id": "001S900001MjTOvIAN",
+        "Name": "Wilfred and Kaizer Group",
+        "ParentId": "001S900001MdJ5wIAF",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001u7e9IAA"
+          },
+          "DeveloperName": "Group"
+        }
+      },
+      {
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v67.0/sobjects/Account/001S900001OXyvcIAD"
+        },
+        "Id": "001S900001OXyvcIAD",
+        "Name": "German Food Spain Ltd",
+        "ParentId": "001S900001OY72NIAT",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001u7eBIAQ"
+          },
+          "DeveloperName": "Location"
+        }
+      }
+    ],
+    "totalSize": 4,
+    "done": true
+  },
+  "warnings": []
+}

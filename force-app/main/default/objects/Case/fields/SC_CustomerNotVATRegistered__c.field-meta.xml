@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CustomerNotVATRegistered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>(End User)Indicates if proof of non-VAT registration was uploaded.</description>
+    <inlineHelpText>(End User) Mark &apos;Yes&apos; if proof was uploaded; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Customer Not VAT Registered</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

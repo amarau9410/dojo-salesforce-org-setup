@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CallBackWaitTime__c</fullName>
+    <description>Sets the wait time in Seconds to enable the Call Back feature based on the longest person waiting in the queue.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If the Call Back option is enabled, then provide a maximum wait time in Seconds which the longest Customer has been in the queue.</inlineHelpText>
+    <label>Call Back Wait Time</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CustomerAwareofCancellateRebate__c</fullName>
+    <description>Indicates if the customer is informed about the rebate.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if the customer is aware; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Customer Aware of Cancellate Rebate</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_if_a_switcher__were_you_made_aware_how_to_claim_your_exit_fees_from_your_previous_provider_yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>_if_a_switcher__were_you_made_aware_how_to_claim_your_exit_fees_from_your_previous_provider_no</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+Colliding labels with different fullNames:
+- Additional Location::Successful | LOCAL=upsell_products_additional_location__additional_location_successful | DEV=upsell_products_additional_location__successful
+- Additional Location::Unsuccessful | LOCAL=upsell_products_additional_location__additional_location_unsuccessful | DEV=upsell_products_additional_location__unsuccessful
+- Additional Terminal::Successful | LOCAL=upsell_products_additional_terminal__additional_terminal_successful | DEV=upsell_products_additional_terminal__successful
+- Additional Terminal::Unsuccessful | LOCAL=upsell_products_additional_terminal__additional_terminal_unsuccessful | DEV=upsell_products_additional_terminal__unsuccessful
+- Business Funding::Successful | LOCAL=upsell_products_business_funding__business_funding_successful | DEV=upsell_products_business_funding__successful
+- Business Funding::Unsuccessful | LOCAL=upsell_products_business_funding__business_funding_unsuccessful | DEV=upsell_products_business_funding__unsuccessful
+- Dojo Bookings::Successful | LOCAL=upsell_products_dojo_consumer_successful | DEV=upsell_products_dojo_bookings__successful
+- Dojo Bookings::Unsuccessful | LOCAL=upsell_products_dojo_consumer_unsuccessful | DEV=upsell_products_dojo_bookings__unsuccessful
+
+Values only in DEV:
+- Additional Location::Successful | upsell_products_additional_location__successful
+- Additional Location::Unsuccessful | upsell_products_additional_location__unsuccessful
+- Additional Terminal::Successful | upsell_products_additional_terminal__successful
+- Additional Terminal::Unsuccessful | upsell_products_additional_terminal__unsuccessful
+- Business Funding::Successful | upsell_products_business_funding__successful
+- Business Funding::Unsuccessful | upsell_products_business_funding__unsuccessful
+- DCC::Prospect | upsell_products_dcc__prospect
+- DCC::Successful | upsell_products_dcc__successful
+- DCC::Unsuccessful | upsell_products_dcc__unsuccessful
+- Dojo Bookings::Successful | upsell_products_dojo_bookings__successful
+- Dojo Bookings::Unsuccessful | upsell_products_dojo_bookings__unsuccessful
+- Integrations::Prospect | upsell_products_integrations__prospect
+- Integrations::Successful | upsell_products_integrations__successful
+- Integrations::Unsuccessful | upsell_products_integrations__unsuccessful
+
+Values only in LOCAL:
+- Additional Location::Successful | upsell_products_additional_location__additional_location_successful
+- Additional Location::Unsuccessful | upsell_products_additional_location__additional_location_unsuccessful
+- Additional Terminal::Successful | upsell_products_additional_terminal__additional_terminal_successful
+- Additional Terminal::Unsuccessful | upsell_products_additional_terminal__additional_terminal_unsuccessful
+- Business Funding::Successful | upsell_products_business_funding__business_funding_successful
+- Business Funding::Unsuccessful | upsell_products_business_funding__business_funding_unsuccessful
+- Dojo Bookings::Successful | upsell_products_dojo_consumer_successful
+- Dojo Bookings::Unsuccessful | upsell_products_dojo_consumer_unsuccessful

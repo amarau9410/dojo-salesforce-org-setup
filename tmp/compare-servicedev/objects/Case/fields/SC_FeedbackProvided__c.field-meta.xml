@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_FeedbackProvided__c</fullName>
+    <description>Indicates if feedback was given.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if feedback was provided; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Feedback Provided</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>no_feedback_provided</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__aurora__onboarding_</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Aurora (Onboarding)</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__flow__app_and_transactions_transfers</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Flow (App and Transactions&amp;Transfers</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__other</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Other</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__prosper__sales_</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Prosper (Sales)</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__q__customer_service_</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Q (Customer Service)</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__seller_feedback</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Seller feedback</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__vis-a-vis__card_machines_</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Vis-a-Vis (Card Machines)</label>
+            </value>
+            <value>
+                <fullName>yes__indifferent__vita__account_mangement_and_billing_</fullName>
+                <default>false</default>
+                <label>Yes::Indifferent::Vita (Account Mangement and Billing)</label>
+            </value>
+            <value>
+                <fullName>yes__negative__aurora__onboarding_</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Aurora (Onboarding)</label>
+            </value>
+            <value>
+                <fullName>yes__negative__flow__app_and_transactions_transfers</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Flow (App and Transactions&amp;Transfers</label>
+            </value>
+            <value>
+                <fullName>yes__negative__other</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Other</label>
+            </value>
+            <value>
+                <fullName>yes__negative__prosper__sales_</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Prosper (Sales)</label>
+            </value>
+            <value>
+                <fullName>yes__negative__q__customer_service_</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Q (Customer Service)</label>
+            </value>
+            <value>
+                <fullName>yes__negative__seller_feedback</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Seller feedback</label>
+            </value>
+            <value>
+                <fullName>yes__negative__vis-a-vis__card_machines_</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Vis-a-Vis (Card Machines)</label>
+            </value>
+            <value>
+                <fullName>yes__negative__vita__account_mangement_and_billing_</fullName>
+                <default>false</default>
+                <label>Yes::Negative::Vita (Account Mangement and Billing)</label>
+            </value>
+            <value>
+                <fullName>yes__positive__aurora__onboarding_</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Aurora (Onboarding)</label>
+            </value>
+            <value>
+                <fullName>yes__positive__flow__app_and_transactions_transfers</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Flow (App and Transactions&amp;Transfers</label>
+            </value>
+            <value>
+                <fullName>yes__positive__other</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Other</label>
+            </value>
+            <value>
+                <fullName>yes__positive__prosper__sales_</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Prosper (Sales)</label>
+            </value>
+            <value>
+                <fullName>yes__positive__q__customer_service_</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Q (Customer Service)</label>
+            </value>
+            <value>
+                <fullName>yes__positive__seller_feedback</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Seller feedback</label>
+            </value>
+            <value>
+                <fullName>yes__positive__vis-a-vis__card_machines_</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Vis-a-Vis (Card Machines)</label>
+            </value>
+            <value>
+                <fullName>yes__positive__vita__account_mangement_and_billing_</fullName>
+                <default>false</default>
+                <label>Yes::Positive::Vita (Account Mangement and Billing)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

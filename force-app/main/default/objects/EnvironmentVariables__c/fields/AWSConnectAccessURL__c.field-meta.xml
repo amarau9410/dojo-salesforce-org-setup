@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AWSConnectAccessURL__c</fullName>
+    <description>The URL of the AWS Connect instance to be used in deep linking from Salesforce.</description>
+    <label>AWS Connect Access URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

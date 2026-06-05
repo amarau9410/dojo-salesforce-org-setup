@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Nutritional_Log_Immutable</fullName>
+    <active>true</active>
+    <description>Locks nutritional log fields after creation to keep audit-compliant immutability.</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+OR(
+ISPICKVAL(Metric_Type__c, "Food Intake (Quarter/Half/Full)"),
+$RecordType.DeveloperName = "Nutritional_Log"
+),
+OR(
+ISCHANGED(Meal_Period__c),
+ISCHANGED(CareOrch_Consumption_Level__c),
+ISCHANGED(Food_Record__c),
+ISCHANGED(Daily_Intake_Date__c)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Meal_Period__c</errorDisplayField>
+    <errorMessage>Nutritional log entries are immutable after creation.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ApplicationForm_ES_IT_Read_Only_For_Sales_Access_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ApplicationForm ES-IT Read Only For Sales Access Group</label>
+        <sharedTo>
+            <group>ES_IT_Sales_App_Access_Users</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>IT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>ES</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_ES_Application_Forms</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share ES Application Forms</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.Spain</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>ES</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_GB_Application_Forms</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share GB Application Forms</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.GreatBritain</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>GB</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_IE_Application_Forms</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share IE Application Forms</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.Ireland</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>IE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_IT_Application_Forms</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share IT Application Forms</label>
+        <sharedTo>
+            <territory>CPQ_TerritoryModel.Italy</territory>
+        </sharedTo>
+        <criteriaItems>
+            <field>TerritoryAssignment__c</field>
+            <operation>equals</operation>
+            <value>IT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>ApplicationForm_All_Internal_Read_Only_For_Sales_Access_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ApplicationForm All Internal Read Only For Sales Access Group</label>
+        <sharedTo>
+            <group>ES_IT_Sales_App_Access_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

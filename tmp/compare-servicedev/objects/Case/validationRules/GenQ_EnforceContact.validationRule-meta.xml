@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GenQ_EnforceContact</fullName>
+    <active>true</active>
+    <description>Enforce contact on general queries when put on hold customer if there&apos;s no web email.</description>
+    <errorConditionFormula>NOT($Permission.SC_BypassValidationRules) &amp;&amp; (RecordType.DeveloperName = &quot;General_Queries&quot; ||
+RecordType.DeveloperName = &quot;Account_Management&quot;)
+&amp;&amp;
+ ISCHANGED(Status) &amp;&amp;
+	ISPICKVAL(Status, &quot;On Hold - Customer&quot;) &amp;&amp;
+	ISBLANK(ContactId) &amp;&amp;  
+	ISBLANK(SuppliedEmail)</errorConditionFormula>
+    <errorMessage>Please add a Contact or Web Email before putting the case status on &quot;On Hold - Customer&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+[BriefcaseDefinition]
+
+[BriefcaseRule]
+
+[BriefcaseRuleFilter]
+
+[BriefcaseAssignment]
+UserOrGroupId|type=reference|required=True|defaulted=False
+BriefcaseId|type=reference|required=True|defaulted=False
+

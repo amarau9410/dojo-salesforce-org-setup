@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_FinalInvoiceUploadedEndUser__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the final invoice was uploaded.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if uploaded; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Final Invoice Uploaded? (End User)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

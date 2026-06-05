@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ReadytoClose__c</fullName>
+    <description>Used for validation and automation from child or other related objects.</description>
+    <label>Ready to Close</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Complaint - Ready</fullName>
+                <default>false</default>
+                <label>Complaint - Ready</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

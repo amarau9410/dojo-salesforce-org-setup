@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Stores the inspection cadence for each fire door building and door type combination.</description>
+    <label>Fire Door Frequency Rule</label>
+    <pluralLabel>Fire Door Frequency Rules</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

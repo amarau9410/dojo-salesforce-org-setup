@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Notify_On_Death__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>When true, family contact must be informed about death events.</description>
+    <label>Notify On Death</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

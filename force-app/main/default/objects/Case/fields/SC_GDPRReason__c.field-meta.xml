@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_GDPRReason__c</fullName>
+    <description>Provide the reason or justification.</description>
+    <label>GDPR Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>gdpr_data_subject_access_request</fullName>
+                <default>false</default>
+                <label>Data Subject Access Request</label>
+            </value>
+            <value>
+                <fullName>gdpr_marketing</fullName>
+                <default>false</default>
+                <label>Marketing/System Removal</label>
+            </value>
+            <value>
+                <fullName>gdpr_information</fullName>
+                <default>false</default>
+                <label>Information</label>
+            </value>
+            <value>
+                <fullName>gdpr_police_request</fullName>
+                <default>false</default>
+                <label>Police Request</label>
+            </value>
+            <value>
+                <fullName>gdpr_data_issues</fullName>
+                <default>false</default>
+                <label>Data Issues</label>
+            </value>
+            <value>
+                <fullName>gdpr_account_de-merger</fullName>
+                <default>false</default>
+                <label>Account De-Merger</label>
+            </value>
+            <value>
+                <fullName>gdpr_system_bug</fullName>
+                <default>false</default>
+                <label>System Bug</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

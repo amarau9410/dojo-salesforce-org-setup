@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VQ_B</fullName>
+    <active>true</active>
+    <businessProcess>Card Machine Charges Process</businessProcess>
+    <description>VQ_B record type for careorchdev compatibility.</description>
+    <label>VQ_B</label>
+</RecordType>

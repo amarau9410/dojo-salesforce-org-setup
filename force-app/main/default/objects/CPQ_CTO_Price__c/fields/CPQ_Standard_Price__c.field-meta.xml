@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Standard_Price__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>DOJOR-50 Standard Price this record relates to</description>
+    <inlineHelpText>CPQ Standard Price Record this record relates to</inlineHelpText>
+    <label>CPQ Standard Price</label>
+    <referenceTo>CPQ_Standard_Price__c</referenceTo>
+    <relationshipName>CTO_Based_Overrides</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

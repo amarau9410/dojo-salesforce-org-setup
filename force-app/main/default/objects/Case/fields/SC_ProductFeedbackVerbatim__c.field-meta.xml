@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ProductFeedbackVerbatim__c</fullName>
+    <description>Exact words used in the product feedback.</description>
+    <inlineHelpText>Provide the verbatim feedback as received.</inlineHelpText>
+    <label>Product Feedback Verbatim</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

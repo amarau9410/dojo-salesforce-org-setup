@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_AmountToHoldOffset__c</fullName>
+    <description>Amount to be held or offset, in pounds.</description>
+    <inlineHelpText>Enter the amount to hold or offset in pounds.</inlineHelpText>
+    <label>Amount To Hold/Offset (£)</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

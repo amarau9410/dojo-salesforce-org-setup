@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_EstimatedARR__c</fullName>
+    <description>DOJOP-8114</description>
+    <inlineHelpText>Estimated cARR calculated when the application was created</inlineHelpText>
+    <label>Estimated ARR</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

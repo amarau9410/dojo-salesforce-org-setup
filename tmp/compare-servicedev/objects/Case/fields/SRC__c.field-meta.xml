@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SRC__c</fullName>
+    <description>Summary Resolution Communication (SRC) used for wrapping up the public complaint to be closed. Updated via the child Public complaint record&apos;s SRC rich text field associated to the case so it can be used in email merge fields from the case.</description>
+    <label>SRC</label>
+    <length>70000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

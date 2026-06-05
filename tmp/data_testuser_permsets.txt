@@ -1,0 +1,16 @@
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé PERMISSIONSET.NAME               Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé Developer                        Γöé
+Γöé DocuSign_User                    Γöé
+Γöé SC_AccountContactViewAllReadOnly Γöé
+Γöé SC_Case_ObjectPermissions        Γöé
+Γöé SC_CustomerServiceAgent          Γöé
+Γöé SC_KnowledgeViewArticles         Γöé
+Γöé SC_VoiceCallFieldsAccess         Γöé
+Γöé ServiceCloudVoiceCustomPsl       Γöé
+Γöé System_Administrator             Γöé
+Γöé X00ex00000018ozT_128_09_43_34_1  Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+
+[1mTotal number of records retrieved: 10.[22m

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Messages_IE</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>SCV_PhoneConfig__c</columns>
+    <columns>MessageType__c</columns>
+    <columns>MessageFormat__c</columns>
+    <columns>MessageOrder__c</columns>
+    <columns>MessageText__c</columns>
+    <columns>MessagePostAction__c</columns>
+    <columns>Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MasterLabel</field>
+        <operation>startsWith</operation>
+        <value>IE</value>
+    </filters>
+    <label>Phone Messages - IE</label>
+    <language>en_US</language>
+</ListView>

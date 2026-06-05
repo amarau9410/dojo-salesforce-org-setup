@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Queries</fullName>
+    <active>true</active>
+    <businessProcess>Card Machine Charges Process</businessProcess>
+    <description>General_Queries record type for careorchdev compatibility.</description>
+    <label>General_Queries</label>
+</RecordType>

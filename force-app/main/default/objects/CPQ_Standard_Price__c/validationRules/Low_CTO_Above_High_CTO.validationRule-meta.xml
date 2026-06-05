@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Low_CTO_Above_High_CTO</fullName>
+    <active>true</active>
+    <errorConditionFormula>Low_CTO_Band__c &gt;= High_CTO_Band__c</errorConditionFormula>
+    <errorDisplayField>Low_CTO_Band__c</errorDisplayField>
+    <errorMessage>The Low CTO Band must be less than the High CTO Band</errorMessage>
+</ValidationRule>

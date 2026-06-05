@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Chat_Profile__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Defines if the Contact Centre Management screen will give the option to change user&apos;s Chat Profiles.</description>
+    <label>User Chat Profile</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

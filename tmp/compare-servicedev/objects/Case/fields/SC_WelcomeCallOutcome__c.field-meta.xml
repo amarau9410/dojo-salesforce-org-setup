@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_WelcomeCallOutcome__c</fullName>
+    <description>Result or conclusion of a process or event.</description>
+    <label>Welcome Call Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>integration_set_up</fullName>
+                <default>false</default>
+                <label>Integration Set Up</label>
+            </value>
+            <value>
+                <fullName>integration_trouble_shoot</fullName>
+                <default>false</default>
+                <label>Integration Trouble Shoot</label>
+            </value>
+            <value>
+                <fullName>integration_already_using</fullName>
+                <default>false</default>
+                <label>Integration Already Using</label>
+            </value>
+            <value>
+                <fullName>integration_not_interested_in_setting_up</fullName>
+                <default>false</default>
+                <label>Integration Not Interested in setting up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

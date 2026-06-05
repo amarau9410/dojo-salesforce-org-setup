@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_InvalidSwitcherReasonRequired</fullName>
+    <active>true</active>
+    <description>When the Switcher Document status has been updated from Attached to Invalid, the fields Invalid Switcher Reason is blank</description>
+    <errorConditionFormula>AND(
+  SC_Record_Type_Formula__c=&quot;Sales Support&quot;,
+		ISCHANGED(SC_SwitcherDocumentStatus__c),
+  ISPICKVAL(PRIORVALUE(SC_SwitcherDocumentStatus__c), &quot;Attached&quot;),
+  ISPICKVAL(SC_SwitcherDocumentStatus__c, &quot;Invalid&quot;),
+  ISPICKVAL(SC_InvalidSwitcherReason__c, &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>SC_InvalidSwitcherReason__c</errorDisplayField>
+    <errorMessage>Please select an Invalid Switcher Reason before saving.</errorMessage>
+</ValidationRule>

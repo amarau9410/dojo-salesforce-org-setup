@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This sets the field value dynamically per object</description>
+    <label>SC Set Dynamic Value To Field Per Object</label>
+    <pluralLabel>SC Set Dynamic Value To Field Per Object</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

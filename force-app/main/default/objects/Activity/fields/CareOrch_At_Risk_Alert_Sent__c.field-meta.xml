@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_At_Risk_Alert_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marks whether proactive at-risk manager alert has already been sent for this shift.</description>
+    <label>CareOrch At Risk Alert Sent</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

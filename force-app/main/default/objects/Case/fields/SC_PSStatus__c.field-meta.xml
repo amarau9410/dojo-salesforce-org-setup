@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PSStatus__c</fullName>
+    <label>PS Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>interest__bf_query</fullName>
+                <default>false</default>
+                <label>Interest::BF Query</label>
+            </value>
+            <value>
+                <fullName>interest__callback_arranged</fullName>
+                <default>false</default>
+                <label>Interest::Callback arranged</label>
+            </value>
+            <value>
+                <fullName>interest__customer_interested</fullName>
+                <default>false</default>
+                <label>Interest::Customer Interested</label>
+            </value>
+            <value>
+                <fullName>interest__named_contact_not_available</fullName>
+                <default>false</default>
+                <label>Interest::Named contact not available</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__no_longer_interested_</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::No longer interested</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__no_contact</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::No contact</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__alternative_funding_through_other_lender</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::Alternative funding through other lender</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__uncertainty</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::Uncertainty</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__cost_too_high</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::Cost too high</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__government_backed_loans</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::Government backed loans</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__funding_amount_too_low</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::Funding amount too low</label>
+            </value>
+            <value>
+                <fullName>interest__not_interested__other</fullName>
+                <default>false</default>
+                <label>Interest::Not Interested::Other</label>
+            </value>
+            <value>
+                <fullName>pre_lead__quote</fullName>
+                <default>false</default>
+                <label>Pre Lead::Quote</label>
+            </value>
+            <value>
+                <fullName>in_progress__pending_documents__with_customer</fullName>
+                <default>false</default>
+                <label>In progress::Pending Documents::With Customer</label>
+            </value>
+            <value>
+                <fullName>in_progress__pending_documents__with_pc</fullName>
+                <default>false</default>
+                <label>In progress::Pending Documents::With PC</label>
+            </value>
+            <value>
+                <fullName>in_progress__submitted_to_banking_circle__with_underwriting</fullName>
+                <default>false</default>
+                <label>In progress::Submitted to Banking Circle::With Underwriting</label>
+            </value>
+            <value>
+                <fullName>in_progress__submitted_to_banking_circle__further_documents_needed</fullName>
+                <default>false</default>
+                <label>In progress::Submitted to Banking Circle::Further documents needed</label>
+            </value>
+            <value>
+                <fullName>in_progress__contract_sent__awaiting_signature</fullName>
+                <default>false</default>
+                <label>In progress::Contract sent::Awaiting signature</label>
+            </value>
+            <value>
+                <fullName>in_progress__contract_sent__contract_query</fullName>
+                <default>false</default>
+                <label>In progress::Contract sent::Contract Query</label>
+            </value>
+            <value>
+                <fullName>in_progress__change_of_bank___requested</fullName>
+                <default>false</default>
+                <label>In progress::Change of Bank:: Requested</label>
+            </value>
+            <value>
+                <fullName>in_progress__change_of_bank___complete</fullName>
+                <default>false</default>
+                <label>In progress::Change of Bank:: Complete</label>
+            </value>
+            <value>
+                <fullName>complete___funded</fullName>
+                <default>false</default>
+                <label>Complete:: Funded</label>
+            </value>
+            <value>
+                <fullName>complete___renewal</fullName>
+                <default>false</default>
+                <label>Complete:: Renewal</label>
+            </value>
+            <value>
+                <fullName>rescinded__alternative_funding_through_other_lender</fullName>
+                <default>false</default>
+                <label>Rescinded::Alternative funding through other lender</label>
+            </value>
+            <value>
+                <fullName>rescinded__funding_amount_too_low</fullName>
+                <default>false</default>
+                <label>Rescinded::Funding amount too low</label>
+            </value>
+            <value>
+                <fullName>rescinded__government_backed_loans</fullName>
+                <default>false</default>
+                <label>Rescinded::Government backed loans</label>
+            </value>
+            <value>
+                <fullName>rescinded__no_longer_interested</fullName>
+                <default>false</default>
+                <label>Rescinded::No longer interested</label>
+            </value>
+            <value>
+                <fullName>rescinded__no_contact</fullName>
+                <default>false</default>
+                <label>Rescinded::No contact</label>
+            </value>
+            <value>
+                <fullName>rescinded__cost_too_high</fullName>
+                <default>false</default>
+                <label>Rescinded::Cost too high</label>
+            </value>
+            <value>
+                <fullName>rescinded__uncertainty</fullName>
+                <default>false</default>
+                <label>Rescinded::Uncertainty</label>
+            </value>
+            <value>
+                <fullName>rescinded__other</fullName>
+                <default>false</default>
+                <label>Rescinded::Other</label>
+            </value>
+            <value>
+                <fullName>declined___does_not_qualify</fullName>
+                <default>false</default>
+                <label>Declined:: Does not qualify</label>
+            </value>
+            <value>
+                <fullName>declined___ccj</fullName>
+                <default>false</default>
+                <label>Declined:: CCJ</label>
+            </value>
+            <value>
+                <fullName>declined___risk</fullName>
+                <default>false</default>
+                <label>Declined:: Risk</label>
+            </value>
+            <value>
+                <fullName>abandoned__duplicate</fullName>
+                <default>false</default>
+                <label>Abandoned::Duplicate</label>
+            </value>
+            <value>
+                <fullName>post_service_query</fullName>
+                <default>false</default>
+                <label>Post Service Query</label>
+            </value>
+            <value>
+                <fullName>test_application</fullName>
+                <default>false</default>
+                <label>Test Application</label>
+            </value>
+            <value>
+                <fullName>in_progress__auto_change_of_bank___error</fullName>
+                <default>false</default>
+                <label>In progress::Auto Change of Bank:: Error</label>
+            </value>
+            <value>
+                <fullName>in_progress__auto_change_of_bank___complete</fullName>
+                <default>false</default>
+                <label>In progress::Auto Change of Bank:: Complete</label>
+            </value>
+            <value>
+                <fullName>in_progress__auto_change_of_bank___requested</fullName>
+                <default>false</default>
+                <label>In progress::Auto Change of Bank:: Requested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

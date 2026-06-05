@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseOnQueueAtAssignedStatus</fullName>
+    <active>true</active>
+    <description>Error when cases get assigned to queues when they&apos;re on Assigned status.
+Post SSCW-376 this validation rule is a candidate for removal as Cases can never be in the &apos;Assigned&apos; Status while being owned by a User.</description>
+    <errorConditionFormula>AND(
+				ISCHANGED(OwnerId),
+				BEGINS(OwnerId,&quot;00G&quot;),
+				ISPICKVAL(Status,&quot;Assigned&quot;),
+				NOT($Permission.SC_BypassValidationRules)
+)</errorConditionFormula>
+    <errorMessage>You can not assign this case to a queue in an &apos;Assigned&apos; status, please choose the correct status for the case.</errorMessage>
+</ValidationRule>

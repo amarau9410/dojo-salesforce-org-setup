@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_MilestoneName__c</fullName>
+    <description>Contains the milestone name in the label and the email template name in the api name.</description>
+    <label>Milestone Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Logistics Failed Drop Off ES Day 0</fullName>
+                <default>false</default>
+                <label>Logistics Failed Drop Off ES Day 0</label>
+            </value>
+            <value>
+                <fullName>Logistics Failed Drop Off ES Day 4</fullName>
+                <default>false</default>
+                <label>Logistics Failed Drop Off ES Day 4</label>
+            </value>
+            <value>
+                <fullName>Logistics Failed Drop Off ES Day 10</fullName>
+                <default>false</default>
+                <label>Logistics Failed Drop Off ES Day 10</label>
+            </value>
+            <value>
+                <fullName>Logistics Failed Drop Off IT Day 0</fullName>
+                <default>false</default>
+                <label>Logistics Failed Drop Off IT Day 0</label>
+            </value>
+            <value>
+                <fullName>Logistics Failed Drop Off IT Day 4</fullName>
+                <default>false</default>
+                <label>Logistics Failed Drop Off IT Day 4</label>
+            </value>
+            <value>
+                <fullName>Logistics Failed Drop Off IT Day 10</fullName>
+                <default>false</default>
+                <label>Logistics Failed Drop Off IT Day 10</label>
+            </value>
+            <value>
+                <fullName>Logistics Closed Not Collected ES Day 0</fullName>
+                <default>false</default>
+                <label>Logistics Closed Not Collected ES Day 0</label>
+            </value>
+            <value>
+                <fullName>Logistics Closed Not Collected ES Day 4</fullName>
+                <default>false</default>
+                <label>Logistics Closed Not Collected ES Day 4</label>
+            </value>
+            <value>
+                <fullName>Logistics Closed Not Collected ES Day 10</fullName>
+                <default>false</default>
+                <label>Logistics Closed Not Collected ES Day 10</label>
+            </value>
+            <value>
+                <fullName>Logistics Closed Not Collected IT Day 0</fullName>
+                <default>false</default>
+                <label>Logistics Closed Not Collected IT Day 0</label>
+            </value>
+            <value>
+                <fullName>Logistics Closed Not Collected IT Day 4</fullName>
+                <default>false</default>
+                <label>Logistics Closed Not Collected IT Day 4</label>
+            </value>
+            <value>
+                <fullName>Logistics Closed Not Collected IT Day 10</fullName>
+                <default>false</default>
+                <label>Logistics Closed Not Collected IT Day 10</label>
+            </value>
+            <value>
+                <fullName>CLE</fullName>
+                <default>false</default>
+                <label>CLE - On Hold Customer - 5th Day Reminder</label>
+            </value>
+            <value>
+                <fullName>Escalated Retentions</fullName>
+                <default>false</default>
+                <label>Escalated Retentions - On Hold Customer - 5th Day Reminder</label>
+            </value>
+            <value>
+                <fullName>Integration Onboarding</fullName>
+                <default>false</default>
+                <label>Integration Onboarding - On Hold Customer - 5th Day Reminder</label>
+            </value>
+            <value>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+                <label>Integrations - On Hold Customer - 5th Day Reminder</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service - On Hold Customer - 5th Day Reminder</label>
+            </value>
+            <value>
+                <fullName>Business Funding</fullName>
+                <default>false</default>
+                <label>Business Funding - On Hold Customer - 5th Day Reminder</label>
+            </value>
+            <value>
+                <fullName>Failed Returns - (Pick up) - GB/IE - 1st</fullName>
+                <default>false</default>
+                <label>logistics_journey_1</label>
+            </value>
+            <value>
+                <fullName>Failed Returns - (Pick up) - GB - Day 3</fullName>
+                <default>false</default>
+                <label>logistics_1_pending</label>
+            </value>
+            <value>
+                <fullName>Failed Returns - (Pick up) - GB - Day 6</fullName>
+                <default>false</default>
+                <label>logistics_6_pending</label>
+            </value>
+            <value>
+                <fullName>logistics_call_required</fullName>
+                <default>false</default>
+                <label>logistics_call_required</label>
+            </value>
+            <value>
+                <fullName>Failed Returns - (Pick up) - GB - Day 14</fullName>
+                <default>false</default>
+                <label>logistics_final_email</label>
+            </value>
+            <value>
+                <fullName>Failed Returns - (Pick up) - GB - Call Unsuccessful</fullName>
+                <default>false</default>
+                <label>logistics_call_unsuccessful</label>
+            </value>
+            <value>
+                <fullName>Failed Returns (Drop off) - GB/IE - Day1</fullName>
+                <default>false</default>
+                <label>send_label_chase_1</label>
+            </value>
+            <value>
+                <fullName>Failed Returns (Drop off) - GB/IE - Day7</fullName>
+                <default>false</default>
+                <label>label_chase_1_logistics</label>
+            </value>
+            <value>
+                <fullName>Failed Returns(Drop off) - GB/IE - Day10</fullName>
+                <default>false</default>
+                <label>label_chase_2_logistics</label>
+            </value>
+            <value>
+                <fullName>Closed Not Collected - GB Day 1</fullName>
+                <default>false</default>
+                <label>cardmachine_journey_1</label>
+            </value>
+            <value>
+                <fullName>Collections - Urgent Action Required</fullName>
+                <default>false</default>
+                <label>Email 1</label>
+            </value>
+            <value>
+                <fullName>Collections - Final Reminder</fullName>
+                <default>false</default>
+                <label>Email 2</label>
+            </value>
+            <value>
+                <fullName>Collections - Call 1</fullName>
+                <default>false</default>
+                <label>Call 1</label>
+            </value>
+            <value>
+                <fullName>Collections - Call 2</fullName>
+                <default>false</default>
+                <label>Call 2</label>
+            </value>
+            <value>
+                <fullName>Collections - Call 3</fullName>
+                <default>false</default>
+                <label>Call 3</label>
+            </value>
+            <value>
+                <fullName>Pocket Returns Email 1</fullName>
+                <default>false</default>
+                <label>Logistics - Pocket Returns Day 0</label>
+            </value>
+            <value>
+                <fullName>Pocket Returns Email 2</fullName>
+                <default>false</default>
+                <label>Logistics - Pocket Returns Day 7</label>
+            </value>
+            <value>
+                <fullName>Pocket Returns Email 3</fullName>
+                <default>false</default>
+                <label>Logistics - Pocket Returns Day 16</label>
+            </value>
+            <value>
+                <fullName>Collections - Urgent Action Required -IT</fullName>
+                <default>false</default>
+                <label>Email 1- IT</label>
+            </value>
+            <value>
+                <fullName>Collections - Urgent Action Required -ES</fullName>
+                <default>false</default>
+                <label>Email 1- ES</label>
+            </value>
+            <value>
+                <fullName>Collections - Final Reminder - IT</fullName>
+                <default>false</default>
+                <label>Email 2 - IT</label>
+            </value>
+            <value>
+                <fullName>Collections - Final Reminder - ES</fullName>
+                <default>false</default>
+                <label>Email 2 - ES</label>
+            </value>
+            <value>
+                <fullName>Collections - Urgent Action Required IE</fullName>
+                <default>false</default>
+                <label>Email 1 IE</label>
+            </value>
+            <value>
+                <fullName>Collections - Final Reminder IE</fullName>
+                <default>false</default>
+                <label>Email 2 IE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_Attempts__c</fullName>
+    <description>Number of attempts made for a specific action.</description>
+    <inlineHelpText>Enter the number of attempts.</inlineHelpText>
+    <label>Attempts</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1st__successful</fullName>
+                <default>false</default>
+                <label>1st::Successful</label>
+            </value>
+            <value>
+                <fullName>1st__unsuccessful</fullName>
+                <default>false</default>
+                <label>1st::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>2nd__successful</fullName>
+                <default>false</default>
+                <label>2nd::Successful</label>
+            </value>
+            <value>
+                <fullName>2nd__unsuccessful</fullName>
+                <default>false</default>
+                <label>2nd::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>3rd__successful</fullName>
+                <default>false</default>
+                <label>3rd::Successful</label>
+            </value>
+            <value>
+                <fullName>3rd__unsuccessful</fullName>
+                <default>false</default>
+                <label>3rd::Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>Callback Set</fullName>
+                <default>false</default>
+                <label>Callback Set</label>
+            </value>
+            <value>
+                <fullName>Unable to attempt</fullName>
+                <default>false</default>
+                <label>Unable to attempt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

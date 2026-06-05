@@ -1,0 +1,260 @@
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000bK3fbIAC"
+        },
+        "Id": "500S900000bK3fbIAC",
+        "CaseNumber": "03040614",
+        "CreatedDate": "2026-05-19T08:30:45.000+0000",
+        "AccountId": "001S900001MdJ5wIAF",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdiIAE"
+          },
+          "DeveloperName": "Complaint"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000bHVmtIAG"
+        },
+        "Id": "500S900000bHVmtIAG",
+        "CaseNumber": "03040613",
+        "CreatedDate": "2026-05-18T10:55:39.000+0000",
+        "AccountId": "001S900001Md74WIAR",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdnIAE"
+          },
+          "DeveloperName": "General_Queries"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000bHP3GIAW"
+        },
+        "Id": "500S900000bHP3GIAW",
+        "CaseNumber": "03040612",
+        "CreatedDate": "2026-05-18T10:53:40.000+0000",
+        "AccountId": "001S900001MjTOvIAN",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdkIAE"
+          },
+          "DeveloperName": "EnterpriseAccountManagement"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000bHKGNIA4"
+        },
+        "Id": "500S900000bHKGNIA4",
+        "CaseNumber": "03040611",
+        "CreatedDate": "2026-05-18T10:34:02.000+0000",
+        "AccountId": "001S900001MdJ5wIAF",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdnIAE"
+          },
+          "DeveloperName": "General_Queries"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000bHFS4IAO"
+        },
+        "Id": "500S900000bHFS4IAO",
+        "CaseNumber": "03040610",
+        "CreatedDate": "2026-05-18T10:31:02.000+0000",
+        "AccountId": "001S900001MdJ5wIAF",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdiIAE"
+          },
+          "DeveloperName": "Complaint"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000b3Pe5IAE"
+        },
+        "Id": "500S900000b3Pe5IAE",
+        "CaseNumber": "03040609",
+        "CreatedDate": "2026-05-12T13:50:14.000+0000",
+        "AccountId": "001S900001OXyvcIAD",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdlIAE"
+          },
+          "DeveloperName": "Funding"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000b276XIAQ"
+        },
+        "Id": "500S900000b276XIAQ",
+        "CaseNumber": "03040608",
+        "CreatedDate": "2026-05-12T07:29:43.000+0000",
+        "AccountId": "001S900001MjTOvIAN",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdiIAE"
+          },
+          "DeveloperName": "Complaint"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000amCrnIAE"
+        },
+        "Id": "500S900000amCrnIAE",
+        "CaseNumber": "03040607",
+        "CreatedDate": "2026-05-06T11:33:07.000+0000",
+        "AccountId": "001S900001Md74WIAR",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdhIAE"
+          },
+          "DeveloperName": "Collections"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/Group/00GQ500000JchCOMAZ"
+          },
+          "Name": "Collections"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000alshyIAA"
+        },
+        "Id": "500S900000alshyIAA",
+        "CaseNumber": "03040606",
+        "CreatedDate": "2026-05-06T11:31:35.000+0000",
+        "AccountId": "001S900001MjTOvIAN",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdhIAE"
+          },
+          "DeveloperName": "Collections"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/Group/00GQ500000JchCOMAZ"
+          },
+          "Name": "Collections"
+        },
+        "Subject": null
+      },
+      {
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v67.0/sobjects/Case/500S900000am2ExIAI"
+        },
+        "Id": "500S900000am2ExIAI",
+        "CaseNumber": "03040605",
+        "CreatedDate": "2026-05-06T11:30:22.000+0000",
+        "AccountId": "001S900001MdJ5wIAF",
+        "RecordType": {
+          "attributes": {
+            "type": "RecordType",
+            "url": "/services/data/v67.0/sobjects/RecordType/012Q5000001uAdiIAE"
+          },
+          "DeveloperName": "Complaint"
+        },
+        "Owner": {
+          "attributes": {
+            "type": "Name",
+            "url": "/services/data/v67.0/sobjects/User/005Q500000DKKZSIA5"
+          },
+          "Name": "Nnamdi Udoye"
+        },
+        "Subject": null
+      }
+    ],
+    "totalSize": 10,
+    "done": true
+  },
+  "warnings": []
+}

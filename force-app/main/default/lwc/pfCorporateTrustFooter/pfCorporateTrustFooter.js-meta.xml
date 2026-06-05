@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>PF Corporate Trust Footer</masterLabel>
+    <description>Corporate trust strip and executive footer for Experience Cloud portfolio pages.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="merchantsSupported" type="Integer" label="Merchants Supported" default="150000" />
+            <property name="salesforceYears" type="Integer" label="Salesforce Experience Years" default="5" />
+            <property name="enterpriseYears" type="Integer" label="Enterprise IT Years" default="15" />
+            <property name="reliabilityPercent" type="Double" label="Release Reliability Percent" default="99.9" />
+            <property name="linkedInUrl" type="String" label="LinkedIn URL" />
+            <property name="emailAddress" type="String" label="Email Address" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ChargebackStage__c</fullName>
+    <description>Current stage of the chargeback process.</description>
+    <inlineHelpText>Specify the stage of the chargeback process.</inlineHelpText>
+    <label>Chargeback Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>chargeback_stage_status_accepted__issuer_accepted</fullName>
+                <default>false</default>
+                <label>Accepted::Issuer Accepted</label>
+            </value>
+            <value>
+                <fullName>chargeback_stage_status_accepted__merchant_accepted</fullName>
+                <default>false</default>
+                <label>Accepted::Merchant Accepted</label>
+            </value>
+            <value>
+                <fullName>chargeback_stage_status_declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>chargeback_stage_status_fail_to_respond_</fullName>
+                <default>false</default>
+                <label>Fail to respond</label>
+            </value>
+            <value>
+                <fullName>chargeback_stage_status_fulfilled</fullName>
+                <default>false</default>
+                <label>Fulfilled</label>
+            </value>
+            <value>
+                <fullName>chargeback_stage_status_no_action</fullName>
+                <default>false</default>
+                <label>No action</label>
+            </value>
+            <value>
+                <fullName>chargeback_stage_status_non_fulfilled</fullName>
+                <default>false</default>
+                <label>Non fulfilled</label>
+            </value>
+            <value>
+                <fullName>chargeback_stage_status_withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

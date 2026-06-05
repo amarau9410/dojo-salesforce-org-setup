@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CauseForComplaint__c</fullName>
+    <description>Reason for filing a complaint.</description>
+    <inlineHelpText>Provide the reason for the complaint.</inlineHelpText>
+    <label>Cause For Complaint</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pricing__charges__card_machine_charges</fullName>
+                <default>false</default>
+                <label>Pricing::Charges::Card machine charges</label>
+            </value>
+            <value>
+                <fullName>pricing__charges__cancellation_charges</fullName>
+                <default>false</default>
+                <label>Pricing::Charges::Cancellation charges</label>
+            </value>
+            <value>
+                <fullName>pricing__charges__mmsc</fullName>
+                <default>false</default>
+                <label>Pricing::Charges::MMSC</label>
+            </value>
+            <value>
+                <fullName>pricing__rate__rate_dispute</fullName>
+                <default>false</default>
+                <label>Pricing::Rate::Rate dispute</label>
+            </value>
+            <value>
+                <fullName>pricing__rate___surcharge</fullName>
+                <default>false</default>
+                <label>Pricing::Rate:: Surcharge</label>
+            </value>
+            <value>
+                <fullName>pricing__rate__secure_transaction_fee</fullName>
+                <default>false</default>
+                <label>Pricing::Rate::Secure Transaction Fee</label>
+            </value>
+            <value>
+                <fullName>pricing__rate__contractual_re-price</fullName>
+                <default>false</default>
+                <label>Pricing::Rate::Contractual re-price</label>
+            </value>
+            <value>
+                <fullName>pricing__amex__amex_rates</fullName>
+                <default>false</default>
+                <label>Pricing::Amex::AMEX rates</label>
+            </value>
+            <value>
+                <fullName>product__app__reporting_speed/ease</fullName>
+                <default>false</default>
+                <label>Product::App::Reporting speed/ease</label>
+            </value>
+            <value>
+                <fullName>product__app__logging_in</fullName>
+                <default>false</default>
+                <label>Product::App::Logging in</label>
+            </value>
+            <value>
+                <fullName>product__amex__remove_amex</fullName>
+                <default>false</default>
+                <label>Product::AmEx::Remove AmEx</label>
+            </value>
+            <value>
+                <fullName>product__billing__bill_cycle</fullName>
+                <default>false</default>
+                <label>Product::Billing::Bill cycle</label>
+            </value>
+            <value>
+                <fullName>product__billing__invoice_error</fullName>
+                <default>false</default>
+                <label>Product::Billing::Invoice error</label>
+            </value>
+            <value>
+                <fullName>product__billing__direct_debit</fullName>
+                <default>false</default>
+                <label>Product::Billing::Direct Debit</label>
+            </value>
+            <value>
+                <fullName>product__billing__billed_before_start_date</fullName>
+                <default>false</default>
+                <label>Product::Billing::Billed before start date</label>
+            </value>
+            <value>
+                <fullName>product__bookings</fullName>
+                <default>false</default>
+                <label>Product::Bookings::General</label>
+            </value>
+            <value>
+                <fullName>product__business_funding__declined_business_funding_</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::Declined Business Funding</label>
+            </value>
+            <value>
+                <fullName>product__business_funding__cob_not_actioned_correctly</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::COB not actioned correctly</label>
+            </value>
+            <value>
+                <fullName>product__business_funding__application_process</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::Application process</label>
+            </value>
+            <value>
+                <fullName>product__business_funding__incorrect_deduction_applied</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::Incorrect % deduction applied</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__cashback_issues</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Cashback issues</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__card_machine_reporting_eod/z</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Card machine reporting EOD/Z</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__activation/supervisor_code_issues</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Activation/Supervisor code issues</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__sim/wifi_connectivity</fullName>
+                <default>false</default>
+                <label>Product::Card machine::SIM/WIFI connectivity</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__card_machine_general</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Card machine general</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__geofencing</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Geofencing</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__card_machine_accessories</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Card machine accessories</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__update_caused_tech_issues</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Update caused tech issues</label>
+            </value>
+            <value>
+                <fullName>product__card_machine__pre_auth</fullName>
+                <default>false</default>
+                <label>Product::Card machine::Pre Auth</label>
+            </value>
+            <value>
+                <fullName>product__integration__set-up_process</fullName>
+                <default>false</default>
+                <label>Product::Integration::Set-Up process</label>
+            </value>
+            <value>
+                <fullName>product__integration__cannot_integrate_with_partner</fullName>
+                <default>false</default>
+                <label>Product::Integration::Cannot integrate with Partner</label>
+            </value>
+            <value>
+                <fullName>product__integration__functionality_limitations</fullName>
+                <default>false</default>
+                <label>Product::Integration::Functionality limitations</label>
+            </value>
+            <value>
+                <fullName>product__pci__pci_compliance</fullName>
+                <default>false</default>
+                <label>Product::PCI::PCI compliance</label>
+            </value>
+            <value>
+                <fullName>product__transactions__missing_transactions</fullName>
+                <default>false</default>
+                <label>Product::Transactions::Missing transactions</label>
+            </value>
+            <value>
+                <fullName>product__transactions__transactions_failed/declined</fullName>
+                <default>false</default>
+                <label>Product::Transactions::Transactions failed/declined</label>
+            </value>
+            <value>
+                <fullName>product__transfers__held_funds</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Held funds</label>
+            </value>
+            <value>
+                <fullName>product__transfers__timing_of_banking_window</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timing of banking window</label>
+            </value>
+            <value>
+                <fullName>product__transfers__missing_transfer</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Missing transfer</label>
+            </value>
+            <value>
+                <fullName>product__transfers__discrepancy</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Discrepancy</label>
+            </value>
+            <value>
+                <fullName>product__transfers__incident</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Incident</label>
+            </value>
+            <value>
+                <fullName>product__transfers__net_settlement</fullName>
+                <default>false</default>
+                <label>Product::Transfers::NET Settlement</label>
+            </value>
+            <value>
+                <fullName>experience__change_to_account__account_closed_for_non_payment</fullName>
+                <default>false</default>
+                <label>Experience::Change to account::Account closed for non payment</label>
+            </value>
+            <value>
+                <fullName>experience__change_to_account__account_closed_in_error</fullName>
+                <default>false</default>
+                <label>Experience::Change to account::Account closed in error</label>
+            </value>
+            <value>
+                <fullName>experience__change_to_account__errors_with_requested_account_changes</fullName>
+                <default>false</default>
+                <label>Experience::Change to account::Errors with requested account changes</label>
+            </value>
+            <value>
+                <fullName>experience__change_to_account__delays_with_requested_account_changes</fullName>
+                <default>false</default>
+                <label>Experience::Change to account::Delays with requested account changes</label>
+            </value>
+            <value>
+                <fullName>experience__logistics__failed_delivery/collection</fullName>
+                <default>false</default>
+                <label>Experience::Logistics::Failed delivery/collection</label>
+            </value>
+            <value>
+                <fullName>experience__logistics__timeframe</fullName>
+                <default>false</default>
+                <label>Experience::Logistics::Timeframe</label>
+            </value>
+            <value>
+                <fullName>experience__risk__duplicate_account</fullName>
+                <default>false</default>
+                <label>Experience::Risk::Duplicate account</label>
+            </value>
+            <value>
+                <fullName>experience__risk__held_funds</fullName>
+                <default>false</default>
+                <label>Experience::Risk::Held funds</label>
+            </value>
+            <value>
+                <fullName>experience__risk__out_of_line_transaction</fullName>
+                <default>false</default>
+                <label>Experience::Risk::Out of line transaction</label>
+            </value>
+            <value>
+                <fullName>experience__risk__closed_by_risk</fullName>
+                <default>false</default>
+                <label>Experience::Risk::Closed by Risk</label>
+            </value>
+            <value>
+                <fullName>experience__risk__fraud</fullName>
+                <default>false</default>
+                <label>Experience::Risk::Fraud</label>
+            </value>
+            <value>
+                <fullName>experience__risk__cyber_security</fullName>
+                <default>false</default>
+                <label>Experience::Risk::Cyber security</label>
+            </value>
+            <value>
+                <fullName>experience__sales__application_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Application inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__bf_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::BF inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__cancellation_rebate_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Cancellation rebate inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__cle_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::CLE inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__multiple_locations_set_up_incorrectly_</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Multiple locations set up incorrectly</label>
+            </value>
+            <value>
+                <fullName>experience__sales__contract_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Contract inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__free_trial_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Free trial inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__mmp_inaccurate_info_provided_</fullName>
+                <default>false</default>
+                <label>Experience::Sales::MMP inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__rates_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Rates inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__rate_review_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Rate review inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__referral_inaccurate_info_provided</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Referral inaccurate info provided</label>
+            </value>
+            <value>
+                <fullName>experience__sales__sign_up_error</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Sign up error</label>
+            </value>
+            <value>
+                <fullName>experience__sales__pc_behaviour</fullName>
+                <default>false</default>
+                <label>Experience::Sales::PC behaviour</label>
+            </value>
+            <value>
+                <fullName>experience__service__wait_times</fullName>
+                <default>false</default>
+                <label>Experience::Service::Wait times</label>
+            </value>
+            <value>
+                <fullName>experience__service__id_v</fullName>
+                <default>false</default>
+                <label>Experience::Service::ID&amp;V</label>
+            </value>
+            <value>
+                <fullName>experience__chargeback__chargeback</fullName>
+                <default>false</default>
+                <label>Experience::Chargeback::Chargeback</label>
+            </value>
+            <value>
+                <fullName>experience__marketing_material__marketing_material_is_not_clear_/misleading</fullName>
+                <default>false</default>
+                <label>Experience::Marketing material::Marketing material is not clear /misleading</label>
+            </value>
+            <value>
+                <fullName>experience__t_cs__t_cs</fullName>
+                <default>false</default>
+                <label>Experience::T&amp;Cs::T&amp;Cs</label>
+            </value>
+            <value>
+                <fullName>product__bookings__vqb_deposits</fullName>
+                <default>false</default>
+                <label>Product::Bookings::VQB Deposits</label>
+            </value>
+            <value>
+                <fullName>product__bookings__card_on_file</fullName>
+                <default>false</default>
+                <label>Product::Bookings::Card on File</label>
+            </value>
+            <value>
+                <fullName>product__hardware_care</fullName>
+                <default>false</default>
+                <label>Product::Hardware Care</label>
+            </value>
+            <value>
+                <fullName>incident__level_1</fullName>
+                <default>false</default>
+                <label>Incident::Level 1</label>
+            </value>
+            <value>
+                <fullName>incident__level_2</fullName>
+                <default>false</default>
+                <label>Incident::Level 2</label>
+            </value>
+            <value>
+                <fullName>incident__level_3</fullName>
+                <default>false</default>
+                <label>Incident::Level 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

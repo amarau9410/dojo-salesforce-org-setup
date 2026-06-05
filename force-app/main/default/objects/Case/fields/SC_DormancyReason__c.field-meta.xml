@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_DormancyReason__c</fullName>
+    <description>Explanation for inactivity or dormancy.</description>
+    <inlineHelpText>Provide the reason for dormancy.</inlineHelpText>
+    <label>Dormancy Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>cancellation_request_reason__experience__billing__billed_before_start_date_clone</fullName>
+                <default>false</default>
+                <label>Experience::Billing::Billed before start date</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__brand_association_with_ps_clone</fullName>
+                <default>false</default>
+                <label>Experience::Brand Association with PS</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__changes_to_account__add_contact_clone</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Add Contact</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__changes_to_account__contact_updated_clone</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Contact Updated</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__changes_to_account__trading_address_clone</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Trading Address</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__delivery__timeframe_clone</fullName>
+                <default>false</default>
+                <label>Experience::Delivery::Timeframe</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__free_trial_clone</fullName>
+                <default>false</default>
+                <label>Experience::Free Trial</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__application_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Application</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__clear_communication_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Clear Communication</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__contract_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Contract</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__general_service_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::General Service</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__helpful/friendly_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Helpful/Friendly</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__knowledge_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Knowledge</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__set_up_process_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Set Up Process</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__sign-up_error_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Sign-up Error</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__sales__wait_times_clone</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Wait Times</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__service_process__cle_speed/ease_clone</fullName>
+                <default>false</default>
+                <label>Experience::Service process::CLE speed/ease</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__service__clear_information_clone</fullName>
+                <default>false</default>
+                <label>Experience::Service::Clear Information</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__service__general_service_clone</fullName>
+                <default>false</default>
+                <label>Experience::Service::General Service</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__service__speed/ease_clone</fullName>
+                <default>false</default>
+                <label>Experience::Service::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__service__wait_times_clone</fullName>
+                <default>false</default>
+                <label>Experience::Service::Wait Times</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__experience__t_cs_clone</fullName>
+                <default>false</default>
+                <label>Experience::T&amp;Cs</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__additional_services_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::Additional Services</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__cancellation_charge_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::Cancellation Charge</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__card_machine_charge_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::Card Machine Charge</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__mmsc_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::MMSC</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__pci_charge_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::PCI Charge</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__seasonal_trader_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::Seasonal Trader</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__uncompetitive_charges_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::Uncompetitive Charges</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__charges__vat_clone</fullName>
+                <default>false</default>
+                <label>Price::Charges::VAT</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__amex_rates_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::AMEX Rates</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__business_rates_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::Business Rates</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__credit_rates_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::Credit Rates</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__debit_rates_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::Debit Rates</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__european_surcharge_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::European Surcharge</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__international_surcharge_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::International Surcharge</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__secure_transaction_fee_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::Secure Transaction Fee</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__rates__uncompetitive_rates_clone</fullName>
+                <default>false</default>
+                <label>Price::Rates::Uncompetitive Rates</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__price__reprice_clone</fullName>
+                <default>false</default>
+                <label>Price::Reprice</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__account__account_reporting_clone</fullName>
+                <default>false</default>
+                <label>Product::Account::Account Reporting</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__alternative_payment_methond__bacs_clone</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::BACs</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__alternative_payment_methond__cash_only_clone</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::Cash Only</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__alternative_payment_methond__delivery_app_clone</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::Delivery App</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__alternative_payment_methond__ecom/moto_clone</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::ECOM/MOTO</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__app__reliability_clone</fullName>
+                <default>false</default>
+                <label>Product::App::Reliability</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__app__reporting__speed/ease_clone</fullName>
+                <default>false</default>
+                <label>Product::App::Reporting::Speed/ease</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__billing__bill_cycle_clone</fullName>
+                <default>false</default>
+                <label>Product::Billing::Bill Cycle</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__billing__direct_debit_clone</fullName>
+                <default>false</default>
+                <label>Product::Billing::Direct Debit</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__billing__invoice_error_clone</fullName>
+                <default>false</default>
+                <label>Product::Billing::Invoice Error</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__billing__refund_clone</fullName>
+                <default>false</default>
+                <label>Product::Billing::Refund</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__card_not_present__speed/ease_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Card Not Present::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__cash_back_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Cash Back</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__contactless_location_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Contactless location</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__navigation_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Navigation</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__phone_top-ups_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Phone Top-ups</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__pinpad_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Pinpad</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__pre_auth_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Pre Auth</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__receipts/till_roll_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Receipts/Till Roll</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__reporting_-_eod/z_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Reporting - EOD/Z</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__sturdiness_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Sturdiness</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_features__user_interface_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::User Interface</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_reliability__base_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Base</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_reliability__battery_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Battery</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_reliability__card_machine_error_message_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Card Machine Error Message</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_reliability__sim_connectivity_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::SIM Connectivity</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_reliability__speed/ease_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine_reliability__wifi_connectivity_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::WIFI Connectivity</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine__card_machine_general_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine::Card Machine General</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__card_machine__replacement_card_machine_clone</fullName>
+                <default>false</default>
+                <label>Product::Card Machine::Replacement Card Machine</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__dojo_advance__declined_dojo_advance_clone</fullName>
+                <default>false</default>
+                <label>Product::Dojo Advance::Declined Dojo Advance</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__ecom_clone</fullName>
+                <default>false</default>
+                <label>Product::ECOM</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__integration__can_not_integrate_with_partner_clone</fullName>
+                <default>false</default>
+                <label>Product::Integration::Can not Integrate with Partner</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__integration__functionality_limitations_clone</fullName>
+                <default>false</default>
+                <label>Product::Integration::Functionality Limitations</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__integration__set-up_process_clone</fullName>
+                <default>false</default>
+                <label>Product::Integration::Set-Up Process</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__integration__tech_issues_clone</fullName>
+                <default>false</default>
+                <label>Product::Integration::Tech Issues</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__integration__wants_all_in_one_solution_clone</fullName>
+                <default>false</default>
+                <label>Product::Integration::Wants All in One Solution</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__moto_clone</fullName>
+                <default>false</default>
+                <label>Product::MOTO</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__service_process__cancellation_rebate_clone</fullName>
+                <default>false</default>
+                <label>Product::Service process::Cancellation Rebate</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__service_process__change_of_bank_clone</fullName>
+                <default>false</default>
+                <label>Product::Service process::Change of Bank</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transactions__failed/declined_clone</fullName>
+                <default>false</default>
+                <label>Product::Transactions::Failed/Declined</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__discrepancy_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Discrepancy</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__held_funds_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Held Funds</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__missing_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Missing</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__net_settlement_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::NET Settlement</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__timeframe_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timeframe</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__timing__7_days_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timing::7 days</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__timing__banking_window_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timing::Banking window</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__product__transfers__timing__instant_transfers_clone</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timing::Instant Transfers</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__cancellation_resale__inside_sales_clone</fullName>
+                <default>false</default>
+                <label>Retention::Cancellation Resale due to Signup Error::Inside Sales</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__cancellation_resale__original_pc__clone</fullName>
+                <default>false</default>
+                <label>Retention::Cancellation Resale due to Signup Error::Original PC</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__ceased_trading__business_closure_clone</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Business Closure</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__ceased_trading__business_sold_clone</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Business Sold</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__ceased_trading__ceased_trading_-_covid_clone</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Ceased Trading - Covid</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__ceased_trading__deceased_clone</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Deceased</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__ceased_trading__struck_of_companies_house_clone</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Struck of Companies House</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__change_of_legal_entity_clone</fullName>
+                <default>false</default>
+                <label>Retention::Change of Legal Entity</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__no_justification_clone</fullName>
+                <default>false</default>
+                <label>Retention::No Justification</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__risk__declined_clone</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Declined</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__risk__declined_cnp_clone</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Declined CNP</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__risk__duplicate_account_clone</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Duplicate Account</label>
+            </value>
+            <value>
+                <fullName>cancellation_request_reason__retention__risk__open_case_clone</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Open Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

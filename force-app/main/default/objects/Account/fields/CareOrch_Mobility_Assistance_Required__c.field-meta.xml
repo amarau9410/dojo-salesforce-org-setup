@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Mobility_Assistance_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flags residents requiring additional mobility support during shift planning.</description>
+    <externalId>false</externalId>
+    <label>CareOrch Mobility Assistance Required</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

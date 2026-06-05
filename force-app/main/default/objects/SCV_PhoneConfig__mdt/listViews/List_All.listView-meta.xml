@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_All</fullName>
+    <columns>MasterLabel</columns>
+    <columns>Language__c</columns>
+    <columns>CallBackEnabled__c</columns>
+    <columns>CallBackWaitTime__c</columns>
+    <columns>Phone__c</columns>
+    <columns>CustomerHoldMusic__c</columns>
+    <columns>CallBackNearestWaitTime__c</columns>
+    <columns>PhoneType__c</columns>
+    <columns>PlayIVRMessage__c</columns>
+    <columns>ForwardingNumber__c</columns>
+    <columns>ForwardingOOH__c</columns>
+    <columns>IVRForwardingNumber__c</columns>
+    <columns>LanguageTranscript__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>List All</label>
+    <language>en_US</language>
+</ListView>

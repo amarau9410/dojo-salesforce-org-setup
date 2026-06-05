@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UserRoutingProfile__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines if the Routing Profile (i.e. Public Groups related to Telephony Routing Profiles) should be shown for selection on Contact Centre User Management.</description>
+    <label>User Routing Profile</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

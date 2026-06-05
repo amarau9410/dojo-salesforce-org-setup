@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Overdue__c</fullName>
+    <formula>AND(
+NOT(ISBLANK(Next_Inspection_Due_Date__c)),
+Next_Inspection_Due_Date__c &lt; TODAY()
+)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <label>Inspection Overdue</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

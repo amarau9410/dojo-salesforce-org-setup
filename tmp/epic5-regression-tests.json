@@ -1,0 +1,137 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "result": {
+    "summary": {
+      "failRate": "0%",
+      "failing": 0,
+      "hostname": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com",
+      "orgId": "00DQ100000BxUbdMAF",
+      "outcome": "Passed",
+      "passRate": "100%",
+      "passing": 8,
+      "skipped": 0,
+      "testRunId": "707Q100000nBiZO",
+      "testStartTime": "2026-05-27T10:07:17.000Z",
+      "testsRan": 8,
+      "userId": "005d3000002x7IyAAI",
+      "username": "nnamdiudoye@gmail.com.partner.careorchde",
+      "commandTime": "151 ms",
+      "testExecutionTime": "101 ms",
+      "testTotalTime": "507 ms"
+    },
+    "tests": [
+      {
+        "Id": "07MQ100000EuihTMAR",
+        "QueueItemId": "709Q100000IJXKbIAP",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Q100000nBiZOIA0",
+        "MethodName": "ingestSignal_createsObservationAndActionPlan",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pQ100000FxCRAIA3",
+          "Name": "CareOrchEmarSignalsRestTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 37,
+        "FullName": "CareOrchEmarSignalsRestTest.ingestSignal_createsObservationAndActionPlan"
+      },
+      {
+        "Id": "07MQ100000EuihUMAR",
+        "QueueItemId": "709Q100000IJXKbIAP",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Q100000nBiZOIA0",
+        "MethodName": "ingestSignal_createsObservationWithoutActionPlan_forStandardSignal",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pQ100000FxCRAIA3",
+          "Name": "CareOrchEmarSignalsRestTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 15,
+        "FullName": "CareOrchEmarSignalsRestTest.ingestSignal_createsObservationWithoutActionPlan_forStandardSignal"
+      },
+      {
+        "Id": "07MQ100000EuihVMAR",
+        "QueueItemId": "709Q100000IJXKbIAP",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Q100000nBiZOIA0",
+        "MethodName": "ingestSignal_rejectsInvalidJson",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pQ100000FxCRAIA3",
+          "Name": "CareOrchEmarSignalsRestTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 6,
+        "FullName": "CareOrchEmarSignalsRestTest.ingestSignal_rejectsInvalidJson"
+      },
+      {
+        "Id": "07MQ100000EuihWMAR",
+        "QueueItemId": "709Q100000IJXKbIAP",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Q100000nBiZOIA0",
+        "MethodName": "ingestSignal_rejectsMissingBody",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pQ100000FxCRAIA3",
+          "Name": "CareOrchEmarSignalsRestTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 7,
+        "FullName": "CareOrchEmarSignalsRestTest.ingestSignal_rejectsMissingBody"
+      },
+      {
+        "Id": "07MQ100000EuihXMAR",
+        "QueueItemId": "709Q100000IJXKbIAP",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Q100000nBiZOIA0",
+        "MethodName": "ingestSignal_rejectsMissingSignalType",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pQ100000FxCRAIA3",
+          "Name": "CareOrchEmarSignalsRestTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 6,
+        "FullName": "CareOrchEmarSignalsRestTest.ingestSignal_rejectsMissingSignalType"
+      },
+      {
+        "Id": "07MQ100000EuihYMAR",
+        "QueueItemId": "709Q100000IJXKbIAP",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Q100000nBiZOIA0",
+        "MethodName": "ingestSignal_rejectsUnexpectedPayloadField",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pQ100000FxCRAIA3",
+          "Name": "CareOrchEmarSignalsRestTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 6,
+        "FullName": "CareOrchEmarSignalsRestTest.ingestSignal_rejectsUnexpectedPayloadField"
+      },
+      {
+        "Id": "07MQ100000EuihZMAR",
+        "QueueItemId": "709Q100000IJXKbIAP",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Q100000nBiZOIA0",
+        "MethodName": "ingestSignal_rejectsUnknownResident",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pQ100000FxCRAIA3",
+          "Name": "CareOrchEmarSignalsRestTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 24,
+        "FullName": "CareOrchEmarSignalsRestTest.ingestSignal_rejectsUnknownResident"
+      }
+    ]
+  }
+}

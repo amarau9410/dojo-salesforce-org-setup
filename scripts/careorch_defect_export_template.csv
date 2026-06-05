@@ -1,0 +1,3 @@
+DefectId,Summary,Severity,Status,Area
+DEF-1001,SLA threshold not persisted,Medium,Resolved,SLA Timers
+DEF-1002,Translation validator stale status,Low,Closed,Validation Rules

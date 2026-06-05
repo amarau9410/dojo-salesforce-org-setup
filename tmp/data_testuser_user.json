@@ -1,0 +1,27 @@
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v65.0/sobjects/User/005Qz00000FCoA6IAL"
+        },
+        "Id": "005Qz00000FCoA6IAL",
+        "Name": "Data TestUser",
+        "Username": "sit.support+datateam@dojo.tech",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v65.0/sobjects/Profile/00e8d0000023iqyAAA"
+          },
+          "Name": "System Administrator"
+        },
+        "IsActive": true
+      }
+    ],
+    "totalSize": 1,
+    "done": true
+  },
+  "warnings": []
+}

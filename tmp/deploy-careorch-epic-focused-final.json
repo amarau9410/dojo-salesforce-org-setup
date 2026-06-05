@@ -1,0 +1,202 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T14:33:25.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T14:33:17.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:20.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalActionPlanService.cls",
+          "fullName": "CareOrchEmarSignalActionPlanService",
+          "id": "01pQ100000G7fwUIAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:20.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalsRest.cls",
+          "fullName": "CareOrchEmarSignalsRest",
+          "id": "01pQ100000FxCR9IAN",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:20.000Z",
+          "deleted": false,
+          "fileName": "classes/CareOrchEmarSignalsRestTest.cls",
+          "fullName": "CareOrchEmarSignalsRestTest",
+          "id": "01pQ100000FxCRAIA3",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:20.000Z",
+          "deleted": false,
+          "fileName": "classes/ManageGroupMemberAction.cls",
+          "fullName": "ManageGroupMemberAction",
+          "id": "01pQ100000G9f3FIAR",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "Flow",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:25.000Z",
+          "deleted": false,
+          "fileName": "flows/CareOrch_Medication_Refused_Action_Plan.flow",
+          "fullName": "CareOrch_Medication_Refused_Action_Plan",
+          "id": "301Q100000abTr8IAE",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:25.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Case_Runtime_Access.permissionset",
+          "fullName": "CareOrch_Case_Runtime_Access",
+          "id": "0PSQ1000005RhUEOA0",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:25.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/CareOrch_Clinical_Workspace.permissionset",
+          "fullName": "CareOrch_Clinical_Workspace",
+          "id": "0PSQ1000005NW7ZOAW",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T14:33:25.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfQ100000RWtD8KAL",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T14:33:25.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 7,
+    "numberComponentsTotal": 7,
+    "numberFiles": "15",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T14:33:18.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 12530,
+    "files": [
+      {
+        "fullName": "CareOrchEmarSignalActionPlanService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanService.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalActionPlanService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalActionPlanService.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRest.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRest.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRestTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRestTest.cls"
+      },
+      {
+        "fullName": "CareOrchEmarSignalsRestTest",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\CareOrchEmarSignalsRestTest.cls-meta.xml"
+      },
+      {
+        "fullName": "ManageGroupMemberAction",
+        "type": "ApexClass",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\ManageGroupMemberAction.cls"
+      },
+      {
+        "fullName": "ManageGroupMemberAction",
+        "type": "ApexClass",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\classes\\ManageGroupMemberAction.cls-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Medication_Refused_Action_Plan",
+        "type": "Flow",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\flows\\CareOrch_Medication_Refused_Action_Plan.flow-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Case_Runtime_Access",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Case_Runtime_Access.permissionset-meta.xml"
+      },
+      {
+        "fullName": "CareOrch_Clinical_Workspace",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\permissionsets\\CareOrch_Clinical_Workspace.permissionset-meta.xml"
+      }
+    ],
+    "zipFileCount": 12,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWtD8KAL%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

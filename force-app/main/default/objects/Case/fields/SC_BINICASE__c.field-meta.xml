@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_BINICASE__c</fullName>
+    <description>Bank Identification Number or Interbank Card Association number.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the BIN or ICA number.</inlineHelpText>
+    <label>BIN/ICA/SE</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

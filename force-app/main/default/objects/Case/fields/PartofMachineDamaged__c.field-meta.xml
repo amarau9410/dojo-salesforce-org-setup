@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartofMachineDamaged__c</fullName>
+    <label>Part of Machine Damaged</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>damaged_screen</fullName>
+                <default>false</default>
+                <label>Screen</label>
+            </value>
+            <value>
+                <fullName>damaged_printer</fullName>
+                <default>false</default>
+                <label>Printer</label>
+            </value>
+            <value>
+                <fullName>damaged_base</fullName>
+                <default>false</default>
+                <label>Base</label>
+            </value>
+            <value>
+                <fullName>damaged_ped_tampered</fullName>
+                <default>false</default>
+                <label>PED Tampered</label>
+            </value>
+            <value>
+                <fullName>damaged_stolen</fullName>
+                <default>false</default>
+                <label>Stolen</label>
+            </value>
+            <value>
+                <fullName>damaged_other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

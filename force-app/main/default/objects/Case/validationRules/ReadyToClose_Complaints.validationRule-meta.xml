@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReadyToClose_Complaints</fullName>
+    <active>false</active>
+    <description>Checks to see if the complaints case is ready to close</description>
+    <errorConditionFormula>/*Complaints*/
+RecordType.DeveloperName =&quot;Complaint&quot;&amp;&amp;
+TEXT(SC_ReadytoClose__c)!=&quot;Complaint - Ready&quot;
+&amp;&amp;TEXT(Status)=&quot;Closed&quot;
+&amp;&amp;
+ NOT($Permission.SC_BypassValidationRules)</errorConditionFormula>
+    <errorMessage>The complaint is not ready to close. Please check you have completed the Giveaway Value, SRC and Complaint Outcome before trying to close the case.</errorMessage>
+</ValidationRule>

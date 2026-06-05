@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Messages_Audio</fullName>
+    <columns>MasterLabel</columns>
+    <columns>RecordedAudioFile__c</columns>
+    <columns>RecordedAudioFilename__c</columns>
+    <columns>DeveloperName</columns>
+    <columns>MessageType__c</columns>
+    <columns>MessageOrder__c</columns>
+    <columns>MessagePostAction__c</columns>
+    <columns>Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MessageFormat__c</field>
+        <operation>equals</operation>
+        <value>Audio (.wav)</value>
+    </filters>
+    <label>Phone Messages - Audio</label>
+    <language>en_US</language>
+</ListView>

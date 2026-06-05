@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UserPresenceConfiguration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, shows the Presence Configurations available on the Contact Centre User Management screen flow.</description>
+    <inlineHelpText>If true, shows the Presence Configurations available on the Contact Centre User Management screen flow.</inlineHelpText>
+    <label>User Presence Configuration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

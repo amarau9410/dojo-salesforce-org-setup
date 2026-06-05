@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_FirstBillWalkThrough__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Review of the first billing statement.</description>
+    <inlineHelpText>Schedule or confirm the first bill walk-through.</inlineHelpText>
+    <label>First Bill Walk Through</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

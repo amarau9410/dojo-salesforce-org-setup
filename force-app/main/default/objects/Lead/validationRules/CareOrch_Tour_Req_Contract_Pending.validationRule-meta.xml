@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Tour_Req_Contract_Pending</fullName>
+    <active>true</active>
+    <description>Prevent transition to Contract Pending until tour feedback is marked satisfactory for Care Enquiry leads.</description>
+    <errorConditionFormula>AND(
+$RecordType.Name = 'Care Enquiry',
+ISCHANGED(Status),
+ISPICKVAL(Status, 'Contract Pending'),
+NOT(CareOrch_Tour_Feedback_Satisfactory__c)
+)</errorConditionFormula>
+    <errorDisplayField>CareOrch_Tour_Feedback_Satisfactory__c</errorDisplayField>
+    <errorMessage>Tour feedback must be marked satisfactory before moving to Contract Pending.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_EmailSentToTreasury__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if an email was sent to the treasury department.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if sent; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Email Sent To Treasury</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

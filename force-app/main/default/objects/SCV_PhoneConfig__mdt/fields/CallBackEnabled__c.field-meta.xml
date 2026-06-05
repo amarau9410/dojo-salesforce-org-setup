@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CallBackEnabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Enable/disable callback functionality</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Does the contact centre want to enable the Callback option? If yes, tick the box and set the Call Back Wait Time.</inlineHelpText>
+    <label>Call Back Enabled</label>
+    <type>Checkbox</type>
+</CustomField>

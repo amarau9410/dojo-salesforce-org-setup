@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountId__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Account (Location) relationship.</description>
+    <inlineHelpText>Account (Location) relationship.</inlineHelpText>
+    <label>Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Account record type must be Location.</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Location</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Location Quote Lines</relationshipLabel>
+    <relationshipName>LocationQuoteLines</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

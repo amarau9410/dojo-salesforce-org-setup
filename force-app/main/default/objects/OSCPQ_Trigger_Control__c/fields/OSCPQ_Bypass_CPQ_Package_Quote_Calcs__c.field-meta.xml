@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSCPQ_Bypass_CPQ_Package_Quote_Calcs__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, will bypass the CPQ Quote/Quote Line asynchronous recalculation. Primarily used when needing to do a bulk data load onto quote/quote line.</description>
+    <inlineHelpText>If checked, will bypass the CPQ Quote/Quote Line asynchronous recalculation. Primarily used when needing to do a bulk data load onto quote/quote line.</inlineHelpText>
+    <label>Bypass CPQ Package Quote Calculations</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExpressedDissatisfactionDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName != &quot;Complaint&quot;,
+OR(
+				AND(ISNEW(),
+								BEGINS( TEXT(SC_ExpressedDissatisfaction__c ), &quot;yes&quot;),
+        ISBLANK( SC_ExpressDissatisfactionRaisedDate__c ) 
+								),
+
+AND(
+BEGINS( TEXT(SC_ExpressedDissatisfaction__c ), &quot;yes&quot;),
+ISBLANK( SC_ExpressDissatisfactionRaisedDate__c ) ,
+ISCHANGED(SC_ExpressDissatisfactionRaisedDate__c)
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>SC_ExpressDissatisfactionRaisedDate__c</errorDisplayField>
+    <errorMessage>Expressed Dissatisfaction Raised Date can not be blank if Expressed Dissatisfaction? is &quot;yes&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ChargebackFee__c</fullName>
+    <description>Fee associated with processing the chargeback.</description>
+    <inlineHelpText>Enter the chargeback fee amount.</inlineHelpText>
+    <label>Chargeback Fee</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>chargeback_fee_waived</fullName>
+                <default>false</default>
+                <label>Waived</label>
+            </value>
+            <value>
+                <fullName>chargeback_fee_non_waived</fullName>
+                <default>false</default>
+                <label>Non Waived</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

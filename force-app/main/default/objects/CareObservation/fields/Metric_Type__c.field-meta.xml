@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metric_Type__c</fullName>
+    <description>Resident clinical metric type used for structured observation logging.</description>
+    <label>Metric Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Fluid Intake (mL)</fullName>
+                <label>Fluid Intake (mL)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Food Intake (Quarter/Half/Full)</fullName>
+                <label>Food Intake (Quarter/Half/Full)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Vitals Check</fullName>
+                <label>Vitals Check</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

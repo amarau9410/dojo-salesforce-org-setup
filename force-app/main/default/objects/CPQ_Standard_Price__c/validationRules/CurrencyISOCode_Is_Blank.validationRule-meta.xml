@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CurrencyISOCode_Is_Blank</fullName>
+    <active>true</active>
+    <description>DOJOR 50 Ensure proper configuration of pricing records</description>
+    <errorConditionFormula>ISPICKVAL(CurrencyIsoCode,&apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>CurrencyIsoCode</errorDisplayField>
+    <errorMessage>Please select Currency before saving</errorMessage>
+</ValidationRule>

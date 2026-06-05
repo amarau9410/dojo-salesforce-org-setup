@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_LoyaltyFeedbackThemes__c</fullName>
+    <description>Themes identified in loyalty feedback.</description>
+    <inlineHelpText>List the loyalty feedback themes.</inlineHelpText>
+    <label>Loyalty Feedback Themes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>loyalty_feedback_themes_additional_card_machine</fullName>
+                <default>false</default>
+                <label>Additional Card Machine</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__collections__closed_dormancy</fullName>
+                <default>false</default>
+                <label>Collections::Closed Dormancy</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__billing__billed_before_start_date</fullName>
+                <default>false</default>
+                <label>Experience::Billing::Billed before start date</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__brand_association_with_ps</fullName>
+                <default>false</default>
+                <label>Experience::Brand Association with PS</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__changes_to_account__add_contact</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Add Contact</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__changes_to_account__contact_updated</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Contact Updated</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__changes_to_account__reciept_details</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Reciept Details</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__changes_to_account__remove_contact</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Remove Contact</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__changes_to_account__trading_address</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Trading Address</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__changes_to_account__trading_name</fullName>
+                <default>false</default>
+                <label>Experience::Changes to Account::Trading Name</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__delivery__timeframe</fullName>
+                <default>false</default>
+                <label>Experience::Delivery::Timeframe</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__free_trial</fullName>
+                <default>false</default>
+                <label>Experience::Free Trial</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__incorrect_score_given__incorrect_score_given</fullName>
+                <default>false</default>
+                <label>Experience::Incorrect Score Given::Incorrect Score Given</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__onboarding__clear_information</fullName>
+                <default>false</default>
+                <label>Experience::Onboarding::Clear Information</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__onboarding__helpful/friendly</fullName>
+                <default>false</default>
+                <label>Experience::Onboarding::Helpful/Friendly</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__onboarding__knowledge</fullName>
+                <default>false</default>
+                <label>Experience::Onboarding::Knowledge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__onboarding__set_up</fullName>
+                <default>false</default>
+                <label>Experience::Onboarding::Set Up</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__onboarding__speed/ease</fullName>
+                <default>false</default>
+                <label>Experience::Onboarding::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__onboarding__training</fullName>
+                <default>false</default>
+                <label>Experience::Onboarding::Training</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__onboarding__wait_times</fullName>
+                <default>false</default>
+                <label>Experience::Onboarding::Wait Times</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__open_risk_case</fullName>
+                <default>false</default>
+                <label>Experience::Open Risk Case</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__application</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Application</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__clear_communication</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Clear Communication</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__contract</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Contract</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__general_service</fullName>
+                <default>false</default>
+                <label>Experience::Sales::General Service</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__helpful/friendly</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Helpful/Friendly</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__knowledge</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Knowledge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__sign-up_error</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Sign-up Error</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__speed/ease</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__sales__wait_times</fullName>
+                <default>false</default>
+                <label>Experience::Sales::Wait Times</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service_process__chargeback</fullName>
+                <default>false</default>
+                <label>Experience::Service process::Chargeback</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service_process__cle_speed/ease</fullName>
+                <default>false</default>
+                <label>Experience::Service process::CLE speed/ease</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service_process__referral_bonus_not_received</fullName>
+                <default>false</default>
+                <label>Experience::Service process::Referral bonus not received</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service__clear_information</fullName>
+                <default>false</default>
+                <label>Experience::Service::Clear Information</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service__dpa</fullName>
+                <default>false</default>
+                <label>Experience::Service::DPA</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service__general_service</fullName>
+                <default>false</default>
+                <label>Experience::Service::General Service</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service__helpful/friendly</fullName>
+                <default>false</default>
+                <label>Experience::Service::Helpful/Friendly</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service__service_-_knowledge</fullName>
+                <default>false</default>
+                <label>Experience::Service::Service - Knowledge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service__speed/ease</fullName>
+                <default>false</default>
+                <label>Experience::Service::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__service__wait_times</fullName>
+                <default>false</default>
+                <label>Experience::Service::Wait Times</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__experience__tcs</fullName>
+                <default>false</default>
+                <label>Experience::T&amp;Cs</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price::business_funding::uncompetative_rates_</fullName>
+                <default>false</default>
+                <label>Price::Business Funding::Uncompetative rates</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__additional_services</fullName>
+                <default>false</default>
+                <label>Price::Charges::Additional Services</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__cancellation_charge</fullName>
+                <default>false</default>
+                <label>Price::Charges::Cancellation Charge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__card_machine_charge</fullName>
+                <default>false</default>
+                <label>Price::Charges::Card Machine Charge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__ecom/moto_charges</fullName>
+                <default>false</default>
+                <label>Price::Charges::ECOM/MOTO Charges</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__mmsc</fullName>
+                <default>false</default>
+                <label>Price::Charges::MMSC</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__pci_charge</fullName>
+                <default>false</default>
+                <label>Price::Charges::PCI Charge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__simconnect_charge</fullName>
+                <default>false</default>
+                <label>Price::Charges::SIMConnect Charge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__uncompetitive_charges</fullName>
+                <default>false</default>
+                <label>Price::Charges::Uncompetitive Charges</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__charges__vat</fullName>
+                <default>false</default>
+                <label>Price::Charges::VAT</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__rates__amex_rates</fullName>
+                <default>false</default>
+                <label>Price::Rates::AMEX Rates</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__rates__authorisation_fee</fullName>
+                <default>false</default>
+                <label>Price::Rates::Authorisation Fee</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__rates__credit_rates</fullName>
+                <default>false</default>
+                <label>Price::Rates::Credit Rates</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__rates__debit_rates</fullName>
+                <default>false</default>
+                <label>Price::Rates::Debit Rates</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price::rates::international_surcharge</fullName>
+                <default>false</default>
+                <label>Price::Rates::International Surcharge</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price::rates::secure_transaction_fee</fullName>
+                <default>false</default>
+                <label>Price::Rates::Secure Transaction Fee</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__rates__uncompetitive_rates</fullName>
+                <default>false</default>
+                <label>Price::Rates::Uncompetitive Rates</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__price__reprice</fullName>
+                <default>false</default>
+                <label>Price::Reprice</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__account__account_logging_in</fullName>
+                <default>false</default>
+                <label>Product::Account::Account Logging In</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__account__account_reporting</fullName>
+                <default>false</default>
+                <label>Product::Account::Account Reporting</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__alternative_payment_methond__bacs</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::BACs</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__alternative_payment_methond__cash_only</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::Cash Only</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__alternative_payment_methond__delivery_app</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::Delivery App</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__alternative_payment_methond__ecom/moto</fullName>
+                <default>false</default>
+                <label>Product::Alternative Payment Methond::ECOM/MOTO</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__app__logging_in</fullName>
+                <default>false</default>
+                <label>Product::App::Logging In</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__app__reliability</fullName>
+                <default>false</default>
+                <label>Product::App::Reliability</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__app__reporting__speed/ease</fullName>
+                <default>false</default>
+                <label>Product::App::Reporting::Speed/ease</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__billing__bill_cycle</fullName>
+                <default>false</default>
+                <label>Product::Billing::Bill Cycle</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__billing__direct_debit</fullName>
+                <default>false</default>
+                <label>Product::Billing::Direct Debit</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__billing__invoice_error</fullName>
+                <default>false</default>
+                <label>Product::Billing::Invoice Error</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__billing__invoice_explanation</fullName>
+                <default>false</default>
+                <label>Product::Billing::Invoice Explanation</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__billing__refund</fullName>
+                <default>false</default>
+                <label>Product::Billing::Refund</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__billing_invoice_explanation</fullName>
+                <default>false</default>
+                <label>Product::Billing:Invoice Explanation</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__business_funding__declined_business_funding</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::Declined Business Funding</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product::business_funding::funded_amount_insufficient</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::Funded Amount Insufficient</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__business_funding__general_issue_s_</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::General Issue(s)</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product::business_funding::quicker_repayment_options</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::Quicker Repayment Options</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product::business_funding::_reporting/repayment_tracking</fullName>
+                <default>false</default>
+                <label>Product::Business Funding::Reporting/Repayment tracking</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_accessories__card_machine_accessories</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Accessories::Card Machine Accessories</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__card_machine_receipts/till_roll</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Card Machine Receipts/Till Roll</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__card_machine_reporting_-_eod/z</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Card Machine Reporting - EOD/Z</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__card_machine_top-ups</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Card Machine Top-ups</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__card_not_present__speed/ease</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Card Not Present::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__cash_back</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Cash Back</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__contactless_location</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Contactless location</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__navigation</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Navigation</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__pinpad</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Pinpad</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__pre_auth</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Pre Auth</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__sturdiness</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Sturdiness</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__supervisor_code</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::Supervisor Code</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_features__user_interface</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Features::User Interface</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_reliability__card_machine_base</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Card Machine Base</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_reliability__card_machine_battery</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Card Machine Battery</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_reliability__card_machine_error_message</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Card Machine Error Message</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_reliability__card_machine_speed/ease</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::Card Machine Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_reliability__sim_connectivity</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::SIM Connectivity</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_reliability__wifi_connectivity</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Reliability::WIFI Connectivity</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_update__caused_tech_issue</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Update::Caused tech issue</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine_update__does_not_like_update</fullName>
+                <default>false</default>
+                <label>Product::Card Machine Update::Does not like update</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine__activation_code</fullName>
+                <default>false</default>
+                <label>Product::Card Machine::Activation Code</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine__card_machine_general</fullName>
+                <default>false</default>
+                <label>Product::Card Machine::Card Machine General</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__card_machine__replacement_card_machine</fullName>
+                <default>false</default>
+                <label>Product::Card Machine::Replacement Card Machine</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__ecom__ecom</fullName>
+                <default>false</default>
+                <label>Product::ECOM::ECOM</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__ecom__speed/ease_of_set-up</fullName>
+                <default>false</default>
+                <label>Product::ECOM::Speed/Ease of set-up</label>
+            </value>
+            <value>
+                <fullName>product__experience__not_suitable_for_business</fullName>
+                <default>false</default>
+                <label>Product::Experience::Not suitable for business</label>
+            </value>
+            <value>
+                <fullName>product__experience__size_of_the_business/resource</fullName>
+                <default>false</default>
+                <label>Product::Experience::Size of the business/resource</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__integration__can_not_integrate_with_partner</fullName>
+                <default>false</default>
+                <label>Product::Integration::Can not Integrate with Partner</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__integration__functionality_limitations</fullName>
+                <default>false</default>
+                <label>Product::Integration::Functionality Limitations</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__integration__set-up_process</fullName>
+                <default>false</default>
+                <label>Product::Integration::Set-Up Process</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__integration__tech_issues</fullName>
+                <default>false</default>
+                <label>Product::Integration::Tech Issues</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__moto__moto</fullName>
+                <default>false</default>
+                <label>Product::MOTO::MOTO</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__moto__tech_issue</fullName>
+                <default>false</default>
+                <label>Product::MOTO::Tech Issue</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__payment_link__tech_issue</fullName>
+                <default>false</default>
+                <label>Product::Payment Link::Tech Issue</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__pci__pci_-_compliance</fullName>
+                <default>false</default>
+                <label>Product::PCI::PCI - Compliance</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__service_process__cancellation_rebate</fullName>
+                <default>false</default>
+                <label>Product::Service process::Cancellation Rebate</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__service_process__cob_process</fullName>
+                <default>false</default>
+                <label>Product::Service process::COB Process</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__tap_to_pay__speed/ease_of_set-up</fullName>
+                <default>false</default>
+                <label>Product::Tap to Pay::Speed/Ease of set-up</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__tap_to_pay__speed/ease_of_use</fullName>
+                <default>false</default>
+                <label>Product::Tap to Pay::Speed/Ease of use</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transactions__failed/declined</fullName>
+                <default>false</default>
+                <label>Product::Transactions::Failed/Declined</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transactions__missing</fullName>
+                <default>false</default>
+                <label>Product::Transactions::Missing</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__discrepancy</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Discrepancy</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__held_funds</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Held Funds</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__missing</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Missing</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__nds/faster_payments</fullName>
+                <default>false</default>
+                <label>Product::Transfers::NDS/Faster Payments</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__net_settlement</fullName>
+                <default>false</default>
+                <label>Product::Transfers::NET Settlement</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__timeframe</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timeframe</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__timing__7_days</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timing::7 days</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__product__transfers__timing__banking_window</fullName>
+                <default>false</default>
+                <label>Product::Transfers::Timing::Banking window</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__ceased_trading__business_closure</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Business Closure</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__ceased_trading__business_sold</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Business Sold</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__ceased_trading__ceased_trading_-_covid</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Ceased Trading - Covid</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__ceased_trading__deceased</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Deceased</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__ceased_trading__struck_of_companies_house</fullName>
+                <default>false</default>
+                <label>Retention::Ceased Trading::Struck of Companies House</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__change_of_legal_entity</fullName>
+                <default>false</default>
+                <label>Retention::Change of Legal Entity</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__no_justification</fullName>
+                <default>false</default>
+                <label>Retention::No Justification</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__risk__closed_by_risk</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Closed by Risk</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__risk__declined</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Declined</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__risk__declined_cnp</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Declined CNP</label>
+            </value>
+            <value>
+                <fullName>loyalty_feedback_themes__retention__risk__duplicate_account</fullName>
+                <default>false</default>
+                <label>Retention::Risk::Duplicate Account</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__billing__invoices</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Billing::Invoices</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__free_trial</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Free Trial</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__incorrect_score_given__incorrect_score_given</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Incorrect Score Given::Incorrect Score Given</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__clear_information</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Clear Information</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__helpful/friendly</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Helpful/Friendly</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__initial_training</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Initial Training</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__knowledge</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Knowledge</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__no_training_from_onboarding</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::No training from Onboarding</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__set_up</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Set Up</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__speed/ease</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__training</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Training</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__onboarding__wait_times</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Onboarding::Wait Times</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__open_risk_case</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Open Risk Case</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__product_knowledge</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Product Knowledge</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__application</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Application</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__clear_communication</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Clear Communication</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__contract</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Contract</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__general_service</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::General Service</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__helpful/friendly</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Helpful/Friendly</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__initial_training</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Initial Training</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__knowledge</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Knowledge</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__no_training_from_pc</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::No training from PC</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__set_up_process</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Set Up Process</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__sign-up_error</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Sign-up Error</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__speed/ease</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__sales__wait_times</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Sales::Wait Times</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__service__clear_information</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Service::Clear Information</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__service__dpa</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Service::DPA</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__service__general_service</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Service::General Service</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__service__helpful/friendly</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Service::Helpful/Friendly</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__service__service_-_knowledge</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Service::Service - Knowledge</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__service__speed/ease</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Service::Speed/Ease</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__service__wait_times</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Service::Wait Times</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__t_cs</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::T&amp;Cs</label>
+            </value>
+            <value>
+                <fullName>vq_b__experience__training__staff_training</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Experience::Training::Staff Training</label>
+            </value>
+            <value>
+                <fullName>vq_b__price__charges__price_increase_letter_received_for_fixed_pricing_element</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Price::Charges::Price Increase Letter Received for fixed pricing element</label>
+            </value>
+            <value>
+                <fullName>vq_b__price__charges__refund_fee</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Price::Charges::Refund Fee</label>
+            </value>
+            <value>
+                <fullName>vq_b__price__charges__uncompetitive_rms_monthly_price</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Price::Charges::Uncompetitive RMS monthly price</label>
+            </value>
+            <value>
+                <fullName>vq_b__price__rates__card_on_file_rates</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Price::Rates::Card on File rates</label>
+            </value>
+            <value>
+                <fullName>vq_b__price__rates__deposits_transaction_rates</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Price::Rates::Deposits transaction rates</label>
+            </value>
+            <value>
+                <fullName>vq_b__price__rates__price_increase_letter_received_for_rates</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Price::Rates::Price Increase Letter Received for rates</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__billing__bill_cycle</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Billing::Bill Cycle</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__billing__billed_before_start_date</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Billing::Billed before start date</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__billing__direct_debit</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Billing::Direct Debit</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__billing__invoice_error</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Billing::Invoice Error</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__billing__invoice_explanation</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Billing::Invoice Explanation</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__billing__refund</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Billing::Refund</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__booking_notifcations_</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Booking Notifcations</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__double_bookings</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Double Bookings</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__hardware_issues</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Hardware Issues</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__integration__can_not_integrate_with_partner</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Integration::Can not Integrate with Partner</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__integration__functionality_limitations</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Integration::Functionality Limitations</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__integration__set-up_process</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Integration::Set-Up Process</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__integration__tech_issues</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Integration::Tech Issues</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__lack_of_visibility_</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Lack of Visibility</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__other</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Other</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__payments__issue_with_card_on_file</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Payments::Issue with Card on File</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__payments__issue_with_deposits</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Payments::Issue with Deposits</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__product_limitations</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Product Limitations</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__issues_with_reporting_features</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Issues with reporting features</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__login/access</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Login/Access</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__need_more_areas/_booking_types_functionality</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Need more areas/ booking types functionality</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__needs_method_of_securing_consumer_payment_for_missed_bookings</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Needs method of securing consumer payment for missed bookings</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__prefers_pen_and_paper</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Prefers pen and paper</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__reliability</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Reliability</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__staff_prefer_competitor_product_overall</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Staff prefer competitor product overall</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__system_has_too_many_bugs</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::System has too many bugs</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__rms__used_to_/_preffered_competitors_ui_</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::RMS::Used to / Preffered competitors UI</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__service_process__cancellation_rebate</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Service process::Cancellation Rebate</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__service_process__cob_process</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Service process::COB Process</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__speed/ease_of_use</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Speed/Ease of use</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__training__complex_staff_training</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Training::Complex Staff training</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__value__bookings_decreased_with_dojo_</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Value::Bookings decreased with Dojo</label>
+            </value>
+            <value>
+                <fullName>vq_b__product__value__no_extra_bookings_</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Product::Value::No extra bookings</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__ceased_trading__business_closure</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::Ceased Trading::Business Closure</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__ceased_trading__business_sold</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::Ceased Trading::Business Sold</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__ceased_trading__deceased</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::Ceased Trading::Deceased</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__ceased_trading__struck_of_companies_house</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::Ceased Trading::Struck of Companies House</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__lack_of_custom</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::Lack of custom</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__lack_of_uplift</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::Lack of Uplift</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__no_justification</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::No Justification</label>
+            </value>
+            <value>
+                <fullName>vq_b__retention__risk__closed_by_risk</fullName>
+                <default>false</default>
+                <label>VQ&amp;B::Retention::Risk::Closed by Risk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

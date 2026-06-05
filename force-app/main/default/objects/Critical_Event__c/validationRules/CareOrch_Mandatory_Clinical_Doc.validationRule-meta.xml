@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Mandatory_Clinical_Doc</fullName>
+    <active>true</active>
+    <description>Blocks move to Closed or Pending Review for critical categories when required clinical fields are empty.</description>
+    <errorConditionFormula>AND(
+    ISCHANGED(Status__c),
+    OR(
+        ISPICKVAL(Status__c, &quot;Closed&quot;),
+        ISPICKVAL(Status__c, &quot;Pending Review&quot;)
+    ),
+    OR(
+        ISPICKVAL(Event_Category__c, &quot;Death&quot;),
+        ISPICKVAL(Event_Category__c, &quot;Serious Health Concern&quot;)
+    ),
+    OR(
+        ISBLANK(TEXT(Observation_Type__c)),
+        ISBLANK(Behavioral_Notes__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>Observation Type and Behavioral Notes are required before moving this critical event to Pending Review or Closed.</errorMessage>
+</ValidationRule>

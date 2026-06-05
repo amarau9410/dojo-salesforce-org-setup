@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Specific_Price_Boundaries</fullName>
+    <columns>NAME</columns>
+    <columns>CPQ_Standard_Price__c</columns>
+    <columns>Level__c</columns>
+    <columns>Persona__c</columns>
+    <columns>Floor__c</columns>
+    <columns>Floor_Override__c</columns>
+    <columns>Ceiling__c</columns>
+    <columns>Ceiling_Override__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Boundary_Type__c</field>
+        <operation>notEqual</operation>
+        <value>General</value>
+    </filters>
+    <label>Product Specific Price Boundaries</label>
+</ListView>

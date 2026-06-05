@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PlanningTeam_RequestType__c</fullName>
+    <description>Type of request made to the planning team.</description>
+    <inlineHelpText>Specify the request type.</inlineHelpText>
+    <label>Planning Team - Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-1__ad_hoc</fullName>
+                <default>false</default>
+                <label>1-1::Ad Hoc</label>
+            </value>
+            <value>
+                <fullName>1-1__additional</fullName>
+                <default>false</default>
+                <label>1-1::Additional</label>
+            </value>
+            <value>
+                <fullName>1-1__amendment</fullName>
+                <default>false</default>
+                <label>1-1::Amendment</label>
+            </value>
+            <value>
+                <fullName>1-1__quality</fullName>
+                <default>false</default>
+                <label>1-1::Probation review</label>
+            </value>
+            <value>
+                <fullName>absence_absence_review_meeting</fullName>
+                <default>false</default>
+                <label>Absence::Absence review meeting</label>
+            </value>
+            <value>
+                <fullName>absence__amendment</fullName>
+                <default>false</default>
+                <label>Absence::Amendment</label>
+            </value>
+            <value>
+                <fullName>absence_compassionate_leave</fullName>
+                <default>false</default>
+                <label>Absence::Compassionate leave</label>
+            </value>
+            <value>
+                <fullName>absence__emergency_leave</fullName>
+                <default>false</default>
+                <label>Absence::Emergency leave</label>
+            </value>
+            <value>
+                <fullName>absence_jury_duty</fullName>
+                <default>false</default>
+                <label>Absence::Jury Duty</label>
+            </value>
+            <value>
+                <fullName>absence_long_term_sickness</fullName>
+                <default>false</default>
+                <label>Absence::Long Term Sickness</label>
+            </value>
+            <value>
+                <fullName>absence_mat___pat_leave</fullName>
+                <default>false</default>
+                <label>Absence::MAT &amp; PAT Leave</label>
+            </value>
+            <value>
+                <fullName>absence_return_to_work_</fullName>
+                <default>false</default>
+                <label>Absence::Return To Work</label>
+            </value>
+            <value>
+                <fullName>absence_tofd</fullName>
+                <default>false</default>
+                <label>Absence::TOFD</label>
+            </value>
+            <value>
+                <fullName>appointment__addition</fullName>
+                <default>false</default>
+                <label>Appointment::Addition</label>
+            </value>
+            <value>
+                <fullName>appointment__addition__time_not_owed_back</fullName>
+                <default>false</default>
+                <label>Appointment::Addition::Time not Owed Back</label>
+            </value>
+            <value>
+                <fullName>appointment__addition__time_owed_back</fullName>
+                <default>false</default>
+                <label>Appointment::Addition::Time Owed Back</label>
+            </value>
+            <value>
+                <fullName>appointment__amendment</fullName>
+                <default>false</default>
+                <label>Appointment::Amendment</label>
+            </value>
+            <value>
+                <fullName>appointment__mat___pat</fullName>
+                <default>false</default>
+                <label>Appointment::MAT &amp; PAT</label>
+            </value>
+            <value>
+                <fullName>appointment__recurring</fullName>
+                <default>false</default>
+                <label>Appointment::recurring</label>
+            </value>
+            <value>
+                <fullName>appointment__removal</fullName>
+                <default>false</default>
+                <label>Appointment::Removal</label>
+            </value>
+            <value>
+                <fullName>change_of_hours__contractual_change</fullName>
+                <default>false</default>
+                <label>Change of hours::Contractual Change</label>
+            </value>
+            <value>
+                <fullName>change_of_hours__flexi_request</fullName>
+                <default>false</default>
+                <label>Change of hours::Flexi Request</label>
+            </value>
+            <value>
+                <fullName>change_of_hours__follow_up</fullName>
+                <default>false</default>
+                <label>Change of hours::Follow Up</label>
+            </value>
+            <value>
+                <fullName>change_of_hours__lunch_swap</fullName>
+                <default>false</default>
+                <label>Change of hours::Lunch Swap</label>
+            </value>
+            <value>
+                <fullName>change_of_hours__rotation_change</fullName>
+                <default>false</default>
+                <label>Change of hours::Rotation Change</label>
+            </value>
+            <value>
+                <fullName>change_of_hours__shift_swap</fullName>
+                <default>false</default>
+                <label>Change of hours::Shift swap</label>
+            </value>
+            <value>
+                <fullName>change_of_hours__time_amendment</fullName>
+                <default>false</default>
+                <label>Change of hours::Time amendment</label>
+            </value>
+            <value>
+                <fullName>coaching__ad_hoc</fullName>
+                <default>false</default>
+                <label>Coaching::Ad hoc</label>
+            </value>
+            <value>
+                <fullName>coaching__additional</fullName>
+                <default>false</default>
+                <label>Coaching::Additional</label>
+            </value>
+            <value>
+                <fullName>coaching__amendment</fullName>
+                <default>false</default>
+                <label>Coaching::Amendment</label>
+            </value>
+            <value>
+                <fullName>coaching__qa_coaching</fullName>
+                <default>false</default>
+                <label>Coaching::QA Coaching</label>
+            </value>
+            <value>
+                <fullName>holiday__added_to_waitlist</fullName>
+                <default>false</default>
+                <label>Holiday::Added to Waitlist</label>
+            </value>
+            <value>
+                <fullName>holiday__amendment</fullName>
+                <default>false</default>
+                <label>Holiday::Amendment</label>
+            </value>
+            <value>
+                <fullName>holiday__holiday_approved</fullName>
+                <default>false</default>
+                <label>Holiday::Holiday Approved</label>
+            </value>
+            <value>
+                <fullName>holiday__holiday_denied</fullName>
+                <default>false</default>
+                <label>Holiday::Holiday Denied</label>
+            </value>
+            <value>
+                <fullName>holiday__lieu_time_owed</fullName>
+                <default>false</default>
+                <label>Holiday::Lieu time owed</label>
+            </value>
+            <value>
+                <fullName>holiday__removal</fullName>
+                <default>false</default>
+                <label>Holiday::Removal</label>
+            </value>
+            <value>
+                <fullName>holiday__unpaid_leave</fullName>
+                <default>false</default>
+                <label>Holiday::Unpaid leave</label>
+            </value>
+            <value>
+                <fullName>meeting__additional</fullName>
+                <default>false</default>
+                <label>Meeting::Additional</label>
+            </value>
+            <value>
+                <fullName>meeting__amendment</fullName>
+                <default>false</default>
+                <label>Meeting::Amendment</label>
+            </value>
+            <value>
+                <fullName>meeting__disciplinary</fullName>
+                <default>false</default>
+                <label>Meeting::Disciplinary</label>
+            </value>
+            <value>
+                <fullName>meeting__feedback_session</fullName>
+                <default>false</default>
+                <label>Meeting::Feedback session</label>
+            </value>
+            <value>
+                <fullName>meeting__probation_review</fullName>
+                <default>false</default>
+                <label>Meeting::Probation review</label>
+            </value>
+            <value>
+                <fullName>meeting__working_group</fullName>
+                <default>false</default>
+                <label>Meeting::Working group</label>
+            </value>
+            <value>
+                <fullName>mi__adhoc_look</fullName>
+                <default>false</default>
+                <label>MI::Adhoc Look</label>
+            </value>
+            <value>
+                <fullName>mi__daily_dash_amendments</fullName>
+                <default>false</default>
+                <label>MI::Daily Dash Amendments</label>
+            </value>
+            <value>
+                <fullName>mi__mi_report</fullName>
+                <default>false</default>
+                <label>MI::MI Report</label>
+            </value>
+            <value>
+                <fullName>mi__trade_automation</fullName>
+                <default>false</default>
+                <label>MI::Trade Automation</label>
+            </value>
+            <value>
+                <fullName>people_request__exit_interview</fullName>
+                <default>false</default>
+                <label>People Request::Exit Interview</label>
+            </value>
+            <value>
+                <fullName>people_request__hr_meeting</fullName>
+                <default>false</default>
+                <label>People Request::HR meeting</label>
+            </value>
+            <value>
+                <fullName>people_request__in_office_activities</fullName>
+                <default>false</default>
+                <label>People Request::In Office Activities</label>
+            </value>
+            <value>
+                <fullName>people_request__internal_interview</fullName>
+                <default>false</default>
+                <label>People Request::Internal interview</label>
+            </value>
+            <value>
+                <fullName>people_request__probation_check_in</fullName>
+                <default>false</default>
+                <label>People Request::Probation check in</label>
+            </value>
+            <value>
+                <fullName>people_request__surveys</fullName>
+                <default>false</default>
+                <label>People Request::Surveys</label>
+            </value>
+            <value>
+                <fullName>quality__area_support/_shadowing</fullName>
+                <default>false</default>
+                <label>Quality::Area Support/ Shadowing</label>
+            </value>
+            <value>
+                <fullName>quality__call_listeining</fullName>
+                <default>false</default>
+                <label>Quality::Call Listeining</label>
+            </value>
+            <value>
+                <fullName>quality__development</fullName>
+                <default>false</default>
+                <label>Quality::Development</label>
+            </value>
+            <value>
+                <fullName>quality__pdp_request</fullName>
+                <default>false</default>
+                <label>Quality::PDP request</label>
+            </value>
+            <value>
+                <fullName>senior_csa___individual_time</fullName>
+                <default>false</default>
+                <label>Senior CSA:: Individual Time</label>
+            </value>
+            <value>
+                <fullName>senior_csa__meeting</fullName>
+                <default>false</default>
+                <label>Senior CSA::Meeting</label>
+            </value>
+            <value>
+                <fullName>senior_csa__offsite_</fullName>
+                <default>false</default>
+                <label>Senior CSA::Offsite</label>
+            </value>
+            <value>
+                <fullName>senior_csa__training</fullName>
+                <default>false</default>
+                <label>Senior CSA::Training</label>
+            </value>
+            <value>
+                <fullName>training_classroom</fullName>
+                <default>false</default>
+                <label>Training::Classroom</label>
+            </value>
+            <value>
+                <fullName>training__e-learning</fullName>
+                <default>false</default>
+                <label>Training::E-learning</label>
+            </value>
+            <value>
+                <fullName>training__shadowing</fullName>
+                <default>false</default>
+                <label>Training::Shadowing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

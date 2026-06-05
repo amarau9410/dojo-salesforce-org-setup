@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_KnowledgeCategory__c</fullName>
+    <description>Shows the article category</description>
+    <label>Category</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SC_KnowledgeMarket__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Your account</fullName>
+                <default>false</default>
+                <label>Your account</label>
+            </value>
+            <value>
+                <fullName>Your Card Machine</fullName>
+                <default>false</default>
+                <label>Your Card Machine</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Transactions and transfers</fullName>
+                <default>false</default>
+                <label>Transactions and transfers</label>
+            </value>
+            <value>
+                <fullName>Payment security</fullName>
+                <default>false</default>
+                <label>Payment security</label>
+            </value>
+            <value>
+                <fullName>Dojo Bookings</fullName>
+                <default>false</default>
+                <label>Dojo Bookings</label>
+            </value>
+            <value>
+                <fullName>Dojo updates</fullName>
+                <default>false</default>
+                <label>Dojo updates</label>
+            </value>
+            <value>
+                <fullName>Tu cuenta</fullName>
+                <default>false</default>
+                <label>Tu cuenta</label>
+            </value>
+            <value>
+                <fullName>Tu datáfono</fullName>
+                <default>false</default>
+                <label>Tu datáfono</label>
+            </value>
+            <value>
+                <fullName>Facturación</fullName>
+                <default>false</default>
+                <label>Facturación</label>
+            </value>
+            <value>
+                <fullName>Transacciones y transferencias</fullName>
+                <default>false</default>
+                <label>Transacciones y transferencias</label>
+            </value>
+            <value>
+                <fullName>Seguridad en los pagos</fullName>
+                <default>false</default>
+                <label>Seguridad en los pagos</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <valueName>Your account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <valueName>Your Card Machine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <valueName>Transactions and transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <valueName>Payment security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Dojo Bookings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <valueName>Dojo updates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Tu cuenta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Tu datáfono</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Facturación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Transacciones y transferencias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Seguridad en los pagos</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

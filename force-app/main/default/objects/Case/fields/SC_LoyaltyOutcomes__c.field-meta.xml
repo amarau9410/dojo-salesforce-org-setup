@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_LoyaltyOutcomes__c</fullName>
+    <description>Results or effects of loyalty programs.</description>
+    <inlineHelpText>Describe the outcomes of loyalty programs.</inlineHelpText>
+    <label>Loyalty Outcomes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>billing_holiday_</fullName>
+                <default>false</default>
+                <label>Billing Holiday</label>
+            </value>
+            <value>
+                <fullName>closed_dormant_card_machine</fullName>
+                <default>false</default>
+                <label>Closed Dormant Card Machine</label>
+            </value>
+            <value>
+                <fullName>closed_passed_to_retentions</fullName>
+                <default>false</default>
+                <label>Closed Passed to Retentions</label>
+            </value>
+            <value>
+                <fullName>re-active_dormant_card_machine</fullName>
+                <default>false</default>
+                <label>Re-active Dormant Card Machine</label>
+            </value>
+            <value>
+                <fullName>gogw_</fullName>
+                <default>false</default>
+                <label>GoGW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ApplicationStatus__c</fullName>
+    <description>Current state of the application process.</description>
+    <inlineHelpText>Select the application status from the list.</inlineHelpText>
+    <label>Application Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>dojoadvance_interest__callback_arranged</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Interest::Callback requested</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_interest__information_given</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Interest::Information Given</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__interest__email_clicked</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Interest::Email Clicked</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_in_progress__pending_documents</fullName>
+                <default>false</default>
+                <label>Dojo Advance::In progress::Pending Documents</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__in_progress__lead_submitted</fullName>
+                <default>false</default>
+                <label>Dojo Advance::In progress::Lead Submitted</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_in_progress__chasing_docs</fullName>
+                <default>false</default>
+                <label>Dojo Advance::In progress::Chasing additional info/docs</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__in_progress__offer_made</fullName>
+                <default>false</default>
+                <label>Dojo Advance::In progress::Offer Made</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__in_progress__contract_signed</fullName>
+                <default>false</default>
+                <label>Dojo Advance::In progress::Contract Signed</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_rescinded__no_contact</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::No contact</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_rescinded__no_longer_interested</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::No longer interested</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_rescinded__cost_too_high</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::Cost too high</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded__pre-offer___prequalified_offer_too_low</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::Prequalified offer too low</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_rescinded__alternative_funding_through_other_lender</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::Alternative funding</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___pre-offer__didn_t_provide_docs</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::Didn&apos;t provide docs</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded__pre-offer___not_suitable</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::Not Suitable</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded__pre-offer___other</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (pre-offer)::Other</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__no_contact</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::No contact</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__not_interested</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Not interested</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__doesn_t_need_funding_yet</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Doesn&apos;t need funding yet</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__cost_too_high</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Cost too high</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__offer_too_low</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Offer too low</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__repayment_sweep_too_high</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Repayment sweep too high</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__alternative_funding_</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Alternative funding</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__offer_declined_by_customer</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Offer declined by customer</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__rescinded___post-offer__other</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Rescinded (post-offer)::Other</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_declined___not_eligable</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Declined:: Not eligible to apply</label>
+            </value>
+            <value>
+                <fullName>dojoadvance_declined___rejected_by_youlend</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Declined:: Rejected by Youlend</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__on_hold</fullName>
+                <default>false</default>
+                <label>Dojo Advance::On Hold</label>
+            </value>
+            <value>
+                <fullName>dojo_advance___already_applied</fullName>
+                <default>false</default>
+                <label>Dojo Advance:: Already applied</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__duplicate</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Duplicate</label>
+            </value>
+            <value>
+                <fullName>dojo_advance__complete__renewal</fullName>
+                <default>false</default>
+                <label>Dojo Advance::Renewal</label>
+            </value>
+            <value>
+                <fullName>additional_card_machine___complete</fullName>
+                <default>false</default>
+                <label>Additional Card Machine::Complete</label>
+            </value>
+            <value>
+                <fullName>addtional_card_machine__in_progress</fullName>
+                <default>false</default>
+                <label>Additional Card Machine::In Progress</label>
+            </value>
+            <value>
+                <fullName>additional_card_machine__rescinded__cost_too_high</fullName>
+                <default>false</default>
+                <label>Additional Card Machine::Rescinded::Cost too high</label>
+            </value>
+            <value>
+                <fullName>additional_card_machine__rescinded__no_contact</fullName>
+                <default>false</default>
+                <label>Additional Card Machine::Rescinded::No contact</label>
+            </value>
+            <value>
+                <fullName>additional_card_machine__rescinded__no_longer_interested</fullName>
+                <default>false</default>
+                <label>Additional Card Machine::Rescinded::No longer interested</label>
+            </value>
+            <value>
+                <fullName>additional_location___complete</fullName>
+                <default>false</default>
+                <label>Additional Location::Complete</label>
+            </value>
+            <value>
+                <fullName>addtional_location__in_progress</fullName>
+                <default>false</default>
+                <label>Additional Location::In Progress</label>
+            </value>
+            <value>
+                <fullName>additional_location__rescinded__cost_too_high</fullName>
+                <default>false</default>
+                <label>Additional Location::Rescinded::Cost too high</label>
+            </value>
+            <value>
+                <fullName>additional_location__rescinded__no_longer_interested</fullName>
+                <default>false</default>
+                <label>Additional Location::Rescinded::No longer interested</label>
+            </value>
+            <value>
+                <fullName>additional_location__rescinded__no_contact</fullName>
+                <default>false</default>
+                <label>Additional Location::Rescinded::No contact</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_customer_live</fullName>
+                <default>false</default>
+                <label>Order IT::Complete::Customer Live</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_interest</fullName>
+                <default>false</default>
+                <label>Order IT::Customer Interested</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_pre_application__customer_not_interested</fullName>
+                <default>false</default>
+                <label>Order IT::Customer no longer interested</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_onboarding</fullName>
+                <default>false</default>
+                <label>Order IT::In progress::Customer Onboarding</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__alternative_provider</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::Alternative provider</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__costs_too_high</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::Costs too high</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__happy_with_provider</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::Happy with provider</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__no_contact</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::No contact</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__no_longer_interested</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::No longer interested</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__other</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::Other</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__prefers_customer_present_</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::Prefers Customer Present</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__requires_delivery_option</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::Requires delivery option</label>
+            </value>
+            <value>
+                <fullName>orderit_application_status_rescinded__requires_till_integration</fullName>
+                <default>false</default>
+                <label>Order IT::Rescinded::Requires till integration</label>
+            </value>
+            <value>
+                <fullName>walkup__complete</fullName>
+                <default>false</default>
+                <label>WalkUp::Complete</label>
+            </value>
+            <value>
+                <fullName>walkup__in_progress__contract_sent</fullName>
+                <default>false</default>
+                <label>WalkUp::In Progress::Contract sent</label>
+            </value>
+            <value>
+                <fullName>walkup__in_progress__demo_arranged</fullName>
+                <default>false</default>
+                <label>WalkUp::In Progress::Demo arranged</label>
+            </value>
+            <value>
+                <fullName>walkup__in_progress__form_sent</fullName>
+                <default>false</default>
+                <label>WalkUp::In Progress::Form sent</label>
+            </value>
+            <value>
+                <fullName>walkup__in_progress__given_demo</fullName>
+                <default>false</default>
+                <label>WalkUp::In Progress::Given demo</label>
+            </value>
+            <value>
+                <fullName>walkup__no_contact</fullName>
+                <default>false</default>
+                <label>WalkUp::No contact</label>
+            </value>
+            <value>
+                <fullName>walkup__not_interested__costs</fullName>
+                <default>false</default>
+                <label>WalkUp::Not interested::Costs</label>
+            </value>
+            <value>
+                <fullName>walkup__not_interested__don_t_have_equipment</fullName>
+                <default>false</default>
+                <label>WalkUp::Not interested::Don&apos;t have equipment</label>
+            </value>
+            <value>
+                <fullName>walkup__not_interested__has_booking_platform</fullName>
+                <default>false</default>
+                <label>WalkUp::Not interested::Has booking platform</label>
+            </value>
+            <value>
+                <fullName>walkup__not_interested__operational_constraint</fullName>
+                <default>false</default>
+                <label>WalkUp::Not interested::Operational constraint</label>
+            </value>
+            <value>
+                <fullName>walkup__not_interested__small_queues</fullName>
+                <default>false</default>
+                <label>WalkUp::Not interested::Small queues</label>
+            </value>
+            <value>
+                <fullName>walkup__rescinded__costs</fullName>
+                <default>false</default>
+                <label>WalkUp::Rescinded::Costs</label>
+            </value>
+            <value>
+                <fullName>walkup__rescinded__don_t_have_equipment</fullName>
+                <default>false</default>
+                <label>WalkUp::Rescinded::Don&apos;t have equipment</label>
+            </value>
+            <value>
+                <fullName>walkup__rescinded__has_booking_platform</fullName>
+                <default>false</default>
+                <label>WalkUp::Rescinded::Has booking platform</label>
+            </value>
+            <value>
+                <fullName>walkup__rescinded__no_further_contact</fullName>
+                <default>false</default>
+                <label>WalkUp::Rescinded::No further contact</label>
+            </value>
+            <value>
+                <fullName>walkup__rescinded__no_longer_interested</fullName>
+                <default>false</default>
+                <label>WalkUp::Rescinded::No longer interested</label>
+            </value>
+            <value>
+                <fullName>walkup__rescinded__operational_constraint</fullName>
+                <default>false</default>
+                <label>WalkUp::Rescinded::Operational constraint</label>
+            </value>
+            <value>
+                <fullName>walkup__rescinded__small_queues</fullName>
+                <default>false</default>
+                <label>WalkUp::Rescinded::Small queues</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

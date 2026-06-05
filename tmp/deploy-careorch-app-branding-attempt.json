@@ -1,0 +1,85 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 1,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-28T07:21:08.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-28T07:21:02.000Z",
+    "details": {
+      "componentFailures": [
+        {
+          "changed": false,
+          "columnNumber": 81,
+          "componentType": "CustomApplication",
+          "created": false,
+          "createdDate": "2026-05-28T07:21:08.000Z",
+          "deleted": false,
+          "fileName": "applications/CareOrch.app",
+          "fullName": "CareOrch",
+          "lineNumber": 10,
+          "problem": "Error parsing file: Element {http://soap.sforce.com/2006/04/metadata}brandColor invalid at this location in type CustomApplication",
+          "problemType": "Error",
+          "success": false
+        }
+      ],
+      "componentSuccesses": [
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-28T07:21:08.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      }
+    },
+    "done": true,
+    "id": "0AfQ100000RXYMkKAP",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-28T07:21:08.000Z",
+    "numberComponentErrors": 1,
+    "numberComponentsDeployed": 0,
+    "numberComponentsTotal": 1,
+    "numberFiles": "3",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-28T07:21:08.000Z",
+    "stateDetail": "Processing Type: CustomApplication",
+    "status": "Failed",
+    "success": false,
+    "zipSize": 898,
+    "files": [
+      {
+        "fullName": "CareOrch",
+        "type": "CustomApplication",
+        "state": "Failed",
+        "problemType": "Error",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\applications\\CareOrch.app-meta.xml",
+        "lineNumber": 10,
+        "columnNumber": 81,
+        "error": "Error parsing file: Element {http://soap.sforce.com/2006/04/metadata}brandColor invalid at this location in type CustomApplication (10:81)"
+      }
+    ],
+    "zipFileCount": 2,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RXYMkKAP%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareOrch_Target_Admission_Date__c</fullName>
+    <description>Target admission date captured during resident enquiry qualification.</description>
+    <externalId>false</externalId>
+    <label>CareOrch Target Admission Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

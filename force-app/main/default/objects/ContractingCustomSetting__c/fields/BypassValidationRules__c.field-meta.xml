@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BypassValidationRules__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, validation rules (managed externally and cannot be edited) for contracting will not run.</description>
+    <inlineHelpText>If true, validation rules (managed externally and cannot be edited) for contracting will not run.</inlineHelpText>
+    <label>Bypass Validation Rules</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PCEnablementOutcome__c</fullName>
+    <description>Result of enabling PC services.</description>
+    <inlineHelpText>Describe the outcome of PC enablement.</inlineHelpText>
+    <label>PC Enablement Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pc_involved__yes__customer_retained</fullName>
+                <default>false</default>
+                <label>PC Involved::Yes::Customer retained</label>
+            </value>
+            <value>
+                <fullName>pc_involved__yes__customer_canelled_</fullName>
+                <default>false</default>
+                <label>PC Involved::Yes::Customer canelled</label>
+            </value>
+            <value>
+                <fullName>pc_involved__no__could_not_reach_pc</fullName>
+                <default>false</default>
+                <label>PC Involved::No::Could not reach PC</label>
+            </value>
+            <value>
+                <fullName>pc_involved__no__customer_did_not_meet_criteria</fullName>
+                <default>false</default>
+                <label>PC Involved::No::Customer did not meet criteria</label>
+            </value>
+            <value>
+                <fullName>pc_involved__no__customer_did_not_want_pc_involvement</fullName>
+                <default>false</default>
+                <label>PC Involved::No::Customer did not want PC involvement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

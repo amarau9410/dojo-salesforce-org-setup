@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CustomerOptedForBonaVacantia__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the customer chose Bona Vacantia.</description>
+    <inlineHelpText>Mark &apos;Yes&apos; if opted; otherwise &apos;No&apos;.</inlineHelpText>
+    <label>Customer Opted For Bona Vacantia?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

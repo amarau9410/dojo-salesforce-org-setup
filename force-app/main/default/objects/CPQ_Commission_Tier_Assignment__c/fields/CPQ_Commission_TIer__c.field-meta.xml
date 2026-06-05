@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Commission_TIer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A lookup to the relevant current commission rate for the combination of Market and User</description>
+    <inlineHelpText>This is set automatically based on the market and level associated to this assignment</inlineHelpText>
+    <label>Commission TIer</label>
+    <referenceTo>CPQ_Commission_Tier__c</referenceTo>
+    <relationshipLabel>Commission Tier Assignments</relationshipLabel>
+    <relationshipName>Tier_Assignments</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

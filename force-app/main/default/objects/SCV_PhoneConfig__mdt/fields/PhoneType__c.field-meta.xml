@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhoneType__c</fullName>
+    <description>Type of the phone. Is used for different types of Voice Call Routing.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Type of the phone. Is used for different types of Voice Call Routing.</inlineHelpText>
+    <label>Phone Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>true</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Seller Support</fullName>
+                <default>false</default>
+                <label>Seller Support</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+                <label>Integrations</label>
+            </value>
+            <value>
+                <fullName>Absence Line</fullName>
+                <default>false</default>
+                <label>Absence Line</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

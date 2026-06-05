@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Model__c</fullName>
+    <description>Billing schedule for the assigned product line.</description>
+    <inlineHelpText>Billing schedule for the assigned product line.</inlineHelpText>
+    <label>Contract Model</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Contract_Model</valueSetName>
+    </valueSet>
+</CustomField>

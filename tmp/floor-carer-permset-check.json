@@ -1,0 +1,19 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.134.6.
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "PermissionSet",
+          "url": "/services/data/v66.0/sobjects/PermissionSet/0PSQ1000005QerlOAC"
+        },
+        "Id": "0PSQ1000005QerlOAC",
+        "Name": "CareOrch_Floor_Carer"
+      }
+    ],
+    "totalSize": 1,
+    "done": true
+  },
+  "warnings": []
+}

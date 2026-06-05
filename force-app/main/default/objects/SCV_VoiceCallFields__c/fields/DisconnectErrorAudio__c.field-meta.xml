@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DisconnectErrorAudio__c</fullName>
+    <description>Stores the recorded audio file name for the disconnect messages</description>
+    <externalId>false</externalId>
+    <label>Disconnect Error Audio</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to determine whether an Omni process is part of a service workstream. If it is, it will be further processed by other automations.</description>
+    <label>SC OmniProcess Mapping</label>
+    <pluralLabel>SC OmniProcess Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

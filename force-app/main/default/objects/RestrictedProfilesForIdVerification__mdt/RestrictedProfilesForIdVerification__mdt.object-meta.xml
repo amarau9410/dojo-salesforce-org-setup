@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Contains restricted profiles for the signatory ID verification. Profiles that are listed in this metadata won&apos;t be able to use manual upload verification for signatory.</description>
+    <label>Restricted Profiles for ID Verification</label>
+    <pluralLabel>Restricted Profiles for ID Verifications</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_PCFeedback__c</fullName>
+    <description>Feedback related to the Payment Consultant.</description>
+    <inlineHelpText>Enter feedback regarding PC.</inlineHelpText>
+    <label>PC Feedback</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>pc_feedback_application_errors</fullName>
+                <default>false</default>
+                <label>Application Error(s)</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_breach_of_gdpr_or_pci_dss</fullName>
+                <default>false</default>
+                <label>Breach of GDPR or PCI DSS</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_business_funding</fullName>
+                <default>false</default>
+                <label>Business Funding</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_cancellation_rebate</fullName>
+                <default>false</default>
+                <label>Cancellation Rebate</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_cle</fullName>
+                <default>false</default>
+                <label>CLE</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_free_trial_-_innacurate_info_provided</fullName>
+                <default>false</default>
+                <label>Free trial - innacurate info provided</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_machine_tampering</fullName>
+                <default>false</default>
+                <label>Machine tampering</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_multiple_locations_set_up_incorrectly</fullName>
+                <default>false</default>
+                <label>Multiple locations set up incorrectly</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_pc_behaviour/conduct</fullName>
+                <default>false</default>
+                <label>PC Behaviour/Conduct</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_pc_signed_agreement</fullName>
+                <default>false</default>
+                <label>PC Signed Service Agreement</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_pc_positive_feedback</fullName>
+                <default>false</default>
+                <label>PC Positive Feedback</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_products_not_offered</fullName>
+                <default>false</default>
+                <label>Products Not Offered</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_rates_-_innacurate_info_provided</fullName>
+                <default>false</default>
+                <label>Rates - innacurate info provided</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_rate_review</fullName>
+                <default>false</default>
+                <label>Rate Review</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>pc_feedback_same_customer_to_dojo_multiple_times</fullName>
+                <default>false</default>
+                <label>Same customer to Dojo multiple times</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

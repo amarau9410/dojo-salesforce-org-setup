@@ -1,0 +1,2002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_SoftwareHouse__c</fullName>
+    <description>Company specializing in software development.</description>
+    <inlineHelpText>Enter the name of the software house.</inlineHelpText>
+    <label>Software House</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>altag_investment_ltd_t/a_skypos_</fullName>
+                <default>false</default>
+                <label>ALTAG Investment Ltd T/A Skypos</label>
+            </value>
+            <value>
+                <fullName>kerridge_commercial_systems_</fullName>
+                <default>false</default>
+                <label>Kerridge commercial systems</label>
+            </value>
+            <value>
+                <fullName>rh_it_solutions__uk__ltd_</fullName>
+                <default>false</default>
+                <label>RH IT Solutions (UK) ltd</label>
+            </value>
+            <value>
+                <fullName>3r_software_solutions_</fullName>
+                <default>false</default>
+                <label>3R Software Solutions</label>
+            </value>
+            <value>
+                <fullName>3s_pos_</fullName>
+                <default>false</default>
+                <label>3S pos</label>
+            </value>
+            <value>
+                <fullName>abacus_online_</fullName>
+                <default>false</default>
+                <label>Abacus Online</label>
+            </value>
+            <value>
+                <fullName>accent_it_services_ltd/accentpos_</fullName>
+                <default>false</default>
+                <label>Accent IT Services Ltd/AccentPOS</label>
+            </value>
+            <value>
+                <fullName>ace_restaurant_tech_ltd_</fullName>
+                <default>false</default>
+                <label>Ace Restaurant Tech Ltd</label>
+            </value>
+            <value>
+                <fullName>acorn/squirrel_systems_</fullName>
+                <default>false</default>
+                <label>Acorn/Squirrel Systems</label>
+            </value>
+            <value>
+                <fullName>active_pos/aktif_pos_</fullName>
+                <default>false</default>
+                <label>Active POS/Aktif POS</label>
+            </value>
+            <value>
+                <fullName>actuality_extensions_pos_</fullName>
+                <default>false</default>
+                <label>Actuality Extensions POS</label>
+            </value>
+            <value>
+                <fullName>ada_it_solutions/pipos_</fullName>
+                <default>false</default>
+                <label>ADA IT Solutions/PiPOS</label>
+            </value>
+            <value>
+                <fullName>addwings_epos_</fullName>
+                <default>false</default>
+                <label>Addwings Epos</label>
+            </value>
+            <value>
+                <fullName>admit_one_</fullName>
+                <default>false</default>
+                <label>Admit One</label>
+            </value>
+            <value>
+                <fullName>agility_software_</fullName>
+                <default>false</default>
+                <label>Agility Software</label>
+            </value>
+            <value>
+                <fullName>airpos_</fullName>
+                <default>false</default>
+                <label>Airpos</label>
+            </value>
+            <value>
+                <fullName>alacarte/floradet_</fullName>
+                <default>false</default>
+                <label>Alacarte/Floradet</label>
+            </value>
+            <value>
+                <fullName>ami3go_</fullName>
+                <default>false</default>
+                <label>Ami3go</label>
+            </value>
+            <value>
+                <fullName>andromeda_</fullName>
+                <default>false</default>
+                <label>Andromeda</label>
+            </value>
+            <value>
+                <fullName>anzia_it_roi_</fullName>
+                <default>false</default>
+                <label>Anzia IT ROI</label>
+            </value>
+            <value>
+                <fullName>aotm_digital_solutions_</fullName>
+                <default>false</default>
+                <label>AOTM Digital Solutions</label>
+            </value>
+            <value>
+                <fullName>atl/advansys_technologies_ltd_</fullName>
+                <default>false</default>
+                <label>ATL/Advansys Technologies Ltd</label>
+            </value>
+            <value>
+                <fullName>auto_cloud_tech_ltd_</fullName>
+                <default>false</default>
+                <label>Auto Cloud Tech ltd</label>
+            </value>
+            <value>
+                <fullName>aztec/garage_master_</fullName>
+                <default>false</default>
+                <label>Aztec/Garage Master</label>
+            </value>
+            <value>
+                <fullName>basetrack_systems/garagebase_pro/firstpoint_</fullName>
+                <default>false</default>
+                <label>Basetrack Systems/GarageBase Pro/FIRSTPoint</label>
+            </value>
+            <value>
+                <fullName>batchline/openbravo_</fullName>
+                <default>false</default>
+                <label>Batchline/Openbravo</label>
+            </value>
+            <value>
+                <fullName>beatqueue_</fullName>
+                <default>false</default>
+                <label>BeatQueue</label>
+            </value>
+            <value>
+                <fullName>benchmark_software_</fullName>
+                <default>false</default>
+                <label>Benchmark Software</label>
+            </value>
+            <value>
+                <fullName>bibase_</fullName>
+                <default>false</default>
+                <label>Bibase</label>
+            </value>
+            <value>
+                <fullName>biostore_ltd/fastrak_</fullName>
+                <default>false</default>
+                <label>BioStore Ltd/Fastrak</label>
+            </value>
+            <value>
+                <fullName>biz_midlands_</fullName>
+                <default>false</default>
+                <label>Biz Midlands</label>
+            </value>
+            <value>
+                <fullName>bizerba_ltd_</fullName>
+                <default>false</default>
+                <label>Bizerba Ltd</label>
+            </value>
+            <value>
+                <fullName>blink_optician_management_software_</fullName>
+                <default>false</default>
+                <label>Blink Optician Management Software</label>
+            </value>
+            <value>
+                <fullName>blinq_ltd_</fullName>
+                <default>false</default>
+                <label>Blinq LTD</label>
+            </value>
+            <value>
+                <fullName>blue_box_</fullName>
+                <default>false</default>
+                <label>Blue Box</label>
+            </value>
+            <value>
+                <fullName>blue_lotus_x_</fullName>
+                <default>false</default>
+                <label>Blue Lotus X</label>
+            </value>
+            <value>
+                <fullName>bluefish_retail/bluestore_live_</fullName>
+                <default>false</default>
+                <label>Bluefish Retail/Bluestore Live</label>
+            </value>
+            <value>
+                <fullName>bluerunner_solutions_</fullName>
+                <default>false</default>
+                <label>BlueRunner Solutions</label>
+            </value>
+            <value>
+                <fullName>book_now_software_limited_</fullName>
+                <default>false</default>
+                <label>Book Now Software Limited</label>
+            </value>
+            <value>
+                <fullName>border_merchant_systems/counteract_</fullName>
+                <default>false</default>
+                <label>Border Merchant Systems/CounterAct</label>
+            </value>
+            <value>
+                <fullName>borium_studio_limited_</fullName>
+                <default>false</default>
+                <label>Borium Studio Limited</label>
+            </value>
+            <value>
+                <fullName>bransom_retail_systems_ltd_</fullName>
+                <default>false</default>
+                <label>Bransom Retail Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>breakaway_pos/egs_</fullName>
+                <default>false</default>
+                <label>Breakaway POS/EGS</label>
+            </value>
+            <value>
+                <fullName>bristec/medepos_</fullName>
+                <default>false</default>
+                <label>Bristec/MedEPOS</label>
+            </value>
+            <value>
+                <fullName>bsg_</fullName>
+                <default>false</default>
+                <label>BSG</label>
+            </value>
+            <value>
+                <fullName>c2_epos_</fullName>
+                <default>false</default>
+                <label>C2 Epos</label>
+            </value>
+            <value>
+                <fullName>calculus_software_solutions_ltd_</fullName>
+                <default>false</default>
+                <label>Calculus Software Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>captur_ltd_</fullName>
+                <default>false</default>
+                <label>Captur ltd</label>
+            </value>
+            <value>
+                <fullName>cash_registers__grimsby__ltd/crs_</fullName>
+                <default>false</default>
+                <label>Cash Registers (Grimsby) Ltd/CRS</label>
+            </value>
+            <value>
+                <fullName>casio_</fullName>
+                <default>false</default>
+                <label>Casio</label>
+            </value>
+            <value>
+                <fullName>ces_software_/_3r_telecom_</fullName>
+                <default>false</default>
+                <label>CES Software / 3R Telecom</label>
+            </value>
+            <value>
+                <fullName>citrus_lime_</fullName>
+                <default>false</default>
+                <label>Citrus Lime</label>
+            </value>
+            <value>
+                <fullName>clarity_hospitality_software/clarity_pos_</fullName>
+                <default>false</default>
+                <label>Clarity Hospitality Software/Clarity POS</label>
+            </value>
+            <value>
+                <fullName>clean_cloud_</fullName>
+                <default>false</default>
+                <label>Clean Cloud</label>
+            </value>
+            <value>
+                <fullName>click_dealer_ltd_</fullName>
+                <default>false</default>
+                <label>Click Dealer Ltd</label>
+            </value>
+            <value>
+                <fullName>click_its_-_swh_</fullName>
+                <default>false</default>
+                <label>Click ITS - SWH</label>
+            </value>
+            <value>
+                <fullName>clinic_software_</fullName>
+                <default>false</default>
+                <label>Clinic Software</label>
+            </value>
+            <value>
+                <fullName>cloud_commerce_pro_</fullName>
+                <default>false</default>
+                <label>Cloud Commerce Pro</label>
+            </value>
+            <value>
+                <fullName>cloud_guys/jbm_merit_-_swh_</fullName>
+                <default>false</default>
+                <label>Cloud Guys/JBM Merit - SWH</label>
+            </value>
+            <value>
+                <fullName>colemans_</fullName>
+                <default>false</default>
+                <label>Colemans</label>
+            </value>
+            <value>
+                <fullName>como_</fullName>
+                <default>false</default>
+                <label>Como</label>
+            </value>
+            <value>
+                <fullName>compilator_ab/team_systems_ltd_</fullName>
+                <default>false</default>
+                <label>Compilator AB/Team Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>computart_</fullName>
+                <default>false</default>
+                <label>Computart</label>
+            </value>
+            <value>
+                <fullName>compute_one_</fullName>
+                <default>false</default>
+                <label>Compute One</label>
+            </value>
+            <value>
+                <fullName>comtrex_</fullName>
+                <default>false</default>
+                <label>Comtrex</label>
+            </value>
+            <value>
+                <fullName>_connect_standalone_</fullName>
+                <default>false</default>
+                <label>Connect Standalone</label>
+            </value>
+            <value>
+                <fullName>consentz_</fullName>
+                <default>false</default>
+                <label>Consentz</label>
+            </value>
+            <value>
+                <fullName>countr_</fullName>
+                <default>false</default>
+                <label>Countr</label>
+            </value>
+            <value>
+                <fullName>creative_hq_</fullName>
+                <default>false</default>
+                <label>Creative HQ</label>
+            </value>
+            <value>
+                <fullName>creative_software_solutions_</fullName>
+                <default>false</default>
+                <label>Creative Software Solutions</label>
+            </value>
+            <value>
+                <fullName>csy_retail_systems_</fullName>
+                <default>false</default>
+                <label>CSY Retail Systems</label>
+            </value>
+            <value>
+                <fullName>cubepos_</fullName>
+                <default>false</default>
+                <label>CubePos</label>
+            </value>
+            <value>
+                <fullName>cunninghams_epos_group_/_quantum_epos_only_</fullName>
+                <default>false</default>
+                <label>Cunninghams Epos Group / Quantum epos only</label>
+            </value>
+            <value>
+                <fullName>custom_adaptive_</fullName>
+                <default>false</default>
+                <label>Custom Adaptive</label>
+            </value>
+            <value>
+                <fullName>darkpos/enlite_pos_</fullName>
+                <default>false</default>
+                <label>DarkPOS/Enlite POS</label>
+            </value>
+            <value>
+                <fullName>dealer_management_services_ltd_/_navigator_</fullName>
+                <default>false</default>
+                <label>Dealer Management Services Ltd / Navigator</label>
+            </value>
+            <value>
+                <fullName>dear_systems/dear_pos_</fullName>
+                <default>false</default>
+                <label>Dear Systems/Dear Pos</label>
+            </value>
+            <value>
+                <fullName>definitive_software_developments_ltd_</fullName>
+                <default>false</default>
+                <label>Definitive Software Developments LTD</label>
+            </value>
+            <value>
+                <fullName>dhodys_ltd__dhs_dentist__</fullName>
+                <default>false</default>
+                <label>Dhodys Ltd (DHS Dentist)</label>
+            </value>
+            <value>
+                <fullName>digi_europe_ltd_</fullName>
+                <default>false</default>
+                <label>Digi Europe LTD</label>
+            </value>
+            <value>
+                <fullName>digi_pos_</fullName>
+                <default>false</default>
+                <label>DIGI POS</label>
+            </value>
+            <value>
+                <fullName>digital_food_technology_</fullName>
+                <default>false</default>
+                <label>Digital Food Technology</label>
+            </value>
+            <value>
+                <fullName>digital_ticketing_systems_ltd_/digitickets_</fullName>
+                <default>false</default>
+                <label>Digital Ticketing Systems Ltd /Digitickets</label>
+            </value>
+            <value>
+                <fullName>dragon2000_ltd_</fullName>
+                <default>false</default>
+                <label>Dragon2000 Ltd</label>
+            </value>
+            <value>
+                <fullName>drystream_</fullName>
+                <default>false</default>
+                <label>Drystream</label>
+            </value>
+            <value>
+                <fullName>e_takeaway_max_</fullName>
+                <default>false</default>
+                <label>E Takeaway Max</label>
+            </value>
+            <value>
+                <fullName>e-tek_solutions_</fullName>
+                <default>false</default>
+                <label>e-Tek Solutions</label>
+            </value>
+            <value>
+                <fullName>e-trackit_systems_</fullName>
+                <default>false</default>
+                <label>e-Trackit systems</label>
+            </value>
+            <value>
+                <fullName>easify_ltd_</fullName>
+                <default>false</default>
+                <label>EASIFY LTD</label>
+            </value>
+            <value>
+                <fullName>easitill_</fullName>
+                <default>false</default>
+                <label>Easitill</label>
+            </value>
+            <value>
+                <fullName>easytouch_pos_</fullName>
+                <default>false</default>
+                <label>Easytouch POS</label>
+            </value>
+            <value>
+                <fullName>ecologital_</fullName>
+                <default>false</default>
+                <label>Ecologital</label>
+            </value>
+            <value>
+                <fullName>ecr_touch_</fullName>
+                <default>false</default>
+                <label>ECR Touch</label>
+            </value>
+            <value>
+                <fullName>electric_media_limited_</fullName>
+                <default>false</default>
+                <label>Electric Media Limited</label>
+            </value>
+            <value>
+                <fullName>electrocoin_ltd_</fullName>
+                <default>false</default>
+                <label>Electrocoin Ltd</label>
+            </value>
+            <value>
+                <fullName>electrocoin_sales_ltd_</fullName>
+                <default>false</default>
+                <label>Electrocoin Sales Ltd</label>
+            </value>
+            <value>
+                <fullName>elite_integrations_ltd_</fullName>
+                <default>false</default>
+                <label>Elite Integrations Ltd</label>
+            </value>
+            <value>
+                <fullName>elmelo_ltd_</fullName>
+                <default>false</default>
+                <label>Elmelo Ltd</label>
+            </value>
+            <value>
+                <fullName>emelan_ltd_</fullName>
+                <default>false</default>
+                <label>EMELAN LTD</label>
+            </value>
+            <value>
+                <fullName>epicuri_</fullName>
+                <default>false</default>
+                <label>Epicuri</label>
+            </value>
+            <value>
+                <fullName>epos_anytime_</fullName>
+                <default>false</default>
+                <label>EpoS Anytime</label>
+            </value>
+            <value>
+                <fullName>epos_company_/_ec_touch_</fullName>
+                <default>false</default>
+                <label>EpoS Company / EC Touch</label>
+            </value>
+            <value>
+                <fullName>epos_direct/e-novations/wowpos/emperium_</fullName>
+                <default>false</default>
+                <label>Epos Direct/E-Novations/WowPos/Emperium</label>
+            </value>
+            <value>
+                <fullName>epos_logic_</fullName>
+                <default>false</default>
+                <label>Epos Logic</label>
+            </value>
+            <value>
+                <fullName>epos_now__</fullName>
+                <default>false</default>
+                <label>Epos Now</label>
+            </value>
+            <value>
+                <fullName>epos_solutions_limited_</fullName>
+                <default>false</default>
+                <label>Epos Solutions Limited</label>
+            </value>
+            <value>
+                <fullName>epos_up_</fullName>
+                <default>false</default>
+                <label>EPOS UP</label>
+            </value>
+            <value>
+                <fullName>epos4u_</fullName>
+                <default>false</default>
+                <label>Epos4u</label>
+            </value>
+            <value>
+                <fullName>eposnet_</fullName>
+                <default>false</default>
+                <label>EposNet</label>
+            </value>
+            <value>
+                <fullName>eposware/intelicle/intelepos_</fullName>
+                <default>false</default>
+                <label>EPOSware/Intelicle/Intelepos</label>
+            </value>
+            <value>
+                <fullName>eskimo_epos/nebula_systems_uk_ltd_</fullName>
+                <default>false</default>
+                <label>Eskimo Epos/Nebula Systems UK Ltd</label>
+            </value>
+            <value>
+                <fullName>etek_retail_solutions_uk_ltd_</fullName>
+                <default>false</default>
+                <label>ETEK RETAIL SOLUTIONS UK LTD</label>
+            </value>
+            <value>
+                <fullName>everything_takeaway_</fullName>
+                <default>false</default>
+                <label>Everything Takeaway</label>
+            </value>
+            <value>
+                <fullName>ewebsystem_</fullName>
+                <default>false</default>
+                <label>Ewebsystem</label>
+            </value>
+            <value>
+                <fullName>ewipro_</fullName>
+                <default>false</default>
+                <label>Ewipro</label>
+            </value>
+            <value>
+                <fullName>ezi_solution_systems_/_retailman_uk-swh_</fullName>
+                <default>false</default>
+                <label>Ezi Solution Systems / Retailman UK-SWH</label>
+            </value>
+            <value>
+                <fullName>fashion_epos_solutions_ltd_</fullName>
+                <default>false</default>
+                <label>Fashion Epos Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>fashion_master_</fullName>
+                <default>false</default>
+                <label>Fashion Master</label>
+            </value>
+            <value>
+                <fullName>fidelity_systems__gpos__</fullName>
+                <default>false</default>
+                <label>Fidelity Systems (GPOS)</label>
+            </value>
+            <value>
+                <fullName>first_sports_international_</fullName>
+                <default>false</default>
+                <label>First Sports International</label>
+            </value>
+            <value>
+                <fullName>firstware_limited_</fullName>
+                <default>false</default>
+                <label>Firstware Limited</label>
+            </value>
+            <value>
+                <fullName>flipdish_</fullName>
+                <default>false</default>
+                <label>Flipdish</label>
+            </value>
+            <value>
+                <fullName>floral_frog_</fullName>
+                <default>false</default>
+                <label>Floral Frog</label>
+            </value>
+            <value>
+                <fullName>food_citi_</fullName>
+                <default>false</default>
+                <label>Food Citi</label>
+            </value>
+            <value>
+                <fullName>foremost_golf__</fullName>
+                <default>false</default>
+                <label>Foremost golf</label>
+            </value>
+            <value>
+                <fullName>franco_epos/shopfitters_</fullName>
+                <default>false</default>
+                <label>Franco EPos/Shopfitters</label>
+            </value>
+            <value>
+                <fullName>fujifilm_</fullName>
+                <default>false</default>
+                <label>Fujifilm</label>
+            </value>
+            <value>
+                <fullName>fullstack_software_solutions_</fullName>
+                <default>false</default>
+                <label>Fullstack Software Solutions</label>
+            </value>
+            <value>
+                <fullName>fusemetrix_group_ltd_</fullName>
+                <default>false</default>
+                <label>FuseMetrix Group Ltd</label>
+            </value>
+            <value>
+                <fullName>g_systems_co_ltd_</fullName>
+                <default>false</default>
+                <label>G Systems Co Ltd</label>
+            </value>
+            <value>
+                <fullName>garage_data_systems_ltd_/_gds_</fullName>
+                <default>false</default>
+                <label>Garage Data Systems Ltd / GDS</label>
+            </value>
+            <value>
+                <fullName>garage_hive_ltd_</fullName>
+                <default>false</default>
+                <label>Garage Hive Ltd</label>
+            </value>
+            <value>
+                <fullName>garden_connect_</fullName>
+                <default>false</default>
+                <label>Garden Connect</label>
+            </value>
+            <value>
+                <fullName>gardiff__software_house__</fullName>
+                <default>false</default>
+                <label>Gardiff (Software House)</label>
+            </value>
+            <value>
+                <fullName>gemini_computer_systems_ltd/evolution_</fullName>
+                <default>false</default>
+                <label>Gemini Computer Systems Ltd/Evolution</label>
+            </value>
+            <value>
+                <fullName>genius_epos_</fullName>
+                <default>false</default>
+                <label>Genius Epos</label>
+            </value>
+            <value>
+                <fullName>gloposnet__</fullName>
+                <default>false</default>
+                <label>Gloposnet</label>
+            </value>
+            <value>
+                <fullName>golden_business_solutions_</fullName>
+                <default>false</default>
+                <label>Golden Business Solutions</label>
+            </value>
+            <value>
+                <fullName>goodtill_</fullName>
+                <default>false</default>
+                <label>Goodtill</label>
+            </value>
+            <value>
+                <fullName>grand_retail_solutions_ltd-swh/sagepos_</fullName>
+                <default>false</default>
+                <label>Grand Retail Solutions Ltd-SWH/Sagepos</label>
+            </value>
+            <value>
+                <fullName>groupo_epelsa_</fullName>
+                <default>false</default>
+                <label>Groupo Epelsa</label>
+            </value>
+            <value>
+                <fullName>healthy_practice_ltd_</fullName>
+                <default>false</default>
+                <label>Healthy Practice Ltd</label>
+            </value>
+            <value>
+                <fullName>i-clarity_</fullName>
+                <default>false</default>
+                <label>i-Clarity</label>
+            </value>
+            <value>
+                <fullName>ibs_systems_/_poslink_/_access_group_</fullName>
+                <default>false</default>
+                <label>IBS Systems / Poslink / Access Group</label>
+            </value>
+            <value>
+                <fullName>icom2_ltd_/_igrocer_</fullName>
+                <default>false</default>
+                <label>Icom2 Ltd / iGrocer</label>
+            </value>
+            <value>
+                <fullName>icontrol_epos_</fullName>
+                <default>false</default>
+                <label>iControl Epos</label>
+            </value>
+            <value>
+                <fullName>icr_touch__</fullName>
+                <default>false</default>
+                <label>ICR Touch</label>
+            </value>
+            <value>
+                <fullName>ideal_epos_software_house_</fullName>
+                <default>false</default>
+                <label>Ideal Epos Software House</label>
+            </value>
+            <value>
+                <fullName>idxtra_</fullName>
+                <default>false</default>
+                <label>idXtra</label>
+            </value>
+            <value>
+                <fullName>ihotelligence_</fullName>
+                <default>false</default>
+                <label>ihotelligence</label>
+            </value>
+            <value>
+                <fullName>iiko_ltd_</fullName>
+                <default>false</default>
+                <label>IIKO Ltd</label>
+            </value>
+            <value>
+                <fullName>ika_</fullName>
+                <default>false</default>
+                <label>IKA</label>
+            </value>
+            <value>
+                <fullName>ikentoo_</fullName>
+                <default>false</default>
+                <label>iKentoo</label>
+            </value>
+            <value>
+                <fullName>image_retail_solutions/image_software_</fullName>
+                <default>false</default>
+                <label>Image Retail Solutions/Image Software</label>
+            </value>
+            <value>
+                <fullName>in-2-technology_</fullName>
+                <default>false</default>
+                <label>In-2-Technology</label>
+            </value>
+            <value>
+                <fullName>inno_e_menu_ltd_</fullName>
+                <default>false</default>
+                <label>Inno e Menu ltd</label>
+            </value>
+            <value>
+                <fullName>inpach_solutions_</fullName>
+                <default>false</default>
+                <label>Inpach Solutions</label>
+            </value>
+            <value>
+                <fullName>insoft_</fullName>
+                <default>false</default>
+                <label>Insoft</label>
+            </value>
+            <value>
+                <fullName>intelligent_golf_</fullName>
+                <default>false</default>
+                <label>Intelligent Golf</label>
+            </value>
+            <value>
+                <fullName>intelligent_salon_software/salon_iq_</fullName>
+                <default>false</default>
+                <label>Intelligent Salon Software/Salon IQ</label>
+            </value>
+            <value>
+                <fullName>interactive_</fullName>
+                <default>false</default>
+                <label>InterActive</label>
+            </value>
+            <value>
+                <fullName>isalon_software_</fullName>
+                <default>false</default>
+                <label>iSalon Software</label>
+            </value>
+            <value>
+                <fullName>it_pro_services_</fullName>
+                <default>false</default>
+                <label>IT Pro Services</label>
+            </value>
+            <value>
+                <fullName>itd_software_</fullName>
+                <default>false</default>
+                <label>iTD Software</label>
+            </value>
+            <value>
+                <fullName>jem_point_of_sale_ltd/just_emenu_ltd_</fullName>
+                <default>false</default>
+                <label>Jem Point of Sale Ltd/Just Emenu Ltd</label>
+            </value>
+            <value>
+                <fullName>jeton_systems__ltd_</fullName>
+                <default>false</default>
+                <label>Jeton Systems  Ltd</label>
+            </value>
+            <value>
+                <fullName>jewel_master/ryba_macaulay_ltd_</fullName>
+                <default>false</default>
+                <label>Jewel Master/Ryba Macaulay Ltd</label>
+            </value>
+            <value>
+                <fullName>jigsaw_bakery_ltd_</fullName>
+                <default>false</default>
+                <label>Jigsaw Bakery Ltd</label>
+            </value>
+            <value>
+                <fullName>jinoby_technologies_ltd_</fullName>
+                <default>false</default>
+                <label>Jinoby technologies LTD</label>
+            </value>
+            <value>
+                <fullName>just_retail_</fullName>
+                <default>false</default>
+                <label>Just Retail</label>
+            </value>
+            <value>
+                <fullName>k3_retail__mstore_</fullName>
+                <default>false</default>
+                <label>K3 Retail (Mstore)</label>
+            </value>
+            <value>
+                <fullName>kazzicom_</fullName>
+                <default>false</default>
+                <label>Kazzicom</label>
+            </value>
+            <value>
+                <fullName>kerridge_commercial_systems__</fullName>
+                <default>false</default>
+                <label>Kerridge Commercial Systems</label>
+            </value>
+            <value>
+                <fullName>khaos_control_</fullName>
+                <default>false</default>
+                <label>Khaos Control</label>
+            </value>
+            <value>
+                <fullName>kobas_</fullName>
+                <default>false</default>
+                <label>Kobas</label>
+            </value>
+            <value>
+                <fullName>komo_media_ltd_/_qpos_x_</fullName>
+                <default>false</default>
+                <label>Komo Media Ltd / QPos X</label>
+            </value>
+            <value>
+                <fullName>kordio_</fullName>
+                <default>false</default>
+                <label>Kordio</label>
+            </value>
+            <value>
+                <fullName>kurve_kiosk_</fullName>
+                <default>false</default>
+                <label>Kurve Kiosk</label>
+            </value>
+            <value>
+                <fullName>kyrio__</fullName>
+                <default>false</default>
+                <label>Kyrio</label>
+            </value>
+            <value>
+                <fullName>lefta_ltd_</fullName>
+                <default>false</default>
+                <label>Lefta Ltd</label>
+            </value>
+            <value>
+                <fullName>lexpos_</fullName>
+                <default>false</default>
+                <label>Lexpos</label>
+            </value>
+            <value>
+                <fullName>lightspeed_k_</fullName>
+                <default>false</default>
+                <label>Lightspeed K</label>
+            </value>
+            <value>
+                <fullName>live_register_ltd_</fullName>
+                <default>false</default>
+                <label>Live Register Ltd</label>
+            </value>
+            <value>
+                <fullName>lois_systems_</fullName>
+                <default>false</default>
+                <label>Lois Systems</label>
+            </value>
+            <value>
+                <fullName>mag_it_solutions/wizlo/simpra_suite_pos_</fullName>
+                <default>false</default>
+                <label>MAG IT Solutions/Wizlo/Simpra Suite POS</label>
+            </value>
+            <value>
+                <fullName>magnum_epos_</fullName>
+                <default>false</default>
+                <label>Magnum EPOS</label>
+            </value>
+            <value>
+                <fullName>maiva_pos/epos_hybrid_</fullName>
+                <default>false</default>
+                <label>Maiva POS/ePOS Hybrid</label>
+            </value>
+            <value>
+                <fullName>mam_software_ltd_</fullName>
+                <default>false</default>
+                <label>MAM Software Ltd</label>
+            </value>
+            <value>
+                <fullName>matrix_epos_</fullName>
+                <default>false</default>
+                <label>Matrix Epos</label>
+            </value>
+            <value>
+                <fullName>mb_it_solutions_/_max9_</fullName>
+                <default>false</default>
+                <label>MB IT Solutions / Max9</label>
+            </value>
+            <value>
+                <fullName>media_magic_ltd_</fullName>
+                <default>false</default>
+                <label>Media Magic Ltd</label>
+            </value>
+            <value>
+                <fullName>medoc_computers_ltd_</fullName>
+                <default>false</default>
+                <label>Medoc Computers Ltd</label>
+            </value>
+            <value>
+                <fullName>memsec_epos/_active_workspace_</fullName>
+                <default>false</default>
+                <label>MemSec EPOS/ Active Workspace</label>
+            </value>
+            <value>
+                <fullName>menumate_</fullName>
+                <default>false</default>
+                <label>Menumate</label>
+            </value>
+            <value>
+                <fullName>merchant_systems/counteract__</fullName>
+                <default>false</default>
+                <label>Merchant Systems/CounterAct</label>
+            </value>
+            <value>
+                <fullName>merlinsoft_ltd_</fullName>
+                <default>false</default>
+                <label>Merlinsoft ltd</label>
+            </value>
+            <value>
+                <fullName>mhouse_solutions_</fullName>
+                <default>false</default>
+                <label>Mhouse Solutions</label>
+            </value>
+            <value>
+                <fullName>mi_store_/_velocity_design_limited__</fullName>
+                <default>false</default>
+                <label>MI Store / velocity design limited</label>
+            </value>
+            <value>
+                <fullName>microtek/uniwell_</fullName>
+                <default>false</default>
+                <label>MicroTek/Uniwell</label>
+            </value>
+            <value>
+                <fullName>millennium_software_</fullName>
+                <default>false</default>
+                <label>Millennium Software</label>
+            </value>
+            <value>
+                <fullName>modulus_retail_</fullName>
+                <default>false</default>
+                <label>Modulus Retail</label>
+            </value>
+            <value>
+                <fullName>msp_systems_</fullName>
+                <default>false</default>
+                <label>MSP Systems</label>
+            </value>
+            <value>
+                <fullName>my_order_box_</fullName>
+                <default>false</default>
+                <label>My Order Box</label>
+            </value>
+            <value>
+                <fullName>myda/luper_</fullName>
+                <default>false</default>
+                <label>Myda/Luper</label>
+            </value>
+            <value>
+                <fullName>myepos_</fullName>
+                <default>false</default>
+                <label>Myepos</label>
+            </value>
+            <value>
+                <fullName>mygadgetrepairs_</fullName>
+                <default>false</default>
+                <label>MyGadgetRepairs</label>
+            </value>
+            <value>
+                <fullName>mypos_</fullName>
+                <default>false</default>
+                <label>Mypos</label>
+            </value>
+            <value>
+                <fullName>nanosoft_tech_ltd_</fullName>
+                <default>false</default>
+                <label>Nanosoft Tech Ltd</label>
+            </value>
+            <value>
+                <fullName>nedfox_bv_</fullName>
+                <default>false</default>
+                <label>Nedfox BV</label>
+            </value>
+            <value>
+                <fullName>newbridge_software_</fullName>
+                <default>false</default>
+                <label>Newbridge Software</label>
+            </value>
+            <value>
+                <fullName>ngeneration_ltd_</fullName>
+                <default>false</default>
+                <label>nGeneration Ltd</label>
+            </value>
+            <value>
+                <fullName>nibs_solutions_</fullName>
+                <default>false</default>
+                <label>Nibs Solutions</label>
+            </value>
+            <value>
+                <fullName>niche_international/oxford_retail/minipos_</fullName>
+                <default>false</default>
+                <label>Niche International/Oxford Retail/MiniPos</label>
+            </value>
+            <value>
+                <fullName>nobly_pos_</fullName>
+                <default>false</default>
+                <label>Nobly POS</label>
+            </value>
+            <value>
+                <fullName>nova_retail_technology_solutions_</fullName>
+                <default>false</default>
+                <label>Nova Retail Technology Solutions</label>
+            </value>
+            <value>
+                <fullName>nuepos_ltd_</fullName>
+                <default>false</default>
+                <label>NuEpos Ltd</label>
+            </value>
+            <value>
+                <fullName>oaks_media/eatpos_</fullName>
+                <default>false</default>
+                <label>Oaks Media/EatPos</label>
+            </value>
+            <value>
+                <fullName>ogl_computer_services_group/profit4_</fullName>
+                <default>false</default>
+                <label>OGL Computer Services Group/Profit4</label>
+            </value>
+            <value>
+                <fullName>one_vision_applications_</fullName>
+                <default>false</default>
+                <label>One Vision Applications</label>
+            </value>
+            <value>
+                <fullName>open_retail_solutions_</fullName>
+                <default>false</default>
+                <label>Open Retail Solutions</label>
+            </value>
+            <value>
+                <fullName>open_solutions_international_</fullName>
+                <default>false</default>
+                <label>Open Solutions International</label>
+            </value>
+            <value>
+                <fullName>openda_</fullName>
+                <default>false</default>
+                <label>Openda</label>
+            </value>
+            <value>
+                <fullName>openplay_ltd_</fullName>
+                <default>false</default>
+                <label>Openplay Ltd</label>
+            </value>
+            <value>
+                <fullName>opticabase_</fullName>
+                <default>false</default>
+                <label>Opticabase</label>
+            </value>
+            <value>
+                <fullName>opus_retail_solutions_</fullName>
+                <default>false</default>
+                <label>Opus Retail Solutions</label>
+            </value>
+            <value>
+                <fullName>oracle_</fullName>
+                <default>false</default>
+                <label>Oracle</label>
+            </value>
+            <value>
+                <fullName>orbit_itech_</fullName>
+                <default>false</default>
+                <label>Orbit itech</label>
+            </value>
+            <value>
+                <fullName>orcus_</fullName>
+                <default>false</default>
+                <label>Orcus</label>
+            </value>
+            <value>
+                <fullName>ordara_ltd_</fullName>
+                <default>false</default>
+                <label>Ordara Ltd</label>
+            </value>
+            <value>
+                <fullName>order_chimps_</fullName>
+                <default>false</default>
+                <label>Order Chimps</label>
+            </value>
+            <value>
+                <fullName>ordergo_</fullName>
+                <default>false</default>
+                <label>ordergo</label>
+            </value>
+            <value>
+                <fullName>other__</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>oyslans_ltd/zynix_pos_</fullName>
+                <default>false</default>
+                <label>Oyslans Ltd/Zynix POS</label>
+            </value>
+            <value>
+                <fullName>panda_epos_ltd_</fullName>
+                <default>false</default>
+                <label>Panda Epos Ltd</label>
+            </value>
+            <value>
+                <fullName>paranetwork_</fullName>
+                <default>false</default>
+                <label>Paranetwork</label>
+            </value>
+            <value>
+                <fullName>pharmatill_</fullName>
+                <default>false</default>
+                <label>Pharmatill</label>
+            </value>
+            <value>
+                <fullName>pioneer_software_ltd_</fullName>
+                <default>false</default>
+                <label>Pioneer Software Ltd</label>
+            </value>
+            <value>
+                <fullName>pixel_point_</fullName>
+                <default>false</default>
+                <label>Pixel Point</label>
+            </value>
+            <value>
+                <fullName>pixels_first_ltd_</fullName>
+                <default>false</default>
+                <label>Pixels First Ltd</label>
+            </value>
+            <value>
+                <fullName>playwerks_</fullName>
+                <default>false</default>
+                <label>Playwerks</label>
+            </value>
+            <value>
+                <fullName>pocket_pos_</fullName>
+                <default>false</default>
+                <label>Pocket POS</label>
+            </value>
+            <value>
+                <fullName>point_o_sale_</fullName>
+                <default>false</default>
+                <label>Point O Sale</label>
+            </value>
+            <value>
+                <fullName>pointone_</fullName>
+                <default>false</default>
+                <label>pointOne</label>
+            </value>
+            <value>
+                <fullName>polaris_</fullName>
+                <default>false</default>
+                <label>Polaris</label>
+            </value>
+            <value>
+                <fullName>pos_247_ltd_</fullName>
+                <default>false</default>
+                <label>POS 247 Ltd</label>
+            </value>
+            <value>
+                <fullName>pos_logix_</fullName>
+                <default>false</default>
+                <label>POS Logix</label>
+            </value>
+            <value>
+                <fullName>pos_ltd_</fullName>
+                <default>false</default>
+                <label>POS Ltd</label>
+            </value>
+            <value>
+                <fullName>pos_plus_roi-swh_</fullName>
+                <default>false</default>
+                <label>Pos Plus ROI-SWH</label>
+            </value>
+            <value>
+                <fullName>posapptive_ltd_</fullName>
+                <default>false</default>
+                <label>PosApptive Ltd</label>
+            </value>
+            <value>
+                <fullName>posboss_</fullName>
+                <default>false</default>
+                <label>PosBoss</label>
+            </value>
+            <value>
+                <fullName>posera_europe_ltd/maitre_d_</fullName>
+                <default>false</default>
+                <label>Posera Europe Ltd/Maitre&apos;D</label>
+            </value>
+            <value>
+                <fullName>pospixel_ltd_</fullName>
+                <default>false</default>
+                <label>Pospixel Ltd</label>
+            </value>
+            <value>
+                <fullName>power_epos/cpos/triniteq/weightapos_</fullName>
+                <default>false</default>
+                <label>Power Epos/CPOS/Triniteq/Weightapos</label>
+            </value>
+            <value>
+                <fullName>practice_point_ltd_-__assisi_</fullName>
+                <default>false</default>
+                <label>Practice Point Ltd -  Assisi</label>
+            </value>
+            <value>
+                <fullName>premier_epos_</fullName>
+                <default>false</default>
+                <label>Premier Epos</label>
+            </value>
+            <value>
+                <fullName>preoday_</fullName>
+                <default>false</default>
+                <label>Preoday</label>
+            </value>
+            <value>
+                <fullName>presto_express/fireflyapps_ltd_</fullName>
+                <default>false</default>
+                <label>Presto Express/Fireflyapps Ltd</label>
+            </value>
+            <value>
+                <fullName>pro_web_design_uk_</fullName>
+                <default>false</default>
+                <label>Pro Web Design UK</label>
+            </value>
+            <value>
+                <fullName>profile_technology_</fullName>
+                <default>false</default>
+                <label>Profile Technology</label>
+            </value>
+            <value>
+                <fullName>proton6_/_infipos_</fullName>
+                <default>false</default>
+                <label>Proton6 / InfiPoS</label>
+            </value>
+            <value>
+                <fullName>purely_solutions_-_koneqt_epos_</fullName>
+                <default>false</default>
+                <label>Purely Solutions - KONEQT EPOS</label>
+            </value>
+            <value>
+                <fullName>qepos_</fullName>
+                <default>false</default>
+                <label>QEPOS</label>
+            </value>
+            <value>
+                <fullName>quadranet_systems_</fullName>
+                <default>false</default>
+                <label>QuadraNet Systems</label>
+            </value>
+            <value>
+                <fullName>quality_it_solutions_</fullName>
+                <default>false</default>
+                <label>Quality IT Solutions</label>
+            </value>
+            <value>
+                <fullName>quick_tills_</fullName>
+                <default>false</default>
+                <label>Quick Tills</label>
+            </value>
+            <value>
+                <fullName>quintus_systems_</fullName>
+                <default>false</default>
+                <label>Quintus Systems</label>
+            </value>
+            <value>
+                <fullName>re_scan_ltd_</fullName>
+                <default>false</default>
+                <label>Re Scan Ltd</label>
+            </value>
+            <value>
+                <fullName>real_business_applications_ltd/rba_uk_</fullName>
+                <default>false</default>
+                <label>Real Business Applications Ltd/RBA UK</label>
+            </value>
+            <value>
+                <fullName>redcat_hospitality_technology_ltd_</fullName>
+                <default>false</default>
+                <label>Redcat Hospitality Technology Ltd</label>
+            </value>
+            <value>
+                <fullName>repairdesk_</fullName>
+                <default>false</default>
+                <label>RepairDesk</label>
+            </value>
+            <value>
+                <fullName>reposs_</fullName>
+                <default>false</default>
+                <label>Reposs</label>
+            </value>
+            <value>
+                <fullName>restapp_uk_limited_</fullName>
+                <default>false</default>
+                <label>RestApp UK Limited</label>
+            </value>
+            <value>
+                <fullName>retail_data_partnerships_ltd_/_trdp_/_shopmate</fullName>
+                <default>false</default>
+                <label>Retail Data Partnerships Ltd / TRDP / Shopmate</label>
+            </value>
+            <value>
+                <fullName>retail_hardware_solutions_t/a_iposg_</fullName>
+                <default>false</default>
+                <label>Retail Hardware Solutions T/A IPOSG</label>
+            </value>
+            <value>
+                <fullName>retail_ltd_</fullName>
+                <default>false</default>
+                <label>Retail Ltd</label>
+            </value>
+            <value>
+                <fullName>retail_software_solutions_ltd/top_to_toe_</fullName>
+                <default>false</default>
+                <label>Retail Software Solutions Ltd/Top To Toe</label>
+            </value>
+            <value>
+                <fullName>retail_solutions_</fullName>
+                <default>false</default>
+                <label>Retail Solutions</label>
+            </value>
+            <value>
+                <fullName>retail_trust_</fullName>
+                <default>false</default>
+                <label>Retail Trust</label>
+            </value>
+            <value>
+                <fullName>rh_it_</fullName>
+                <default>false</default>
+                <label>RH IT</label>
+            </value>
+            <value>
+                <fullName>ritty_ltd_</fullName>
+                <default>false</default>
+                <label>Ritty Ltd</label>
+            </value>
+            <value>
+                <fullName>romancart_limited/sellr_</fullName>
+                <default>false</default>
+                <label>Romancart Limited/Sellr</label>
+            </value>
+            <value>
+                <fullName>rst_epos_</fullName>
+                <default>false</default>
+                <label>RST Epos</label>
+            </value>
+            <value>
+                <fullName>rushcliff_ltd__</fullName>
+                <default>false</default>
+                <label>Rushcliff ltd</label>
+            </value>
+            <value>
+                <fullName>sacs_uk_ltd_</fullName>
+                <default>false</default>
+                <label>Sacs UK Ltd</label>
+            </value>
+            <value>
+                <fullName>safa_solutions_</fullName>
+                <default>false</default>
+                <label>Safa Solutions</label>
+            </value>
+            <value>
+                <fullName>saledock_ltd_</fullName>
+                <default>false</default>
+                <label>Saledock Ltd</label>
+            </value>
+            <value>
+                <fullName>salesvu_technologies_</fullName>
+                <default>false</default>
+                <label>SalesVu Technologies</label>
+            </value>
+            <value>
+                <fullName>salon_precision_</fullName>
+                <default>false</default>
+                <label>Salon Precision</label>
+            </value>
+            <value>
+                <fullName>salon_tracker_</fullName>
+                <default>false</default>
+                <label>Salon Tracker</label>
+            </value>
+            <value>
+                <fullName>sambapos_</fullName>
+                <default>false</default>
+                <label>SambaPOS</label>
+            </value>
+            <value>
+                <fullName>samtouch/ycr_</fullName>
+                <default>false</default>
+                <label>Samtouch/YCR</label>
+            </value>
+            <value>
+                <fullName>scotweigh_</fullName>
+                <default>false</default>
+                <label>Scotweigh</label>
+            </value>
+            <value>
+                <fullName>secure_card_payment_ltd__fudz_</fullName>
+                <default>false</default>
+                <label>Secure Card Payment Ltd (Fudz)</label>
+            </value>
+            <value>
+                <fullName>sentinel_epos_and_solutions_ltd_</fullName>
+                <default>false</default>
+                <label>Sentinel EPOS and Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>shanghai_teraoka_electronic__digi_group_/maxpos_</fullName>
+                <default>false</default>
+                <label>Shanghai Teraoka Electronic (Digi Group)/MaxPOS</label>
+            </value>
+            <value>
+                <fullName>sharp_epos/sharp_business_systems_uk_plc_</fullName>
+                <default>false</default>
+                <label>Sharp Epos/Sharp Business Systems UK PLC</label>
+            </value>
+            <value>
+                <fullName>shopwave_</fullName>
+                <default>false</default>
+                <label>ShopWave</label>
+            </value>
+            <value>
+                <fullName>silver_eagle_solutions_ltd_</fullName>
+                <default>false</default>
+                <label>Silver Eagle Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>simple_and_creative_</fullName>
+                <default>false</default>
+                <label>Simple and Creative</label>
+            </value>
+            <value>
+                <fullName>simply_pos_ltd_</fullName>
+                <default>false</default>
+                <label>Simply POS Ltd</label>
+            </value>
+            <value>
+                <fullName>sirrahsoft_hospitality_systems_</fullName>
+                <default>false</default>
+                <label>Sirrahsoft Hospitality Systems</label>
+            </value>
+            <value>
+                <fullName>skoop__inc_</fullName>
+                <default>false</default>
+                <label>Skoop! Inc</label>
+            </value>
+            <value>
+                <fullName>smart_club_solutions_</fullName>
+                <default>false</default>
+                <label>Smart Club Solutions</label>
+            </value>
+            <value>
+                <fullName>smart_restaurants_</fullName>
+                <default>false</default>
+                <label>smart restaurants</label>
+            </value>
+            <value>
+                <fullName>smart_volution_</fullName>
+                <default>false</default>
+                <label>Smart Volution</label>
+            </value>
+            <value>
+                <fullName>softabacus_</fullName>
+                <default>false</default>
+                <label>Softabacus</label>
+            </value>
+            <value>
+                <fullName>softcore_technology_/_retail_expert_</fullName>
+                <default>false</default>
+                <label>Softcore Technology / retail expert</label>
+            </value>
+            <value>
+                <fullName>softech_cyprus_/_gladius_software_</fullName>
+                <default>false</default>
+                <label>Softech Cyprus / Gladius Software</label>
+            </value>
+            <value>
+                <fullName>softsync_</fullName>
+                <default>false</default>
+                <label>Softsync</label>
+            </value>
+            <value>
+                <fullName>software_4_dentists_</fullName>
+                <default>false</default>
+                <label>Software 4 Dentists</label>
+            </value>
+            <value>
+                <fullName>software_of_excellence_uk_/_exact__software__</fullName>
+                <default>false</default>
+                <label>Software of Excellence UK / Exact (software)</label>
+            </value>
+            <value>
+                <fullName>spark_</fullName>
+                <default>false</default>
+                <label>Spark</label>
+            </value>
+            <value>
+                <fullName>sportsoft__u.k.__ltd_</fullName>
+                <default>false</default>
+                <label>SportSoft (U.K.) Ltd</label>
+            </value>
+            <value>
+                <fullName>spxus_</fullName>
+                <default>false</default>
+                <label>SPXUS</label>
+            </value>
+            <value>
+                <fullName>station_master_</fullName>
+                <default>false</default>
+                <label>Station Master</label>
+            </value>
+            <value>
+                <fullName>stok.ly_</fullName>
+                <default>false</default>
+                <label>Stok.ly</label>
+            </value>
+            <value>
+                <fullName>sunshine_soft_</fullName>
+                <default>false</default>
+                <label>Sunshine Soft</label>
+            </value>
+            <value>
+                <fullName>superconnexions__london_till_rolls__</fullName>
+                <default>false</default>
+                <label>Superconnexions (London Till Rolls)</label>
+            </value>
+            <value>
+                <fullName>swiftsoft_computers_systems_ltd_</fullName>
+                <default>false</default>
+                <label>Swiftsoft Computers Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>swoopos_</fullName>
+                <default>false</default>
+                <label>Swoopos</label>
+            </value>
+            <value>
+                <fullName>symplex_</fullName>
+                <default>false</default>
+                <label>Symplex</label>
+            </value>
+            <value>
+                <fullName>syrve_</fullName>
+                <default>false</default>
+                <label>Syrve</label>
+            </value>
+            <value>
+                <fullName>syslab_epos_</fullName>
+                <default>false</default>
+                <label>Syslab Epos</label>
+            </value>
+            <value>
+                <fullName>tabology/bar_tab_</fullName>
+                <default>false</default>
+                <label>Tabology/Bar Tab</label>
+            </value>
+            <value>
+                <fullName>tcube/epos_technologies_</fullName>
+                <default>false</default>
+                <label>Tcube/EPOS Technologies</label>
+            </value>
+            <value>
+                <fullName>tech_cube_</fullName>
+                <default>false</default>
+                <label>Tech Cube</label>
+            </value>
+            <value>
+                <fullName>techman/web_seller_pro_ltd_</fullName>
+                <default>false</default>
+                <label>TechMan/Web Seller Pro Ltd</label>
+            </value>
+            <value>
+                <fullName>tengo_software_</fullName>
+                <default>false</default>
+                <label>Tengo Software</label>
+            </value>
+            <value>
+                <fullName>tevalis_</fullName>
+                <default>false</default>
+                <label>Tevalis</label>
+            </value>
+            <value>
+                <fullName>tgr_london_limited_</fullName>
+                <default>false</default>
+                <label>TGR London limited</label>
+            </value>
+            <value>
+                <fullName>the_epos_bureau_limited_</fullName>
+                <default>false</default>
+                <label>The EPOS Bureau Limited</label>
+            </value>
+            <value>
+                <fullName>till_one_</fullName>
+                <default>false</default>
+                <label>Till One</label>
+            </value>
+            <value>
+                <fullName>tillcomm_software/_rmh_integration_</fullName>
+                <default>false</default>
+                <label>Tillcomm Software/ RMH Integration</label>
+            </value>
+            <value>
+                <fullName>tillex_</fullName>
+                <default>false</default>
+                <label>Tillex</label>
+            </value>
+            <value>
+                <fullName>tillpoint_epos-swh_</fullName>
+                <default>false</default>
+                <label>TillPoint EPOS-SWH</label>
+            </value>
+            <value>
+                <fullName>tills_plus_/_ssayy__/_epos_sense_</fullName>
+                <default>false</default>
+                <label>Tills Plus / Ssayy  / Epos Sense</label>
+            </value>
+            <value>
+                <fullName>time_2_dine_</fullName>
+                <default>false</default>
+                <label>Time 2 Dine</label>
+            </value>
+            <value>
+                <fullName>tissl_</fullName>
+                <default>false</default>
+                <label>TISSL</label>
+            </value>
+            <value>
+                <fullName>tlm_technologies/_madic_uk/_evopos_</fullName>
+                <default>false</default>
+                <label>TLM Technologies/ Madic UK/ Evopos</label>
+            </value>
+            <value>
+                <fullName>togo_</fullName>
+                <default>false</default>
+                <label>ToGo</label>
+            </value>
+            <value>
+                <fullName>topsys_/_positive_software_company_</fullName>
+                <default>false</default>
+                <label>Topsys / Positive Software Company</label>
+            </value>
+            <value>
+                <fullName>total_salon_controls_ltd_</fullName>
+                <default>false</default>
+                <label>Total Salon Controls Ltd</label>
+            </value>
+            <value>
+                <fullName>touchbistro_</fullName>
+                <default>false</default>
+                <label>TouchBistro</label>
+            </value>
+            <value>
+                <fullName>touchretail_ltd_</fullName>
+                <default>false</default>
+                <label>Touchretail Ltd</label>
+            </value>
+            <value>
+                <fullName>trinal_genius_</fullName>
+                <default>false</default>
+                <label>Trinal Genius</label>
+            </value>
+            <value>
+                <fullName>triple_software_</fullName>
+                <default>false</default>
+                <label>Triple Software</label>
+            </value>
+            <value>
+                <fullName>tulip_accounting_</fullName>
+                <default>false</default>
+                <label>Tulip Accounting</label>
+            </value>
+            <value>
+                <fullName>twinsoft_</fullName>
+                <default>false</default>
+                <label>Twinsoft</label>
+            </value>
+            <value>
+                <fullName>tyresoft_</fullName>
+                <default>false</default>
+                <label>Tyresoft</label>
+            </value>
+            <value>
+                <fullName>unicenta_</fullName>
+                <default>false</default>
+                <label>Unicenta</label>
+            </value>
+            <value>
+                <fullName>uniorg_</fullName>
+                <default>false</default>
+                <label>Uniorg</label>
+            </value>
+            <value>
+                <fullName>unisoft_solutions_limited_</fullName>
+                <default>false</default>
+                <label>Unisoft Solutions Limited</label>
+            </value>
+            <value>
+                <fullName>universal_pos_</fullName>
+                <default>false</default>
+                <label>Universal POS</label>
+            </value>
+            <value>
+                <fullName>var_cloud_horizon_ltd_t/a_postree_</fullName>
+                <default>false</default>
+                <label>Var Cloud Horizon Ltd t/a Postree</label>
+            </value>
+            <value>
+                <fullName>vdit_solutions_</fullName>
+                <default>false</default>
+                <label>Vdit Solutions</label>
+            </value>
+            <value>
+                <fullName>vecsoft_</fullName>
+                <default>false</default>
+                <label>Vecsoft</label>
+            </value>
+            <value>
+                <fullName>vectron_/_arcsoft_/_northwood_software_solutions_</fullName>
+                <default>false</default>
+                <label>Vectron / Arcsoft / Northwood Software Solutions</label>
+            </value>
+            <value>
+                <fullName>velo_systems_</fullName>
+                <default>false</default>
+                <label>Velo Systems</label>
+            </value>
+            <value>
+                <fullName>vend_</fullName>
+                <default>false</default>
+                <label>Vend</label>
+            </value>
+            <value>
+                <fullName>vennersys_</fullName>
+                <default>false</default>
+                <label>Vennersys</label>
+            </value>
+            <value>
+                <fullName>vestipos_ltd_</fullName>
+                <default>false</default>
+                <label>VestiPOS Ltd</label>
+            </value>
+            <value>
+                <fullName>vintner_systems_</fullName>
+                <default>false</default>
+                <label>Vintner Systems</label>
+            </value>
+            <value>
+                <fullName>visbook_as_</fullName>
+                <default>false</default>
+                <label>Visbook AS</label>
+            </value>
+            <value>
+                <fullName>vision_infosys_ltdvision_infosys_ltd_</fullName>
+                <default>false</default>
+                <label>Vision Infosys LtdVision Infosys Ltd</label>
+            </value>
+            <value>
+                <fullName>visual_business_retail__vbr__</fullName>
+                <default>false</default>
+                <label>Visual Business Retail (VBR)</label>
+            </value>
+            <value>
+                <fullName>webranges_technology_solutions_ltd_</fullName>
+                <default>false</default>
+                <label>Webranges Technology Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>webwise_solutions/restaurant_pos_software_</fullName>
+                <default>false</default>
+                <label>Webwise Solutions/Restaurant Pos Software</label>
+            </value>
+            <value>
+                <fullName>wi_systems_</fullName>
+                <default>false</default>
+                <label>Wi Systems</label>
+            </value>
+            <value>
+                <fullName>wilson_digital_media_</fullName>
+                <default>false</default>
+                <label>Wilson Digital Media</label>
+            </value>
+            <value>
+                <fullName>wirebox_</fullName>
+                <default>false</default>
+                <label>Wirebox</label>
+            </value>
+            <value>
+                <fullName>wizards_workshop_ltd/wizardpos_</fullName>
+                <default>false</default>
+                <label>Wizards Workshop Ltd/WizardPOS</label>
+            </value>
+            <value>
+                <fullName>wizbang/onetap_</fullName>
+                <default>false</default>
+                <label>WizBang/Onetap</label>
+            </value>
+            <value>
+                <fullName>workflow_digital_ltd_t/a_app_companion_</fullName>
+                <default>false</default>
+                <label>Workflow Digital Ltd T/A App Companion</label>
+            </value>
+            <value>
+                <fullName>world_golf_systems_ltd_</fullName>
+                <default>false</default>
+                <label>World Golf Systems Ltd</label>
+            </value>
+            <value>
+                <fullName>write_software_ltd_</fullName>
+                <default>false</default>
+                <label>Write Software Ltd</label>
+            </value>
+            <value>
+                <fullName>xepos/xepay/express_epos_</fullName>
+                <default>false</default>
+                <label>XEPOS/XEPAY/Express Epos</label>
+            </value>
+            <value>
+                <fullName>xeyex_</fullName>
+                <default>false</default>
+                <label>Xeyex</label>
+            </value>
+            <value>
+                <fullName>xpert_pos_ltd_</fullName>
+                <default>false</default>
+                <label>Xpert POS Ltd</label>
+            </value>
+            <value>
+                <fullName>yinghao_network_technology_ltd_</fullName>
+                <default>false</default>
+                <label>Yinghao Network Technology Ltd</label>
+            </value>
+            <value>
+                <fullName>yp_solutions_ltd_</fullName>
+                <default>false</default>
+                <label>YP Solutions Ltd</label>
+            </value>
+            <value>
+                <fullName>yumapos_uk_ltd_</fullName>
+                <default>false</default>
+                <label>YumaPOS UK Ltd</label>
+            </value>
+            <value>
+                <fullName>zonal_retail_solutions_</fullName>
+                <default>false</default>
+                <label>Zonal Retail Solutions</label>
+            </value>
+            <value>
+                <fullName>dentally_</fullName>
+                <default>false</default>
+                <label>Dentally</label>
+            </value>
+            <value>
+                <fullName>untill_epos</fullName>
+                <default>false</default>
+                <label>Untill Epos</label>
+            </value>
+            <value>
+                <fullName>grafterr_</fullName>
+                <default>false</default>
+                <label>Grafterr</label>
+            </value>
+            <value>
+                <fullName>datasym_</fullName>
+                <default>false</default>
+                <label>Datasym</label>
+            </value>
+            <value>
+                <fullName>hbp_systems_/_kcpos</fullName>
+                <default>false</default>
+                <label>HBP Systems / KCPOS</label>
+            </value>
+            <value>
+                <fullName>arch_order</fullName>
+                <default>false</default>
+                <label>Arch Order</label>
+            </value>
+            <value>
+                <fullName>foodeo</fullName>
+                <default>false</default>
+                <label>Foodeo</label>
+            </value>
+            <value>
+                <fullName>neron</fullName>
+                <default>false</default>
+                <label>Neron</label>
+            </value>
+            <value>
+                <fullName>motasoft_ltd</fullName>
+                <default>false</default>
+                <label>MotaSoft Ltd</label>
+            </value>
+            <value>
+                <fullName>spos_uk</fullName>
+                <default>false</default>
+                <label>SPOS UK</label>
+            </value>
+            <value>
+                <fullName>floristpro</fullName>
+                <default>false</default>
+                <label>Floristpro</label>
+            </value>
+            <value>
+                <fullName>shoptill-e</fullName>
+                <default>false</default>
+                <label>shoptill-e</label>
+            </value>
+            <value>
+                <fullName>hiopos/icg</fullName>
+                <default>false</default>
+                <label>HIOPOS/ICG</label>
+            </value>
+            <value>
+                <fullName>jsm_bars</fullName>
+                <default>false</default>
+                <label>JSM Bars</label>
+            </value>
+            <value>
+                <fullName>aerona_dental</fullName>
+                <default>false</default>
+                <label>Aerona Dental</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

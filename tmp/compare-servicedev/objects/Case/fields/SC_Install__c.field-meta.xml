@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_Install__c</fullName>
+    <description>Process of setting up or installing equipment.</description>
+    <inlineHelpText>Indicate if installation is complete.</inlineHelpText>
+    <label>Install</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>install_ob_agent_-_remote</fullName>
+                <default>false</default>
+                <label>OB agent - Remote</label>
+            </value>
+            <value>
+                <fullName>install_ob_agent_-_on_site</fullName>
+                <default>false</default>
+                <label>OB agent - On site</label>
+            </value>
+            <value>
+                <fullName>install_completed_by_pc</fullName>
+                <default>false</default>
+                <label>Completed by PC</label>
+            </value>
+            <value>
+                <fullName>install_completed_by_partner</fullName>
+                <default>false</default>
+                <label>Completed by Partner</label>
+            </value>
+            <value>
+                <fullName>install_completed_by_customer</fullName>
+                <default>false</default>
+                <label>Completed by Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,50 @@
+<template>
+    <section class="trust-shell">
+        <article class="trust-band">
+            <header>
+                <p class="eyebrow">Why teams trust this delivery model</p>
+                <h2>Enterprise-grade Salesforce execution with measurable accountability.</h2>
+            </header>
+            <div class="metric-grid">
+                <template for:each={metricCards} for:item="metric">
+                    <article class="metric-card" key={metric.key}>
+                        <strong>{metric.value}</strong>
+                        <span>{metric.label}</span>
+                    </article>
+                </template>
+            </div>
+        </article>
+
+        <article class="exec-footer">
+            <section class="column">
+                <h3>Certifications</h3>
+                <ul class="cert-badge-list">
+                    <template for:each={certifications} for:item="cert">
+                        <li key={cert.label} class="cert-badge-item">
+                            <img src={cert.badgeUrl} alt={cert.label} class="cert-badge-img" />
+                            <span>{cert.label}</span>
+                        </li>
+                    </template>
+                </ul>
+            </section>
+
+            <section class="column">
+                <h3>Delivery Principles</h3>
+                <ul>
+                    <template for:each={deliveryPillars} for:item="pillar">
+                        <li key={pillar}>{pillar}</li>
+                    </template>
+                </ul>
+            </section>
+
+            <section class="column cta">
+                <h3>Executive Contact</h3>
+                <p>Open to Salesforce admin, governance, and service optimization engagements.</p>
+                <div class="cta-row">
+                    <a href={mailtoHref} class="btn primary" data-event-name="generate_lead" data-event-label="trust_footer_email" onclick={trackClick}>Email Nnamdi</a>
+                    <a href={linkedInUrl} target="_blank" class="btn secondary" data-event-name="linkedin_click" data-event-label="trust_footer_linkedin" onclick={trackClick}>LinkedIn</a>
+                </div>
+            </section>
+        </article>
+    </section>
+</template>

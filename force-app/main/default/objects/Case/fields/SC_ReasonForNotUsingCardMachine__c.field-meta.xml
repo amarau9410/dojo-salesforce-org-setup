@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ReasonForNotUsingCardMachine__c</fullName>
+    <description>Explanation for not utilizing the card machine.</description>
+    <inlineHelpText>Provide the reason for not using the card machine.</inlineHelpText>
+    <label>Reason For Not Using Card Machine</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>awaiting_business_open_date_</fullName>
+                <default>false</default>
+                <label>Awaiting Business Open Date</label>
+            </value>
+            <value>
+                <fullName>back-up_card_machine_</fullName>
+                <default>false</default>
+                <label>Back-up Card Machine</label>
+            </value>
+            <value>
+                <fullName>business_refurb_</fullName>
+                <default>false</default>
+                <label>Business Refurb</label>
+            </value>
+            <value>
+                <fullName>business_temporarily_closed___staff_sickness_</fullName>
+                <default>false</default>
+                <label>Business Temporarily Closed:: Staff sickness</label>
+            </value>
+            <value>
+                <fullName>business_temporarily_closed__customer_holiday_</fullName>
+                <default>false</default>
+                <label>Business Temporarily Closed::Customer holiday</label>
+            </value>
+            <value>
+                <fullName>card_machine_reliability</fullName>
+                <default>false</default>
+                <label>Card Machine Reliability</label>
+            </value>
+            <value>
+                <fullName>customer_cancelled</fullName>
+                <default>false</default>
+                <label>Customer Cancelled</label>
+            </value>
+            <value>
+                <fullName>damaged_card_machine_</fullName>
+                <default>false</default>
+                <label>Damaged Card Machine</label>
+            </value>
+            <value>
+                <fullName>limited_trading_hours_</fullName>
+                <default>false</default>
+                <label>Limited Trading Hours</label>
+            </value>
+            <value>
+                <fullName>moved_provider_</fullName>
+                <default>false</default>
+                <label>Moved Provider</label>
+            </value>
+            <value>
+                <fullName>only_used_at_peak_times_</fullName>
+                <default>false</default>
+                <label>Only used at peak times</label>
+            </value>
+            <value>
+                <fullName>seasonal_business/events</fullName>
+                <default>false</default>
+                <label>Seasonal Business/Events</label>
+            </value>
+            <value>
+                <fullName>using_dual_providers__dojo_is_back_up_card_machine</fullName>
+                <default>false</default>
+                <label>Using dual providers::Dojo is back up card machine</label>
+            </value>
+            <value>
+                <fullName>using_dual_providers__kept_old_provider_</fullName>
+                <default>false</default>
+                <label>Using dual providers::Kept old provider</label>
+            </value>
+            <value>
+                <fullName>using_dual_providers__trialing_new_provider_</fullName>
+                <default>false</default>
+                <label>Using dual providers::Trialing new provider</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ChargebackFraudNonFraud__c</fullName>
+    <description>Classification of the chargeback as fraud or non-fraud.</description>
+    <inlineHelpText>Indicate if the chargeback is fraud or non-fraud.</inlineHelpText>
+    <label>Chargeback Fraud / Non-Fraud</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>chargeback_-_fraud_/_non-fraud_fraud</fullName>
+                <default>false</default>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>chargeback_-_fraud_/_non-fraud_non-fraud</fullName>
+                <default>false</default>
+                <label>Non-Fraud</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UserPersona__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines if to use the Persona selection for Contact Centre Management (a &quot;Persona&quot; is a Permission Set Group assigned to users).</description>
+    <label>User Persona</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

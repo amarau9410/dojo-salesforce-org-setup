@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_LoyaltyFeedbackThemesSentiment__c</fullName>
+    <description>Sentiment analysis of loyalty feedback themes.</description>
+    <inlineHelpText>Describe the sentiment of the feedback.</inlineHelpText>
+    <label>Loyalty Feedback Themes Sentiment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>positive</fullName>
+                <default>false</default>
+                <label>Positive</label>
+            </value>
+            <value>
+                <fullName>neutral</fullName>
+                <default>false</default>
+                <label>Neutral</label>
+            </value>
+            <value>
+                <fullName>negative</fullName>
+                <default>false</default>
+                <label>Negative</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

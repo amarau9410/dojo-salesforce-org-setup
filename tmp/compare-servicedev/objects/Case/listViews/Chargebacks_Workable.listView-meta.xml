@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chargebacks_Workable</fullName>
+    <booleanFilter>1 AND (2 OR 3) AND (4 OR 5)</booleanFilter>
+    <columns>SC_Market__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>SC_ChargebackAmount__c</columns>
+    <columns>SC_ChargebackCardScheme__c</columns>
+    <columns>SC_ChargebackReasonCode__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>SC_ActionRequiredDateTime__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>SC_ChargebackDate__c</columns>
+    <columns>SC_ChargebackDisputeStage__c</columns>
+    <columns>SC_FundsOnHoldAtTicketCreation__c</columns>
+    <columns>SC_IsCBKDataComplete__c</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Escalated,New,Reopened,Reassign</value>
+    </filters>
+    <filters>
+        <field>SC_ChargebackEscalation__c</field>
+        <operation>equals</operation>
+        <value>,chargeback_escalation_no</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.General_Queries</value>
+    </filters>
+    <filters>
+        <field>SC_Team__c</field>
+        <operation>equals</operation>
+        <value>Chargebacks</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>Chargebacks</value>
+    </filters>
+    <label>Chargebacks - Workable</label>
+</ListView>

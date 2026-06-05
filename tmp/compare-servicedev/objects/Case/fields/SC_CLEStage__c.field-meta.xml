@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_CLEStage__c</fullName>
+    <description>Stage of change of legal entity</description>
+    <label>CLE Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0.cle_status_account_closed_in_error</fullName>
+                <default>false</default>
+                <label>0. Account closed in error</label>
+            </value>
+            <value>
+                <fullName>cle_status_1._cle_answers_and_pob</fullName>
+                <default>false</default>
+                <label>1. CLE form answers and POB</label>
+            </value>
+            <value>
+                <fullName>cle_status_2._sending_and_signing_agreements</fullName>
+                <default>false</default>
+                <label>2. New application and card machine delivery</label>
+            </value>
+            <value>
+                <fullName>cle_status_3._cancellation</fullName>
+                <default>false</default>
+                <label>3. Card machine collection and account closure</label>
+            </value>
+            <value>
+                <fullName>cle_status_4._lad</fullName>
+                <default>false</default>
+                <label>4. LAD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

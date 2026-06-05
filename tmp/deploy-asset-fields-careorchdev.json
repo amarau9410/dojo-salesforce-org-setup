@@ -1,0 +1,178 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "checkOnly": false,
+    "completedDate": "2026-05-27T13:11:24.000Z",
+    "createdBy": "005d3000002x7Iy",
+    "createdByName": "Nnamdi Udoye",
+    "createdDate": "2026-05-27T13:11:21.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Building_Type__c",
+          "id": "00NQ100000MPCGOMA5",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Door_Type__c",
+          "id": "00NQ100000MPYzWMAX",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Fire_Door_Status__c",
+          "id": "00NQ100000MPHYtMAP",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Inspection_Frequency_Months__c",
+          "id": "00NQ100000MPDn2MAH",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Inspection_Overdue__c",
+          "id": "00NQ100000MPHYvMAP",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Last_Inspection_Date__c",
+          "id": "00NQ100000MPHYuMAP",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": true,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Asset.object",
+          "fullName": "Asset.Next_Inspection_Due_Date__c",
+          "id": "00NQ100000MPHYwMAP",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-05-27T13:11:23.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfQ100000RWpawKAD",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-05-27T13:11:24.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 7,
+    "numberComponentsTotal": 7,
+    "numberFiles": "3",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-05-27T13:11:21.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 1506,
+    "files": [
+      {
+        "fullName": "Asset.Building_Type__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Building_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Door_Type__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Door_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Fire_Door_Status__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Fire_Door_Status__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Inspection_Frequency_Months__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Inspection_Frequency_Months__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Inspection_Overdue__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Inspection_Overdue__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Last_Inspection_Date__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Last_Inspection_Date__c.field-meta.xml"
+      },
+      {
+        "fullName": "Asset.Next_Inspection_Due_Date__c",
+        "type": "CustomField",
+        "state": "Created",
+        "filePath": "C:\\Users\\NnamdiUdoye\\Dojo Salesforce Org Setup\\Dojo Salesforce Org Setup\\force-app\\main\\default\\objects\\Asset\\fields\\Next_Inspection_Due_Date__c.field-meta.xml"
+      }
+    ],
+    "zipFileCount": 2,
+    "deployUrl": "https://wilfredandkaizer--careorchde.sandbox.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfQ100000RWpawKAD%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": []
+}

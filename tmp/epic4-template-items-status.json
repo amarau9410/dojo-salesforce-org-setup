@@ -1,0 +1,29 @@
+ ┬╗   Warning: @salesforce/cli update available from 2.102.6 to 2.135.7.
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "ActionPlanTemplateItem",
+          "url": "/services/data/v66.0/sobjects/ActionPlanTemplateItem/0PJQ10000000VYTOA2"
+        },
+        "Id": "0PJQ10000000VYTOA2",
+        "Name": "Emergency Vitals Check",
+        "DisplayOrder": 1
+      },
+      {
+        "attributes": {
+          "type": "ActionPlanTemplateItem",
+          "url": "/services/data/v66.0/sobjects/ActionPlanTemplateItem/0PJQ10000000VYUOA2"
+        },
+        "Id": "0PJQ10000000VYUOA2",
+        "Name": "Hydration Review",
+        "DisplayOrder": 2
+      }
+    ],
+    "totalSize": 2,
+    "done": true
+  },
+  "warnings": []
+}

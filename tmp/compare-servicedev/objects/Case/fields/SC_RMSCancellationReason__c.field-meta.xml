@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_RMSCancellationReason__c</fullName>
+    <description>Explanation for canceling RMS services.</description>
+    <inlineHelpText>Provide the reason for RMS cancellation.</inlineHelpText>
+    <label>RMS Cancellation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>closed_dormancy</fullName>
+                <default>false</default>
+                <label>Closed Dormancy</label>
+            </value>
+            <value>
+                <fullName>closed_non_payment</fullName>
+                <default>false</default>
+                <label>Closed Non Payment</label>
+            </value>
+            <value>
+                <fullName>brand_association_with_ps</fullName>
+                <default>false</default>
+                <label>Brand Association with PS</label>
+            </value>
+            <value>
+                <fullName>add_contact</fullName>
+                <default>false</default>
+                <label>Add Contact</label>
+            </value>
+            <value>
+                <fullName>contact_updated</fullName>
+                <default>false</default>
+                <label>Contact updated</label>
+            </value>
+            <value>
+                <fullName>receipt_details</fullName>
+                <default>false</default>
+                <label>Receipt Details</label>
+            </value>
+            <value>
+                <fullName>remove_contact</fullName>
+                <default>false</default>
+                <label>Remove Contact</label>
+            </value>
+            <value>
+                <fullName>trading_address</fullName>
+                <default>false</default>
+                <label>Trading Address</label>
+            </value>
+            <value>
+                <fullName>trading_name</fullName>
+                <default>false</default>
+                <label>Trading Name</label>
+            </value>
+            <value>
+                <fullName>timeframe</fullName>
+                <default>false</default>
+                <label>Timeframe</label>
+            </value>
+            <value>
+                <fullName>free_trial</fullName>
+                <default>false</default>
+                <label>Free Trial</label>
+            </value>
+            <value>
+                <fullName>incorrect_score_given</fullName>
+                <default>false</default>
+                <label>Incorrect Score Given</label>
+            </value>
+            <value>
+                <fullName>clear_information</fullName>
+                <default>false</default>
+                <label>Clear Information</label>
+            </value>
+            <value>
+                <fullName>helpful-friendly</fullName>
+                <default>false</default>
+                <label>Helpful-Friendly</label>
+            </value>
+            <value>
+                <fullName>knowledge</fullName>
+                <default>false</default>
+                <label>Knowledge</label>
+            </value>
+            <value>
+                <fullName>set_up</fullName>
+                <default>false</default>
+                <label>Set up</label>
+            </value>
+            <value>
+                <fullName>speed-ease</fullName>
+                <default>false</default>
+                <label>Speed-Ease</label>
+            </value>
+            <value>
+                <fullName>training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>wait_times</fullName>
+                <default>false</default>
+                <label>Wait Times</label>
+            </value>
+            <value>
+                <fullName>risk</fullName>
+                <default>false</default>
+                <label>Risk</label>
+            </value>
+            <value>
+                <fullName>rms_application</fullName>
+                <default>false</default>
+                <label>RMS Application</label>
+            </value>
+            <value>
+                <fullName>clear_communication</fullName>
+                <default>false</default>
+                <label>Clear Communication</label>
+            </value>
+            <value>
+                <fullName>contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>general_service</fullName>
+                <default>false</default>
+                <label>General Service</label>
+            </value>
+            <value>
+                <fullName>set_up_process</fullName>
+                <default>false</default>
+                <label>Set Up Process</label>
+            </value>
+            <value>
+                <fullName>signup_error</fullName>
+                <default>false</default>
+                <label>Signup Error</label>
+            </value>
+            <value>
+                <fullName>dpa</fullName>
+                <default>false</default>
+                <label>DPA</label>
+            </value>
+            <value>
+                <fullName>chargeback</fullName>
+                <default>false</default>
+                <label>Chargeback</label>
+            </value>
+            <value>
+                <fullName>cle_speed-ease</fullName>
+                <default>false</default>
+                <label>CLE Speed-ease</label>
+            </value>
+            <value>
+                <fullName>rms_terms_and_conditions</fullName>
+                <default>false</default>
+                <label>RMS Terms and Conditions</label>
+            </value>
+            <value>
+                <fullName>price_increase_-_fixed_element</fullName>
+                <default>false</default>
+                <label>Price increase - fixed element</label>
+            </value>
+            <value>
+                <fullName>refund_fee</fullName>
+                <default>false</default>
+                <label>Refund fee</label>
+            </value>
+            <value>
+                <fullName>uncompetitive_rms_price</fullName>
+                <default>false</default>
+                <label>Uncompetitive RMS price</label>
+            </value>
+            <value>
+                <fullName>card_on_file_rates</fullName>
+                <default>false</default>
+                <label>Card on File rates</label>
+            </value>
+            <value>
+                <fullName>deposits_transaction_rates</fullName>
+                <default>false</default>
+                <label>Deposits transaction rates</label>
+            </value>
+            <value>
+                <fullName>price_increase_-_rates</fullName>
+                <default>false</default>
+                <label>Price Increase - rates</label>
+            </value>
+            <value>
+                <fullName>bill_cycle</fullName>
+                <default>false</default>
+                <label>Bill Cycle</label>
+            </value>
+            <value>
+                <fullName>billed_before_start_date</fullName>
+                <default>false</default>
+                <label>Billed before start date</label>
+            </value>
+            <value>
+                <fullName>direct_debit</fullName>
+                <default>false</default>
+                <label>Direct Debit</label>
+            </value>
+            <value>
+                <fullName>invoice_error</fullName>
+                <default>false</default>
+                <label>Invoice Error</label>
+            </value>
+            <value>
+                <fullName>invoice_explanation</fullName>
+                <default>false</default>
+                <label>Invoice Explanation</label>
+            </value>
+            <value>
+                <fullName>refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>issue_with_customer_journey</fullName>
+                <default>false</default>
+                <label>Issue with Customer journey</label>
+            </value>
+            <value>
+                <fullName>cannot_integrate_with_partner</fullName>
+                <default>false</default>
+                <label>Cannot integrate with Partner</label>
+            </value>
+            <value>
+                <fullName>functionality_limitations</fullName>
+                <default>false</default>
+                <label>Functionality Limitations</label>
+            </value>
+            <value>
+                <fullName>tech_issues</fullName>
+                <default>false</default>
+                <label>Tech Issues</label>
+            </value>
+            <value>
+                <fullName>other_product_issue</fullName>
+                <default>false</default>
+                <label>Other product issue</label>
+            </value>
+            <value>
+                <fullName>issue_with_card_on_file</fullName>
+                <default>false</default>
+                <label>Issue with Card on File</label>
+            </value>
+            <value>
+                <fullName>issue_with_deposits</fullName>
+                <default>false</default>
+                <label>Issue with Deposits</label>
+            </value>
+            <value>
+                <fullName>does_not_like_update</fullName>
+                <default>false</default>
+                <label>Does not like update</label>
+            </value>
+            <value>
+                <fullName>issues_with_crm_features</fullName>
+                <default>false</default>
+                <label>Issues with CRM features</label>
+            </value>
+            <value>
+                <fullName>issues_with_reporting_features</fullName>
+                <default>false</default>
+                <label>Issues with reporting features</label>
+            </value>
+            <value>
+                <fullName>need_more_areas</fullName>
+                <default>false</default>
+                <label>Need more areas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

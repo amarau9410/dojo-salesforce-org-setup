@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Market</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GB</fullName>
+                <default>true</default>
+                <label>GB</label>
+            </value>
+            <value>
+                <fullName>IE</fullName>
+                <default>false</default>
+                <label>IE</label>
+            </value>
+            <value>
+                <fullName>ES</fullName>
+                <default>false</default>
+                <label>ES</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>GB - IE</fullName>
+                <default>false</default>
+                <label>GB - IE</label>
+            </value>
+            <value>
+                <fullName>GB - IE - ES</fullName>
+                <default>false</default>
+                <label>GB - IE - ES</label>
+            </value>
+            <value>
+                <fullName>GB - IE - IT</fullName>
+                <default>false</default>
+                <label>GB - IE - IT</label>
+            </value>
+            <value>
+                <fullName>GB - IE - ES - IT</fullName>
+                <default>false</default>
+                <label>GB - IE - ES - IT</label>
+            </value>
+            <value>
+                <fullName>GB - ES</fullName>
+                <default>false</default>
+                <label>GB - ES</label>
+            </value>
+            <value>
+                <fullName>GB - ES - IT</fullName>
+                <default>false</default>
+                <label>GB - ES - IT</label>
+            </value>
+            <value>
+                <fullName>GB - IT</fullName>
+                <default>false</default>
+                <label>GB - IT</label>
+            </value>
+            <value>
+                <fullName>IE - ES</fullName>
+                <default>false</default>
+                <label>IE - ES</label>
+            </value>
+            <value>
+                <fullName>IE - IT</fullName>
+                <default>false</default>
+                <label>IE - IT</label>
+            </value>
+            <value>
+                <fullName>IE - ES - IT</fullName>
+                <default>false</default>
+                <label>IE - ES - IT</label>
+            </value>
+            <value>
+                <fullName>ES - IT</fullName>
+                <default>false</default>
+                <label>ES - IT</label>
+            </value>
+            <value>
+                <fullName>Market Agnostic</fullName>
+                <default>false</default>
+                <label>Market Agnostic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

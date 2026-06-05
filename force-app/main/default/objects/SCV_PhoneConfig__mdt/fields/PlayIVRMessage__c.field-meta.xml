@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlayIVRMessage__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, IVR message will be played. If unchecked, IVR Message will not be played and call will be routed directly to service line queue.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If checked, IVR message will be played. If unchecked, IVR Message will not be played and call will be routed directly to service line queue.</inlineHelpText>
+    <label>Play IVR Message</label>
+    <type>Checkbox</type>
+</CustomField>

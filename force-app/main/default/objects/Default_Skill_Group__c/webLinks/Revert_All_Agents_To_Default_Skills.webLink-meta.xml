@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revert_All_Agents_To_Default_Skills</fullName>
+    <availability>online</availability>
+    <description>Revert the skills of all agents to their default values, using the Assign Default Skills Screen flow</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Revert All Agents To Default Skills</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/flow/SC_Assign_Default_Skills_Screen</url>
+</WebLink>

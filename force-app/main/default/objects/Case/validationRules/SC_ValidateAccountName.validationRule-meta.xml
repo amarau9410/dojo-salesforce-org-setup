@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SC_ValidateAccountName</fullName>
+    <active>true</active>
+    <description>Validate that Account Name is complete on save or change of Status apart from New status</description>
+    <errorConditionFormula>AND( 
+				ISPICKVAL(SC_SourceofContact__c, &apos;Customer&apos;), 
+				ISBLANK(Account.Name), 
+				OR( 
+								NOT(ISCHANGED(Status)),
+								AND(
+												ISCHANGED(Status),
+												NOT(
+																AND(
+																				ISPICKVAL(PRIORVALUE(Status), &apos;New&apos;),
+																				NOT(ISPICKVAL(Status, &apos;New&apos;))
+																			)
+												    )
+											)
+				    )
+)</errorConditionFormula>
+    <errorMessage>Please fill in account name for the customer before proceeding.</errorMessage>
+</ValidationRule>
