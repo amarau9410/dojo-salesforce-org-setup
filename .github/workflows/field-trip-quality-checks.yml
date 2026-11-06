@@ -32,7 +32,7 @@ jobs:
         run: npm install --ignore-scripts --no-audit --no-fund
 
       - name: Run LWC Jest tests
-        run: npm run test:unit -- --runInBand
+        run: npm run test:unit -- -- --runInBand
 
   code-analyzer:
     name: Salesforce Code Analyzer
