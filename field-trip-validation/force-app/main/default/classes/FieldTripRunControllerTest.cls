@@ -633,6 +633,38 @@ private class FieldTripRunControllerTest {
     }
 
     @isTest
+    static void shouldResolveApprovers_WhenAssignmentsUseNamedBinds() {
+        User submitter = FieldTripRunTestDataFactory.createOperator(
+            new List<String>{ 'Field_Usage_Report_Submitter' },
+            new Set<String>{ 'CMSL' }
+        );
+        User cmslApprover = FieldTripRunTestDataFactory.createOperator(
+            new List<String>{ 'Field_Usage_Report_Approver' },
+            new Set<String>{ 'CMSL' }
+        );
+        User allAllianceApprover = FieldTripRunTestDataFactory.createOperator(
+            new List<String>{ 'Field_Usage_Report_Approver', 'Field_Usage_All_Alliances' },
+            new Set<String>{ 'FDMS' }
+        );
+        FieldTripRunTestDataFactory.createOperator(
+            new List<String>{ 'Field_Usage_Report_Approver' },
+            new Set<String>{ 'FDMS' }
+        );
+        Set<Id> actualApproverIds = new Set<Id>();
+        System.runAs(submitter) {
+            Test.startTest();
+            List<User> approvers = FieldUsageApprovalAccess.getEligibleApprovers('CMSL');
+            Test.stopTest();
+            for (User approver : approvers) {
+                actualApproverIds.add(approver.Id);
+            }
+        }
+        Assert.areEqual(new Set<Id>{ cmslApprover.Id, allAllianceApprover.Id },
+            actualApproverIds,
+            'Named setup-query binds must retain same-alliance and all-alliance routing only');
+    }
+
+    @isTest
     static void shouldCreateApprovalAudit_WhenApproverIsEligible() {
         User submitter = FieldTripRunTestDataFactory.createOperator(
             new List<String>{ 'Field_Usage_Report_Submitter' },

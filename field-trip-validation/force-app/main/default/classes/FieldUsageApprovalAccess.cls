@@ -23,13 +23,17 @@ public without sharing class FieldUsageApprovalAccess {
         }
 
         Set<Id> allAllianceUserIds = new Set<Id>();
-        for (PermissionSetAssignment assignment : [
-            SELECT AssigneeId
-            FROM PermissionSetAssignment
-            WHERE PermissionSet.Name = :ALL_ALLIANCES_PERMISSION_SET
-                AND AssigneeId IN :candidateIds
-            WITH SYSTEM_MODE
-        ]) {
+        List<PermissionSetAssignment> allAllianceAssignments = Database.queryWithBinds(
+            'SELECT AssigneeId FROM PermissionSetAssignment '
+                + 'WHERE PermissionSet.Name = :permissionSetName '
+                + 'AND AssigneeId IN :candidateIds',
+            new Map<String, Object>{
+                'permissionSetName' => ALL_ALLIANCES_PERMISSION_SET,
+                'candidateIds' => candidateIds
+            },
+            AccessLevel.SYSTEM_MODE
+        );
+        for (PermissionSetAssignment assignment : allAllianceAssignments) {
             allAllianceUserIds.add(assignment.AssigneeId);
         }
 
@@ -61,12 +65,13 @@ public without sharing class FieldUsageApprovalAccess {
     @TestVisible
     private static Set<Id> getApproverCandidateIds() {
         Set<Id> candidateIds = new Set<Id>();
-        for (PermissionSetAssignment assignment : [
-            SELECT AssigneeId
-            FROM PermissionSetAssignment
-            WHERE PermissionSet.Name = :APPROVER_PERMISSION_SET
-            WITH SYSTEM_MODE
-        ]) {
+        List<PermissionSetAssignment> assignments = Database.queryWithBinds(
+            'SELECT AssigneeId FROM PermissionSetAssignment '
+                + 'WHERE PermissionSet.Name = :permissionSetName',
+            new Map<String, Object>{ 'permissionSetName' => APPROVER_PERMISSION_SET },
+            AccessLevel.SYSTEM_MODE
+        );
+        for (PermissionSetAssignment assignment : assignments) {
             candidateIds.add(assignment.AssigneeId);
         }
         return candidateIds;
