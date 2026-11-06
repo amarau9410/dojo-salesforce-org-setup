@@ -48,6 +48,8 @@
 
         <template lwc:if={filterError}><div class="c-error" role="alert">{filterError}</div></template>
         <template lwc:if={usageError}><div class="c-error" role="alert">{usageError}</div></template>
+        <template lwc:if={rowsError}><div class="c-error" role="alert">{rowsError}</div></template>
+        <template lwc:if={refreshError}><div class="c-error" role="alert">{refreshError}</div></template>
         <template lwc:if={usageWarning}><div class="slds-notify slds-notify_alert slds-alert_warning" role="status">{usageWarning}</div></template>
         <template lwc:if={reportError}><div class="c-error" role="alert">{reportError}</div></template>
 
@@ -58,7 +60,7 @@
                         <h2 id="alliance-summary-heading">Reporting segment overview</h2>
                         <p>Standard object fields that are uniquely used by one authorized alliance, grouped by quarter.</p>
                     </div>
-                    <span>{allianceSummaryRows.length} quarter group{allianceSummaryRows.length === 1 ? '' : 's'}</span>
+                    <span>{quarterGroupLabel}</span>
                 </div>
 
                 <template lwc:if={allianceSummaryRows.length}>

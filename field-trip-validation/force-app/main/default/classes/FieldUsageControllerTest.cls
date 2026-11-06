@@ -42,7 +42,7 @@ private class FieldUsageControllerTest {
         FieldUsageController.UsageResponse response;
         System.runAs(getDictionaryReader('ddscope')) {
             Test.startTest();
-            response = FieldUsageController.getUsage('CMSL', null, 'Used', 'Field 0');
+            response = getUsageWithRows('CMSL', null, 'Used', 'Field 0');
             Test.stopTest();
         }
 
@@ -59,7 +59,7 @@ private class FieldUsageControllerTest {
         FieldUsageController.UsageResponse response;
         System.runAs(getDictionaryReader('ddmulti')) {
             Test.startTest();
-            response = FieldUsageController.getUsage('FDMS', 'Account', 'No Records', 'Field 2');
+            response = getUsageWithRows('FDMS', 'Account', 'No Records', 'Field 2');
             Test.stopTest();
         }
 
@@ -73,7 +73,7 @@ private class FieldUsageControllerTest {
         FieldUsageController.UsageResponse response;
         System.runAs(getDictionaryReader('ddscope')) {
             Test.startTest();
-            response = FieldUsageController.getUsage(null, null, null, null);
+            response = getUsageWithRows(null, null, null, null);
             Test.stopTest();
         }
 
@@ -100,7 +100,7 @@ private class FieldUsageControllerTest {
         FieldUsageController.UsageResponse response;
         System.runAs(getDictionaryReader('ddmulti')) {
             Test.startTest();
-            response = FieldUsageController.getUsage(null, 'Account', null, null);
+            response = getUsageWithRows(null, 'Account', null, null);
             Test.stopTest();
         }
 
@@ -196,5 +196,87 @@ private class FieldUsageControllerTest {
 
     private static User getDictionaryReader(String aliasValue) {
         return [SELECT Id FROM User WHERE Alias = :aliasValue LIMIT 1];
+    }
+
+    @isTest
+    static void shouldScanEvidenceOnce_WhenAdministratorLoadsMetrics() {
+        DataDictionaryTestDataFactory.createUsageBudgetRows(9000);
+        User administrator = getDictionaryReader('ddsysadm');
+        FieldUsageController.UsageResponse response;
+        Integer queryRows;
+        System.runAs(administrator) {
+            Test.startTest();
+            response = FieldUsageController.getUsage(null, null, null, null);
+            queryRows = Limits.getQueryRows();
+            Test.stopTest();
+        }
+        Assert.areEqual(9003, response.summary.evidenceCount, 'Metrics must include all evidence');
+        Assert.areEqual(9004, queryRows, 'Metrics should scan evidence once plus the profile record');
+        Assert.areEqual(0, response.rows.size(), 'Details must not consume the metrics transaction budget');
+        Assert.areEqual(2, response.segments.size(), 'Both reporting segments should remain visible');
+        FieldUsageController.SegmentSummary cmsl;
+        for (FieldUsageController.SegmentSummary segment : response.segments) {
+            if (segment.reportingGroup == 'CMSL') {
+                cmsl = segment;
+            }
+        }
+        Assert.isNotNull(cmsl, 'The CMSL summary should exist');
+        Assert.areEqual(250, cmsl.recordsAnalyzed, 'Analysis samples must not be double-counted across statuses');
+        Assert.areEqual(200, cmsl.previousRecordsAnalyzed, 'Previous samples must be counted once');
+        Assert.areEqual(12.5, cmsl.previousAveragePopulationPercent,
+            'Rows without previous analysis dates must not dilute previous averages');
+    }
+
+    @isTest
+    static void shouldCountOnlyGroups_WhenAdministratorLoadsFilters() {
+        DataDictionaryTestDataFactory.createUsageBudgetRows(251);
+        User administrator = getDictionaryReader('ddsysadm');
+        Integer queryRows;
+        FieldUsageController.FilterOptions options;
+        System.runAs(administrator) {
+            Test.startTest();
+            options = FieldUsageController.getFilterOptions();
+            queryRows = Limits.getQueryRows();
+            Test.stopTest();
+        }
+        Assert.areEqual(5, queryRows, 'Filter queries should count groups plus two profile checks, not evidence rows');
+        Assert.areEqual(new List<String>{ 'CMSL', 'FDMS' }, options.alliances,
+            'Optimized filters must preserve all authorized groups');
+    }
+
+    @isTest
+    static void shouldRejectDetailRequest_WhenAllianceIsNotAuthorized() {
+        System.runAs(getDictionaryReader('ddscope')) {
+            Test.startTest();
+            try {
+                FieldUsageController.getUsageRows('FDMS', null, null, null);
+                Assert.fail('The detail endpoint must independently enforce alliance restrictions');
+            } catch (AuraHandledException exceptionValue) {
+                Assert.isNotNull(exceptionValue, 'Unauthorized detail requests should be rejected');
+            }
+            Test.stopTest();
+        }
+    }
+
+    @isTest
+    static void shouldReturnNoDetails_WhenReaderHasNoAlliance() {
+        FieldUsageController.UsageResponse response;
+        System.runAs(getDictionaryReader('ddnone')) {
+            Test.startTest();
+            response = FieldUsageController.getUsageRows(null, null, null, null);
+            Test.stopTest();
+        }
+        Assert.areEqual(0, response.rows.size(), 'Unentitled readers must see no details');
+        Assert.isFalse(response.isTruncated, 'An empty authorized scope is not truncation');
+    }
+
+    private static FieldUsageController.UsageResponse getUsageWithRows(
+        String alliance, String objectApiName, String usageStatus, String searchTerm
+    ) {
+        FieldUsageController.UsageResponse response =
+            FieldUsageController.getUsage(alliance, objectApiName, usageStatus, searchTerm);
+        response.rows =
+            FieldUsageController.getUsageRows(alliance, objectApiName, usageStatus, searchTerm).rows;
+        return response;
     }
 }

@@ -3,6 +3,7 @@ import { NavigationMixin } from 'lightning/navigation';
 import { refreshApex } from '@salesforce/apex';
 import getFilterOptions from '@salesforce/apex/FieldUsageController.getFilterOptions';
 import getUsage from '@salesforce/apex/FieldUsageController.getUsage';
+import getUsageRows from '@salesforce/apex/FieldUsageController.getUsageRows';
 import getAllianceReportState from '@salesforce/apex/FieldTripRunController.getAllianceReportState';
 import submitReportForApproval from '@salesforce/apex/FieldTripRunController.submitReportForApproval';
 
@@ -64,10 +65,16 @@ export default class FieldUsageWorkbench extends NavigationMixin(LightningElemen
     selectedRow;
     filterError;
     usageError;
+    rowsError;
+    refreshError;
     usageWarning;
+    isTruncated = false;
+    isMetricsLoading = true;
+    isRowsLoading = true;
     isLoading = true;
     wiredOptionsResult;
     wiredUsageResult;
+    wiredRowsResult;
     reportState = {
         approvers: [],
         artifacts: [],
@@ -122,28 +129,58 @@ export default class FieldUsageWorkbench extends NavigationMixin(LightningElemen
     })
     wiredUsage(result) {
         this.wiredUsageResult = result;
-        this.isLoading = false;
+        if (!result.data && !result.error) {
+            return;
+        }
+        this.isMetricsLoading = false;
+        this.isLoading = this.isRowsLoading;
         if (result.data) {
             this.usageError = undefined;
-            this.usageWarning = result.data.isTruncated
-                ? `More than ${result.data.rowLimit} rows match. Narrow the object, status, or search filters to review the complete result.`
-                : undefined;
             this.summary = result.data.summary || EMPTY_SUMMARY;
-            this.usageRows = result.data.rows || [];
             this.segmentRows = result.data.segments || [];
-            this.allianceSummaryRows = this.buildAllianceSummaryRows();
             this.buildDataset();
-            this.reconcileSelection();
         } else if (result.error) {
             this.summary = EMPTY_SUMMARY;
-            this.usageRows = [];
             this.segmentRows = [];
-            this.displayRows = [];
-            this.selectedRow = undefined;
-            this.usageWarning = undefined;
-            this.allianceSummaryRows = [];
+            this.buildDataset();
             this.usageError = this.reduceError(result.error);
         }
+    }
+
+    @wire(getUsageRows, {
+        alliance: '$alliance',
+        objectApiName: '$objectApiName',
+        usageStatus: '$usageStatus',
+        searchTerm: '$searchTerm'
+    })
+    wiredRows(result) {
+        this.wiredRowsResult = result;
+        if (!result.data && !result.error) {
+            return;
+        }
+        this.isRowsLoading = false;
+        this.isLoading = this.isMetricsLoading;
+        if (result.data) {
+            this.rowsError = undefined;
+            this.isTruncated = Boolean(result.data.isTruncated);
+            this.usageWarning = this.isTruncated
+                ? `More than ${result.data.rowLimit} rows match. Metrics include all matching evidence; detail rows are limited and unique-alliance field comparisons are hidden. Narrow the filters to review complete details.`
+                : undefined;
+            this.usageRows = result.data.rows || [];
+            this.allianceSummaryRows = this.isTruncated ? [] : this.buildAllianceSummaryRows();
+        } else {
+            this.rowsError = this.reduceError(result.error);
+            this.usageRows = [];
+            this.allianceSummaryRows = [];
+            this.usageWarning = undefined;
+            this.isTruncated = false;
+        }
+        this.buildDataset();
+        this.reconcileSelection();
+    }
+
+    get quarterGroupLabel() {
+        return `${this.allianceSummaryRows.length} quarter group${this.allianceSummaryRows.length === 1 ? '' : 's'}`;
     }
 
     get hasRows() {
@@ -396,11 +433,23 @@ export default class FieldUsageWorkbench extends NavigationMixin(LightningElemen
 
     async handleRefresh() {
         this.startLoading();
-        await Promise.all([
-            refreshApex(this.wiredOptionsResult),
-            refreshApex(this.wiredUsageResult),
-            this.loadReportState()
-        ]);
+        this.refreshError = undefined;
+        try {
+            const results = await Promise.allSettled([
+                refreshApex(this.wiredOptionsResult),
+                refreshApex(this.wiredUsageResult),
+                refreshApex(this.wiredRowsResult),
+                this.loadReportState()
+            ]);
+            const failure = results.find((result) => result.status === 'rejected');
+            if (failure) {
+                this.refreshError = this.reduceError(failure.reason);
+            }
+        } finally {
+            this.isMetricsLoading = false;
+            this.isRowsLoading = false;
+            this.isLoading = false;
+        }
     }
 
     async loadReportState() {
@@ -495,6 +544,9 @@ export default class FieldUsageWorkbench extends NavigationMixin(LightningElemen
 
     startLoading() {
         this.isLoading = true;
+        this.isMetricsLoading = true;
+        this.isRowsLoading = true;
+        this.refreshError = undefined;
         this.selectedRow = undefined;
     }
 

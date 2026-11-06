@@ -36,7 +36,7 @@ public with sharing class FieldUsageController {
      * @param objectApiName Optional object API name.
      * @param usageStatus Optional exact usage classification.
      * @param searchTerm Optional field label or API-name search text.
-     * @return Usage rows and metrics for the matching evidence.
+     * @return Complete metrics for the matching evidence; detail rows load separately.
      */
     @AuraEnabled(cacheable=true)
     public static UsageResponse getUsage(
@@ -50,28 +50,13 @@ public with sharing class FieldUsageController {
         response.rows = new List<UsageRow>();
         response.segments = new List<SegmentSummary>();
         response.rowLimit = MAX_USAGE_ROWS;
-        Set<String> authorizedReportingGroups = getAuthorizedReportingGroups();
+        Set<String> authorizedReportingGroups = authorizeScope(alliance);
         if (String.isBlank(alliance)
             && authorizedReportingGroups != null
             && authorizedReportingGroups.isEmpty()) {
             return response;
         }
-        if (!String.isBlank(alliance)
-            && authorizedReportingGroups != null
-            && !authorizedReportingGroups.contains(alliance)) {
-            throw new AuraHandledException('You are not authorized to view this reporting segment.');
-        }
-
         try {
-            for (AggregateResult result : FieldUsageDataAccess.getUsageSummary(
-                authorizedReportingGroups,
-                alliance,
-                objectApiName,
-                usageStatus,
-                searchTerm
-            )) {
-                response.summary.addAggregate(result);
-            }
             Map<String, SegmentSummary> segmentByName = new Map<String, SegmentSummary>();
             for (AggregateResult result : FieldUsageDataAccess.getUsageByReportingGroup(
                 authorizedReportingGroups,
@@ -85,35 +70,46 @@ public with sharing class FieldUsageController {
                     segmentByName.put(reportingGroup, new SegmentSummary(reportingGroup));
                 }
                 segmentByName.get(reportingGroup).addAggregate(result);
-            }
-            for (AggregateResult result : FieldUsageDataAccess.getPreviousUsageByReportingGroup(
-                authorizedReportingGroups,
-                alliance,
-                objectApiName,
-                usageStatus,
-                searchTerm
-            )) {
-                String reportingGroup = (String) result.get('reportingGroup');
-                if (segmentByName.containsKey(reportingGroup)) {
+                response.summary.addAggregate(result);
+                if (result.get('previousAnalyzedAt') != null) {
                     segmentByName.get(reportingGroup).addPreviousAggregate(result);
                 }
-            }
-            for (AggregateResult result : FieldUsageDataAccess.getAnalysisSamplesByReportingGroup(
-                authorizedReportingGroups,
-                alliance,
-                objectApiName,
-                usageStatus,
-                searchTerm
-            )) {
-                String reportingGroup = (String) result.get('reportingGroup');
-                if (segmentByName.containsKey(reportingGroup)) {
-                    segmentByName.get(reportingGroup).addAnalysisSample(result);
-                }
+                segmentByName.get(reportingGroup).addAnalysisSample(result);
             }
             for (SegmentSummary segment : segmentByName.values()) {
                 segment.finalizeAverages();
             }
             response.segments.addAll(segmentByName.values());
+            return response;
+        } catch (Exception exceptionValue) {
+            throw new AuraHandledException('Field usage metrics could not be loaded.');
+        }
+    }
+
+    /**
+     * Loads bounded field evidence in a separate transaction from full-scope metrics.
+     * @param alliance Optional authorized reporting segment.
+     * @param objectApiName Optional object API name.
+     * @param usageStatus Optional usage classification.
+     * @param searchTerm Optional field label or API-name search.
+     * @return Detail rows with an explicit truncation indicator.
+     */
+    @AuraEnabled(cacheable=true)
+    public static UsageResponse getUsageRows(
+        String alliance,
+        String objectApiName,
+        String usageStatus,
+        String searchTerm
+    ) {
+        Set<String> authorizedReportingGroups = authorizeScope(alliance);
+        UsageResponse response = new UsageResponse();
+        response.rows = new List<UsageRow>();
+        response.rowLimit = MAX_USAGE_ROWS;
+        if (String.isBlank(alliance) && authorizedReportingGroups != null
+            && authorizedReportingGroups.isEmpty()) {
+            return response;
+        }
+        try {
             List<Data_Dictionary_Field_Usage__c> evidenceRows =
                 FieldUsageDataAccess.getUsageEvidence(
                     authorizedReportingGroups,
@@ -132,6 +128,15 @@ public with sharing class FieldUsageController {
         } catch (Exception exceptionValue) {
             throw new AuraHandledException('Field usage evidence could not be loaded.');
         }
+    }
+
+    private static Set<String> authorizeScope(String alliance) {
+        Set<String> authorizedGroups = getAuthorizedReportingGroups();
+        if (!String.isBlank(alliance) && authorizedGroups != null
+            && !authorizedGroups.contains(alliance)) {
+            throw new AuraHandledException('You are not authorized to view this reporting segment.');
+        }
+        return authorizedGroups;
     }
 
     /**
@@ -238,6 +243,8 @@ public with sharing class FieldUsageController {
         private Decimal populationTotal = 0;
         private Integer previousEvidenceCount = 0;
         private Decimal previousPopulationTotal = 0;
+        private Map<String, Integer> recordsByAnalysis = new Map<String, Integer>();
+        private Map<String, Integer> previousRecordsByAnalysis = new Map<String, Integer>();
 
         private SegmentSummary(String reportingGroup) {
             this.reportingGroup = reportingGroup;
@@ -263,10 +270,10 @@ public with sharing class FieldUsageController {
         }
 
         private void addPreviousAggregate(AggregateResult result) {
-            String usageStatus = (String) result.get('usageStatus');
+            String usageStatus = (String) result.get('previousUsageStatus');
             Integer statusCount = ((Decimal) result.get('evidenceCount')).intValue();
             previousEvidenceCount += statusCount;
-            previousPopulationTotal += (Decimal) result.get('populationTotal') ?? 0;
+            previousPopulationTotal += (Decimal) result.get('previousPopulationTotal') ?? 0;
             if (usageStatus == 'Used') {
                 previousUsedCount += statusCount;
             } else if (usageStatus == 'Unused') {
@@ -274,7 +281,7 @@ public with sharing class FieldUsageController {
             } else if (usageStatus == 'No Records') {
                 previousNoRecordsCount += statusCount;
             }
-            Datetime statusLatest = (Datetime) result.get('latestAnalyzedAt');
+            Datetime statusLatest = (Datetime) result.get('previousAnalyzedAt');
             if (statusLatest != null
                 && (previousAnalyzedAt == null || statusLatest > previousAnalyzedAt)) {
                 previousAnalyzedAt = statusLatest;
@@ -282,13 +289,22 @@ public with sharing class FieldUsageController {
         }
 
         private void addAnalysisSample(AggregateResult result) {
-            recordsAnalyzed += integerValue((Decimal) result.get('recordsAnalyzed'));
-            previousRecordsAnalyzed += integerValue(
-                (Decimal) result.get('previousRecordsAnalyzed')
-            );
+            String analysisId = (String) result.get('analysisId');
+            Integer currentRecords = integerValue((Decimal) result.get('recordsAnalyzed'));
+            Integer previousRecords = integerValue((Decimal) result.get('previousRecordsAnalyzed'));
+            recordsByAnalysis.put(analysisId,
+                Math.max(recordsByAnalysis.get(analysisId) ?? 0, currentRecords));
+            previousRecordsByAnalysis.put(analysisId,
+                Math.max(previousRecordsByAnalysis.get(analysisId) ?? 0, previousRecords));
         }
 
         private void finalizeAverages() {
+            for (Integer sample : recordsByAnalysis.values()) {
+                recordsAnalyzed += sample;
+            }
+            for (Integer sample : previousRecordsByAnalysis.values()) {
+                previousRecordsAnalyzed += sample;
+            }
             averagePopulationPercent = evidenceCount == 0
                 ? null
                 : populationTotal / evidenceCount;

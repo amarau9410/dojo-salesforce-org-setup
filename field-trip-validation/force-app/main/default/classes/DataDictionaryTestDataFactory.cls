@@ -141,6 +141,21 @@ public class DataDictionaryTestDataFactory {
         return usageRows;
     }
 
+    public static void createUsageBudgetRows(Integer recordCount) {
+        List<Data_Dictionary_Field_Usage__c> rows = new List<Data_Dictionary_Field_Usage__c>();
+        for (Integer indexValue = 0; indexValue < recordCount; indexValue++) {
+            Data_Dictionary_Field_Usage__c row = buildUsage(
+                null, 'Budget_' + indexValue + '__c', 'CMSL', 250, 250, 100, 'Used'
+            );
+            row.Previous_Analyzed_At__c = null;
+            row.Previous_Usage_Status__c = null;
+            row.Previous_Population_Percent__c = null;
+            row.Previous_Records_Analyzed__c = null;
+            rows.add(row);
+        }
+        Database.insert(rows, AccessLevel.SYSTEM_MODE);
+    }
+
     private static Data_Dictionary_Field_Usage__c buildUsage(
         Id dictionaryFieldId,
         String fieldApiName,

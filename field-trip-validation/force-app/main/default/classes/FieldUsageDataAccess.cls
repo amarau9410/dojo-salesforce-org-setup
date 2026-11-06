@@ -10,7 +10,7 @@ public without sharing class FieldUsageDataAccess {
         List<String> groups = new List<String>();
         if (authorizedGroups == null) {
             for (AggregateResult result : (List<AggregateResult>) Database.query(
-                'SELECT Reporting_Group__c reportingGroup '
+                'SELECT Reporting_Group__c reportingGroup, COUNT(Id) evidenceCount '
                     + 'FROM Data_Dictionary_Field_Usage__c WHERE Active__c = true '
                     + 'GROUP BY Reporting_Group__c ORDER BY Reporting_Group__c',
                 AccessLevel.SYSTEM_MODE
@@ -19,7 +19,7 @@ public without sharing class FieldUsageDataAccess {
             }
         } else if (!authorizedGroups.isEmpty()) {
             for (AggregateResult result : (List<AggregateResult>) Database.queryWithBinds(
-                'SELECT Reporting_Group__c reportingGroup '
+                'SELECT Reporting_Group__c reportingGroup, COUNT(Id) evidenceCount '
                     + 'FROM Data_Dictionary_Field_Usage__c '
                     + 'WHERE Active__c = true AND Reporting_Group__c IN :authorizedGroups '
                     + 'GROUP BY Reporting_Group__c ORDER BY Reporting_Group__c',
@@ -37,7 +37,7 @@ public without sharing class FieldUsageDataAccess {
         List<String> objectApiNames = new List<String>();
         if (authorizedGroups == null) {
             for (AggregateResult result : (List<AggregateResult>) Database.query(
-                'SELECT Object_API_Name__c objectApiName '
+                'SELECT Object_API_Name__c objectApiName, COUNT(Id) evidenceCount '
                     + 'FROM Data_Dictionary_Field_Usage__c WHERE Active__c = true '
                     + 'GROUP BY Object_API_Name__c ORDER BY Object_API_Name__c',
                 AccessLevel.SYSTEM_MODE
@@ -46,7 +46,7 @@ public without sharing class FieldUsageDataAccess {
             }
         } else if (!authorizedGroups.isEmpty()) {
             for (AggregateResult result : (List<AggregateResult>) Database.queryWithBinds(
-                'SELECT Object_API_Name__c objectApiName '
+                'SELECT Object_API_Name__c objectApiName, COUNT(Id) evidenceCount '
                     + 'FROM Data_Dictionary_Field_Usage__c '
                     + 'WHERE Active__c = true AND Reporting_Group__c IN :authorizedGroups '
                     + 'GROUP BY Object_API_Name__c ORDER BY Object_API_Name__c',
@@ -57,32 +57,6 @@ public without sharing class FieldUsageDataAccess {
             }
         }
         return objectApiNames;
-    }
-
-    public static List<AggregateResult> getUsageSummary(
-        Set<String> authorizedGroups,
-        String alliance,
-        String objectApiName,
-        String usageStatus,
-        String searchTerm
-    ) {
-        requireWorkbenchAccess();
-        QueryScope queryScope = buildUsageScope(
-            authorizedGroups,
-            alliance,
-            objectApiName,
-            usageStatus,
-            searchTerm
-        );
-        return Database.queryWithBinds(
-            'SELECT Usage_Status__c usageStatus, COUNT(Id) evidenceCount, '
-                + 'MAX(Last_Analyzed_At__c) latestAnalyzedAt '
-                + 'FROM Data_Dictionary_Field_Usage__c WHERE '
-                + String.join(queryScope.predicates, ' AND ')
-                + ' GROUP BY Usage_Status__c',
-            queryScope.binds,
-            AccessLevel.SYSTEM_MODE
-        );
     }
 
     public static List<Data_Dictionary_Field_Usage__c> getUsageEvidence(
@@ -140,69 +114,20 @@ public without sharing class FieldUsageDataAccess {
         );
         return Database.queryWithBinds(
             'SELECT Reporting_Group__c reportingGroup, Usage_Status__c usageStatus, '
+                + 'Previous_Usage_Status__c previousUsageStatus, '
+                + 'Source_Analysis_Id__c analysisId, '
+                + 'DAY_ONLY(Previous_Analyzed_At__c) previousDay, '
                 + 'COUNT(Id) evidenceCount, SUM(Population_Percent__c) populationTotal, '
-                + 'MAX(Last_Analyzed_At__c) latestAnalyzedAt '
-                + 'FROM Data_Dictionary_Field_Usage__c WHERE '
-                + String.join(queryScope.predicates, ' AND ')
-                + ' GROUP BY Reporting_Group__c, Usage_Status__c '
-                + 'ORDER BY Reporting_Group__c',
-            queryScope.binds,
-            AccessLevel.SYSTEM_MODE
-        );
-    }
-
-    public static List<AggregateResult> getPreviousUsageByReportingGroup(
-        Set<String> authorizedGroups,
-        String alliance,
-        String objectApiName,
-        String usageStatus,
-        String searchTerm
-    ) {
-        requireWorkbenchAccess();
-        QueryScope queryScope = buildUsageScope(
-            authorizedGroups,
-            alliance,
-            objectApiName,
-            usageStatus,
-            searchTerm
-        );
-        queryScope.predicates.add('Previous_Analyzed_At__c != null');
-        return Database.queryWithBinds(
-            'SELECT Reporting_Group__c reportingGroup, Previous_Usage_Status__c usageStatus, '
-                + 'COUNT(Id) evidenceCount, '
-                + 'SUM(Previous_Population_Percent__c) populationTotal, '
-                + 'MAX(Previous_Analyzed_At__c) latestAnalyzedAt '
-                + 'FROM Data_Dictionary_Field_Usage__c WHERE '
-                + String.join(queryScope.predicates, ' AND ')
-                + ' GROUP BY Reporting_Group__c, Previous_Usage_Status__c '
-                + 'ORDER BY Reporting_Group__c',
-            queryScope.binds,
-            AccessLevel.SYSTEM_MODE
-        );
-    }
-
-    public static List<AggregateResult> getAnalysisSamplesByReportingGroup(
-        Set<String> authorizedGroups,
-        String alliance,
-        String objectApiName,
-        String usageStatus,
-        String searchTerm
-    ) {
-        requireWorkbenchAccess();
-        QueryScope queryScope = buildUsageScope(
-            authorizedGroups,
-            alliance,
-            objectApiName,
-            usageStatus,
-            searchTerm
-        );
-        return Database.queryWithBinds(
-            'SELECT Reporting_Group__c reportingGroup, Source_Analysis_Id__c analysisId, '
+                + 'MAX(Last_Analyzed_At__c) latestAnalyzedAt, '
+                + 'SUM(Previous_Population_Percent__c) previousPopulationTotal, '
+                + 'MAX(Previous_Analyzed_At__c) previousAnalyzedAt, '
                 + 'MAX(Records_Analyzed__c) recordsAnalyzed, '
                 + 'MAX(Previous_Records_Analyzed__c) previousRecordsAnalyzed '
                 + 'FROM Data_Dictionary_Field_Usage__c WHERE '
                 + String.join(queryScope.predicates, ' AND ')
-                + ' GROUP BY Reporting_Group__c, Source_Analysis_Id__c '
+                + ' GROUP BY Reporting_Group__c, Usage_Status__c, '
+                + 'Previous_Usage_Status__c, Source_Analysis_Id__c, '
+                + 'DAY_ONLY(Previous_Analyzed_At__c) '
                 + 'ORDER BY Reporting_Group__c',
             queryScope.binds,
             AccessLevel.SYSTEM_MODE
