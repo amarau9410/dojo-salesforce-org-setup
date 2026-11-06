@@ -121,10 +121,12 @@ describe('c-field-trip-quarterly-console', () => {
         await flushPromises();
         await flushPromises();
 
-        element.shadowRoot
-            .querySelector('lightning-dual-listbox[name="analyses"]')
-            .dispatchEvent(new CustomEvent('change', { detail: { value: ['analysis-1'] } }));
-        const dateInputs = element.shadowRoot.querySelectorAll('lightning-input[type="date"]');
+        const analysisList = element.shadowRoot.querySelector('lightning-dual-listbox');
+        expect(analysisList).not.toBeNull();
+        analysisList.dispatchEvent(
+            new CustomEvent('change', { detail: { value: ['analysis-1'] } })
+        );
+        const dateInputs = element.shadowRoot.querySelectorAll('lightning-input');
         dateInputs[0].value = '2026-06-01';
         dateInputs[0].dispatchEvent(new CustomEvent('change', { detail: { value: '2026-06-01' } }));
         dateInputs[1].value = '2026-07-01';
