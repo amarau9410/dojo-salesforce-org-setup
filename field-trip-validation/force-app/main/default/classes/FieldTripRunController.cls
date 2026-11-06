@@ -232,7 +232,7 @@ public with sharing class FieldTripRunController {
      * @param alliance Reporting alliance selected in the Field Usage workbench.
      * @return Report artifacts, permissions, approver choices, and approval history.
      */
-    @AuraEnabled(cacheable=true)
+    @AuraEnabled
     public static AllianceReportState getAllianceReportState(String alliance) {
         requireAuthorizedAlliance(alliance);
         AllianceReportState state = new AllianceReportState();

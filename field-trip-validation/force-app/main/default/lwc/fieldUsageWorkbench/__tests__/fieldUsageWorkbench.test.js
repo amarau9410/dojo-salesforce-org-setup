@@ -4,6 +4,8 @@ import { refreshApex } from '@salesforce/apex';
 import getFilterOptions from '@salesforce/apex/FieldUsageController.getFilterOptions';
 import getUsage from '@salesforce/apex/FieldUsageController.getUsage';
 import getUsageRows from '@salesforce/apex/FieldUsageController.getUsageRows';
+import getAllianceReportState from '@salesforce/apex/FieldTripRunController.getAllianceReportState';
+import submitReportForApproval from '@salesforce/apex/FieldTripRunController.submitReportForApproval';
 
 jest.mock('@salesforce/apex', () => ({ refreshApex: jest.fn() }), { virtual: true });
 jest.mock('@salesforce/apex/FieldUsageController.getFilterOptions', () => ({
@@ -111,5 +113,47 @@ describe('c-field-usage-workbench', () => {
         expect(element.shadowRoot.querySelector('[role="alert"]').textContent)
             .toContain('Refresh unavailable');
         expect(element.shadowRoot.querySelector('lightning-spinner')).toBeNull();
+    });
+
+    it('reloads approval evidence after submission and prevents duplicate submission', async () => {
+        const artifact = {
+            id: 'workbook1', fileName: 'CMSL Account.xlsx', canSubmit: true,
+            approvalStatus: 'Not Submitted', downloadUrl: 'https://example.com/report.xlsx',
+            startDate: '2026-10-01', endDateExclusive: '2027-01-01', fileSize: 2048
+        };
+        const state = {
+            canDownloadReports: true, canSubmitForApproval: true,
+            approvers: [{ id: 'approver1', label: 'Selected CMSL approver' }],
+            artifacts: [artifact]
+        };
+        getAllianceReportState.mockResolvedValue(state);
+        const element = mount();
+        getFilterOptions.emit({
+            alliances: ['CMSL'], objectApiNames: ['Account'], canViewAllAlliances: false
+        });
+        await settle();
+        element.shadowRoot.querySelector('.c-report__actions lightning-button[variant="brand"]')
+            .click();
+        await settle();
+        const dialog = element.shadowRoot.querySelector('[role="dialog"]');
+        dialog.querySelector('lightning-combobox').dispatchEvent(
+            new CustomEvent('change', { detail: { value: 'approver1' } })
+        );
+        await settle();
+        submitReportForApproval.mockResolvedValue('process1');
+        getAllianceReportState.mockResolvedValue({
+            ...state, artifacts: [{ ...artifact, approvalStatus: 'Pending', canSubmit: false }]
+        });
+        dialog.querySelector('lightning-button[variant="brand"]').click();
+        await settle();
+        expect(submitReportForApproval).toHaveBeenCalledWith({
+            reportItemId: 'workbook1', approverId: 'approver1', comments: ''
+        });
+        expect(getAllianceReportState).toHaveBeenCalledTimes(2);
+        expect(element.shadowRoot.querySelector('[role="dialog"]')).toBeNull();
+        expect(element.shadowRoot.querySelector('.c-approval-status').textContent).toBe('Pending');
+        expect(element.shadowRoot
+            .querySelector('.c-report__actions lightning-button[variant="brand"]').disabled)
+            .toBe(true);
     });
 });
