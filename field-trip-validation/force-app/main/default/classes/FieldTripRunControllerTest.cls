@@ -122,15 +122,28 @@ private class FieldTripRunControllerTest {
 
     @isTest
     static void shouldRecoverOnlyStaleProcessingRun_WhenAdministratorIsAuthorized() {
-        assertStaleRunRecovery(false);
+        Field_Trip_Run__c recoveredRun = recoverStaleRun(new List<Field_Trip_Run_Item__c>());
+        Assert.areEqual(
+            'Worker host and Apex job evidence were reconciled before recovery.',
+            recoveredRun.Recovery_Reason__c,
+            'Recovery must retain the operator evidence unchanged when job IDs are valid'
+        );
     }
 
     @isTest
     static void shouldAuditMalformedJobIds_WhenRecoveringStaleRun() {
-        assertStaleRunRecovery(true);
+        Field_Trip_Run__c recoveredRun = recoverStaleRun(new List<Field_Trip_Run_Item__c>{
+            new Field_Trip_Run_Item__c(Apex_Job_Id__c = 'malformed')
+        });
+        Assert.areEqual(
+            'Worker host and Apex job evidence were reconciled before recovery.'
+                + ' Historical malformed Apex job IDs skipped: 1.',
+            recoveredRun.Recovery_Reason__c,
+            'Recovery must audit skipped malformed job IDs alongside the operator evidence'
+        );
     }
 
-    private static void assertStaleRunRecovery(Boolean hasMalformedJobId) {
+    private static Field_Trip_Run__c recoverStaleRun(List<Field_Trip_Run_Item__c> jobItems) {
         User administrator = FieldTripRunTestDataFactory.createAdministratorOperator(
             new List<String>{ 'Field_Trip_Run_Recovery' }
         );
@@ -150,13 +163,7 @@ private class FieldTripRunControllerTest {
         System.runAs(administrator) {
             Database.insert(run, AccessLevel.SYSTEM_MODE);
             FieldTripRunController.recoveryMinimumAgeMinutes = -1;
-            FieldTripRunController.recoveryItemsTestRecords =
-                new List<Field_Trip_Run_Item__c>();
-            if (hasMalformedJobId) {
-                FieldTripRunController.recoveryItemsTestRecords.add(
-                    new Field_Trip_Run_Item__c(Apex_Job_Id__c = 'malformed')
-                );
-            }
+            FieldTripRunController.recoveryItemsTestRecords = jobItems;
             Test.startTest();
             FieldTripRunController.recoverRun(
                 run.Id,
@@ -175,13 +182,7 @@ private class FieldTripRunControllerTest {
             'Recovery should terminalize the stuck run as Failed');
         Assert.isTrue(recoveredRun.Idempotency_Key__c.endsWith(':' + run.Id),
             'Recovery should release the active request key');
-        String expectedReason =
-            'Worker host and Apex job evidence were reconciled before recovery.';
-        if (hasMalformedJobId) {
-            expectedReason += ' Historical malformed Apex job IDs skipped: 1.';
-        }
-        Assert.areEqual(expectedReason, recoveredRun.Recovery_Reason__c,
-            'Recovery must retain the operator evidence and audit skipped malformed IDs');
+        return recoveredRun;
     }
 
     @isTest
