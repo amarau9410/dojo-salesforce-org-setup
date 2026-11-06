@@ -132,8 +132,8 @@ describe('c-field-usage-workbench', () => {
             alliances: ['CMSL'], objectApiNames: ['Account'], canViewAllAlliances: false
         });
         await settle();
-        element.shadowRoot.querySelector('.c-report__actions lightning-button[variant="brand"]')
-            .click();
+        expect(getAllianceReportState).toHaveBeenCalledWith({ alliance: 'CMSL' });
+        element.shadowRoot.querySelector('.c-report__actions lightning-button[data-id]').click();
         await settle();
         const dialog = element.shadowRoot.querySelector('[role="dialog"]');
         dialog.querySelector('lightning-combobox').dispatchEvent(
@@ -144,7 +144,8 @@ describe('c-field-usage-workbench', () => {
         getAllianceReportState.mockResolvedValue({
             ...state, artifacts: [{ ...artifact, approvalStatus: 'Pending', canSubmit: false }]
         });
-        dialog.querySelector('lightning-button[variant="brand"]').click();
+        [...dialog.querySelectorAll('lightning-button')]
+            .find((button) => button.label === 'Submit for approval').click();
         await settle();
         expect(submitReportForApproval).toHaveBeenCalledWith({
             reportItemId: 'workbook1', approverId: 'approver1', comments: ''
@@ -153,7 +154,7 @@ describe('c-field-usage-workbench', () => {
         expect(element.shadowRoot.querySelector('[role="dialog"]')).toBeNull();
         expect(element.shadowRoot.querySelector('.c-approval-status').textContent).toBe('Pending');
         expect(element.shadowRoot
-            .querySelector('.c-report__actions lightning-button[variant="brand"]').disabled)
+            .querySelector('.c-report__actions lightning-button[data-id]').disabled)
             .toBe(true);
     });
 });
