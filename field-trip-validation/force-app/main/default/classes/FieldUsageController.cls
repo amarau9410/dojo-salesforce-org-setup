@@ -151,6 +151,7 @@ public with sharing class FieldUsageController {
                 Visible_Alliance_VERT__c
             FROM User
             WHERE Id = :UserInfo.getUserId()
+            WITH SYSTEM_MODE
         ];
 
         Set<String> reportingGroups = new Set<String>();

@@ -26,6 +26,7 @@ public with sharing class FieldTripRunController {
             Organization organization = [
                 SELECT Id, Name, IsSandbox
                 FROM Organization
+                WITH SYSTEM_MODE
                 LIMIT 1
             ];
             ConsoleState state = new ConsoleState();
@@ -188,6 +189,7 @@ public with sharing class FieldTripRunController {
             SELECT Id, Status__c
             FROM Field_Trip_Run__c
             WHERE Id = :runId
+            WITH SYSTEM_MODE
             LIMIT 1
         ];
         if (runs.isEmpty()) {
@@ -206,6 +208,7 @@ public with sharing class FieldTripRunController {
             SELECT Id, Status__c
             FROM Field_Trip_Run_Item__c
             WHERE Field_Trip_Run__c = :run.Id
+            WITH SYSTEM_MODE
         ];
         Set<Id> itemIds = new Map<Id, Field_Trip_Run_Item__c>(items).keySet();
         for (Field_Trip_Run_Item__c item : items) {
@@ -342,6 +345,7 @@ public with sharing class FieldTripRunController {
             SELECT Id, Status__c, Idempotency_Key__c, LastModifiedDate
             FROM Field_Trip_Run__c
             WHERE Id = :runId
+            WITH SYSTEM_MODE
             LIMIT 1
             FOR UPDATE
         ];
@@ -355,11 +359,12 @@ public with sharing class FieldTripRunController {
             );
         }
         Set<Id> apexJobIds = new Set<Id>();
+        Integer malformedJobIdCount = 0;
         for (Field_Trip_Run_Item__c item : getRecoveryRunItems(run.Id)) {
             try {
                 apexJobIds.add((Id) item.Apex_Job_Id__c);
             } catch (StringException ignoredInvalidJobId) {
-                // Historical malformed IDs are evidence, but cannot identify a live Apex job.
+                malformedJobIdCount++;
             }
         }
         if (!apexJobIds.isEmpty() && [
@@ -376,7 +381,11 @@ public with sharing class FieldTripRunController {
         run.Completed_At__c = System.now();
         run.Recovered_At__c = System.now();
         run.Recovered_By__c = UserInfo.getUserId();
-        run.Recovery_Reason__c = reason.trim().left(32000);
+        String recoveryEvidence = malformedJobIdCount == 0
+            ? ''
+            : ' Historical malformed Apex job IDs skipped: ' + malformedJobIdCount + '.';
+        run.Recovery_Reason__c = reason.trim().left(32000 - recoveryEvidence.length())
+            + recoveryEvidence;
         run.Failure_Summary__c = ('Recovered as failed: ' + reason.trim()).left(32000);
         String terminalSuffix = ':' + run.Id;
         if (!run.Idempotency_Key__c.endsWith(terminalSuffix)) {
@@ -393,6 +402,7 @@ public with sharing class FieldTripRunController {
             SELECT Apex_Job_Id__c
             FROM Field_Trip_Run_Item__c
             WHERE Field_Trip_Run__c = :runId AND Apex_Job_Id__c != null
+            WITH SYSTEM_MODE
         ];
     }
 
@@ -595,7 +605,9 @@ public with sharing class FieldTripRunController {
     }
 
     private static EnvironmentContext getEnvironment(Boolean confirmedProduction) {
-        Organization organization = [SELECT Id, Name, IsSandbox FROM Organization LIMIT 1];
+        Organization organization = [
+            SELECT Id, Name, IsSandbox FROM Organization WITH SYSTEM_MODE LIMIT 1
+        ];
         if (!organization.IsSandbox && confirmedProduction != true) {
             throw new AuraHandledException('Confirm the production operation before submitting.');
         }
@@ -660,6 +672,7 @@ public with sharing class FieldTripRunController {
             SELECT Id
             FROM Field_Trip_Run__c
             WHERE Idempotency_Key__c = :idempotencyKey
+            WITH SYSTEM_MODE
             LIMIT 1
         ];
         return existingRuns.isEmpty() ? null : existingRuns[0].Id;

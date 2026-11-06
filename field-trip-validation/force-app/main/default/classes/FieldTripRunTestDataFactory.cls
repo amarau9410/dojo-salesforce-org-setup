@@ -2,7 +2,7 @@
 public class FieldTripRunTestDataFactory {
     public static Field_Trip__Object_Analysis__c createAnalysis() {
         String keyPrefix = Field_Trip__Object_Analysis__c.SObjectType
-            .getDescribe().getKeyPrefix();
+            .getDescribe(SObjectDescribeOptions.DEFERRED).getKeyPrefix();
         return new Field_Trip__Object_Analysis__c(
             Id = (Id) (keyPrefix + '000000000001'),
             Name = 'FDMS Account Test',

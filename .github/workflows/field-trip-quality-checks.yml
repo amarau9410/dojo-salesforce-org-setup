@@ -66,6 +66,7 @@ jobs:
           timestamp="$(date -u +%Y%m%d-%H%M%S)"
           sf code-analyzer run \
             --rule-selector Recommended \
+            --severity-threshold 2 \
             --target "force-app/main/default/classes,force-app/main/default/lwc" \
             --output-file "./code-analyzer-results-${timestamp}.json" \
             --include-fixes 2>&1 | tee "./code-analyzer-results-${timestamp}.log"

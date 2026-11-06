@@ -319,14 +319,10 @@ export default class FieldUsageWorkbench extends NavigationMixin(LightningElemen
     get reportArtifacts() {
         return (this.reportState.artifacts || []).map((artifact) => ({
             ...artifact,
-            isDownloadDisabled: !Boolean(
-                this.reportState.canDownloadReports && artifact.downloadUrl
-            ),
-            isSubmitDisabled: !Boolean(
-                artifact.canSubmit
+            isDownloadDisabled: !(this.reportState.canDownloadReports && artifact.downloadUrl),
+            isSubmitDisabled: !(artifact.canSubmit
                 && this.reportState.canSubmitForApproval
-                && this.approverOptions.length
-            ),
+                && this.approverOptions.length),
             approvalClass: `c-approval-status c-approval-status_${(artifact.approvalStatus || '')
                 .toLowerCase().replaceAll(' ', '-')}`,
             windowLabel: `${artifact.startDate} to ${artifact.endDateExclusive} (exclusive)`,
@@ -435,7 +431,7 @@ export default class FieldUsageWorkbench extends NavigationMixin(LightningElemen
                 throw new Error('Unsupported download protocol.');
             }
             window.open(downloadUrl.href, '_blank', 'noopener');
-        } catch (error) {
+        } catch {
             this.reportError = 'The report link is invalid. Refresh the workbench or contact an administrator.';
         }
     }

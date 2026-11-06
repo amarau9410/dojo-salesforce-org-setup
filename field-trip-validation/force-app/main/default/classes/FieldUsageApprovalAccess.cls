@@ -28,6 +28,7 @@ public without sharing class FieldUsageApprovalAccess {
             FROM PermissionSetAssignment
             WHERE PermissionSet.Name = :ALL_ALLIANCES_PERMISSION_SET
                 AND AssigneeId IN :candidateIds
+            WITH SYSTEM_MODE
         ]) {
             allAllianceUserIds.add(assignment.AssigneeId);
         }
@@ -64,6 +65,7 @@ public without sharing class FieldUsageApprovalAccess {
             SELECT AssigneeId
             FROM PermissionSetAssignment
             WHERE PermissionSet.Name = :APPROVER_PERMISSION_SET
+            WITH SYSTEM_MODE
         ]) {
             candidateIds.add(assignment.AssigneeId);
         }

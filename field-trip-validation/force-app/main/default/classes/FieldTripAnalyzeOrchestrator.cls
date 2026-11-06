@@ -356,7 +356,7 @@ public without sharing class FieldTripAnalyzeOrchestrator
         public Id submit(String analysisId) {
             if (Test.isRunningTest()) {
                 return (Id) (
-                    AsyncApexJob.SObjectType.getDescribe().getKeyPrefix()
+                    AsyncApexJob.SObjectType.getDescribe(SObjectDescribeOptions.DEFERRED).getKeyPrefix()
                     + '000000000001'
                 );
             }

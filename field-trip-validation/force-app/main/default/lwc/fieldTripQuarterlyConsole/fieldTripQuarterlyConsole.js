@@ -252,7 +252,7 @@ export default class FieldTripQuarterlyConsole extends LightningElement {
                 throw new Error('Unsupported download protocol.');
             }
             window.open(downloadUrl.href, '_blank', 'noopener');
-        } catch (error) {
+        } catch {
             this.errorMessage = 'The report link is invalid. Refresh the console or contact an administrator.';
         }
     }

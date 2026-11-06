@@ -18,7 +18,7 @@
 .status-band,
 .request-panel,
 .runs-panel {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem var(--slds-g-spacing-5, 1.5rem);
 }
 
 .console-header {
@@ -51,7 +51,7 @@ p {
 
 h1 {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 1.5rem;
+    font-size: var(--slds-g-font-scale-4, 1.5rem);
     line-height: 1.2;
 }
 
@@ -73,11 +73,11 @@ h3 {
 .status {
     display: inline-flex;
     align-items: center;
-    min-height: 1.5rem;
+    min-height: var(--slds-g-sizing-7, 1.5rem);
     padding: 0.15rem 0.55rem;
     border-radius: 3px;
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: var(--slds-g-font-weight-7, 700);
     white-space: nowrap;
 }
 
@@ -94,7 +94,7 @@ h3 {
 }
 
 .status-band div {
-    padding: 1rem 1.25rem;
+    padding: var(--slds-g-spacing-4, 1rem) 1.25rem;
     background: #eef2f4;
 }
 
@@ -116,14 +116,14 @@ h3 {
 
 .request-panel,
 .runs-panel {
-    margin: 1rem 1.5rem 0;
+    margin: var(--slds-g-spacing-4, 1rem) var(--slds-g-spacing-5, 1.5rem) 0;
     background: var(--console-surface);
-    border: 1px solid var(--console-line);
+    border: var(--slds-g-sizing-border-1, 1px) solid var(--console-line);
     border-radius: 6px;
 }
 
 .runs-panel {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--slds-g-spacing-5, 1.5rem);
 }
 
 .section-heading,
@@ -136,7 +136,7 @@ h3 {
 
 .section-heading {
     min-height: 2.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--slds-g-spacing-4, 1rem);
     border-bottom: 1px solid var(--console-line);
 }
 
@@ -144,12 +144,12 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
-    margin: 1rem 0;
+    margin: var(--slds-g-spacing-4, 1rem) 0;
 }
 
 .production-confirmation {
-    margin-top: 1rem;
-    padding: 0.75rem 1rem;
+    margin-top: var(--slds-g-spacing-4, 1rem);
+    padding: var(--slds-g-spacing-3, 0.75rem) var(--slds-g-spacing-4, 1rem);
     border-left: 4px solid #ba1b1d;
     background: #fff1f0;
 }
@@ -158,21 +158,21 @@ h3 {
 .folder-action {
     display: flex;
     justify-content: flex-end;
-    margin-top: 1rem;
+    margin-top: var(--slds-g-spacing-4, 1rem);
 }
 
 .message {
-    margin: 1rem 1.5rem 0;
-    padding: 0.75rem 1rem;
+    margin: var(--slds-g-spacing-4, 1rem) var(--slds-g-spacing-5, 1.5rem) 0;
+    padding: var(--slds-g-spacing-3, 0.75rem) var(--slds-g-spacing-4, 1rem);
     border-left: 4px solid;
 }
 
 .message_error,
 .run-error { color: #8e1113; background: #fff1f0; border-color: #ba1b1d; }
-.message_success { color: #165c34; background: #edf8f0; border-color: #2e844a; }
+.message_success { color: #165c34; background: #edf8f0; border-color: var(--slds-g-color-palette-green-50, #2e844a); }
 
 .run {
-    padding: 1rem 0;
+    padding: var(--slds-g-spacing-4, 1rem) 0;
     border-bottom: 1px solid var(--console-line);
 }
 
@@ -198,8 +198,8 @@ h3 {
 }
 
 .run-error {
-    margin-top: 0.75rem;
-    padding: 0.6rem 0.75rem;
+    margin-top: var(--slds-g-spacing-3, 0.75rem);
+    padding: 0.6rem var(--slds-g-spacing-3, 0.75rem);
     border-left: 3px solid;
 }
 
@@ -214,7 +214,7 @@ h3 {
     justify-content: space-between;
     gap: 1rem;
     min-height: 3.25rem;
-    padding: 0.5rem 0.25rem;
+    padding: var(--slds-g-spacing-2, 0.5rem) var(--slds-g-spacing-1, 0.25rem);
     border-bottom: 1px solid #edf0f2;
 }
 
@@ -224,14 +224,14 @@ h3 {
 }
 
 .status_requested,
-.status_queued { color: #584600; background: #fbf3d4; }
+.status_queued { color: var(--slds-g-color-palette-orange-30, #584600); background: #fbf3d4; }
 .status_processing { color: #074b78; background: #e6f4ff; }
 .status_completed { color: #165c34; background: #edf8f0; }
 .status_failed,
 .status_cancelled { color: #8e1113; background: #fff1f0; }
 
 .empty-state {
-    padding: 2.5rem 1rem;
+    padding: var(--slds-g-spacing-7, 2.5rem) var(--slds-g-spacing-4, 1rem);
     color: var(--console-muted);
     text-align: center;
 }
@@ -252,8 +252,8 @@ h3 {
 
     .request-panel,
     .runs-panel {
-        margin-right: 0.75rem;
-        margin-left: 0.75rem;
+        margin-right: var(--slds-g-spacing-3, 0.75rem);
+        margin-left: var(--slds-g-spacing-3, 0.75rem);
     }
 
     .artifact-actions {
@@ -265,5 +265,5 @@ h3 {
 .run-actions {
     display: flex;
     align-items: center;
-    gap: var(--lwc-spacingSmall, 0.75rem);
+    gap: var(--slds-g-spacing-3, var(--lwc-spacingSmall, 0.75rem));
 }

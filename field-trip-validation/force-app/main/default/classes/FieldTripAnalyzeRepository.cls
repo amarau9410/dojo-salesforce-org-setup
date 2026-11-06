@@ -1,5 +1,6 @@
 /**
  * Reads and persists the Salesforce records used by the Analyze orchestrator.
+ * The Analyze custom permission gates system-mode access to shared queue and job state.
  */
 public without sharing class FieldTripAnalyzeRepository {
     private static final String REQUIRED_PERMISSION = 'Launch_Field_Trip_Analyze';
@@ -63,6 +64,7 @@ public without sharing class FieldTripAnalyzeRepository {
             FROM Field_Trip_Run_Item__c
             WHERE Field_Trip_Run__c IN :runIds
                 AND Item_Type__c = 'Analyze Job'
+            WITH SYSTEM_MODE
             ORDER BY CreatedDate ASC
         ];
     }
@@ -78,6 +80,7 @@ public without sharing class FieldTripAnalyzeRepository {
             FROM AsyncApexJob
             WHERE JobType = 'BatchApex'
                 AND Status IN :ACTIVE_JOB_STATUSES
+            WITH SYSTEM_MODE
         ];
     }
 
@@ -95,6 +98,7 @@ public without sharing class FieldTripAnalyzeRepository {
             SELECT Id, Status, NumberOfErrors, ExtendedStatus
             FROM AsyncApexJob
             WHERE Id IN :jobIds
+            WITH SYSTEM_MODE
         ];
     }
 
@@ -110,6 +114,7 @@ public without sharing class FieldTripAnalyzeRepository {
             WHERE JobType = 'Queueable'
                 AND ApexClass.Name = 'FieldTripAnalyzeOrchestrator'
                 AND Status IN :ACTIVE_JOB_STATUSES
+            WITH SYSTEM_MODE
         ] > 0;
     }
 
@@ -124,6 +129,7 @@ public without sharing class FieldTripAnalyzeRepository {
             FROM CronTrigger
             WHERE CronJobDetail.Name = :SCHEDULER_NAME
                 AND State IN :ACTIVE_SCHEDULE_STATES
+            WITH SYSTEM_MODE
             ORDER BY CreatedDate DESC
             LIMIT 1
         ];

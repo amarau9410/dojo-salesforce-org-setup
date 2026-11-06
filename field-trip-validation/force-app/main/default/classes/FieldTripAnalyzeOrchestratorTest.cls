@@ -292,7 +292,7 @@ private class FieldTripAnalyzeOrchestratorTest {
 
     private static Id fakeJobId(Integer sequenceNumber) {
         String suffix = String.valueOf(sequenceNumber).leftPad(12, '0');
-        return (Id) (AsyncApexJob.SObjectType.getDescribe().getKeyPrefix() + suffix);
+        return (Id) (AsyncApexJob.SObjectType.getDescribe(SObjectDescribeOptions.DEFERRED).getKeyPrefix() + suffix);
     }
 
     private class FakeBatchSubmitter implements FieldTripAnalyzeOrchestrator.BatchSubmitter {

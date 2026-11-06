@@ -1,5 +1,6 @@
 /**
  * Atomically claims and terminalizes Field Trip runs for the dedicated automation identity.
+ * The worker custom permission authorizes system-mode queue access across request owners.
  */
 @RestResource(urlMapping='/field-trip-worker/v1/*')
 global without sharing class FieldTripWorkerApi {
@@ -55,6 +56,7 @@ global without sharing class FieldTripWorkerApi {
                 WHERE Status__c = 'Requested'
                     AND Salesforce_Org_Id__c = :organizationId
                     AND Operation__c IN :allowedOperations
+                WITH SYSTEM_MODE
                 LIMIT 1
                 FOR UPDATE
             ];
@@ -64,6 +66,7 @@ global without sharing class FieldTripWorkerApi {
                     Confirmed_Production__c, Requested_By__r.Email
                 FROM Field_Trip_Run__c
                 WHERE Id = :request.runId
+                WITH SYSTEM_MODE
                 LIMIT 1
                 FOR UPDATE
             ];
@@ -85,7 +88,7 @@ global without sharing class FieldTripWorkerApi {
         if (!allowedOperations.contains(run.Operation__c)) {
             throw new WorkerApiException(409, 'The selected operation is not enabled for this worker.');
         }
-        Organization organization = [SELECT IsSandbox FROM Organization LIMIT 1];
+        Organization organization = [SELECT IsSandbox FROM Organization WITH SYSTEM_MODE LIMIT 1];
         if (!organization.IsSandbox && !run.Confirmed_Production__c) {
             throw new WorkerApiException(409, 'The production run is not explicitly confirmed.');
         }
@@ -123,6 +126,7 @@ global without sharing class FieldTripWorkerApi {
             SELECT Id, Status__c, Claim_Token__c, Idempotency_Key__c
             FROM Field_Trip_Run__c
             WHERE Id = :request.runId
+            WITH SYSTEM_MODE
             LIMIT 1
             FOR UPDATE
         ];
