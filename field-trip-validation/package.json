@@ -1,0 +1,11 @@
+{
+  "name": "field-trip-validation",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test:unit": "sfdx-lwc-jest"
+  },
+  "devDependencies": {
+    "@salesforce/sfdx-lwc-jest": "^3.1.0"
+  }
+}

@@ -1,0 +1,326 @@
+<template>
+    <main class="c-workbench">
+        <header class="c-header">
+            <div class="c-header__identity">
+                <lightning-icon
+                    icon-name="standard:dataset"
+                    alternative-text="Data dictionary catalog"
+                    size="medium">
+                </lightning-icon>
+                <div>
+                    <h1>Salesforce Data Dictionary</h1>
+                    <p>Governed metadata, field context, access evidence, and change impact.</p>
+                </div>
+            </div>
+            <div class="c-header__actions">
+                <template lwc:if={summary.lastScannedAt}>
+                    <span class="c-scan-time">
+                        Scanned
+                        <lightning-formatted-date-time
+                            value={summary.lastScannedAt}
+                            year="numeric"
+                            month="short"
+                            day="2-digit"
+                            hour="2-digit"
+                            minute="2-digit">
+                        </lightning-formatted-date-time>
+                    </span>
+                </template>
+                <lightning-button-icon
+                    icon-name="action:refresh"
+                    alternative-text="Refresh catalog view"
+                    title="Refresh catalog view"
+                    onclick={handleRefresh}>
+                </lightning-button-icon>
+            </div>
+        </header>
+
+        <nav class="c-view-nav" aria-label="Data dictionary views">
+            <lightning-button-group>
+                <lightning-button label="Catalog" variant={catalogButtonVariant} data-view="catalog" onclick={handleViewChange}></lightning-button>
+                <lightning-button label="Change Inventory" variant={changesButtonVariant} data-view="changes" onclick={handleViewChange}></lightning-button>
+                <lightning-button label="Potential Duplicates" variant={duplicatesButtonVariant} data-view="duplicates" onclick={handleViewChange}></lightning-button>
+            </lightning-button-group>
+        </nav>
+
+        <template lwc:if={isCatalogView}>
+        <section class="c-metrics" aria-label="Catalog health">
+            <article class="c-metric">
+                <span>Objects</span>
+                <strong><lightning-formatted-number value={summary.objectCount}></lightning-formatted-number></strong>
+                <small>{summary.approvedObjectCount} approved</small>
+            </article>
+            <article class="c-metric">
+                <span>Fields</span>
+                <strong><lightning-formatted-number value={summary.fieldCount}></lightning-formatted-number></strong>
+                <small>{summary.documentedFieldCount} documented</small>
+            </article>
+            <article class="c-metric c-metric_accent">
+                <span>Documentation coverage</span>
+                <strong><lightning-formatted-number value={coverageValue} maximum-fraction-digits="1"></lightning-formatted-number>%</strong>
+                <lightning-progress-bar value={coverageValue} size="small"></lightning-progress-bar>
+            </article>
+            <article class="c-metric">
+                <span>Governance signals</span>
+                <strong><lightning-formatted-number value={summary.dependencyCount}></lightning-formatted-number></strong>
+                <small>{summary.sensitiveFieldCount} sensitive fields</small>
+            </article>
+        </section>
+        </template>
+        <template lwc:elseif={isChangesView}>
+            <section class="c-metrics" aria-label="Metadata change inventory">
+                <article class="c-metric"><span>Added</span><strong>{changeSummary.addedCount}</strong><small>new metadata</small></article>
+                <article class="c-metric"><span>Changed</span><strong>{changeSummary.changedCount}</strong><small>technical differences</small></article>
+                <article class="c-metric"><span>Removed</span><strong>{changeSummary.removedCount}</strong><small>{changeSummary.reactivatedCount} reactivated</small></article>
+                <article class="c-metric c-metric_accent"><span>Pending review</span><strong>{changeSummary.pendingReviewCount}</strong><small>{changeSummary.notificationStatus}</small></article>
+            </section>
+        </template>
+        <template lwc:else>
+            <section class="c-metrics" aria-label="Potential duplicate field inventory">
+                <article class="c-metric"><span>Candidates</span><strong>{duplicateSummary.candidateCount}</strong><small>same-object pairs</small></article>
+                <article class="c-metric"><span>New</span><strong>{duplicateSummary.newCount}</strong><small>awaiting review</small></article>
+                <article class="c-metric"><span>Confirmed</span><strong>{duplicateSummary.confirmedCount}</strong><small>{duplicateSummary.plannedCount} planned</small></article>
+                <article class="c-metric c-metric_accent"><span>Average confidence</span><strong>{duplicateSummary.averageConfidence}%</strong><small>80% minimum</small></article>
+            </section>
+        </template>
+
+        <template lwc:if={isCatalogView}>
+        <section class="c-filters" aria-label="Catalog filters">
+            <lightning-input
+                type="search"
+                label="Search objects"
+                value={searchTerm}
+                placeholder="Label or API name"
+                onchange={handleSearch}>
+            </lightning-input>
+            <lightning-combobox
+                label="Documentation"
+                value={documentationStatus}
+                options={documentationOptions}
+                onchange={handleDocumentationFilter}>
+            </lightning-combobox>
+            <lightning-combobox
+                label="Sensitivity"
+                value={sensitivity}
+                options={sensitivityOptions}
+                onchange={handleSensitivityFilter}>
+            </lightning-combobox>
+            <lightning-combobox
+                label="Category"
+                value={objectCategory}
+                options={categoryOptions}
+                onchange={handleCategoryFilter}>
+            </lightning-combobox>
+        </section>
+
+        <template lwc:if={catalogError}>
+            <div class="c-error" role="alert">{catalogError}</div>
+        </template>
+
+        <section class="c-catalog" aria-label="Metadata catalog">
+            <aside class="c-object-panel">
+                <div class="c-panel-heading">
+                    <div>
+                        <h2>Objects</h2>
+                        <span>{objectCountLabel}</span>
+                    </div>
+                    <template lwc:if={isCatalogLoading}>
+                        <lightning-spinner alternative-text="Loading objects" size="small"></lightning-spinner>
+                    </template>
+                </div>
+
+                <template lwc:if={hasObjects}>
+                    <div class="c-object-list" role="list">
+                        <template for:each={objectRows} for:item="objectRow">
+                            <button
+                                key={objectRow.id}
+                                class={objectRow.cssClass}
+                                data-id={objectRow.id}
+                                onclick={handleObjectSelection}
+                                type="button"
+                                role="listitem"
+                                aria-current={objectRow.ariaCurrent}>
+                                <span class="c-object-row__name">{objectRow.label}</span>
+                                <span class="c-object-row__api">{objectRow.apiName}</span>
+                                <span class="c-object-row__meta">
+                                    <span>{objectRow.fieldCount} fields</span>
+                                    <span>{objectRow.documentationStatus}</span>
+                                </span>
+                            </button>
+                        </template>
+                    </div>
+                </template>
+                <template lwc:if={showObjectEmptyState}>
+                    <div class="c-empty">No objects match the current filters.</div>
+                </template>
+            </aside>
+
+            <section class="c-detail-panel">
+                <template lwc:if={selectedObject}>
+                    <div class="c-object-heading">
+                        <div>
+                            <span class="c-eyebrow">{selectedObject.category}</span>
+                            <h2>{selectedObject.label}</h2>
+                            <code>{selectedObject.apiName}</code>
+                        </div>
+                        <div class="c-object-heading__actions">
+                            <span class="c-status">{selectedObject.documentationStatus}</span>
+                            <span class="c-status">{selectedObject.sensitivity}</span>
+                            <lightning-button
+                                label="Open record"
+                                icon-name="utility:new_window"
+                                onclick={handleOpenObjectRecord}>
+                            </lightning-button>
+                        </div>
+                    </div>
+
+                    <lightning-tabset>
+                        <lightning-tab label="Fields" value="fields">
+                            <template lwc:if={fieldError}>
+                                <div class="c-error" role="alert">{fieldError}</div>
+                            </template>
+                            <template lwc:if={hasFields}>
+                                <lightning-datatable
+                                    key-field="id"
+                                    data={fieldRows}
+                                    columns={fieldColumns}
+                                    max-row-selection="1"
+                                    selected-rows={selectedFieldId}
+                                    onrowselection={handleFieldSelection}
+                                    is-loading={isFieldLoading}>
+                                </lightning-datatable>
+                            </template>
+                            <template lwc:if={showFieldEmptyState}>
+                                <div class="c-empty">No active fields are cataloged for this object.</div>
+                            </template>
+
+                            <template lwc:if={selectedField}>
+                                <div class="c-field-detail">
+                                    <div class="c-field-detail__heading">
+                                        <div>
+                                            <h3>{selectedField.label}</h3>
+                                            <code>{selectedField.apiName}</code>
+                                        </div>
+                                        <lightning-button-icon
+                                            icon-name="utility:new_window"
+                                            alternative-text="Open field dictionary record"
+                                            title="Open field dictionary record"
+                                            onclick={handleOpenFieldRecord}>
+                                        </lightning-button-icon>
+                                    </div>
+                                    <dl class="c-definition-grid">
+                                        <div><dt>Type</dt><dd>{selectedField.dataType}</dd></div>
+                                        <div><dt>Documentation</dt><dd>{selectedField.documentationStatus}</dd></div>
+                                        <div><dt>Sensitivity</dt><dd>{selectedField.sensitivity}</dd></div>
+                                        <div><dt>Compliance</dt><dd>{selectedField.complianceGroup}</dd></div>
+                                        <div><dt>References</dt><dd>{selectedField.dependencyCount}</dd></div>
+                                        <div><dt>Related object</dt><dd>{selectedField.referenceTo}</dd></div>
+                                        <div><dt>Required</dt><dd>{selectedField.required}</dd></div>
+                                        <div><dt>Unique</dt><dd>{selectedField.uniqueValue}</dd></div>
+                                        <div><dt>External ID</dt><dd>{selectedField.externalId}</dd></div>
+                                    </dl>
+                                    <div class="c-prose">
+                                        <h4>Business definition</h4>
+                                        <lightning-formatted-text value={selectedField.businessDefinition}></lightning-formatted-text>
+                                        <h4>Metadata description</h4>
+                                        <lightning-formatted-text value={selectedField.metadataDescription}></lightning-formatted-text>
+                                        <h4>Help text</h4>
+                                        <lightning-formatted-text value={selectedField.helpText}></lightning-formatted-text>
+                                        <template lwc:if={hasFormula}>
+                                            <h4>Formula</h4>
+                                            <pre class="c-technical-text">{selectedField.formula}</pre>
+                                        </template>
+                                        <template lwc:if={hasPicklistValues}>
+                                            <h4>Picklist values</h4>
+                                            <pre class="c-technical-text">{selectedField.picklistValues}</pre>
+                                        </template>
+                                        <template lwc:if={hasFlsSummary}>
+                                            <h4>Field-level security</h4>
+                                            <pre class="c-technical-text">{selectedField.flsSummary}</pre>
+                                        </template>
+                                        <template lwc:if={hasDependencies}>
+                                            <h4>Dependencies</h4>
+                                            <pre class="c-technical-text">{selectedField.dependencies}</pre>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+                        </lightning-tab>
+
+                        <lightning-tab label="Definition" value="definition">
+                            <div class="c-prose c-prose_tab">
+                                <h3>Approved business definition</h3>
+                                <lightning-formatted-text value={selectedObject.businessDefinition}></lightning-formatted-text>
+                                <h3>Salesforce metadata description</h3>
+                                <lightning-formatted-text value={selectedObject.metadataDescription}></lightning-formatted-text>
+                            </div>
+                        </lightning-tab>
+
+                        <lightning-tab label="Governance" value="governance">
+                            <dl class="c-definition-grid c-definition-grid_tab">
+                                <div><dt>Data steward</dt><dd>{selectedObject.stewardName}</dd></div>
+                                <div><dt>Documentation</dt><dd>{selectedObject.documentationStatus}</dd></div>
+                                <div><dt>Sensitivity</dt><dd>{selectedObject.sensitivity}</dd></div>
+                                <div><dt>Fields</dt><dd>{selectedObject.fieldCount}</dd></div>
+                                <div><dt>Documented fields</dt><dd>{selectedObject.documentedFieldCount}</dd></div>
+                                <div><dt>Sensitive fields</dt><dd>{selectedObject.sensitiveFieldCount}</dd></div>
+                                <div><dt>Dependency references</dt><dd>{selectedObject.dependencyCount}</dd></div>
+                                <div><dt>Last scanned</dt><dd><lightning-formatted-date-time value={selectedObject.lastScannedAt}></lightning-formatted-date-time></dd></div>
+                            </dl>
+                        </lightning-tab>
+                    </lightning-tabset>
+                </template>
+
+                <template lwc:else>
+                    <div class="c-empty c-empty_large">Select an object to inspect its fields and governance context.</div>
+                </template>
+            </section>
+        </section>
+        </template>
+
+        <template lwc:elseif={isChangesView}>
+            <section class="c-filters c-filters_three" aria-label="Change inventory filters">
+                <lightning-input type="search" label="Search changes" value={changeSearchTerm} placeholder="Label or API name" onchange={handleChangeSearch}></lightning-input>
+                <lightning-combobox label="Change type" value={changeType} options={changeTypeOptions} onchange={handleChangeType}></lightning-combobox>
+                <lightning-combobox label="Review status" value={changeReviewStatus} options={changeReviewOptions} onchange={handleChangeReview}></lightning-combobox>
+            </section>
+            <template lwc:if={governanceError}><div class="c-error" role="alert">{governanceError}</div></template>
+            <section class="c-governance-view" aria-label="Detected metadata changes">
+                <template lwc:if={isGovernanceLoading}><lightning-spinner alternative-text="Loading metadata changes" size="small"></lightning-spinner></template>
+                <template lwc:if={hasChanges}>
+                    <lightning-datatable key-field="id" data={changeRows} columns={changeColumns} max-row-selection="1" selected-rows={selectedChangeId} onrowselection={handleChangeSelection} is-loading={isGovernanceLoading}></lightning-datatable>
+                </template>
+                <template lwc:if={showChangeEmptyState}><div class="c-empty">No metadata changes match the current filters.</div></template>
+                <template lwc:if={selectedChange}>
+                    <section class="c-review-detail">
+                        <div class="c-field-detail__heading"><div><h2>{selectedChange.metadataLabel}</h2><code>{selectedChange.qualifiedApiName}</code></div><lightning-button-icon icon-name="utility:new_window" alternative-text="Open change record" title="Open change record" onclick={handleOpenChangeRecord}></lightning-button-icon></div>
+                        <dl class="c-definition-grid"><div><dt>Change type</dt><dd>{selectedChange.changeType}</dd></div><div><dt>Entity</dt><dd>{selectedChange.entityType}</dd></div><div><dt>Review</dt><dd>{selectedChange.reviewStatus}</dd></div><div><dt>Changed properties</dt><dd>{selectedChange.changedProperties}</dd></div><div><dt>Scan</dt><dd>{selectedChange.scanNumber}</dd></div><div><dt>Retain until</dt><dd><lightning-formatted-date-time value={selectedChange.retentionUntil}></lightning-formatted-date-time></dd></div></dl>
+                    </section>
+                </template>
+            </section>
+        </template>
+
+        <template lwc:else>
+            <section class="c-filters c-filters_three" aria-label="Potential duplicate filters">
+                <lightning-input type="search" label="Search candidates" value={duplicateSearchTerm} placeholder="Object, field label, or API name" onchange={handleDuplicateSearch}></lightning-input>
+                <lightning-combobox label="Review status" value={duplicateReviewStatus} options={duplicateReviewOptions} onchange={handleDuplicateReview}></lightning-combobox>
+                <lightning-input type="number" label="Minimum confidence" value={minimumConfidence} min="80" max="100" step="1" onchange={handleConfidence}></lightning-input>
+            </section>
+            <template lwc:if={governanceError}><div class="c-error" role="alert">{governanceError}</div></template>
+            <section class="c-governance-view" aria-label="Potential duplicate fields">
+                <template lwc:if={isGovernanceLoading}><lightning-spinner alternative-text="Loading potential duplicates" size="small"></lightning-spinner></template>
+                <template lwc:if={hasDuplicates}>
+                    <lightning-datatable key-field="id" data={duplicateRows} columns={duplicateColumns} max-row-selection="1" selected-rows={selectedDuplicateId} onrowselection={handleDuplicateSelection} is-loading={isGovernanceLoading}></lightning-datatable>
+                </template>
+                <template lwc:if={showDuplicateEmptyState}><div class="c-empty">No active candidates match the current filters.</div></template>
+                <template lwc:if={selectedDuplicate}>
+                    <section class="c-review-detail">
+                        <div class="c-field-detail__heading"><div><h2>{selectedDuplicate.fieldALabel} / {selectedDuplicate.fieldBLabel}</h2><code>{selectedDuplicate.objectApiName}</code></div><lightning-button-icon icon-name="utility:new_window" alternative-text="Open duplicate candidate" title="Open duplicate candidate" onclick={handleOpenDuplicateRecord}></lightning-button-icon></div>
+                        <dl class="c-definition-grid"><div><dt>Field A</dt><dd>{selectedDuplicate.fieldAApiName}</dd></div><div><dt>Field B</dt><dd>{selectedDuplicate.fieldBApiName}</dd></div><div><dt>Confidence</dt><dd>{selectedDuplicate.confidence}%</dd></div><div><dt>Type</dt><dd>{selectedDuplicate.dataType}</dd></div><div><dt>Dependencies</dt><dd>{selectedDuplicate.fieldADependencyCount} / {selectedDuplicate.fieldBDependencyCount}</dd></div><div><dt>Review</dt><dd>{selectedDuplicate.reviewStatus}</dd></div></dl>
+                        <div class="c-prose"><h3>Evidence signals</h3><lightning-formatted-text value={selectedDuplicate.evidenceSignals}></lightning-formatted-text><h3>Review notes</h3><lightning-formatted-text value={selectedDuplicate.reviewNotes}></lightning-formatted-text></div>
+                    </section>
+                </template>
+            </section>
+        </template>
+    </main>
+</template>

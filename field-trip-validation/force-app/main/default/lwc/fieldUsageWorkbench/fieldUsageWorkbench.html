@@ -1,0 +1,246 @@
+<template>
+    <main class="c-workbench">
+        <header class="c-header">
+            <div class="c-header__identity">
+                <lightning-icon icon-name="standard:metrics" alternative-text="Field usage" size="medium"></lightning-icon>
+                <div>
+                    <h1>Field Usage</h1>
+                    <p>Field Trip population evidence by approved reporting segment.</p>
+                </div>
+            </div>
+            <div class="c-header__actions">
+                <span class="c-read-only">Read-only snapshot</span>
+                <lightning-button-icon
+                    icon-name="action:refresh"
+                    alternative-text="Refresh field usage"
+                    title="Refresh field usage"
+                    onclick={handleRefresh}>
+                </lightning-button-icon>
+            </div>
+        </header>
+
+        <section class="c-dashboard-scope" aria-labelledby="field-usage-scope-heading">
+            <div>
+                <span>Dashboard scope</span>
+                <h2 id="field-usage-scope-heading">{dashboardScope}</h2>
+            </div>
+            <lightning-button-group>
+                <lightning-button label="All fields" variant={allStatusVariant} data-status="" onclick={handleStatusQuickFilter}></lightning-button>
+                <lightning-button label="Used fields" variant={usedStatusVariant} data-status="Used" onclick={handleStatusQuickFilter}></lightning-button>
+                <lightning-button label="Unused fields" variant={unusedStatusVariant} data-status="Unused" onclick={handleStatusQuickFilter}></lightning-button>
+                <lightning-button label="No-record fields" variant={noRecordsStatusVariant} data-status="No Records" onclick={handleStatusQuickFilter}></lightning-button>
+            </lightning-button-group>
+        </section>
+
+        <section class="c-metrics" aria-label="Field usage metrics">
+            <article class="c-metric"><span>Field observations</span><strong>{summary.evidenceCount}</strong><small>{evidenceLabel}</small></article>
+            <article class="c-metric c-metric_used"><span>Using field</span><strong>{summary.usedCount}</strong><small>Population is greater than zero</small></article>
+            <article class="c-metric c-metric_unused"><span>Not using field</span><strong>{summary.unusedCount}</strong><small>Zero population with records analyzed</small></article>
+            <article class="c-metric"><span>No records</span><strong>{summary.noRecordsCount}</strong><small>No records were available to assess</small></article>
+        </section>
+
+        <section class="c-filters" aria-label="Field usage filters">
+            <lightning-combobox label="Reporting segment" value={alliance} options={allianceOptions} onchange={handleAllianceChange}></lightning-combobox>
+            <lightning-combobox label="Object" value={objectApiName} options={objectOptions} onchange={handleObjectChange}></lightning-combobox>
+            <lightning-combobox label="Usage status" value={usageStatus} options={statusOptions} onchange={handleStatusChange}></lightning-combobox>
+            <lightning-input type="search" label="Search fields" value={searchTerm} placeholder="Label or API name" onchange={handleSearch}></lightning-input>
+        </section>
+
+        <template lwc:if={filterError}><div class="c-error" role="alert">{filterError}</div></template>
+        <template lwc:if={usageError}><div class="c-error" role="alert">{usageError}</div></template>
+        <template lwc:if={rowsError}><div class="c-error" role="alert">{rowsError}</div></template>
+        <template lwc:if={refreshError}><div class="c-error" role="alert">{refreshError}</div></template>
+        <template lwc:if={usageWarning}><div class="slds-notify slds-notify_alert slds-alert_warning" role="status">{usageWarning}</div></template>
+        <template lwc:if={reportError}><div class="c-error" role="alert">{reportError}</div></template>
+
+        <template lwc:if={showAllianceSummary}>
+            <section class="c-alliance-summary" aria-labelledby="alliance-summary-heading">
+                <div class="c-alliance-summary__heading">
+                    <div>
+                        <h2 id="alliance-summary-heading">Reporting segment overview</h2>
+                        <p>Standard object fields that are uniquely used by one authorized alliance, grouped by quarter.</p>
+                    </div>
+                    <span>{quarterGroupLabel}</span>
+                </div>
+
+                <template lwc:if={allianceSummaryRows.length}>
+                    <div class="c-alliance-summary__table-wrap">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><div class="slds-truncate" title="Alliance">Alliance</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Period">Period</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Standard object fields solely used by the alliance">Standard object fields solely used by the alliance</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={allianceSummaryRows} for:item="row">
+                                    <tr key={row.key}>
+                                        <th scope="row"><div class="slds-truncate" title={row.alliance}>{row.alliance}</div></th>
+                                        <td>{row.periodLabel}</td>
+                                        <td>
+                                            <div class="c-alliance-summary__field-count">{row.fieldCountLabel}</div>
+                                            <div class="c-alliance-summary__fields" title={row.fieldsLabel}>{row.fieldsLabel}</div>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+                <template lwc:else>
+                    <div class="c-empty">No standard object fields are uniquely assigned to the visible alliances.</div>
+                </template>
+            </section>
+        </template>
+
+        <template lwc:if={isSegmentSelected}>
+        <section class="c-reports" aria-labelledby="field-usage-reports-heading">
+            <div class="c-reports__heading">
+                <div>
+                    <h2 id="field-usage-reports-heading">Approved-format workbooks</h2>
+                    <p>Completed workbook-template results for {alliance}.</p>
+                </div>
+                <template lwc:if={isReportLoading}>
+                    <lightning-spinner alternative-text="Loading report artifacts" size="small"></lightning-spinner>
+                </template>
+            </div>
+            <template lwc:if={hasReportArtifacts}>
+                <div class="c-report-list">
+                    <template for:each={reportArtifacts} for:item="artifact">
+                        <article class="c-report" key={artifact.id}>
+                            <div class="c-report__identity">
+                                <lightning-icon icon-name="doctype:excel" alternative-text="Excel workbook" size="medium"></lightning-icon>
+                                <div>
+                                    <h3>{artifact.fileName}</h3>
+                                    <p>{artifact.objectApiName} | {artifact.windowLabel} | {artifact.sizeLabel}</p>
+                                </div>
+                            </div>
+                            <div class="c-report__actions">
+                                <span class={artifact.approvalClass}>{artifact.approvalStatus}</span>
+                                <lightning-button
+                                    label="Download report"
+                                    icon-name="utility:download"
+                                    data-url={artifact.downloadUrl}
+                                    disabled={artifact.isDownloadDisabled}
+                                    onclick={handleDownloadReport}>
+                                </lightning-button>
+                                <lightning-button
+                                    label="Submit for approval"
+                                    variant="brand"
+                                    icon-name="action:approval"
+                                    data-id={artifact.id}
+                                    disabled={artifact.isSubmitDisabled}
+                                    onclick={handleOpenApprovalDialog}>
+                                </lightning-button>
+                            </div>
+                            <dl class="c-report__audit">
+                                <div><dt>Run</dt><dd>{artifact.runName}</dd></div>
+                                <div><dt>Generated</dt><dd><lightning-formatted-date-time value={artifact.generatedAt}></lightning-formatted-date-time></dd></div>
+                                <div><dt>Submitted by</dt><dd>{artifact.submittedBy}</dd></div>
+                                <div><dt>Submitted</dt><dd><lightning-formatted-date-time value={artifact.submittedAt}></lightning-formatted-date-time></dd></div>
+                                <div><dt>Decided by</dt><dd>{artifact.decidedBy}</dd></div>
+                                <div><dt>Decision time</dt><dd><lightning-formatted-date-time value={artifact.decidedAt}></lightning-formatted-date-time></dd></div>
+                                <div class="c-report__checksum"><dt>SHA-256</dt><dd><code>{artifact.checksumSha256}</code></dd></div>
+                                <div class="c-report__comments"><dt>Approval comments</dt><dd>{artifact.approvalComments}</dd></div>
+                            </dl>
+                        </article>
+                    </template>
+                </div>
+            </template>
+            <template lwc:else>
+                <div class="c-empty">No completed workbook-template report is available for this alliance.</div>
+            </template>
+        </section>
+        </template>
+
+        <section class="c-content" aria-label="Field Trip evidence">
+            <div class="c-table-panel">
+                <div class="c-panel-heading">
+                    <div>
+                        <h2>{datasetHeading}</h2>
+                        <p>{datasetDescription}</p>
+                        <template lwc:if={summary.latestAnalyzedAt}>
+                            <span>Analyzed <lightning-formatted-date-time value={summary.latestAnalyzedAt} year="numeric" month="short" day="2-digit" hour="2-digit" minute="2-digit"></lightning-formatted-date-time></span>
+                        </template>
+                    </div>
+                    <template lwc:if={isLoading}><lightning-spinner alternative-text="Loading field usage" size="small"></lightning-spinner></template>
+                </div>
+                <template lwc:if={hasRows}>
+                    <template lwc:if={isSegmentSelected}>
+                    <lightning-datatable
+                        key-field="datasetId"
+                        data={displayRows}
+                        columns={usageColumns}
+                        max-row-selection="1"
+                        selected-rows={selectedRowId}
+                        onrowselection={handleRowSelection}
+                        is-loading={isLoading}>
+                    </lightning-datatable>
+                    </template>
+                    <template lwc:else>
+                        <lightning-datatable
+                            key-field="datasetId"
+                            data={displayRows}
+                            columns={usageColumns}
+                            hide-checkbox-column
+                            onrowaction={handleSegmentAction}
+                            is-loading={isLoading}>
+                        </lightning-datatable>
+                    </template>
+                </template>
+                <template lwc:else><div class="c-empty">No fields match this reporting segment and filter combination.</div></template>
+            </div>
+
+            <aside class="c-detail-panel">
+                <template lwc:if={selectedRow}>
+                    <div class="c-detail-heading">
+                        <div><span>{selectedRow.objectApiName}</span><h2>{selectedRow.fieldLabel}</h2><code>{selectedRow.fieldApiName}</code></div>
+                        <lightning-button-icon icon-name="utility:new_window" alternative-text="Open dictionary field" title="Open dictionary field" onclick={handleOpenFieldRecord}></lightning-button-icon>
+                    </div>
+                    <dl class="c-evidence-grid">
+                        <div><dt>Population</dt><dd><lightning-formatted-number value={selectedRow.populationPercent} maximum-fraction-digits="3"></lightning-formatted-number>%</dd></div>
+                        <div><dt>Status</dt><dd>{selectedRow.usageStatus}</dd></div>
+                        <div><dt>Records analyzed</dt><dd>{selectedRow.recordsAnalyzed}</dd></div>
+                        <div><dt>Populated records</dt><dd>{selectedRow.populatedCount}</dd></div>
+                        <div><dt>References</dt><dd>{selectedRow.dependencyCount}</dd></div>
+                        <div><dt>Catalog match</dt><dd>{selectedRow.catalogMatchStatus}</dd></div>
+                        <div><dt>Record type</dt><dd>{selectedRow.recordTypeName}</dd></div>
+                    </dl>
+                    <section class="c-signal"><h3>Field-level security</h3><lightning-formatted-text value={selectedRow.flsSummary}></lightning-formatted-text></section>
+                    <section class="c-signal"><h3>Dependency evidence</h3><lightning-formatted-text value={selectedRow.dependencies}></lightning-formatted-text></section>
+                    <section class="c-source">
+                        <h3>Field Trip source</h3>
+                        <dl><div><dt>Segment</dt><dd>{selectedRow.alliance}</dd></div><div><dt>Analysis</dt><dd>{selectedRow.analysisName}</dd></div><div><dt>Source org</dt><dd>{selectedRow.sourceOrgId}</dd></div><div><dt>Analysis ID</dt><dd>{selectedRow.sourceAnalysisId}</dd></div><div><dt>Last synchronized</dt><dd><lightning-formatted-date-time value={selectedRow.lastSyncedAt}></lightning-formatted-date-time></dd></div></dl>
+                    </section>
+                </template>
+                <template lwc:else>
+                    <div class="c-empty c-empty_large">
+                        <template lwc:if={isSegmentSelected}>Select a field to inspect its evidence.</template>
+                        <template lwc:else>Select View fields beside a reporting segment to open its workbook-style dataset.</template>
+                    </div>
+                </template>
+            </aside>
+        </section>
+
+        <template lwc:if={isApprovalDialogOpen}>
+            <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="approval-dialog-heading" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <lightning-button-icon class="slds-button slds-button_icon slds-modal__close" icon-name="utility:close" alternative-text="Close approval dialog" title="Close" onclick={handleCloseApprovalDialog}></lightning-button-icon>
+                        <h2 id="approval-dialog-heading" class="slds-modal__title">{approvalDialogTitle}</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <lightning-combobox label="Approver" value={selectedApproverId} options={approverOptions} required onchange={handleApproverChange}></lightning-combobox>
+                        <lightning-textarea class="slds-m-top_medium" label="Comments" value={approvalComments} maxlength="4000" onchange={handleApprovalCommentsChange}></lightning-textarea>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancel" onclick={handleCloseApprovalDialog}></lightning-button>
+                        <lightning-button class="slds-m-left_small" variant="brand" label="Submit for approval" disabled={isApprovalSubmitDisabled} onclick={handleSubmitForApproval}></lightning-button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+    </main>
+</template>
