@@ -17,10 +17,10 @@ public with sharing class FieldTripRunController {
     @TestVisible private static List<Field_Trip_Run_Item__c> recoveryItemsTestRecords;
 
     /**
-     * Returns environment, permission, available-analysis, and recent-run state.
+     * Returns uncached environment, permission, analysis, and live run state.
      * @return State required to render the quarterly console.
      */
-    @AuraEnabled(cacheable=true)
+    @AuraEnabled
     public static ConsoleState getConsoleState() {
         try {
             Organization organization = [
