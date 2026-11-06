@@ -634,6 +634,7 @@ private class FieldTripRunControllerTest {
 
     @isTest
     static void shouldResolveApprovers_WhenAssignmentsUseNamedBinds() {
+        Set<Id> preexistingApproverIds = FieldUsageApprovalAccess.getApproverCandidateIds();
         User submitter = FieldTripRunTestDataFactory.createOperator(
             new List<String>{ 'Field_Usage_Report_Submitter' },
             new Set<String>{ 'CMSL' }
@@ -659,6 +660,7 @@ private class FieldTripRunControllerTest {
                 actualApproverIds.add(approver.Id);
             }
         }
+        actualApproverIds.removeAll(preexistingApproverIds);
         Assert.areEqual(new Set<Id>{ cmslApprover.Id, allAllianceApprover.Id },
             actualApproverIds,
             'Named setup-query binds must retain same-alliance and all-alliance routing only');
