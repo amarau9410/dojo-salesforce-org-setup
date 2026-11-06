@@ -1,5 +1,4 @@
 import { createElement } from 'lwc';
-import { createApexTestWireAdapter } from '@salesforce/sfdx-lwc-jest';
 import DataDictionaryWorkbench from 'c/dataDictionaryWorkbench';
 import getCatalog from '@salesforce/apex/DataDictionaryController.getCatalog';
 import getFields from '@salesforce/apex/DataDictionaryController.getFields';
@@ -8,7 +7,9 @@ import getDuplicateCandidates from '@salesforce/apex/DataDictionaryController.ge
 
 jest.mock(
     '@salesforce/apex/DataDictionaryController.getCatalog',
-    () => ({ default: jest.fn() }),
+    () => ({
+        default: require('@salesforce/sfdx-lwc-jest').createApexTestWireAdapter(jest.fn())
+    }),
     { virtual: true }
 );
 
@@ -29,8 +30,6 @@ jest.mock(
     () => ({ default: jest.fn() }),
     { virtual: true }
 );
-
-const getCatalogAdapter = createApexTestWireAdapter(getCatalog);
 
 const flushPromises = () => Promise.resolve();
 
@@ -117,7 +116,7 @@ describe('c-data-dictionary-workbench', () => {
         getFields.mockResolvedValue(FIELD_ROWS);
         const element = createComponent();
 
-        getCatalogAdapter.emit(CATALOG_RESPONSE);
+        getCatalog.emit(CATALOG_RESPONSE);
         await flushPromises();
         await flushPromises();
 
@@ -138,7 +137,7 @@ describe('c-data-dictionary-workbench', () => {
     it('shows technical governance evidence for a selected field', async () => {
         getFields.mockResolvedValue(FIELD_ROWS);
         const element = createComponent();
-        getCatalogAdapter.emit(CATALOG_RESPONSE);
+        getCatalog.emit(CATALOG_RESPONSE);
         await flushPromises();
         await flushPromises();
 
@@ -165,7 +164,7 @@ describe('c-data-dictionary-workbench', () => {
             .mockReturnValueOnce(firstRequest.promise)
             .mockReturnValueOnce(secondRequest.promise);
         const element = createComponent();
-        getCatalogAdapter.emit({
+        getCatalog.emit({
             ...CATALOG_RESPONSE,
             objects: [
                 ...CATALOG_RESPONSE.objects,
@@ -213,7 +212,7 @@ describe('c-data-dictionary-workbench', () => {
             ]
         });
         const element = createComponent();
-        getCatalogAdapter.emit(CATALOG_RESPONSE);
+        getCatalog.emit(CATALOG_RESPONSE);
         await flushPromises();
 
         clickView(element, 'Change Inventory');
@@ -235,7 +234,7 @@ describe('c-data-dictionary-workbench', () => {
             body: { message: 'Duplicate inventory is unavailable.' }
         });
         const element = createComponent();
-        getCatalogAdapter.emit(CATALOG_RESPONSE);
+        getCatalog.emit(CATALOG_RESPONSE);
         await flushPromises();
 
         clickView(element, 'Potential Duplicates');
