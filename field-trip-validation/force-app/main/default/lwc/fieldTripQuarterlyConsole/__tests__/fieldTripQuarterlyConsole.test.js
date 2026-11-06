@@ -131,6 +131,8 @@ describe('c-field-trip-quarterly-console', () => {
         dateInputs[0].dispatchEvent(new CustomEvent('change', { detail: { value: '2026-06-01' } }));
         dateInputs[1].value = '2026-07-01';
         dateInputs[1].dispatchEvent(new CustomEvent('change', { detail: { value: '2026-07-01' } }));
+        await flushPromises();
+        await flushPromises();
 
         const submitButton = [...element.shadowRoot.querySelectorAll('lightning-button')].find(
             (button) => button.label === 'Launch Analyze jobs'

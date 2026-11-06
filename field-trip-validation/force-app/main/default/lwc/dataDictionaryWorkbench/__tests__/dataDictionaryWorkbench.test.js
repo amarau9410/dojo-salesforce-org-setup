@@ -217,6 +217,7 @@ describe('c-data-dictionary-workbench', () => {
 
         clickView(element, 'Change Inventory');
         await flushPromises();
+        await flushPromises();
 
         expect(getChangeInventory).toHaveBeenCalledWith({
             searchTerm: '',
@@ -238,6 +239,7 @@ describe('c-data-dictionary-workbench', () => {
         await flushPromises();
 
         clickView(element, 'Potential Duplicates');
+        await flushPromises();
         await flushPromises();
 
         expect(getDuplicateCandidates).toHaveBeenCalledWith({
